@@ -5,7 +5,7 @@
 
 An [Agent Skills](https://agentskills.io/specification) package for AI agents, with a Chinese-first catalogue for historical Bilibili memes, danmaku language, remix material, ACG, games and esports, livestream culture, and expressions that travel across communities. The offline corpus records meanings, aliases, transmission relationships, usage boundaries, and source indexes. Precise provenance and additions still require reading the relevant public sources. Runtime and development checks use the Python 3.10+ standard library.
 
-The current project version is recorded in [`references/metadata.json`](../references/metadata.json), and the Skill name is `bilibili-meme-atlas`. This is not a census of every Bilibili meme, an account-interaction tool, a video downloader, or an unattended scraper.
+The Skill name is `bilibili-meme-atlas`. Its version is recorded in [`references/metadata.json`](../references/metadata.json).
 
 ## Quick start
 
@@ -33,11 +33,9 @@ Use bilibili-meme-atlas to trace the original material, remix techniques, and tr
 
 The agent loads `SKILL.md` for the task, then reads the scripts and resources it needs. The [Agent installation guide (Chinese)](../AGENT_INSTALL.md) covers release verification, host-specific destinations, and first-use checks. See [local lifecycle](INSTALL.en.md) for upgrades, removal, and recovery.
 
-## Project status and boundaries
+## Scope
 
-Maturity is **0.x / pre-1.0**. Agents perform offline lookup, evidence-aware explanation, and contextual writing; maintainers update the corpus and tools. The acceptance baseline is: deterministic projections match their inputs; project and corpus validation passes; the complete behavioral test suite passes; archives rebuild deterministically and verify against the source tree; factual lookup excludes `candidate` records by default; and the repository does not bundle third-party complete works without an applicable right to do so. Compatibility and breaking-change handling are described in [Compatibility (Chinese)](COMPATIBILITY.md).
-
-In scope are offline lookup, catalogue maintenance, public-source checking, deterministic archives, and local install/recovery. Account actions, video downloading, unattended scraping, real-time popularity monitoring, and redistribution of third-party media are out of scope. Source loss, `partial`/`candidate` evidence, fixed platform endpoint availability, and changes in third-party rights remain explicit maintenance risks. Runtime remains CPython 3.10+ standard library only.
+In scope are offline lookup, catalogue maintenance, public-source checking, deterministic archives, and local installation/recovery. Account actions, video downloading, unattended scraping, real-time popularity monitoring, and redistribution of third-party media are out of scope. Compatibility and versioning rules are described in [Compatibility (Chinese)](COMPATIBILITY.md).
 
 Most corpus and maintenance documentation is Chinese-first. Links below are marked when no English full-text counterpart is provided.
 

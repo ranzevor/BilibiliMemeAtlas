@@ -5,7 +5,7 @@
 
 面向支持 [Agent Skills](https://agentskills.io/specification) 的 AI Agent，用于查询和解释 B站历史热梗、弹幕黑话、鬼畜素材、ACG、游戏电竞、直播与跨圈表达。离线语料提供含义、别名、传播关系、使用边界和来源索引；需要精确溯源或补录时，再核读相应公开来源。运行与开发检查采用 Python 3.10+ 标准库。
 
-当前项目版本见 [`references/metadata.json`](references/metadata.json)，Skill 名称为 `bilibili-meme-atlas`。本库不是全站梗总表，也不提供账号互动、视频下载或无人值守抓取。
+Skill 名称为 `bilibili-meme-atlas`，版本见 [`references/metadata.json`](references/metadata.json)。
 
 ## 快速开始
 
@@ -33,13 +33,9 @@ https://raw.githubusercontent.com/ranzevor/BilibiliMemeAtlas/main/AGENT_INSTALL.
 
 Agent 按任务加载 `SKILL.md`，再读取所需脚本和资料。[Agent 安装指南](AGENT_INSTALL.md)负责获取与校验发行、选择宿主目录及验证调用；[本地生命周期](docs/INSTALL.md)提供升级、卸载和恢复步骤。
 
-## 项目状态与边界
+## 功能范围
 
-当前成熟度为 **0.x / pre-1.0**。由 Agent 执行离线查询、核对与表达任务，维护者负责语料与工具更新；项目以可复核来源、明确证据状态和不臆造出处的查询行为为核心。兼容面与破坏性变更策略见[兼容性](docs/COMPATIBILITY.md)。
-
-质量基线：确定性派生文件与源码一致；项目结构和语料合同验证通过；完整行为测试通过；同一源码可确定性构建并核验归档；默认事实检索不采用 `candidate`；仓库不打包未获适用权利的第三方完整作品。公开来源失效、证据仍为 `partial`/`candidate`、固定平台端点不可用和第三方权利条件变化是持续维护风险，不会被静默改写为已解决。
-
-范围内包括离线检索、语料维护、公开来源核查、确定性归档及本地安装/恢复；范围外包括账号操作、视频下载、无人值守抓取、实时热度监控和第三方媒体再分发。运行资源保持为 CPython 3.10+ 标准库，无数据库、模型服务或项目第三方 Python 包。
+离线检索、语料维护、公开来源核查、确定性归档及本地安装/恢复属于功能范围。账号操作、视频下载、无人值守抓取、实时热度监控和第三方媒体再分发不在功能范围内。兼容面与版本演进规则见[兼容性](docs/COMPATIBILITY.md)。
 
 [Skill 入口](SKILL.md) · [词条目录](references/catalog.md) · [历史导航](references/history-map.md) · [年份索引](references/history-index.md) · [来源](references/sources.json) · [用法](references/usage.md) · [安装](docs/INSTALL.md) · [维护](docs/MAINTENANCE.md) · [验证](docs/VERIFICATION.md) · [发行字节合同](docs/RELEASING.md) · [权利](CONTENT_RIGHTS.md) · [English](docs/README.en.md)
 

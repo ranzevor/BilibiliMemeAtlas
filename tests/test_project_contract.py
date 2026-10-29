@@ -286,7 +286,6 @@ class ProjectContractTests(unittest.TestCase):
                 with self.subTest(path=relative, target=target):
                     self.assertTrue((path.parent / target).resolve().is_file())
         english = (ROOT / "docs" / "README.en.md").read_text(encoding="utf-8")
-        self.assertIn("0.x / pre-1.0", english)
         for label in ("Catalogue (Chinese)", "Maintenance (Chinese)",
                       "Verification (Chinese)", "Dependencies (Chinese)"):
             self.assertIn(label, english)
