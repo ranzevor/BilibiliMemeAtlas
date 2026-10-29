@@ -10,7 +10,7 @@
     "version": "0.1.1",
     "knowledge_cutoff": "2026-10-29",
     "entries": 303,
-    "sources": 286,
+    "sources": 287,
     "by_evidence": {
       "candidate": 52,
       "partial": 206,
@@ -36,7 +36,7 @@
     },
     "source_access": {
       "full": 101,
-      "metadata": 50,
+      "metadata": 51,
       "snippet": 135
     },
     "coverage": "按年代与分区组织的收录集；未建立全站历史梗总量，不计算全量覆盖率"
