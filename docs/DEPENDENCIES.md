@@ -8,7 +8,9 @@
 
 ## 仓库验证
 
-`.github/workflows/` 中的手动只读工作流使用 GitHub 托管 Ubuntu runner，固定 `actions/checkout` 与 `actions/setup-python` 动作版本，并显式在 CPython 3.10 和 3.13 上运行检查；每个作业先输出 `python -VV` 供日志确认实际解释器。工作流不安装第三方项目依赖，不读取发布凭据，也不执行标签、上传或发布。
+`.github/workflows/verify.yml` 在 GitHub 托管 Ubuntu 24.04 与 Windows Server 2022 上验证 CPython 3.10 和 3.13；另外两个工作流使用 Ubuntu 24.04。所有工作流保持手动触发、只读权限，作业先输出 `python -VV`。`actions/checkout` 与 `actions/setup-python` 均固定到完整提交 SHA；工作流不安装第三方项目依赖，不读取发布凭据，也不执行标签、上传或发布。
+
+`.github/dependabot.yml` 为 GitHub Actions 配置版本更新，每周一 09:00（Asia/Shanghai）安排检查，最多同时保留 5 个更新 PR。维护者合并更新前，在更新分支上手动运行现有验证工作流，确认完整提交 SHA 固定和行为检查仍通过。
 
 ## 静态资源
 
