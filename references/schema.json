@@ -1,0 +1,215 @@
+{
+  "title": "Bilibili Meme Atlas entries",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "term": {
+        "type": "string",
+        "minLength": 1
+      },
+      "aliases": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "category": {
+        "enum": [
+          "community",
+          "acg",
+          "guichu",
+          "game",
+          "live",
+          "music",
+          "film",
+          "life",
+          "tech",
+          "esports",
+          "vtuber"
+        ]
+      },
+      "era": {
+        "type": "string",
+        "pattern": "^[0-9]{4}-[0-9]{4}$",
+        "description": "2009-2015、2016-2020、2021-2026；2027年起连续五年窗口。实际时期由脚本交叉校验。"
+      },
+      "meaning": {
+        "type": "string",
+        "minLength": 1
+      },
+      "origin": {
+        "type": "object",
+        "properties": {
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "year",
+              "range",
+              "unknown"
+            ]
+          },
+          "bilibili_role": {
+            "enum": [
+              "origin",
+              "adaptation",
+              "amplifier",
+              "imported",
+              "uncertain"
+            ]
+          }
+        },
+        "required": [
+          "summary",
+          "date",
+          "precision",
+          "bilibili_role"
+        ],
+        "additionalProperties": false
+      },
+      "usage": {
+        "type": "object",
+        "properties": {
+          "contexts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          },
+          "example": {
+            "type": "string",
+            "minLength": 1
+          },
+          "avoid": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          }
+        },
+        "required": [
+          "contexts",
+          "example",
+          "avoid"
+        ],
+        "additionalProperties": false
+      },
+      "lifecycle": {
+        "enum": [
+          "classic",
+          "periodic",
+          "contextual",
+          "volatile"
+        ]
+      },
+      "sensitivity": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "relations": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "evidence_status": {
+        "enum": [
+          "verified",
+          "partial",
+          "candidate"
+        ]
+      },
+      "evidence": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "source_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "claims": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "meaning",
+                  "origin",
+                  "date",
+                  "platform_usage"
+                ]
+              }
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "source_id",
+            "claims",
+            "note"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "notes": {
+        "type": "string"
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      }
+    },
+    "required": [
+      "id",
+      "term",
+      "aliases",
+      "category",
+      "era",
+      "meaning",
+      "origin",
+      "usage",
+      "lifecycle",
+      "sensitivity",
+      "relations",
+      "evidence_status",
+      "evidence",
+      "notes"
+    ],
+    "additionalProperties": false
+  }
+}

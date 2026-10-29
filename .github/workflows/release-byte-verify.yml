@@ -1,0 +1,32 @@
+name: Verify offline release byte contract
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-release-bytes-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.13"]
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Report interpreter
+        run: python -VV
+      - name: Validate project boundary
+        run: python scripts/validate.py
+      - name: Test source, notes, archive, checksum and readback comparisons
+        run: python -m unittest -v tests.test_release

@@ -1,0 +1,4218 @@
+[
+  {
+    "id": "early-233",
+    "term": "2333",
+    "aliases": [
+      "233",
+      "23333",
+      "233333"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "用数字代替笑声；连续的3通常加强或延长笑意。",
+    "origin": {
+      "summary": "常见词源解释指向猫扑第233号大笑表情，后来跨论坛、聊天软件和弹幕站流通。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "好笑的反差",
+        "轻松吐槽"
+      ],
+      "example": "前一秒还信誓旦旦，下一秒就翻车了2333。",
+      "avoid": [
+        "不要对灾难、受害者或真实困境机械刷笑。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "early-src-tencent-danmu",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "文章明确释义并记录A/B等弹幕站语境。"
+      }
+    ],
+    "notes": "猫扑原始表情档案未回溯；不填写首创年份。"
+  },
+  {
+    "id": "early-orz",
+    "term": "Orz",
+    "aliases": [
+      "orz",
+      "OTZ",
+      "囧rz"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "象形的俯身跪地姿势，常表达失意或无奈；敬佩等其他语义仍待补专门用例。",
+    "origin": {
+      "summary": "B站建站前已在中文网络流行的日系颜文字。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "自嘲失误",
+        "对技艺表示服气"
+      ],
+      "example": "刚发现自己把左右手画反了，Orz。",
+      "avoid": [
+        "敬佩解释需具体上下文与用例，不从当前来源推定频率。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-orz",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "2008年报道解释构形和中文变体。"
+      }
+    ],
+    "notes": "缺早期B站特定用例；2008为已见报道年，不作起源年。"
+  },
+  {
+    "id": "early-high-energy",
+    "term": "前方高能",
+    "aliases": [
+      "高能预警",
+      "全程高能"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "提示即将出现强烈、精彩、惊吓或反差片段；全程高能表示几乎没有平淡段落。",
+    "origin": {
+      "summary": "2015年文章已将其列为弹幕提示语；现有材料未确认唯一最初作品。 2018年B站年度弹幕名单再次收录，属于传播节点，不是首创证据。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "无具体剧透的内容预警",
+        "标记精彩段落",
+        "即将到来的高潮"
+      ],
+      "example": "01:20前方高能，建议先把音量调低一点。",
+      "avoid": [
+        "不要假装预警诱导观众调大突发噪声。",
+        "首看场景避免泄露剧情结果。",
+        "不要泄露关键剧情，也不要用它替代具体的闪烁或惊吓提示。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-danmu-shield"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-tencent-danmu",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "2015年原文已有前方高能弹幕例子。"
+      },
+      {
+        "source_id": "mid-src-annual18",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "正文列名，语义未逐词展开。"
+      }
+    ],
+    "notes": "未将《高达》等常见词源推断写作唯一出处。",
+    "tags": [
+      "非战斗人员请撤离"
+    ]
+  },
+  {
+    "id": "early-airdrop",
+    "term": "空降成功",
+    "aliases": [
+      "空降",
+      "精准空降"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "按时间戳跳过前段，直接来到某个视频位置；“成功”常用于回应他人提供的时间点。",
+    "origin": {
+      "summary": "弹幕社区将跳转播放比作空降；不等于空降兵的字面军事含义。 2018年B站年度弹幕名单再次收录，属于传播节点，不是首创证据。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "时间戳导航",
+        "跳过片头"
+      ],
+      "example": "从评论给的时间点空降成功，正好赶上演示。",
+      "avoid": [
+        "不要把时间点当已核内容；先核它实际指向什么。",
+        "不要虚构时间戳；跨视频时间点不能直接复用。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-danmu-glossary",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "2020年B站用语释义。"
+      },
+      {
+        "source_id": "early-src-airdrop-2015",
+        "claims": [
+          "date"
+        ],
+        "note": "跨站讨论中2015年已有同样用法。"
+      },
+      {
+        "source_id": "mid-src-annual18",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "正文列名，语义未逐词展开。"
+      }
+    ],
+    "notes": "前2016中文用例已见；B站最早用例未补。"
+  },
+  {
+    "id": "early-danmu-shield",
+    "term": "弹幕护体",
+    "aliases": [
+      "护体弹幕"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "借密集弹幕挡住恐怖或不适画面，也表达“有人陪着看”的心理缓冲。",
+    "origin": {
+      "summary": "弹幕站观看恐怖片、恐怖游戏时形成的互动用语。 2018年B站年度弹幕名单再次收录，属于传播节点，不是首创证据。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "恐怖视频讨论",
+        "回应非图透的惊吓提示",
+        "恐怖游戏实况"
+      ],
+      "example": "这段有突然出现的画面，我先开弹幕护体。",
+      "avoid": [
+        "不要批量刷屏挡住其他观众观看。",
+        "不要真的刷满屏妨碍观看；对光敏风险没有防护作用。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-high-energy"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-danmu-glossary",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "明确解释遮挡恐怖画面的含义。"
+      },
+      {
+        "source_id": "early-src-danmu-shield-2014",
+        "claims": [
+          "date",
+          "platform_usage"
+        ],
+        "note": "2014年投稿简介已有该表达。"
+      },
+      {
+        "source_id": "mid-src-annual18",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "正文列名，语义未逐词展开。"
+      }
+    ],
+    "notes": "2014年站内用例与2018年榜可见；最早造词及B站首次使用未确认，早期投稿仅核到元数据。"
+  },
+  {
+    "id": "early-soramimi",
+    "term": "空耳",
+    "aliases": [],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "把听到的语音按另一套相近发音重新分词或配成文字，常用于歌词和鬼畜；结果不是真实翻译。",
+    "origin": {
+      "summary": "来自日语そらみみ的“幻听/听错”意象，在弹幕和音MAD中发展成谐音玩法。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "解释谐音字幕",
+        "辨认鬼畜素材"
+      ],
+      "example": "这是中文空耳，原句的德语意思要另查。",
+      "avoid": [
+        "不要把空耳字幕作为原作者真实发言。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-hebei",
+      "early-german-boy"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "early-src-tencent-danmu",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "文章专门解释空耳并置于弹幕语境。"
+      }
+    ],
+    "notes": "",
+    "tags": [
+      "空耳君"
+    ]
+  },
+  {
+    "id": "early-red-blue-cp",
+    "term": "自古红蓝出CP",
+    "aliases": [
+      "红蓝出CP"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "把以红、蓝为代表色的角色配成一对，是同人配对的观察和玩笑。",
+    "origin": {
+      "summary": "ACG同人和弹幕文化中的配对句式，不是角色关系的官方规则。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "讨论角色配色",
+        "同人创作"
+      ],
+      "example": "这两套队服刚好一红一蓝，评论区已经开始嗑CP了。",
+      "avoid": [
+        "不要把配色当恋爱或性取向证据。",
+        "真人配对须顾及本人和受众语境。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "真人关系误判"
+    ],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-tencent-danmu",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "2015年腾讯正文在弹幕列举中出现此词组；仅支持列名用例，不解释红蓝角色配对含义。"
+      }
+    ],
+    "notes": "2015年腾讯正文只在弹幕列举中出现该词组，未解释红蓝角色配对；首次造词、具体原作和早期跨站传播链也没有来源支持。"
+  },
+  {
+    "id": "early-serious-lose",
+    "term": "认真你就输了",
+    "aliases": [
+      "认真就输了"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "在恶搞语境提醒不要把夸张内容完全按字面理解，也可能被用来逃避反驳。",
+    "origin": {
+      "summary": "2015年文章已将其作为AcFun口号引用；它属于弹幕文化中的戏谑表达。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "解释明显恶搞",
+        "自嘲钻牛角尖"
+      ],
+      "example": "这段是故意胡说的喜剧设定，别按教程操作。",
+      "avoid": [
+        "不能用它抹掉事实错误、欺骗或真实伤害。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-tencent-danmu",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "2015年文章引用AcFun口号并讨论弹幕文化；不直接证明该句在B站的使用。"
+      }
+    ],
+    "notes": "登记正文支持AcFun口号与弹幕文化语境，尚缺该句在B站使用的直接记录及更早来源。"
+  },
+  {
+    "id": "early-kneel",
+    "term": "给跪了",
+    "aliases": [
+      "跪了",
+      "献上膝盖"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "以跪拜夸张表示佩服，也可表达被离谱操作打败的无奈。",
+    "origin": {
+      "summary": "论坛、微博与视频社区通用的夸张表达；现有材料包含2012年度回顾证据。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "技艺赞叹",
+        "无奈自嘲"
+      ],
+      "example": "全程手算还一次算对，给跪了。",
+      "avoid": [
+        "不要把它当真实屈服或宗教动作的陈述。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-kneel-2012",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "回顾文给出佩服与自嘲两义。"
+      }
+    ],
+    "notes": "缺B站最早传播记录。"
+  },
+  {
+    "id": "early-source-of-all",
+    "term": "万恶之源",
+    "aliases": [
+      "一切的开始"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "在视频圈指后来大量二创、鬼畜或名场面的原素材；通常是戏称。",
+    "origin": {
+      "summary": "借用已有成语指称素材源头，早期葛平素材标题已使用。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "定位鬼畜原素材",
+        "回顾系列开端"
+      ],
+      "example": "原来这个两秒动作就是后面那串二创的万恶之源。",
+      "avoid": [
+        "标题自称原版不等于已确认首发。",
+        "不要把原素材出演者说成现实恶人。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-geping-source",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "早期素材视频标题使用该说法。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 [万恶之源]葛平 吴克 小光头的由来：platform_usage（metadata）。标题可证用例，精确造词者未知。"
+  },
+  {
+    "id": "early-site-treasure",
+    "term": "镇站之宝",
+    "aliases": [
+      "镇站神作"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "观众对长期具有辨识度、常被回访的代表作品的称赞；没有固定唯一名单。",
+    "origin": {
+      "summary": "B站社群对经典投稿的荣誉性称谓，后来也出现在站方入站必刷描述。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "介绍经典视频",
+        "考古旧作"
+      ],
+      "example": "这部黑白剪影动画经常被老观众称为镇站之宝。",
+      "avoid": [
+        "不要把称号当官方奖项、统计排名或独家原创凭证。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-bad-apple",
+      "early-kuroko"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-popular-history",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "站方列表出现相关称呼和经典作品。"
+      },
+      {
+        "source_id": "early-src-badapple-history",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "回顾文章描述Bad Apple的经典地位。"
+      }
+    ],
+    "notes": "当前/回顾名单可解释荣誉称谓；历史首称、首次入榜及旧版榜单完整内容未核实。"
+  },
+  {
+    "id": "early-god-sync",
+    "term": "神同步",
+    "aliases": [
+      "完美同步"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "两段本来无关的音画、动作或节拍高度贴合，令人产生“像专门制作”的感觉。",
+    "origin": {
+      "summary": "剪辑和音MAD观看中常见的评价；2010年作品页面可见相关标签。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "混剪",
+        "音画对拍"
+      ],
+      "example": "这段走路动作和鼓点神同步。",
+      "avoid": [
+        "后加标签不能证明其与视频同年出现。",
+        "不要把人工剪辑误称为纯巧合。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-synchronization",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "原页面含神同步标签。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 卡密SAMA的抹杀循环：platform_usage（metadata）。词义为剪辑语境归纳；最早年代尚缺原始标签历史。"
+  },
+  {
+    "id": "early-jinkela",
+    "term": "金坷垃",
+    "aliases": [
+      "坷垃",
+      "金坷垃三人组"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "以夸张肥料广告及其中争抢情节为素材的一大鬼畜系列；出现名称时往往指二创文化而非购买建议。",
+    "origin": {
+      "summary": "原素材是商业广告，后来在A/B等弹幕站被调音、剪辑和套曲。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "早期鬼畜考古",
+        "识别广告素材"
+      ],
+      "example": "这个合唱把金坷垃广告声线当成了乐器。",
+      "avoid": [
+        "广告中的功效和国家刻板印象不能当事实复述。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "广告功效误信",
+      "国籍刻板印象"
+    ],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "early-src-jiemian-guichu",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "正文说明广告素材及长期二创。"
+      }
+    ],
+    "notes": "广告品牌年代与B站传播年代分开；未认定站内首传者。"
+  },
+  {
+    "id": "early-geping",
+    "term": "葛平鬼畜",
+    "aliases": [
+      "葛叔",
+      "葛炮"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "以配音演员葛平面对儿童的讲话素材进行调音或剪辑的早期系列；“葛炮”属于旧恶搞称谓。",
+    "origin": {
+      "summary": "素材来自葛平介绍配音与见面经历的节目录像，并非他本人按二创台词重新发言。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "鬼畜史",
+        "素材辨认"
+      ],
+      "example": "这里是对葛平原讲话的重新剪辑，台词已经重组。",
+      "avoid": [
+        "不以侮辱外号直接称呼本人。",
+        "区分原话与调音后的句子。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "真人素材再归因"
+    ],
+    "relations": [
+      "early-wuke"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-geping-column",
+        "claims": [
+          "origin",
+          "platform_usage"
+        ],
+        "note": "专栏引用av10429素材。"
+      },
+      {
+        "source_id": "early-src-geping-source",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "素材页身份和早期投稿线索。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 鬼畜区的前世今生:创造的时代：origin,platform_usage（snippet）；[万恶之源]葛平 吴克 小光头的由来：platform_usage（metadata）。仅取得社区回顾摘要与旧素材页线索；原节目录像、摄制时间和完整台词未直接核看。"
+  },
+  {
+    "id": "early-wuke",
+    "term": "吴克",
+    "aliases": [
+      "光头吴克",
+      "小光头"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "葛平素材中提及的小朋友名字，被二创扩展为光头形象的代称。",
+    "origin": {
+      "summary": "来自葛平讲述与小朋友见面的一段录像，不是葛平本名。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "解释旧鬼畜台词",
+        "辨认葛平衍生梗"
+      ],
+      "example": "这里的吴克来自葛平讲的故事，不是葛平改名。",
+      "avoid": [
+        "不要拿真实个人的脱发或外貌开攻击性玩笑。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "外貌嘲讽"
+    ],
+    "relations": [
+      "early-geping"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-geping-column",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "提及小朋友吴克与原素材编号。"
+      }
+    ],
+    "notes": "素材中的人名与后续用法由社区摘要解释；原录像逐句内容及站内最初转义节点未核实。"
+  },
+  {
+    "id": "early-downfall",
+    "term": "元首的愤怒",
+    "aliases": [
+      "愤怒的元首",
+      "元首鬼畜"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "对电影《帝国的毁灭》中地堡发怒片段的改字幕、空耳和调音系列。",
+    "origin": {
+      "summary": "源自电影表演片段，经国际网络恶搞后进入中文弹幕站。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "鬼畜素材辨识",
+        "解释改字幕短片"
+      ],
+      "example": "字幕是在借电影表演吐槽游戏，并非原台词翻译。",
+      "avoid": [
+        "不要把剪辑内容当历史人物真实讲话。",
+        "不能据娱乐传播替纳粹宣传或赞颂。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "纳粹符号语境",
+      "历史失真"
+    ],
+    "relations": [
+      "early-hebei",
+      "early-soramimi"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-guichu-history",
+        "claims": [
+          "origin",
+          "platform_usage"
+        ],
+        "note": "解释电影素材与中文德语空耳。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 中国鬼畜破圈简史：origin,platform_usage（snippet）。目前只核回顾摘要；电影原片与最早中文/B站二创传播链未直接核实。"
+  },
+  {
+    "id": "early-hebei",
+    "term": "我到河北省来",
+    "aliases": [
+      "河北省来"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "元首素材的代表性中文空耳之一；笑点是德语声音被听成汉语句子。",
+    "origin": {
+      "summary": "中文网友对《帝国的毁灭》德语片段的重新分词，与葛平“石家庄”素材又可接梗。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "识别德语空耳",
+        "解释旧鬼畜联动"
+      ],
+      "example": "这是元首系列的中文空耳，不是角色真的去了河北。",
+      "avoid": [
+        "不能作为德语翻译或历史地理证据。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-downfall",
+      "early-geping",
+      "early-soramimi"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-guichu-history",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "摘要明确列出河北空耳及葛平联动。"
+      }
+    ],
+    "notes": "空耳及葛平联动有摘要证据；未核原片声音或最早二创，不能当成德语翻译。",
+    "tags": [
+      "气死偶咧"
+    ]
+  },
+  {
+    "id": "early-ranranru",
+    "term": "蓝蓝路",
+    "aliases": [
+      "蓝蓝噜",
+      "Ran Ran Ru"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "麦当劳叔叔广告动作与喊声被节奏化重复的早期音MAD代表素材。",
+    "origin": {
+      "summary": "日本广告经niconico音MAD二创后传入中文弹幕社区；2008年已有代表作品。",
+      "date": "2008",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "音MAD史",
+        "解释循环动作"
+      ],
+      "example": "蓝蓝路的重复动作是这类早期音MAD的明显标记。",
+      "avoid": [
+        "不要把2008年日本作品误称为2009年B站首创。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "early-src-jiemian-guichu",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "正文记载日本2008年二创与中文流入。"
+      }
+    ],
+    "notes": "",
+    "tags": [
+      "最终鬼畜蓝蓝路"
+    ]
+  },
+  {
+    "id": "early-german-boy",
+    "term": "德国BOY",
+    "aliases": [
+      "德国boy",
+      "Keyboard Crasher",
+      "Angry German Kid",
+      "键盘破坏者"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "一段夸张砸键盘表演的主角称呼，也是早期音MAD、德语空耳素材。",
+    "origin": {
+      "summary": "德国创作者录制的表演视频经各国改编传播；不能将表演直接诊断为真实网瘾或失控。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "鬼畜史",
+        "解释键盘素材"
+      ],
+      "example": "这段属于德国BOY的表演素材，别当成临床案例。",
+      "avoid": [
+        "不要据旧视频给真人贴精神健康标签。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "真人健康误判"
+    ],
+    "relations": [
+      "early-soramimi"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "early-src-german-boy",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "正文说明表演背景和A/B站传播。"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "early-kim-laugh",
+    "term": "金馆长",
+    "aliases": [
+      "金馆长的笑"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "特指韩国电影角色夸张笑脸及其表情包、鬼畜素材；常用于坏笑或荒诞得意。",
+    "origin": {
+      "summary": "关联电影《金馆长对金馆长对金馆长》中崔成国饰演的角色。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "老表情包解释",
+        "鬼畜声线辨认"
+      ],
+      "example": "画面套的是金馆长笑脸，表达的是得意的坏笑。",
+      "avoid": [
+        "角色表情不代表演员本人正在嘲笑某人。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-kim",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "2011年已见中文娱乐使用。"
+      }
+    ],
+    "notes": "B站早期原投稿链接仍待补，未写首发年。"
+  },
+  {
+    "id": "early-kongming-wanglang",
+    "term": "诸葛亮大战王司徒",
+    "aliases": [
+      "孔明王朗",
+      "丞相司徒"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "将央视版《三国演义》两军阵前对骂片段改成歌曲、辩论或喜剧的一组作品。",
+    "origin": {
+      "summary": "素材来自影视表演；2012年AcFun已有相关RAP作品的研究记录。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "鬼畜素材考古",
+        "识别台词重新拼接"
+      ],
+      "example": "原片是阵前对话，这个版本把双方台词改成了说唱。",
+      "avoid": [
+        "不把影视改编当正史原话。",
+        "不将A站已见作品标为B站首创。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "历史失真"
+    ],
+    "relations": [
+      "early-shameless"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-wanglang-history",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "研究回溯2012年A站作品。"
+      },
+      {
+        "source_id": "early-src-jiemian-guichu",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文说明其B站长期传播。"
+      }
+    ],
+    "notes": "B站传播有全文回顾；2012年AcFun作品目前只有研究摘要，不能据此裁定全网首创。"
+  },
+  {
+    "id": "early-shameless",
+    "term": "我从未见过有如此厚颜无耻之人",
+    "aliases": [
+      "如此厚颜无耻之人"
+    ],
+    "category": "film",
+    "era": "2009-2015",
+    "meaning": "诸葛亮斥责王朗的经典影视台词，被用作强烈反讽或愤怒反应。",
+    "origin": {
+      "summary": "来自1994年央视版《三国演义》的相关表演，经鬼畜强化流传。",
+      "date": "1994",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释诸葛王朗二创",
+        "讨论虚构角色行为"
+      ],
+      "example": "弹幕借丞相这句台词吐槽剧中反派的狡辩。",
+      "avoid": [
+        "直接对陌生人使用具有明确侮辱性。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "直接辱骂"
+    ],
+    "relations": [
+      "early-kongming-wanglang"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "early-src-jiemian-guichu",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage",
+          "date"
+        ],
+        "note": "正文直接讨论该台词与鬼畜。"
+      }
+    ],
+    "notes": "1994指原电视剧版本，不是梗首次流行年。"
+  },
+  {
+    "id": "early-liang-feifan",
+    "term": "吔屎啦，梁非凡",
+    "aliases": [
+      "吔屎啦梁非凡"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "粤语影视怒骂片段及其调音系列；说出这句话的是刘醒，被骂者是梁非凡。",
+    "origin": {
+      "summary": "出自2010年《巾帼枭雄之义海豪情》，B站2013年已见相关二创。",
+      "date": "2010",
+      "precision": "year",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "识别粤语素材",
+        "梗源解释"
+      ],
+      "example": "这段里唱歌的怒吼声来自刘醒，梁非凡是对方。",
+      "avoid": [
+        "用作对他人的回复会构成粗俗辱骂。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "粗俗辱骂"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-liangfeifan",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "报道区分说话者与受话者。"
+      },
+      {
+        "source_id": "early-src-liangfeifan-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2013年B站相关作品。"
+      }
+    ],
+    "notes": "年份指电视剧素材；不列为默认社交推荐话术。",
+    "tags": [
+      "非凡哥",
+      "刘醒梁非凡"
+    ]
+  },
+  {
+    "id": "early-recitation",
+    "term": "我有特别的朗诵技巧",
+    "aliases": [
+      "特别的朗诵技巧"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "由充满动作和表情的朗诵演示发展出的梗，也可套成“我有特别的××技巧”。",
+    "origin": {
+      "summary": "梁逸峰朗诵录像在2014年热传，吃素的狮子等创作者将素材改编为《红日》鬼畜。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "解释朗诵素材",
+        "自嘲独特操作"
+      ],
+      "example": "我有特别的整理技巧：先把桌面收进一个文件夹。",
+      "avoid": [
+        "不要嘲弄个人口音、学习能力或现实身份。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "真人嘲讽"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-liangyifeng",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "同期新闻介绍演示与混音。"
+      },
+      {
+        "source_id": "early-src-liangyifeng-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2014-01-07投稿。"
+      }
+    ],
+    "notes": "2014为热传时间；原朗诵录像拍摄年份另行核验。",
+    "tags": [
+      "梁逸峰",
+      "我会装作四处看风景"
+    ]
+  },
+  {
+    "id": "early-duang",
+    "term": "Duang",
+    "aliases": [
+      "duang"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "模仿夸张弹跳或特效的声音，也指成龙洗发水广告被调音后的系列。",
+    "origin": {
+      "summary": "2015年绯色toy将广告与《我的滑板鞋》结合，拟声词和广告表述随二创流传。",
+      "date": "2015",
+      "precision": "year",
+      "bilibili_role": "origin"
+    },
+    "usage": {
+      "contexts": [
+        "夸张视觉效果",
+        "回顾广告鬼畜"
+      ],
+      "example": "按钮一按，字幕duang地弹了出来。",
+      "avoid": [
+        "广告效果不能当产品功效。",
+        "不得把重新拼接的自述当演员完整原话。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-skate-shoes"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "early-src-china-news-guichu",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "正文记载2015年2月二创与作者。"
+      }
+    ],
+    "notes": "origin指这一具体二创梗的站内形成，不指成龙原广告起源。",
+    "tags": [
+      "加特技",
+      "其实我是拒绝的"
+    ]
+  },
+  {
+    "id": "early-are-you-ok",
+    "term": "Are you OK",
+    "aliases": [
+      "RUOK",
+      "雷军Are you OK",
+      "跟着雷总摇起来"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "雷军英语发布会素材经调音产生的鬼畜名曲和问候梗；离开音乐语境也可能只是普通英语。",
+    "origin": {
+      "summary": "Mr.Lemon将雷军印度发布会发言剪成音MAD，于2015-04-30上传。",
+      "date": "2015-04-30",
+      "precision": "exact",
+      "bilibili_role": "origin"
+    },
+    "usage": {
+      "contexts": [
+        "科技圈怀旧",
+        "轻松问候",
+        "介绍鬼畜作品"
+      ],
+      "example": "看到发布会麦克风和熟悉旋律，评论区又开始Are you OK了。",
+      "avoid": [
+        "真实关心对方状态时，不要只顾接梗。",
+        "别把口音当人格或能力缺陷。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "口音嘲讽"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-areyouok",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "同期作者采访。"
+      },
+      {
+        "source_id": "early-src-areyouok-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "原投稿搜索元数据与采访一致。"
+      }
+    ],
+    "notes": "同期采访可核作者与上传日；B站原投稿仅核到元数据、直开412，未观看视频。"
+  },
+  {
+    "id": "early-dali",
+    "term": "大力出奇迹",
+    "aliases": [
+      "大力哥"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "用“用力就能解决”式的夸张口气形容粗放操作；早期同名素材与受访者有关。",
+    "origin": {
+      "summary": "2014年前后网络采访片段成为鬼畜素材；现有记录不将该素材断言为成语式说法的唯一首创。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "自嘲蛮力操作",
+        "解释旧鬼畜"
+      ],
+      "example": "这个卡扣终于拔开了，刚才真是大力出奇迹。",
+      "avoid": [
+        "不能据此建议暴力拆修危险设备。",
+        "不传播药物滥用做法或将犯罪当榜样。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "药物滥用背景"
+    ],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-dali",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "同期采访记载2014年传播。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 最搞笑劫匪“大力哥”接受采访：“雷语”频出：origin,date（snippet）。缺具体早期B站二创原稿。"
+  },
+  {
+    "id": "early-xueyi-door",
+    "term": "雪姨敲门",
+    "aliases": [
+      "开门啊",
+      "你有本事开门啊"
+    ],
+    "category": "film",
+    "era": "2009-2015",
+    "meaning": "借雪姨拍门的急切语气催促回应或更新，也是经典鬼畜素材。",
+    "origin": {
+      "summary": "《情深深雨濛濛》片段在2012年被剪成电音作品再次传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "熟人催更玩笑",
+        "影视梗辨认"
+      ],
+      "example": "更新提醒响了，评论区的雪姨已经开始敲门。",
+      "avoid": [
+        "不得借梗骚扰、逼迫真实个人回复。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "催促骚扰"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-xueyi",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "同期报道记录电音改编。"
+      }
+    ],
+    "notes": "2012年电音改编只有同期报道摘要；原片、二创作者及B站首次投稿尚未完整核实。",
+    "tags": [
+      "傅文佩"
+    ]
+  },
+  {
+    "id": "early-zhang-quandan",
+    "term": "张全蛋",
+    "aliases": [
+      "富土康质检员",
+      "质检小王子"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "《暴走大事件》中夸张吐槽生产与消费的虚构质检员角色，带有夹杂英语的喜剧表演。",
+    "origin": {
+      "summary": "2014年节目角色走红；“富土康”是喜剧虚构称呼。",
+      "date": "2014",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "早期网络节目考古",
+        "辨识表演与新闻"
+      ],
+      "example": "这是张全蛋的角色表演，不是企业员工爆料。",
+      "avoid": [
+        "不能引用剧中测试数值证明手机有质量问题。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "企业事实误归因"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-zhangquandan",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "同期报道明确虚构工厂和角色性质。"
+      }
+    ],
+    "notes": "B站具体传播节点未补。"
+  },
+  {
+    "id": "early-jiangnan-leather",
+    "term": "江南皮革厂倒闭了",
+    "aliases": [
+      "江南皮革厂",
+      "黄鹤体"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "由街头叫卖录音及改编歌曲形成的循环梗；常借其语调戏仿清仓甩卖。",
+    "origin": {
+      "summary": "2013年前后叫卖录音流传，2015年出现配曲改编；歌中情节与真实企业情况并不等同。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "辨认叫卖音源",
+        "梗史说明"
+      ],
+      "example": "这个节奏借了江南皮革厂的叫卖腔，不是在报道企业消息。",
+      "avoid": [
+        "不得把歌词中的私生活指控写成事实。",
+        "不能借梗误导真实商品促销。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "不实商业指控",
+      "真人私生活传闻"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-jiangnan",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "记者调查区分企业事实和改编。"
+      },
+      {
+        "source_id": "early-src-jiangnan-correction",
+        "claims": [
+          "origin"
+        ],
+        "note": "转述创作者致歉及不实情节。"
+      }
+    ],
+    "notes": "现有记录未把歌词当司法材料；缺B站早期原稿。"
+  },
+  {
+    "id": "early-ordinary-disco",
+    "term": "普通DISCO",
+    "aliases": [
+      "普通的DISCO"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "ilem创作的洛天依、言和中文歌曲名称；原投稿与作者访谈可定位该作品。",
+    "origin": {
+      "summary": "原作于2015-03-21在B站投稿。",
+      "date": "2015-03-21",
+      "precision": "exact",
+      "bilibili_role": "origin"
+    },
+    "usage": {
+      "contexts": [
+        "中文Vocaloid文化",
+        "普通却特别的自嘲"
+      ],
+      "example": "只是一次普通练习，怎么评论区已经开起DISCO了。",
+      "avoid": [
+        "不能把原创词曲、翻唱者和虚拟声库混为一人。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-disco-bili",
+        "claims": [
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "原作元数据。"
+      },
+      {
+        "source_id": "early-src-disco-interview",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "访谈正文确认作品身份、ilem创作关系和2015年创作；不据此证明歌词风格、翻唱频率或精确投稿日。"
+      }
+    ],
+    "notes": "原作元数据支持投稿日期，2020年访谈转载正文支持作者创作关系。现有材料未独立支持原作音画、精确投稿时区、“反复强调普通”的释义及翻唱改编概括。"
+  },
+  {
+    "id": "early-food-princess",
+    "term": "吃货殿下",
+    "aliases": [
+      "世界第一的吃货殿下"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "洛天依同人中以爱吃美食为特征的称呼，《千年食谱颂》是重要早期关联作品。",
+    "origin": {
+      "summary": "2012年原曲和PV投稿均使用“吃货殿下”描述，角色形象通过作品传播。",
+      "date": "2012",
+      "precision": "year",
+      "bilibili_role": "origin"
+    },
+    "usage": {
+      "contexts": [
+        "洛天依相关讨论",
+        "美食向二创"
+      ],
+      "example": "今天这桌菜又够吃货殿下唱一轮了。",
+      "avoid": [
+        "这是虚拟角色同人形象，不用于嘲笑真人体型。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-millennium-food-song"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-foodsong-original",
+        "claims": [
+          "meaning",
+          "date",
+          "platform_usage"
+        ],
+        "note": "6月29日原曲元数据。"
+      },
+      {
+        "source_id": "early-src-foodsong-pv",
+        "claims": [
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "7月13日原曲+PV元数据。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 【洛天依】千年食谱颂：meaning,date,platform_usage（metadata）；【洛天依】千年食谱颂 原曲+PV 【H.K.君】：origin,date,platform_usage（metadata）。原曲与PV日期不同；不将7月13日直接称为歌曲唯一首发日。",
+    "tags": [
+      "千年食谱颂"
+    ]
+  },
+  {
+    "id": "early-bad-apple",
+    "term": "Bad Apple!!",
+    "aliases": [
+      "Bad Apple",
+      "黑白苹果",
+      "烂苹果"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "东方Project相关同人歌曲和黑白剪影PV的常用称呼；技术播放变体另待专门证据。",
+    "origin": {
+      "summary": "来自东方原曲的同人改编与PV，2009年已在B站传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "东方同人史",
+        "像素/终端播放展示"
+      ],
+      "example": "这次作者把Bad Apple的黑白轮廓搬进了终端。",
+      "avoid": [
+        "区分原游戏配乐、同人歌曲、剪影PV和各类再实现的作者。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-site-treasure"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-badapple-history",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "回顾早期传播。"
+      },
+      {
+        "source_id": "early-src-bili-17",
+        "claims": [
+          "date",
+          "platform_usage"
+        ],
+        "note": "补充折射2009年投稿线索。"
+      }
+    ],
+    "notes": "不采纳“所有设备都能播”的夸张泛化。"
+  },
+  {
+    "id": "early-senbonzakura",
+    "term": "千本樱",
+    "aliases": [
+      "千本桜",
+      "千本X"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "黒うさP的Vocaloid作品名称，在B站有器乐改编、翻唱及以“千本×”命名的鬼畜。",
+    "origin": {
+      "summary": "2011年作品进入中文视频站；2014年墨韵古筝改编是代表传播节点之一。",
+      "date": "2011",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "器乐改编",
+        "Vocaloid梗史"
+      ],
+      "example": "这个“千本×”标题是在提示它改编了千本樱。",
+      "avoid": [
+        "不能把翻奏者称为原作词曲作者。",
+        "不以旋律相同推断改编获得许可。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-senbonzakura",
+        "claims": [
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "早期转载元数据。"
+      },
+      {
+        "source_id": "early-src-guzheng",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2014年古筝改编采访。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 『黒うさ』千本桜『PV』：origin,date,platform_usage（metadata）；B站敲钟前夜，我们和三位UP主聊了聊：platform_usage,date（snippet）。2011年原作背景与2014年改编节点有元数据/采访摘要；日方首发页与B站最早传播未核全。"
+  },
+  {
+    "id": "early-leekspin",
+    "term": "甩葱歌",
+    "aliases": [
+      "Ievan Polkka",
+      "Leekspin"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "与角色甩葱动作结合的芬兰波尔卡歌曲网络称呼；初音未来翻唱版在ACG圈传播广。",
+    "origin": {
+      "summary": "歌曲早于初音未来；初音版和甩葱动画是后来的网络再创作。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "初音相关怀旧",
+        "宅舞与循环动画"
+      ],
+      "example": "这里用的是初音翻唱版，原歌并不是为初音创作的。",
+      "avoid": [
+        "不要把无意义音节按中文空耳当真实歌词翻译。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-leek",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "2011年报道解释来源链。"
+      }
+    ],
+    "notes": "未核B站最早投稿；不把“甩葱”只归于初音。"
+  },
+  {
+    "id": "early-love-circulation",
+    "term": "恋爱循环",
+    "aliases": [
+      "恋愛サーキュレーション"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "《化物语》相关角色歌曲及其宅舞、翻唱、音MAD的共同参照；常用来营造甜美反差。",
+    "origin": {
+      "summary": "原曲属于动画角色歌曲，B站2012年已有咬人猫宅舞等投稿。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "宅舞",
+        "甜美与反差剪辑"
+      ],
+      "example": "前奏很甜，后半段却接成了反差音MAD。",
+      "avoid": [
+        "不要把每个翻跳者当原创编舞者。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-god-sync"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-love-dance",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2012年具体宅舞用例。"
+      },
+      {
+        "source_id": "early-src-synchronization",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "2010年已有同曲音MAD。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 【咬人猫】恋爱循环❤第八作の舞蹈~喵：platform_usage,date（metadata）；卡密SAMA的抹杀循环：platform_usage（metadata）。现有材料未包含歌曲版权方原发行页。"
+  },
+  {
+    "id": "early-platinum-disco",
+    "term": "白金迪斯科",
+    "aliases": [
+      "白金ディスコ",
+      "白金Disco"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "《伪物语》相关歌曲与舞蹈，也常用于和风旋律的音MAD改编。",
+    "origin": {
+      "summary": "2012年作品在中文ACG圈传播，咬人猫后续投稿已链接其白金迪斯科前作。",
+      "date": "2012",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "宅舞怀旧",
+        "角色歌曲辨认"
+      ],
+      "example": "熟悉的白金迪斯科前奏一出来，大家就想起那套动作。",
+      "avoid": [
+        "不要与中文原创《普通DISCO》混淆。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-ordinary-disco"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-platinum",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "作品资料。"
+      },
+      {
+        "source_id": "early-src-love-dance",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "2012年投稿指向既有白金迪斯科前作。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 【白金迪斯科/伪物语】【中日字幕】：meaning,origin,date（metadata）；【咬人猫】恋爱循环❤第八作の舞蹈~喵：platform_usage（metadata）。作品与2012年宅舞互链目前为元数据证据；原专辑、原编舞与B站最早用例未核全。"
+  },
+  {
+    "id": "early-skate-shoes",
+    "term": "我的滑板鞋",
+    "aliases": [
+      "滑板鞋",
+      "魔鬼的步伐"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "庞麦郎歌曲及其口语节奏、舞步意象形成的网络梗，也是Duang改编的音乐来源。",
+    "origin": {
+      "summary": "歌曲在2014年广泛传播，之后进入多种鬼畜和翻唱。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "早期神曲回顾",
+        "舞步自嘲"
+      ],
+      "example": "这段略显笨拙的走位，被剪成了滑板鞋式的节奏。",
+      "avoid": [
+        "不要以作品风格给创作者贴健康标签。",
+        "不延展嘲弄真实个人困境。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "真人嘲讽"
+    ],
+    "relations": [
+      "early-duang"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-skate-shoes",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "研究回顾2014传播及Duang改编。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 后现代语境下我国“神曲”现象研究：origin,date（snippet）。2014为走红节点，原始创作与发行日未定。"
+  },
+  {
+    "id": "early-gangnam-style",
+    "term": "江南Style",
+    "aliases": [
+      "Gangnam Style",
+      "骑马舞"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "PSY歌曲和骑马舞动作构成的全球网络梗，中文平台有模仿、改编和鬼畜。",
+    "origin": {
+      "summary": "韩国流行音乐作品在2012年跨平台传播，不起源于B站。",
+      "date": "2012",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "舞蹈模仿",
+        "2012年网络史"
+      ],
+      "example": "这个摆臂动作借用了江南Style的骑马舞。",
+      "avoid": [
+        "不把歌曲当韩国社会的完整写照。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-gangnam",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "2013年回顾2012传播。"
+      }
+    ],
+    "notes": "缺现有材料直接支持的早期B站投稿。"
+  },
+  {
+    "id": "early-kuroko",
+    "term": "危险的黑子",
+    "aliases": [
+      "危险黑子"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "B站早期以白井黑子相关素材制作的音MAD代表作，标题常作为老站记忆的指代。",
+    "origin": {
+      "summary": "冴羽獠2010年投稿的作品；后被列入入站必刷。",
+      "date": "2010",
+      "precision": "year",
+      "bilibili_role": "origin"
+    },
+    "usage": {
+      "contexts": [
+        "早期B站音MAD史",
+        "经典投稿导航"
+      ],
+      "example": "要了解早期音MAD，可以从危险的黑子这类作品看起。",
+      "avoid": [
+        "不要与《黑子的篮球》角色混淆。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-site-treasure"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-kuroko",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "原作品页标题与经典标识。"
+      },
+      {
+        "source_id": "early-src-bili-17",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "回顾确认2010年与作者。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 危险的黑子：meaning,platform_usage（metadata）；17年只做一件事，为什么B站越活越扎实？：origin,date（snippet）。作品元数据与回顾摘要相互支持作者和2010年节点；未播放核对素材，最早页面版本未补。"
+  },
+  {
+    "id": "early-cirno-nine",
+    "term": "⑨",
+    "aliases": [
+      "琪露诺",
+      "笨蛋九",
+      "baka⑨"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "东方圈中常指琪露诺，也可自嘲犯傻；脱离圈内时仍可能只是普通编号。",
+    "origin": {
+      "summary": "《东方花映塚》介绍图将琪露诺标在⑨处，并加“笨蛋”注释。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "东方同人",
+        "轻微自嘲"
+      ],
+      "example": "又把加减号看反了，今天我也是⑨。",
+      "avoid": [
+        "数字9出现不一定在玩梗。",
+        "别拿它攻击别人的智力。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "智力贬损"
+    ],
+    "relations": [
+      "early-cirno-classroom"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-cirno",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "专业社区引述原设。"
+      }
+    ],
+    "notes": "游戏说明图的解释由专业社区摘要引述；未直接读取原说明书或早期B站用例。"
+  },
+  {
+    "id": "early-cirno-classroom",
+    "term": "琪露诺的完美算术教室",
+    "aliases": [
+      "琪露诺的完美算数教室",
+      "⑨舞"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "以琪露诺算术和笨蛋反差为主题的东方同人曲及舞蹈、二创系列。",
+    "origin": {
+      "summary": "IOSYS制作，官方作品史记载其MV于2008-10-25公开。",
+      "date": "2008-10-25",
+      "precision": "exact",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "东方同人歌曲",
+        "算术反差玩笑"
+      ],
+      "example": "题目越讲越错，已经有完美算术教室那味了。",
+      "avoid": [
+        "原曲、PV、舞蹈和后续改编要分别署名。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-cirno-nine"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-iosys",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "作者官方活动史。"
+      }
+    ],
+    "notes": "官方资料只支持MV公开日期；已登记释义来源仅解释⑨绰号，不支持该曲主题、舞蹈或二创系列。"
+  },
+  {
+    "id": "early-nyanpasu",
+    "term": "喵帕斯",
+    "aliases": [
+      "にゃんぱすー",
+      "Nyanpasu"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "宫内莲华的独特问候语，也用于指代《悠哉日常大王》的轻松氛围。",
+    "origin": {
+      "summary": "从《悠哉日常大王》角色口癖传播；2013—2014年已有流行记录。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "轻松招呼",
+        "番剧同好交流"
+      ],
+      "example": "喵帕斯，今天也来慢慢看一集。",
+      "avoid": [
+        "陌生正式场合先用常规问候。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-nyanpasu",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "2014年同期回顾。"
+      }
+    ],
+    "notes": "有2014年同期回顾摘要；日语原素材和B站首次传播未核实。"
+  },
+  {
+    "id": "early-akarin",
+    "term": "阿卡林",
+    "aliases": [
+      "阿卡琳",
+      "Akarin"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "从赤座灯里的昵称引申为存在感低、常被忽略；不表示角色实际上不存在。",
+    "origin": {
+      "summary": "《摇曳百合》角色昵称与作品内存在感笑点衍生。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "角色讨论",
+        "自嘲被忽略"
+      ],
+      "example": "我在合影里又只露了一角，阿卡林属性拉满。",
+      "avoid": [
+        "避免用来贬损现实地区或否定他人存在。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "地域贬损"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-akarin",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "词典说明角色与引申义。"
+      }
+    ],
+    "notes": "缺2015年前B站实际用例，不能声称站内起源已核。"
+  },
+  {
+    "id": "early-nico-nico-ni",
+    "term": "Nico Nico Ni",
+    "aliases": [
+      "妮可妮可妮",
+      "にっこにっこにー"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "《Love Live!》矢泽妮可的标志性卖萌口号与动作，也常被反差模仿。",
+    "origin": {
+      "summary": "关联矢泽妮可的偶像表演；2013年相关商品文字中已可见。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "Love Live同好",
+        "动作模仿"
+      ],
+      "example": "他一本正经地做起妮可妮可妮，反差感就来了。",
+      "avoid": [
+        "不要把角色口号误认为视频网站niconico的官方口号。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-nico",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "2013商品资料的同期关联。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 Love Live! Perfect Visual Collection: Smile：origin,date（metadata）。原动画台词与早期B站二创需要继续补证。"
+  },
+  {
+    "id": "early-power-five",
+    "term": "战五渣",
+    "aliases": [
+      "战斗力只有5的渣渣",
+      "战斗力五"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "形容某一能力很弱，常用于夸张自嘲；带贬义。",
+    "origin": {
+      "summary": "来自《龙珠》中拉蒂兹测量地球农夫战斗力的情节。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "游戏自嘲",
+        "能力反差"
+      ],
+      "example": "我的节奏感还是战五渣，先从慢速练起。",
+      "avoid": [
+        "避免对陌生人或弱势个体直接贬损。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "能力贬损"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-powerfive",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "社区解释原作场景与中文缩略。"
+      }
+    ],
+    "notes": "原作场景与缩略语由社区摘要解释；未直接核漫画页或B站早期实例。"
+  },
+  {
+    "id": "early-madoka-contract",
+    "term": "和我签订契约，成为魔法少女吧",
+    "aliases": [
+      "成为魔法少女吧",
+      "丘比契约"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "借丘比的邀请台词表达带有隐藏代价的招募或推销，也可轻松邀请同好入坑。",
+    "origin": {
+      "summary": "出自《魔法少女小圆》；作品于2011年播出并衍生相关ACG用语。",
+      "date": "2011",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "番剧解释",
+        "入坑邀请的反讽"
+      ],
+      "example": "这个招募说得太轻松了，先看看是不是丘比式契约。",
+      "avoid": [
+        "正式招募或交易必须直接说明条件，不能用梗遮蔽。",
+        "首看观众注意剧透范围。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "剧情剧透"
+    ],
+    "relations": [
+      "early-nothing-to-fear"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-madoka",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "触乐报道同时关联作品、B站与衍生用语。"
+      }
+    ],
+    "notes": "作品与站内传播目前只核报道摘要；原片译句版本及中文首次使用未定位。"
+  },
+  {
+    "id": "early-nothing-to-fear",
+    "term": "已经没什么好害怕的了",
+    "aliases": [
+      "已经没有什么好怕的了"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "先表现自信，后因剧情转折被用作“立下危险预兆”的反讽；也可能只是普通鼓励。",
+    "origin": {
+      "summary": "与《魔法少女小圆》巴麻美相关的经典台词。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "讨论角色flag",
+        "自嘲盲目乐观"
+      ],
+      "example": "存档以后才敢说这句，没存档先别立flag。",
+      "avoid": [
+        "不要无提示泄露作品关键转折。",
+        "真在安慰害怕的人时避免阴阳怪气。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "剧情剧透"
+    ],
+    "relations": [
+      "early-madoka-contract"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-madoka",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "报道列为作品衍生用语。"
+      }
+    ],
+    "notes": "目前由报道摘要支持作品归属；未逐句核原片、中文译本与首次站内用例。"
+  },
+  {
+    "id": "early-wind-noisy",
+    "term": "今天的风儿甚是喧嚣",
+    "aliases": [
+      "今天的风儿好喧嚣啊"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "模仿文艺却尴尬的开场白，也用于风大到盖过说话声的字面笑点。",
+    "origin": {
+      "summary": "来自《男子高中生的日常》文学少女相关场景，汉译有多个版本。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "尴尬搭话",
+        "风大视频"
+      ],
+      "example": "本来想说点浪漫的话，最后只剩今天的风儿甚是喧嚣。",
+      "avoid": [
+        "不是古诗原句；别伪造古籍出处。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-wind",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "社区条目指向作品和场景。"
+      }
+    ],
+    "notes": "目前由社区摘要支持作品场景；译句版本不同，未确认唯一中文原句或首传。"
+  },
+  {
+    "id": "early-coach-learn",
+    "term": "教练，我想打篮球",
+    "aliases": [],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "从表达重返篮球的愿望，扩展为看到高超技艺后强烈想学的模板。",
+    "origin": {
+      "summary": "《灌篮高手》中三井寿面对安西教练的经典场景。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "技能视频评论",
+        "愿望表达"
+      ],
+      "example": "这手绘转场太漂亮了，教练我想学这个。",
+      "avoid": [
+        "不把网友续句当原作台词。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-coach",
+        "claims": [
+          "origin"
+        ],
+        "note": "回顾报道确认台词广泛成梗。"
+      },
+      {
+        "source_id": "early-src-coach-explain",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "说明人物和场景。"
+      }
+    ],
+    "notes": "B站前2016用例未独立核验。",
+    "tags": [
+      "教练我想学这个",
+      "教练我想学",
+      "教练：你什么都想学"
+    ]
+  },
+  {
+    "id": "early-people-die",
+    "term": "人被杀就会死",
+    "aliases": [
+      "People die if they are killed"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "脱离剧情看似同义反复的句子，在Fate原叙事里涉及人的脆弱性；网络常将其用成废话笑点。",
+    "origin": {
+      "summary": "关联《Fate/stay night》卫宫士郎的台词及翻译传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "识别断章取义梗",
+        "说明同义反复"
+      ],
+      "example": "这句单看像废话，放回Fate情节里有具体对照。",
+      "avoid": [
+        "不要只凭截句评价原作者逻辑。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-fate-shirou",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "B站专栏将其放回剧情解释。"
+      }
+    ],
+    "notes": "汉译与英文字幕存在版本差异；不写唯一首译。"
+  },
+  {
+    "id": "early-tokiomi-fault",
+    "term": "都是时臣的错",
+    "aliases": [
+      "全是时臣的错"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "把所有问题夸张归咎给同一个对象的甩锅模板；Fate语境中指远坂时臣。",
+    "origin": {
+      "summary": "由《Fate/Zero》相关情节与粉丝解读传播，2011—2012动画时期已流行。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "自嘲甩锅",
+        "Fate讨论"
+      ],
+      "example": "抽卡没出货又怪时臣，这锅已经背不动了。",
+      "avoid": [
+        "现实责任分析不能用模板代替证据。",
+        "不要把任何“都是XX的错”都判定为该梗。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-tokiomi",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "百科回顾作品和语义。"
+      }
+    ],
+    "notes": "只有百科摘要的回顾性解释；中文归因句并未对照原作或站内早期投稿。",
+    "tags": [
+      "都是XX的错"
+    ]
+  },
+  {
+    "id": "early-lancer-luck",
+    "term": "自古枪兵幸运E",
+    "aliases": [
+      "枪兵幸运E"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "Fate圈对部分Lancer角色低幸运和遭遇的夸张概括，后来调侃倒霉的持枪角色。",
+    "origin": {
+      "summary": "从角色属性表和故事遭遇衍生；2013年中文社区已见此句。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "Fate讨论",
+        "游戏倒霉自嘲"
+      ],
+      "example": "关键一枪又被打断了，今天真是枪兵幸运E。",
+      "avoid": [
+        "并非所有枪兵角色的官方幸运值都为E。",
+        "续句有多种版本，不捏造统一完整版。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-lancer",
+        "claims": [
+          "date"
+        ],
+        "note": "同期问答可证已存在。"
+      }
+    ],
+    "notes": "释义仍需角色官方资料与早期B站用例补证；现有2013问答不能证明来源链。"
+  },
+  {
+    "id": "early-kugimiya-syndrome",
+    "term": "钉宫病",
+    "aliases": [
+      "钉宫病毒"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "粉丝夸张表示沉迷钉宫理惠声线及相关角色的说法，不是医学病名。",
+    "origin": {
+      "summary": "B站建站前的声优粉丝文化已有此称谓；2009年3月中文报道可见。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "声优圈怀旧",
+        "解释粉丝术语"
+      ],
+      "example": "这段熟悉的声线，让老观众又想起钉宫病这个说法。",
+      "avoid": [
+        "不能当健康诊断或将喜爱声优病理化。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "健康概念误用"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-kugimiya",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "2009年同期报道用例。"
+      }
+    ],
+    "notes": "2009年报道摘要支持中文用例；原造词记录与早期站内传播未补。"
+  },
+  {
+    "id": "early-fff",
+    "term": "FFF团",
+    "aliases": [
+      "异端审问会",
+      "3F团"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "源于作品内搞笑社团，网络上常被单身者借来调侃秀恩爱。",
+    "origin": {
+      "summary": "《笨蛋·测验·召唤兽》的社团设定；原作情境和网络泛化用法有差别。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "作品设定说明",
+        "熟人轻松自嘲"
+      ],
+      "example": "看完甜甜的结局，我这个单身观众又被晾在一边了。",
+      "avoid": [
+        "不使用伤害现实情侣的号召。",
+        "不能据此判断用户性取向。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "暴力口号语境"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-fff",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "词条区分原作设定和泛化。"
+      }
+    ],
+    "notes": "未直接核原作集数；使用示例避开煽动性口号。"
+  },
+  {
+    "id": "early-nice-boat",
+    "term": "Nice boat",
+    "aliases": [
+      "Nice boat.",
+      "好船"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "与《School Days》最终话停播时替代风景画面有关的老梗，也可指让人联想到该事件的船景。",
+    "origin": {
+      "summary": "2007年动画播出事件后形成的跨语种网络笑点，早于B站。",
+      "date": "2007",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "动画史",
+        "旧宅圈梗解释"
+      ],
+      "example": "这个好船梗指的是当年的替代播出画面，不是普通赞船。",
+      "avoid": [
+        "避免在现实受害事件下玩梗。",
+        "首看观众注意剧透。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "现实暴力事件背景",
+      "剧情剧透"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-niceboat",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "日文媒体回顾2007年事件。"
+      }
+    ],
+    "notes": "2007年事件由日媒回顾摘要支持；未核最初讨论帖和早期B站用例。"
+  },
+  {
+    "id": "early-gachimuchi",
+    "term": "哲♂学",
+    "aliases": [
+      "兄贵哲学"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "在特定鬼畜语境中指以肌肉男性表演和空耳为核心的亚文化；普通“哲学”仍须按学科义理解。",
+    "origin": {
+      "summary": "相关素材有成人影片背景，经日本和中文社区剪辑、调音后形成圈内文化。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "解释符号与素材来历",
+        "鬼畜史"
+      ],
+      "example": "这里夹入♂是在提示兄贵鬼畜语境，不是在讲哲学课程。",
+      "avoid": [
+        "不向无相关语境的对象强行投放成人影射。",
+        "不据看过此类二创推断个人性取向。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "成人来源",
+      "性取向误判"
+    ],
+    "relations": [
+      "extra-yajusenpai"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-gachimuchi",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "文化文章说明来源。"
+      },
+      {
+        "source_id": "early-src-gachimuchi-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "B站社群称谓回顾。"
+      }
+    ],
+    "notes": "仅非露骨解释；不附成人片下载链接。",
+    "tags": [
+      "比利王",
+      "森之妖精",
+      "兄贵"
+    ]
+  },
+  {
+    "id": "early-german-orthopedics",
+    "term": "德国骨科",
+    "aliases": [
+      "骨科",
+      "伪骨科"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "ACG语境中暗指亲属间恋爱设定；“伪骨科”常指后来揭示无血缘的类似设定。",
+    "origin": {
+      "summary": "流传的起源故事涉及所谓2012年网络传闻，现有材料未确认原帖和事件真实性。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "解释虚构作品标签",
+        "区分字面医疗与隐语"
+      ],
+      "example": "这里的骨科是在说剧情关系设定，不是医院科室。",
+      "avoid": [
+        "不得把未经证实的起源故事按真人新闻转述。",
+        "不得用来影射现实亲属关系。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "亲属恋爱影射",
+      "未经证实传闻"
+    ],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-german-orthopedics",
+        "claims": [
+          "meaning"
+        ],
+        "note": "社区材料说明流传中的解释。"
+      }
+    ],
+    "notes": "缺可核原始来源；仅用于识别语义，不能回答确定首创者或首发日。"
+  },
+  {
+    "id": "early-equipment-ok",
+    "term": "这样的装备没问题吗",
+    "aliases": [],
+    "category": "game",
+    "era": "2009-2015",
+    "meaning": "先质疑准备是否充分、再自信回答，却可能迅速失败的反差模板。",
+    "origin": {
+      "summary": "关联《El Shaddai》2010年游戏宣传片的装备问答与重来桥段。",
+      "date": "2010",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "游戏装备玩笑",
+        "准备不足的反讽"
+      ],
+      "example": "拿着新手木剑去打Boss，这样的装备没问题吗？",
+      "avoid": [
+        "中文“萌大奶”是空耳，不是原日语意思。",
+        "实际安全检查须给明确结论。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "成人谐音歧义"
+    ],
+    "relations": [
+      "early-soramimi"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-elshaddai",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "回顾宣传片桥段并解释空耳。"
+      }
+    ],
+    "notes": "只核2024年回顾摘要；未直接读取2010年宣传片，中文译句与空耳不可混为一谈。",
+    "tags": [
+      "大丈夫，没问题",
+      "大丈夫萌大奶",
+      "给我最好的"
+    ]
+  },
+  {
+    "id": "early-arrow-knee",
+    "term": "膝盖中了一箭",
+    "aliases": [
+      "膝盖中箭",
+      "直到我的膝盖中了一箭"
+    ],
+    "category": "game",
+    "era": "2009-2015",
+    "meaning": "把过去的理想或本领与一个突然的阻碍相接，用作夸张转折或借口。",
+    "origin": {
+      "summary": "源于《上古卷轴5：天际》卫兵的重复台词，2011年已在中文玩家社区流行。",
+      "date": "2011",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "游戏怀旧",
+        "无伤害自嘲"
+      ],
+      "example": "我本来也想做全收集玩家，直到膝盖中了一箭。",
+      "avoid": [
+        "不要把中箭暗喻结婚的流传说法当已证实词源。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-arrow",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "2011年同期游戏报道。"
+      }
+    ],
+    "notes": "未核B站最早视频；不采用报道推测的唯一首个网络评论。"
+  },
+  {
+    "id": "early-excavator",
+    "term": "挖掘机技术哪家强",
+    "aliases": [],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "借技校广告的问答句式制造突兀转折，后可泛化为“某种技术哪家强”。",
+    "origin": {
+      "summary": "来自蓝翔广告，经2014年网络改写和B站RAP等二创扩大传播。",
+      "date": "2014",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "广告鬼畜",
+        "无关转折笑话"
+      ],
+      "example": "讲了半天挖坑原理，最后突然问起挖掘机技术哪家强。",
+      "avoid": [
+        "不能把广告口号当教育质量排名。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-excavator-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2014年具体B站作品。"
+      },
+      {
+        "source_id": "early-src-2014-memes",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "同期年度回顾解释广告句式。"
+      }
+    ],
+    "notes": "年份为网络传播节点，非原广告摄制年。",
+    "tags": [
+      "那么问题来了",
+      "中国山东找蓝翔"
+    ]
+  },
+  {
+    "id": "early-yuanfang",
+    "term": "元芳，你怎么看",
+    "aliases": [
+      "元芳体",
+      "元芳此事你怎么看"
+    ],
+    "category": "film",
+    "era": "2009-2015",
+    "meaning": "借侦探搭档形象询问看法，常带调侃、反问或“这事有疑点”的语气。",
+    "origin": {
+      "summary": "2012年网友围绕《神探狄仁杰》人物对话改写流传；主演张子健指出流行原句并非剧中逐字台词。",
+      "date": "2012",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "轻松征询意见",
+        "解释影视误引"
+      ],
+      "example": "方案有三种，元芳你怎么看？先说成本，再说效果。",
+      "avoid": [
+        "不要把网络改写标成原剧准确引文。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-yuanfang-correction",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "同期采访纠正网络台词与剧中原话混淆。"
+      }
+    ],
+    "notes": "该来源能核流行与纠错；早期B站具体投稿仍未补。"
+  },
+  {
+    "id": "early-unclear-awesome",
+    "term": "不明觉厉",
+    "aliases": [
+      "虽不明但觉厉"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "虽然没完全听懂，但觉得对方很厉害；可能是真赞叹，也可能讽刺故弄玄虚。",
+    "origin": {
+      "summary": "中文网络缩略语，2013年已有媒体系统解释。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "复杂技术展示",
+        "玩笑式赞叹"
+      ],
+      "example": "原理还没全懂，但效果确实不明觉厉。",
+      "avoid": [
+        "需要做决定时，不能用赞叹代替理解和核验。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2013-meaning",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "同期释义。"
+      }
+    ],
+    "notes": "未证唯一首创，也未核B站首传日期。"
+  },
+  {
+    "id": "early-abandon-treatment",
+    "term": "何弃疗",
+    "aliases": [
+      "为何放弃治疗",
+      "为什么放弃治疗"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "用“放弃治疗”的比喻吐槽古怪或离谱行为，带嘲讽色彩。",
+    "origin": {
+      "summary": "2013年中文网络常见的缩略语；现有材料未确认具体最早故事。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "解释旧评论",
+        "识别攻击性语气"
+      ],
+      "example": "这条评论里的何弃疗是在嘲讽，不是询问医疗情况。",
+      "avoid": [
+        "不用它回应真实心理健康求助或评价患者。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "健康污名化"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2013-treatment",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "同期报道展开该缩略语。"
+      }
+    ],
+    "notes": "2013年报道摘要支持缩略语用法；唯一首创故事与B站最早用例未确认。"
+  },
+  {
+    "id": "early-friends-shocked",
+    "term": "我和我的小伙伴们都惊呆了",
+    "aliases": [
+      "我伙呆",
+      "小伙伴都惊呆了"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "夸张表达一群人对结果出乎意料，可真惊讶也可讽刺。",
+    "origin": {
+      "summary": "2013年广泛流传并进入年度网络用语名单；所谓原始作文的真实性和版本并不稳定。",
+      "date": "2013",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "反转视频",
+        "夸张惊讶"
+      ],
+      "example": "居然用纸板复刻成功，我和小伙伴们都惊呆了。",
+      "avoid": [
+        "不要把流传的作文故事当可考原始事实。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2013-treatment",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "同期释义。"
+      },
+      {
+        "source_id": "early-src-2013-list",
+        "claims": [
+          "date"
+        ],
+        "note": "官方年度名单。"
+      }
+    ],
+    "notes": "2013是传播证据年，不是已证最早出现日。"
+  },
+  {
+    "id": "early-universal-celebration",
+    "term": "喜大普奔",
+    "aliases": [
+      "喜闻乐见大快人心普天同庆奔走相告"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "合并四个成语表达极度高兴，常用于终于等到更新或好消息。",
+    "origin": {
+      "summary": "2013年中文网络流行的压缩表达。",
+      "date": "2013",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "宣布好消息",
+        "等待后终于实现"
+      ],
+      "example": "存档终于恢复了，喜大普奔！",
+      "avoid": [
+        "不要对他人的灾祸使用幸灾乐祸口吻。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2013-meaning",
+        "claims": [
+          "meaning"
+        ],
+        "note": "报道展开构词。"
+      },
+      {
+        "source_id": "early-src-2013-list",
+        "claims": [
+          "date"
+        ],
+        "note": "2013年网络用语名单。"
+      }
+    ],
+    "notes": "释义与2013年年度名单来自摘要；入榜并非造词日，B站早期用例未补。"
+  },
+  {
+    "id": "early-life-hard",
+    "term": "人艰不拆",
+    "aliases": [
+      "人生已经如此艰难"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "表示现实已够难，请不要继续戳破自我安慰；常用于自嘲而非严肃隐瞒。",
+    "origin": {
+      "summary": "2013年媒体已把它作为中文网络缩略语解释；歌词到缩略词的具体转用链仍待核。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "熟人善意吐槽",
+        "自嘲窘境"
+      ],
+      "example": "别再提醒我这关打了多少次了，人艰不拆。",
+      "avoid": [
+        "不能以此要求隐瞒必要事实或欺骗。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2013-meaning",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "同期报道记录该用语。"
+      }
+    ],
+    "notes": "现有材料未核实歌词初次转为缩略语的源帖。"
+  },
+  {
+    "id": "early-also-drunk",
+    "term": "我也是醉了",
+    "aliases": [
+      "也是醉了",
+      "醉了"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "表达无语、难以理解、佩服或被离谱事情打败；一般不指真的醉酒。",
+    "origin": {
+      "summary": "2014年度网络用语之一；多条词源说法并存，本条不指定唯一首创者。",
+      "date": "2014",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "无奈吐槽",
+        "离谱反差"
+      ],
+      "example": "重开三次还是出生在同一个坑里，我也是醉了。",
+      "avoid": [
+        "遇到实际饮酒或健康问题须按字面澄清。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2014-list",
+        "claims": [
+          "date"
+        ],
+        "note": "年度名单。"
+      },
+      {
+        "source_id": "early-src-2014-memes",
+        "claims": [
+          "meaning"
+        ],
+        "note": "年度回顾用法。"
+      }
+    ],
+    "notes": "年度名单全文支持2014年流行；词源说法冲突，B站独立传播链未补。"
+  },
+  {
+    "id": "early-too-beautiful",
+    "term": "画面太美我不敢看",
+    "aliases": [
+      "这画面太美",
+      "画美不看"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "通常反说画面夸张、尴尬或不协调，也可能真在赞美壮观场面。",
+    "origin": {
+      "summary": "借流行歌曲中短句的语感，被网友转为反讽表达，2014年进入年度网络用语。",
+      "date": "2014",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "荒诞画面",
+        "自嘲失败作品"
+      ],
+      "example": "角色全挤在门口跳舞，这画面太美我不敢看。",
+      "avoid": [
+        "别用来羞辱真人外貌。",
+        "不把歌词化用当事实评测。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "外貌嘲讽"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2014-memes",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "报道解释从歌曲到反讽的用法。"
+      },
+      {
+        "source_id": "early-src-2014-list",
+        "claims": [
+          "date"
+        ],
+        "note": "2014年度名单。"
+      }
+    ],
+    "notes": "2014年年度名单有全文；歌曲到反讽的转用只有回顾摘要，站内首传未核。"
+  },
+  {
+    "id": "early-little-education",
+    "term": "我读书少，你别骗我",
+    "aliases": [
+      "我读书少你不要骗我"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "用自嘲口吻表示对某项说法怀疑，期待对方提供证据。",
+    "origin": {
+      "summary": "2014年已进入年度网络用语名单；现有材料未核定所传影视首句来源。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "面对夸张说法",
+        "轻松要求解释"
+      ],
+      "example": "这个算法真能快一千倍？我读书少，你别骗我。",
+      "avoid": [
+        "不要据此推断说话者受教育程度。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-2014-list",
+        "claims": [
+          "date"
+        ],
+        "note": "年度传播锚点；具体用法为语境归纳。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 年度十大“流行语”“新词语”“网络用语”反映世情民意：date（full）。影视词源和早期B站用例仍待补。"
+  },
+  {
+    "id": "early-ranbingluan",
+    "term": "然并卵",
+    "aliases": [
+      "然而并没有什么卵用"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "表示做了许多事但对目标没帮助，带粗俗和不耐烦语气。",
+    "origin": {
+      "summary": "2015年广泛传播的中文缩略表达，不能仅凭某位UP主使用就认定其首创。",
+      "date": "2015",
+      "precision": "year",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "解释旧评论",
+        "自嘲无效忙碌"
+      ],
+      "example": "折腾了一晚只改了壁纸，问题还是没解决。",
+      "avoid": [
+        "面向陌生人、正式协作或用户反馈改用“没有解决问题”。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "粗俗用语"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2015-list",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "同期传播报道。"
+      },
+      {
+        "source_id": "early-src-2015-report",
+        "claims": [
+          "meaning"
+        ],
+        "note": "热词报告释义。"
+      }
+    ],
+    "notes": "2015年传播与释义由摘要支持；特定UP主使用不能证明首创，站内最初节点未确认。"
+  },
+  {
+    "id": "early-city-play",
+    "term": "你们城里人真会玩",
+    "aliases": [
+      "城会玩"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "对新奇、复杂或离谱玩法的夸张惊讶，后泛化为“你们真会玩”。",
+    "origin": {
+      "summary": "2015年网络流行句式；现有记录不采纳未经原帖核实的单一起源故事。",
+      "date": "2015",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "新奇玩法",
+        "创意剪辑"
+      ],
+      "example": "把整个房间做成解谜地图，你们真会玩。",
+      "avoid": [
+        "不要拿城乡出身构造优劣或群体嘲讽。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "城乡刻板印象"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2015-list",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "同期报道。"
+      }
+    ],
+    "notes": "同期摘要可支持2015年流行用法；起源原帖及B站首次传播未确认。"
+  },
+  {
+    "id": "early-say-three-times",
+    "term": "重要的事情说三遍",
+    "aliases": [
+      "重要的事说三遍"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "通过重复加强强调，也常拿来制造反差；不要求真的所有重要信息都重复三次。",
+    "origin": {
+      "summary": "2015年流行；同期编辑访谈明确称来源未查到，因此不认定某广告、动画或名人为唯一首创。",
+      "date": "2015",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "轻松强调",
+        "活动提醒"
+      ],
+      "example": "先保存，先保存，先保存——这次真的重要。",
+      "avoid": [
+        "正式文档避免机械重复。",
+        "不能伪称确定最早出处。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-2015-list",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "同期报道记载来源未查到。"
+      },
+      {
+        "source_id": "early-src-2015-report",
+        "claims": [
+          "meaning"
+        ],
+        "note": "热词报告列出该句。"
+      }
+    ],
+    "notes": "年份为流行证据，不是确证起源年。"
+  },
+  {
+    "id": "early-own-bgm",
+    "term": "自带BGM的男人",
+    "aliases": [
+      "自带BGM"
+    ],
+    "category": "film",
+    "era": "2009-2015",
+    "meaning": "某人或角色一出场便让人联想到固定音乐，甚至不播放也仿佛听见。",
+    "origin": {
+      "summary": "影视、游戏和电竞中的共通说法；2015年B站袁华剪辑已有直接用例，不限于袁华。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "角色出场音乐",
+        "剪辑反差"
+      ],
+      "example": "他一出现，我脑子里就自动响起那段配乐。",
+      "avoid": [
+        "“自带BGM”不表示演员拥有曲目版权。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-bgm-2015",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "同期媒体说明。"
+      },
+      {
+        "source_id": "early-src-bgm-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2015年B站袁华用例。"
+      }
+    ],
+    "notes": "2015年B站袁华用例仅元数据；不能据此认定首创，也不能把共通称谓限定为袁华。",
+    "tags": [
+      "一剪梅BOY"
+    ]
+  },
+  {
+    "id": "early-chenqie-cannot",
+    "term": "臣妾做不到啊",
+    "aliases": [
+      "臣妾做不到"
+    ],
+    "category": "film",
+    "era": "2009-2015",
+    "meaning": "借宫廷剧夸张语气表示自己难以做到某事，多为自嘲。",
+    "origin": {
+      "summary": "关联《甄嬛传》皇后台词，2013年蔡少芬微博与网络二创促进传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "自嘲难以坚持",
+        "影视梗说明"
+      ],
+      "example": "一集就关掉去睡觉？臣妾做不到啊。",
+      "avoid": [
+        "正式承诺或真实任务失败应说明原因和下一步，不能只甩梗。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-chenqie",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "2013年同期传播报道。"
+      },
+      {
+        "source_id": "early-src-chenqie-bili",
+        "claims": [
+          "origin",
+          "platform_usage",
+          "date"
+        ],
+        "note": "2013年B站标题与甄嬛传标签。"
+      }
+    ],
+    "notes": "不把2013年热传时间误写成电视剧首播年。"
+  },
+  {
+    "id": "early-fire-before",
+    "term": "火钳刘明",
+    "aliases": [
+      "火前留名"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "认为作品将走红，趁早留言表示自己很早发现；由谐音字形制造轻松语气。",
+    "origin": {
+      "summary": "中文网络“火前留名”的谐音写法，2014年已有报道解释。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "新人佳作评论",
+        "早期支持"
+      ],
+      "example": "这个手工做得真细，火钳刘明。",
+      "avoid": [
+        "不承诺作品一定会火，也不批量刷同一句。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-fire-before",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "同期媒体释义。"
+      }
+    ],
+    "notes": "缺B站最早使用记录。"
+  },
+  {
+    "id": "early-hiyori-dub",
+    "term": "日和中文配音",
+    "aliases": [
+      "日和中配",
+      "CUCN201日和"
+    ],
+    "category": "acg",
+    "era": "2009-2015",
+    "meaning": "《搞笑漫画日和》的民间中文改配作品族，以本土口语、夸张语调和快速吐槽形成大量可引用句式。",
+    "origin": {
+      "summary": "CUCN201等配音组在2010年前后创作并传播；原日语作品、民间改台词与后续合集是不同创作层次。",
+      "date": "2010",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "早期中文配音文化",
+        "识别日和口吻"
+      ],
+      "example": "这段一本正经地快速吐槽，很容易让人想起日和中配。",
+      "avoid": [
+        "不把民间改配台词说成日文原作逐字翻译。",
+        "不能把所有中文配音都归给CUCN201。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-geili"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-hiyori-interview",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "同期采访交代改配方式与参与者。"
+      },
+      {
+        "source_id": "early-src-hiyori-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2014年站内合集的元数据。"
+      }
+    ],
+    "notes": "2010指这一配音组传播节点，非作品原漫画诞生年；B站具体首传尚未核定。"
+  },
+  {
+    "id": "early-geili",
+    "term": "给力",
+    "aliases": [
+      "不给力",
+      "不给力啊老湿"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "称赞有用、有效或令人满意；否定式可轻松表达没有达到期待。",
+    "origin": {
+      "summary": "2010年《日和》中文配音推动此词广泛传播；配音者说其部分短语本来就在寝室使用，因此不认定视频首次造词。",
+      "date": "2010",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "肯定成果",
+        "轻松反馈"
+      ],
+      "example": "这一版加载快了很多，给力。",
+      "avoid": [
+        "正式评价应补充具体优点或不足。",
+        "不要把“老湿”用作对不熟悉教师的称呼。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-hiyori-dub"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-hiyori-interview",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "同期报道释义，同时采访提示词源不可全部追溯。"
+      },
+      {
+        "source_id": "early-src-hiyori-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "站内相关作品合集，非单句弹幕原始记录。"
+      }
+    ],
+    "notes": "年为破圈节点；作为普通口语使用时不必强行判作ACG引用。"
+  },
+  {
+    "id": "early-shuzo",
+    "term": "松冈修造",
+    "aliases": [
+      "松岡修造",
+      "修造导师"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "鬼畜语境中指用松冈修造热血应援讲话创作的音MAD；“导师”是圈内敬称，东方热血汉是采用东方音乐的一支。",
+    "origin": {
+      "summary": "其官网应援视频自2008年初被日本网友改成MAD，随后进入中文搬运和创作圈。",
+      "date": "2008",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "热血鼓励",
+        "音MAD素材识别"
+      ],
+      "example": "这段修造导师的应援，适合放在挑战关卡的最后一次尝试前。",
+      "avoid": [
+        "不要把夸张热血话当专业训练或健康建议。",
+        "真人本人、素材角色和二创台词必须区分。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "真人素材再归因"
+    ],
+    "relations": [
+      "early-otomad"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-shuzo-report",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "2009年同期报道回顾2008年开始流行。"
+      },
+      {
+        "source_id": "early-src-shuzo-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "早期B站搬运和导师称谓。"
+      },
+      {
+        "source_id": "early-src-shuzo-community",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "东方热血汉支系解释。"
+      }
+    ],
+    "notes": "不采用社区“第一位”等未经原视频核实的排行说法。",
+    "tags": [
+      "东方热血汉"
+    ]
+  },
+  {
+    "id": "early-otomad",
+    "term": "音MAD",
+    "aliases": [
+      "音mad",
+      "音マッド",
+      "OtoMAD"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "以截取的声音重新编排节奏或旋律的二创类型，是理解许多早期鬼畜梗的素材和制作背景。",
+    "origin": {
+      "summary": "从日本网络视频文化流入B站；早期中文鬼畜与音MAD紧密相关，后来形成多种并存做法。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "解释鬼畜作品类别",
+        "区分素材、原曲和改编"
+      ],
+      "example": "这支音MAD把角色的短音节编成了旋律。",
+      "avoid": [
+        "音MAD不一定低俗，也不一定以真人为素材。",
+        "不能把音MAD、人力VOCALOID、所有MV或一般剪辑视作完全同义。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-ranranru",
+      "early-shuzo",
+      "early-kuroko"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "early-src-china-news-guichu",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "正文84—101行解释B站语境和创作侧重。"
+      }
+    ],
+    "notes": "这是创作类型词，不是单一视频台词；收录用于识别早期梗族，非判定所有作品的固定技术标准。"
+  },
+  {
+    "id": "early-marisa-stole",
+    "term": "魔理沙偷走了重要的东西",
+    "aliases": [
+      "魔理沙は大変なものを盗んでいきました",
+      "魔理莎偷走了重要的东西"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "东方同人曲及其PV引出的音乐、手书和换角色二创系列；“某人偷走了重要的东西”可作为致敬标题。",
+    "origin": {
+      "summary": "IOSYS作品，官方活动史记载MV于2006-11-01公开；后在niconico及中文ACG社区衍生二创。",
+      "date": "2006-11-01",
+      "precision": "exact",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "东方音乐怀旧",
+        "解释仿作标题"
+      ],
+      "example": "换了角色但保留节奏与标题结构，是对魔理沙原PV的致敬。",
+      "avoid": [
+        "原作、MV和手书仿作署名不能混淆。",
+        "普通失窃叙述不自动等于此梗。"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "early-cirno-classroom",
+      "early-otomad"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "early-src-iosys",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "官方MV公开日。"
+      },
+      {
+        "source_id": "early-src-marisa-song",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "社区说明同人曲与衍生MAD。"
+      },
+      {
+        "source_id": "early-src-marisa-remix",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "作者简介直接说明后续仿作关系。"
+      }
+    ],
+    "notes": "2006为MV公开日；现有材料未核实2015年前具体B站投稿，因此平台历史证据仍有缺口。"
+  },
+  {
+    "id": "extra-yajusenpai",
+    "term": "野兽先辈",
+    "aliases": [
+      "野獣先輩",
+      "野獸先輩",
+      "田所浩二"
+    ],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "日本成人影像角色经剪辑、音MAD和表情包传播形成的素材称谓；中文圈也用来识别同一套数字、口癖与图像引用。",
+    "origin": {
+      "summary": "主要关联2001年的《真夏の夜の淫夢》角色，经niconico传播；B站2013年已有相关二创投稿。田所浩二是网络称谓，不是已证实本名。",
+      "date": "2001",
+      "precision": "year",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "解释鬼畜素材族",
+        "辨认表情与数字暗号"
+      ],
+      "example": "这里的先辈指特定二创角色，和普通“学长”不是一个用法。",
+      "avoid": [
+        "不把网络化名或长相相似者当演员真实身份。",
+        "不凭玩梗推断观众性取向。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "成人来源",
+      "真人身份误认",
+      "性取向误判"
+    ],
+    "relations": [
+      "extra-inmu-digits",
+      "extra-hakushin",
+      "extra-sleep-tea",
+      "extra-hmm-scream",
+      "early-gachimuchi"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "extra-src-udn-inmu",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "媒体解释原作背景与称谓。"
+      },
+      {
+        "source_id": "extra-src-bili-inmu-guide",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "站内文化解释。"
+      },
+      {
+        "source_id": "extra-src-inmu-2013-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "早期二创上传记录。"
+      }
+    ],
+    "notes": "2001为原影像背景年，不是梗形成或B站首传年。与比利等兄贵哲学是不同来源体系。仅非露骨说明。"
+  },
+  {
+    "id": "extra-hakushin",
+    "term": "迫真",
+    "aliases": [
+      "（迫真）",
+      "迫真演技",
+      "迫真XX部"
+    ],
+    "category": "community",
+    "era": "2009-2015",
+    "meaning": "日语原义为逼真；网络句末括号用法可强调演得像真的，也常反说拙劣模仿或故作认真。特定模板与淫梦文化有关。",
+    "origin": {
+      "summary": "普通日语词被相关视频评论借作演技评价，再扩展成句尾语气标记；一条标注2015年上传的B站投稿在检索时的简介含相关用法，简介是否当年已含此句未核。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "反讽式认真",
+        "解释括号语气"
+      ],
+      "example": "五分钟速成大师（迫真）。",
+      "avoid": [
+        "正式日语中的迫真不自动带成人含义。",
+        "译文须看是否为括号梗，不能一律翻译成同一口头禅。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "成人来源语境"
+    ],
+    "relations": [
+      "extra-yajusenpai"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "extra-src-hakushin-dictionary",
+        "claims": [
+          "meaning"
+        ],
+        "note": "普通词义。"
+      },
+      {
+        "source_id": "extra-src-hakushin-slang",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "2014年前后的日文网络用法。"
+      },
+      {
+        "source_id": "extra-src-hakushin-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2015年B站简介。"
+      }
+    ],
+    "notes": "词典与早期用例目前只读摘要/元数据；未核原始评论或最初中文传播。不主张该社群创造了“迫真”这一普通日语词。"
+  },
+  {
+    "id": "extra-amot",
+    "term": "必須アモト酸",
+    "aliases": [],
+    "category": "guichu",
+    "era": "2009-2015",
+    "meaning": "以久本雅美等公开影像、宗教宣传素材及其后续关联素材制作的日本音MAD谱系名称；词形戏仿日语“必需氨基酸”。",
+    "origin": {
+      "summary": "社区回顾将这一谱系追溯至2007年末niconico二创，再由中文弹幕社区引入。エア本关联素材后来扩展到与宗教团体无关的对象。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "早期音MAD史",
+        "识别久本及创价素材标签"
+      ],
+      "example": "这个标题里的必須アモト酸是在标记音MAD素材族，不是化学成分。",
+      "avoid": [
+        "不能因某人出现在相关MAD中就断定其宗教归属。",
+        "不把二创字幕或调音当人物原话、团体正式观点。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "宗教语境",
+      "真人素材再归因",
+      "群体污名化"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "extra-src-amot-wiki",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "素材分类与非完全等同的边界。"
+      },
+      {
+        "source_id": "extra-src-amot-bili-guide",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "中文站内历史回顾。"
+      },
+      {
+        "source_id": "extra-src-amot-bili-video",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "投稿及旧niconico编号线索。"
+      }
+    ],
+    "notes": "同族合并但不声称久本本人、创价学会这个现实组织、全部エア本作品是完全同义词。2007首作作者和B站首传未独立核定。",
+    "tags": [
+      "头破七分",
+      "创价MAD",
+      "创价学会鬼畜",
+      "久本雅美鬼畜",
+      "エア本"
+    ]
+  },
+  {
+    "id": "extra-reverse-q",
+    "term": "反向Q",
+    "aliases": [
+      "韦神反向Q",
+      "反向一箭"
+    ],
+    "category": "esports",
+    "era": "2009-2015",
+    "meaning": "本该朝目标释放的方向技能却反向出手；特定电竞典故指韦神的韦鲁斯反向技能失误。",
+    "origin": {
+      "summary": "关联2015年S5小组赛LGD对KT的比赛，此后被玩家泛化为方向判断失误。",
+      "date": "2015",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "电竞历史",
+        "方向操作失误的自嘲"
+      ],
+      "example": "鼠标一滑打到反方向，我这波也反向Q了。",
+      "avoid": [
+        "不凭一次失误推断选手作弊或故意输比赛。",
+        "不是所有反方向施法都是失误，可能有具体战术。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "选手嘲讽"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "extra-src-reverse-cnmo",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "回顾比赛与角色。"
+      },
+      {
+        "source_id": "extra-src-reverse-18183",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "另一来源同样指向KT。"
+      }
+    ],
+    "notes": "部分网络稿写成TSM，与多源一致的KT冲突；未核原录像，暂不写精确日时。B站同期用例待补。"
+  },
+  {
+    "id": "early-millennium-food-song",
+    "term": "千年食谱颂",
+    "aliases": [
+      "千年食譜頌"
+    ],
+    "category": "music",
+    "era": "2009-2015",
+    "meaning": "洛天依的食物主题歌曲及其PV，也是解释“吃货殿下”同人称呼时常见的关联作品。歌名和角色称呼指不同对象。",
+    "origin": {
+      "summary": "现有投稿元数据显示原曲页日期为2012-06-29，原曲+PV页为2012-07-13；后一个日期不能代替原曲投稿日。",
+      "date": "2012-06-29",
+      "precision": "exact",
+      "bilibili_role": "origin"
+    },
+    "usage": {
+      "contexts": [
+        "洛天依作品回顾",
+        "区分原曲与PV时间",
+        "美食向音乐二创"
+      ],
+      "example": "考古千年食谱颂时，记得把原曲投稿和后来PV分开看。",
+      "avoid": [
+        "不把PV日期写成歌曲唯一首发日",
+        "再创作须分别辨认原曲与所用音源，不默认转载已获授权"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "音乐版权"
+    ],
+    "relations": [
+      "early-food-princess"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "early-src-foodsong-original",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "原曲投稿标题、日期与简介的元数据，支持作品和2012-06-29节点。"
+      },
+      {
+        "source_id": "early-src-foodsong-pv",
+        "claims": [
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "原曲+PV为另一投稿，日期2012-07-13。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 【洛天依】千年食谱颂：meaning,origin,date,platform_usage（metadata）；【洛天依】千年食谱颂 原曲+PV 【H.K.君】：origin,date,platform_usage（metadata）。登记读取范围仅为投稿元数据，未播放原曲/PV或逐项核对全部创作人员；不据二创页面确定歌曲在全网的最早公开时间。"
+  }
+]

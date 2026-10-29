@@ -1,0 +1,27 @@
+name: 词条补录或纠错
+description: 提交可核查的含义、出处、年代或传播线索
+title: "[词条] "
+body:
+  - type: input
+    id: term
+    attributes:
+      label: 词条与别名
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 具体语境及需要修正的内容
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 内容来源及其支持范围
+      description: 提供原视频、作者说明或具体报道链接；说明是否已读正文或仅见摘要。
+    validations:
+      required: true
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: 尚缺的材料或存在的分歧

@@ -1,0 +1,8 @@
+interface:
+  display_name: "B站热梗知识库"
+  short_description: "检索B站历史热梗与弹幕表达，核对出处、传播和适用语境"
+  default_prompt: "使用 $bilibili-meme-atlas 解释这些B站热梗的含义、出处和合适用法，并给出可核验来源。"
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"
+policy:
+  allow_implicit_invocation: true

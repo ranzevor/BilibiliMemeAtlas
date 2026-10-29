@@ -1,0 +1,16 @@
+name: 检索或数据问题
+description: 报告可复现的查询、字段或生成物错误
+title: "[缺陷] "
+body:
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 版本、环境与复现命令
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 实际结果与所需结果
+    validations:
+      required: true

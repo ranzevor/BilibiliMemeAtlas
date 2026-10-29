@@ -1,0 +1,4501 @@
+[
+  {
+    "id": "recent-po-fang",
+    "term": "破防了",
+    "aliases": [
+      "破防",
+      "我破防了"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "心理防线被触动；可指感动，也可指受挫、恼怒，褒贬取决于上下文。",
+    "origin": {
+      "summary": "由游戏中破除防御的说法扩展为情绪表达；B站选为2021年度弹幕。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "感人故事",
+        "游戏受挫",
+        "自嘲"
+      ],
+      "example": "看到他终于团聚，我有点破防了。",
+      "avoid": [
+        "勿把别人表达不适一律嘲成破防",
+        "严肃求助不要用它否定感受"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "recent-hongwen"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-annual21",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-slang21",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-shock21",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "已阅读全文，支持对应的有限表述；不反推最早首创。"
+      }
+    ],
+    "notes": "官方简介与全文报道相互印证年度入选；词语首次产生时间不在证据范围。"
+  },
+  {
+    "id": "recent-elegant",
+    "term": "优雅",
+    "aliases": [
+      "优雅，实在是优雅"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "在B站常用于赞赏生活中的巧思、从容与勇气，也可带轻松的反差感。",
+    "origin": {
+      "summary": "普通汉语词在B站获得更广的赞美用法，2022被选为年度弹幕。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "熟练操作",
+        "从容化解意外"
+      ],
+      "example": "这次救场，优雅，实在是优雅。",
+      "avoid": [
+        "勿将年度弹幕选词直接等同某动画首次造词",
+        "反讽需要上下文"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-annual22",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-annual22-report",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "已阅读全文，支持对应的有限表述；不反推最早首创。"
+      }
+    ],
+    "notes": "年度选词与站内用法有全文报道；长句作为检索别名保留，其具体动画台词来源未核验，不作溯源结论。"
+  },
+  {
+    "id": "recent-ah",
+    "term": "啊？",
+    "aliases": [
+      "啊?",
+      "啊？？？"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "用短促疑问表达意外、疑惑或认知被刷新，不一定是在请求重复。",
+    "origin": {
+      "summary": "普通语气词被弹幕强化；B站选为2023年度弹幕。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "意外反转",
+        "发现隐藏技巧",
+        "惊叹"
+      ],
+      "example": "啊？这居然是手工做的？",
+      "avoid": [
+        "勿把所有“啊？”解释为赞美",
+        "2026春晚高频不等于2026年度弹幕"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-annual23",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-gala26",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-annual23-report",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "已阅读全文，支持对应的有限表述；不反推最早首创。"
+      }
+    ],
+    "notes": "2023官方简介与2026单场统计属于不同事件。"
+  },
+  {
+    "id": "recent-jie",
+    "term": "接",
+    "aliases": [
+      "接好运",
+      "接接接"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "在好消息或许愿视频下表示希望自己也获得好运。",
+    "origin": {
+      "summary": "日常动词在社交场景中获得“接好运”义；B站选为2024年度弹幕。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "考试上岸分享",
+        "祝福",
+        "喜讯"
+      ],
+      "example": "接好运，也祝你接下来顺顺利利。",
+      "avoid": [
+        "勿当作已经达成愿望的事实",
+        "严肃承诺不能用“接”代替行动"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-annual24",
+        "claims": [
+          "meaning",
+          "platform_usage",
+          "origin"
+        ],
+        "note": "已阅读全文；仅支持本条所述释义、来源背景或站内使用，未声称唯一首创。"
+      }
+    ],
+    "notes": "媒体报道可确认年度入选；未核验该祈愿用法的最早平台。"
+  },
+  {
+    "id": "recent-salute",
+    "term": "致敬",
+    "aliases": [],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "对善意、勇气、认真付出表达敬意，通常保留认真语气。",
+    "origin": {
+      "summary": "普通汉语词在B站持续使用，2025年被选为年度弹幕。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "真实付出",
+        "纪录片",
+        "纪念性内容"
+      ],
+      "example": "向认真把这件事做完的人致敬。",
+      "avoid": [
+        "勿在悼念或现实受苦内容中强行反讽",
+        "普通敬意无需包装成搞笑梗"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-annual25",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-annual25-report",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "已阅读全文，支持对应的有限表述；不反推最早首创。"
+      }
+    ],
+    "notes": "官方简介及完整媒体报道支持2025年度选词，不能反推普通汉语词始于2025。"
+  },
+  {
+    "id": "recent-bengbu",
+    "term": "蚌埠住了",
+    "aliases": [
+      "绷不住了",
+      "绷不住",
+      "绷"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "“绷不住了”的地名谐音，可表示忍不住笑、想哭或情绪失守。",
+    "origin": {
+      "summary": "以安徽蚌埠地名替代“绷不”；2021媒体和B站投稿均有记录。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "搞笑反转",
+        "自嘲",
+        "感人片段"
+      ],
+      "example": "前面还很严肃，这个转场让我蚌埠住了。",
+      "avoid": [
+        "勿据此嘲讽蚌埠居民",
+        "具体是笑还是哭要按画面判断"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-bengbu",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-bengbu-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "已找到2021使用记录；存在多个网络溯源版本，不认定唯一首创。"
+  },
+  {
+    "id": "recent-yyds",
+    "term": "YYDS",
+    "aliases": [
+      "yyds",
+      "永远的神"
+    ],
+    "category": "esports",
+    "era": "2021-2026",
+    "meaning": "“永远的神”的拼音首字母缩写，用于强烈夸赞。",
+    "origin": {
+      "summary": "2021年度全国网络用语资料记录其夸赞用法；游戏或粉丝圈的具体起源链尚待核。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "高光操作",
+        "作品夸赞"
+      ],
+      "example": "这段现场稳定得离谱，YYDS。",
+      "avoid": [
+        "勿据夸张赞词作实际排名",
+        "反讽要避免误读"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "mid-eternal-god"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang21",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "来源支持2021全国传播；电竞首创者及B站首条使用未在本分片核验。 反讽用法、游戏/粉丝起源与B站放大作用没有由当前单一榜单直接建立。"
+  },
+  {
+    "id": "recent-juejuezi",
+    "term": "绝绝子",
+    "aliases": [],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "加强“绝了”的语气，表达很棒、非常好的赞美。",
+    "origin": {
+      "summary": "粉丝加油与社交表达中流行，2021被年度网络用语资料收录。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "食物或作品的轻松赞美",
+        "朋友聊天"
+      ],
+      "example": "这个配色绝绝子，夜景里特别显眼。",
+      "avoid": [
+        "正式评价要说明好在哪里",
+        "别给每句话都加“子”"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang21",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "未确认B站传播起点；反讽义需由当前语境支持。 反讽为可能的语用解释，尚需具体用例，不纳入当前已核释义。"
+  },
+  {
+    "id": "recent-lying-flat",
+    "term": "躺平",
+    "aliases": [
+      "躺了"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "以减少竞争投入或暂时放下压力表达疲惫和自我调整；具体程度随语境变化。",
+    "origin": {
+      "summary": "2021网络广泛讨论的词，不等于所有使用者永久放弃目标。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "自嘲休息",
+        "讨论生活压力"
+      ],
+      "example": "周末先躺平半天，下午再收拾房间。",
+      "avoid": [
+        "勿把他人劳动处境归咎为懒惰",
+        "不得代替真实心理状态判断"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "压力处境"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-shock21",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "资料支持流行阶段与一般语义；具体作者状态不可由一个词推断。"
+  },
+  {
+    "id": "recent-low-damage",
+    "term": "伤害性不高，侮辱性极强",
+    "aliases": [
+      "伤害不大，侮辱性极强",
+      "伤害性不大，侮辱性极强"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "实际损失不大，但场面让人难堪；常用于轻度失败或被反差衬托。",
+    "origin": {
+      "summary": "2021流行语资料以夹菜视频中的冷落场面解释其传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "游戏失误",
+        "无害的反差笑点"
+      ],
+      "example": "赢了比赛却被系统评为全场最闲，伤害性不高，侮辱性极强。",
+      "avoid": [
+        "现实羞辱或霸凌不能淡化成梗",
+        "不要对不愿参与的人使用"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-shock21",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "未找到最初评论原件，不据二手叙述给首创者定名。"
+  },
+  {
+    "id": "recent-greatly-shocked",
+    "term": "我看不懂，但我大受震撼",
+    "aliases": [
+      "大受震撼"
+    ],
+    "category": "film",
+    "era": "2021-2026",
+    "meaning": "承认没完全理解，同时表达强烈惊讶；可赞叹也可吐槽。",
+    "origin": {
+      "summary": "常见版本关联李安在2013纪录片《打扰伯格曼》中的评论，2021再次流行。",
+      "date": "2013",
+      "precision": "year",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "抽象剪辑",
+        "难以理解的创意",
+        "反转"
+      ],
+      "example": "这个操作我看不懂，但我大受震撼。",
+      "avoid": [
+        "不能用它假装已经理解技术解释",
+        "严肃讨论应接具体问题"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-shock21",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "原片逐字台词尚未独立比对；流行文本可能经过简化。"
+  },
+  {
+    "id": "recent-social-bold",
+    "term": "社交牛逼症",
+    "aliases": [
+      "社牛",
+      "社交牛掰症",
+      "社交NB症"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "夸张形容在社交场合自在大胆、敢表现自己，也可能调侃过度打扰。",
+    "origin": {
+      "summary": "2021短视频与评论中的“社牛”标签传播，B站评论起点说法仍属考证线索。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "公开场合整活",
+        "朋友活跃气氛"
+      ],
+      "example": "他一进场就和大家聊起来，社牛本牛。",
+      "avoid": [
+        "不是医学诊断",
+        "勿鼓励骚扰陌生人或嘲笑社交困难"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "粗口",
+      "非医学术语"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-she-niu",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "来源明确列出不同溯源说法，故不写精确首创时间。"
+  },
+  {
+    "id": "recent-high-quality-human",
+    "term": "人类高质量男性",
+    "aliases": [
+      "人类高质量XX"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "模仿一本正经的自我包装，常用“人类高质量XX”反讽或自嘲。",
+    "origin": {
+      "summary": "2021求偶视频中的自称引发模仿和二创。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "夸张自我介绍",
+        "装备或生活技巧的自嘲"
+      ],
+      "example": "人类高质量摸鱼选手，正在整理桌面。",
+      "avoid": [
+        "勿按性别给真人评质量等级",
+        "不要附带未经核实的当事人财富经历"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "人物嘲讽"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-high-quality",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "仅保留公开表演的模板，不保留无关个人信息。"
+  },
+  {
+    "id": "recent-happy-planet",
+    "term": "什么是快乐星球",
+    "aliases": [
+      "快乐星球"
+    ],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "借歌曲提问句引出开心场景或搞笑反差。",
+    "origin": {
+      "summary": "来自《快乐星球5》的插曲片段，2021经短视频再传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "快乐日常",
+        "怀旧影视",
+        "音乐二创"
+      ],
+      "example": "这顿晚饭，算是找到我的快乐星球了。",
+      "avoid": [
+        "不要续写整段歌词",
+        "跨作品评论中不要刷屏打断内容"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "歌词片段"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-happy-planet",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "拍摄、剧集上线与2021翻红是不同时间节点。"
+  },
+  {
+    "id": "recent-diana-dog",
+    "term": "嘉然小姐的狗",
+    "aliases": [
+      "我好想做嘉然小姐的狗啊"
+    ],
+    "category": "vtuber",
+    "era": "2021-2026",
+    "meaning": "以表达对嘉然的喜爱为主题的小作文及相关复制传播。",
+    "origin": {
+      "summary": "2021B站跨分区出现相关小作文与朗读二创。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释虚拟主播历史梗",
+        "相关作品中的有意引用"
+      ],
+      "example": "这条评论是在套嘉然小作文的格式。",
+      "avoid": [
+        "不要把原文整段复制到无关评论区",
+        "不要把表演性语句当真实依附关系"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "拟亲密表达",
+      "刷屏反串"
+    ],
+    "relations": [
+      "recent-jiaxintang"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-diana",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "报道正文确认文章名、表达喜欢及2021年跨分区复制传播；“夸张卑微”“反串”为用法概括，未由该报道逐项核实，不据文字判定具体账号粉籍。"
+      },
+      {
+        "source_id": "recent-src-diana-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "2022年报道支持文章身份、表达喜爱及2021年跨分区复制传播；最早动态或评论原件、卑微语气、反串和朗读等具体用法没有直接来源支持。报道中的全站说法不是本库统计。"
+  },
+  {
+    "id": "recent-jiaxintang",
+    "term": "嘉心糖",
+    "aliases": [],
+    "category": "vtuber",
+    "era": "2021-2026",
+    "meaning": "嘉然粉丝群体的称呼；同名自称也可能出现在反串中。",
+    "origin": {
+      "summary": "嘉然粉丝称呼；2021A-SOUL专栏记录了它在B站直播和评论中的使用。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释粉丝称呼",
+        "嘉然相关内容"
+      ],
+      "example": "这里的嘉心糖指嘉然粉丝。",
+      "avoid": [
+        "不以一个称呼断言具体账号属于某群体",
+        "勿将恶意刷屏归咎全部粉丝"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "粉籍误判"
+    ],
+    "relations": [
+      "recent-diana-dog"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-diana",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-asoul-year",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "已阅读全文，支持对应的有限表述；不反推最早首创。"
+      }
+    ],
+    "notes": "称呼形成的首条官方声明未核验。"
+  },
+  {
+    "id": "recent-ji",
+    "term": "寄了",
+    "aliases": [
+      "寄",
+      "这把寄了"
+    ],
+    "category": "esports",
+    "era": "2021-2026",
+    "meaning": "表示失败、没机会或事情结束，语气通常是自嘲。",
+    "origin": {
+      "summary": "由GG的读音与游戏结束语境演变；2021已有网络释义。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "游戏败局",
+        "计划失败的轻松吐槽"
+      ],
+      "example": "最后一条命也没了，这把寄了。",
+      "avoid": [
+        "严肃事故或死亡消息不要用来取笑",
+        "勿把GG所有用法都译成失败"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-ji",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-ji-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "不确认某主播独占首创；GG本身也可表示赛后礼貌。"
+  },
+  {
+    "id": "recent-shuanq",
+    "term": "栓Q",
+    "aliases": [
+      "我真的栓Q"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "Thank you的谐音；网络语境常表示无语或反讽感谢。",
+    "origin": {
+      "summary": "2022年旅游英语口音视频推动Thank you的“栓Q”写法传播；它与另有来源的“我真的会谢”后来合流使用。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "小失误",
+        "被朋友善意坑到"
+      ],
+      "example": "刚洗完车就下雨，我真的栓Q。",
+      "avoid": [
+        "真正向人致谢时避免让反讽造成误解",
+        "不要把口音当能力或地域贬低理由"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "recent-will-thank"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang22",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-annual22-report",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "已阅读全文，支持对应的有限表述；不反推最早首创。"
+      }
+    ],
+    "notes": "原口音视频的感谢本来是真诚的；“我真的会谢”是另一条表达，仅作关联检索，不能当作同源别名。",
+    "tags": [
+      "我真的会谢"
+    ]
+  },
+  {
+    "id": "recent-retreat",
+    "term": "退退退",
+    "aliases": [
+      "退！退！退！"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "配合驱赶手势，夸张表示抗拒霉运、麻烦或不喜欢的事。",
+    "origin": {
+      "summary": "来自街头争执片段中的重复喊话，2022成为模仿模板。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "自嘲排斥坏运气",
+        "表情包回复"
+      ],
+      "example": "周一临时加班？退退退。",
+      "avoid": [
+        "不对陌生人现实挑衅",
+        "拒绝他人时需清楚说明具体诉求"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang22",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-annual22-report",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "已阅读全文，支持对应的有限表述；不反推最早首创。"
+      }
+    ],
+    "notes": "不传播片中私人身份信息；首条上传时间未核。"
+  },
+  {
+    "id": "recent-cpu",
+    "term": "你CPU我",
+    "aliases": [
+      "CPU我",
+      "你在CPU我",
+      "KTV我",
+      "PPT我"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "故意把PUA替换为CPU等缩写，吐槽被绕晕、施压或操控。",
+    "origin": {
+      "summary": "2022口误视频带动CPU/KTV等错置缩写的使用。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "轻松吐槽话术",
+        "解释错词梗"
+      ],
+      "example": "你这一串反问，把我CPU了。",
+      "avoid": [
+        "具体操控或虐待应清楚描述事实",
+        "技术问题里的CPU通常仍指处理器"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "人际操控指控"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang22",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "谐音模板不改变CPU等技术缩写的正式定义。"
+  },
+  {
+    "id": "recent-yuan-zhong",
+    "term": "大冤种",
+    "aliases": [
+      "冤种",
+      "纯纯大冤种"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "自嘲花了冤枉钱、白忙或承担了不对等付出的人。",
+    "origin": {
+      "summary": "东北方言“冤种”经网络扩散，2022集中流行。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "消费踩坑",
+        "朋友之间自嘲"
+      ],
+      "example": "折腾半天才发现买错型号，我是大冤种。",
+      "avoid": [
+        "不要用来羞辱受骗者",
+        "不把一段经历概括成一个人的价值"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang22",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "方言存在早于2022，未定首次网络使用时间。"
+  },
+  {
+    "id": "recent-mouthpiece",
+    "term": "嘴替",
+    "aliases": [
+      "互联网嘴替",
+      "我的嘴替"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "替自己把想法清楚说出来的人；表示共鸣和认同。",
+    "origin": {
+      "summary": "“替身”构词方式被用于表达者，2022进入网络流行语榜。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "评论区共鸣",
+        "观点总结"
+      ],
+      "example": "这句把我的困惑说清楚了，简直是嘴替。",
+      "avoid": [
+        "不要借用嘴替身份替整个群体宣言",
+        "引用原话需保留原意"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang22b",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "B站最早传播节点未核验。"
+  },
+  {
+    "id": "recent-very-new",
+    "term": "一种很新的XX",
+    "aliases": [
+      "一种很新的东西",
+      "一种很新的玩法"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "用表面中性的“新”表达惊奇、困惑或轻度吐槽，需读反差。",
+    "origin": {
+      "summary": "2022音乐评论语境中的句式扩展为可替换模板。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "混搭作品",
+        "非常规操作"
+      ],
+      "example": "你在用一种很新的方式收纳数据线。",
+      "avoid": [
+        "不要把委婉吐槽写成真实的新技术认定"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang22b",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "来源为年度语义归纳，没有唯一原评论。"
+  },
+  {
+    "id": "recent-lao-liu",
+    "term": "老六",
+    "aliases": [
+      "服了你个老六",
+      "你个老六"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "调侃躲藏、偷袭、出其不意或不按常规配合的玩家，也扩展到日常捣乱。",
+    "origin": {
+      "summary": "射击游戏语境传播，2022进入全网流行语榜。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "竞技游戏",
+        "熟人间出其不意的操作"
+      ],
+      "example": "你从背后绕了一整圈，真是个老六。",
+      "avoid": [
+        "别把正常战术一概当作弊",
+        "不愿被取笑的队友不适合继续叫"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "贬称"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang22b",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "网络有多套源头解释，此处只保留可确认的射击游戏语境。"
+  },
+  {
+    "id": "recent-price-assassin",
+    "term": "雪糕刺客",
+    "aliases": [
+      "XX刺客",
+      "水果刺客",
+      "价格刺客"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "外表普通却在结账时价格远超预期的商品，后扩为“XX刺客”。",
+    "origin": {
+      "summary": "2022围绕高价雪糕的消费讨论形成可迁移的比喻。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "价格吐槽",
+        "消费信息说明"
+      ],
+      "example": "忘看价签就拿了这瓶饮料，被饮料刺客偷袭了。",
+      "avoid": [
+        "具体价格要核实",
+        "不能把昂贵直接等同违法或欺诈"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang22b",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "描述价格意外，不替代商品事实核对。"
+  },
+  {
+    "id": "recent-hextech",
+    "term": "科技与狠活",
+    "aliases": [
+      "科技与狠活儿",
+      "海克斯科技"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "在食品制作视频语境中，调侃看似天然的食品靠复杂加工或配方做出的说法。",
+    "origin": {
+      "summary": "2022食品制作短视频中的口头语，与“海克斯科技”说法合流。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "解释食品制作视频梗"
+      ],
+      "example": "这段食品制作演示被叫作“科技与狠活”；实际配料和安全性还得看可靠证据。",
+      "avoid": [
+        "添加剂或加工本身不等于不安全",
+        "不能凭梗对具体商家作食安指控"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "食品安全误导",
+      "商业指控"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-hextech",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "海克斯科技原有《英雄联盟》设定义；本条聚焦2022食品语境。 泛指技术操作的扩展用法待补实际用例。"
+  },
+  {
+    "id": "recent-muyu",
+    "term": "电子木鱼",
+    "aliases": [
+      "功德+1",
+      "赛博功德",
+      "敲木鱼"
+    ],
+    "category": "tech",
+    "era": "2021-2026",
+    "meaning": "点击虚拟木鱼产生声响，以“加功德”开玩笑；也可用于讲完损梗后的自嘲。",
+    "origin": {
+      "summary": "2022相关软件和B站视频形成传播，“赛博功德”是戏拟说法。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "软件整活",
+        "轻度自嘲",
+        "解释评论里的功德计数"
+      ],
+      "example": "刚笑完这个冷笑话，先敲两下电子木鱼。",
+      "avoid": [
+        "不得声称点击能实际积累宗教功德或治疗疾病",
+        "尊重严肃宗教场合"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "宗教语境"
+    ],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-muyu",
+        "claims": [
+          "meaning",
+          "platform_usage",
+          "origin"
+        ],
+        "note": "已阅读全文；仅支持本条所述释义、来源背景或站内使用，未声称唯一首创。"
+      },
+      {
+        "source_id": "recent-src-muyu-bili",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "全文报道确认玩法与站内使用；软件上线、最早玩梗日期及心理疗效不在核验范围。"
+  },
+  {
+    "id": "recent-you-are-right",
+    "term": "你说得对，但是原神",
+    "aliases": [
+      "你说得对但是",
+      "你说的对，但是原神"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "先假意赞同，再突然插入游戏介绍的复制文模板；笑点在无关转折。",
+    "origin": {
+      "summary": "2022游戏社区把宣传文案接到“你说得对，但是”后，产生大量替换版本。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释复制文",
+        "相关游戏二创"
+      ],
+      "example": "你说得对，但是这段回复已经进入游戏宣传片模式了。",
+      "avoid": [
+        "不要把无关长文刷到正常讨论里",
+        "不能把反串当官方发言或真实玩家共识"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "反串",
+      "刷屏"
+    ],
+    "relations": [
+      "recent-start-genshin"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-genshin-copy",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-genshin-copy-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "不收录完整营销文案；首发评论尚未核验。"
+  },
+  {
+    "id": "recent-you-are-my-god",
+    "term": "你是我的神",
+    "aliases": [],
+    "category": "film",
+    "era": "2021-2026",
+    "meaning": "以夸张崇拜表达感谢或赞赏，常配戏剧化姿势。",
+    "origin": {
+      "summary": "海清在2013《快乐男声》为欧豪拉票的片段于2022翻红。",
+      "date": "2013",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "朋友救场",
+        "粉丝式夸赞"
+      ],
+      "example": "你找回了我忘记保存的文件，你是我的神。",
+      "avoid": [
+        "不把节目表演推定为真实恋爱关系",
+        "对陌生人不做冒犯模仿"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-my-god",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "本条的2021–2026时代标记指翻红阶段，素材本身更早。"
+  },
+  {
+    "id": "recent-pan-stand-up",
+    "term": "有请潘周聃",
+    "aliases": [
+      "潘周聃起身",
+      "万物皆可潘周聃"
+    ],
+    "category": "film",
+    "era": "2021-2026",
+    "meaning": "配合侧身、扭头起立，模仿隆重出场或避让狭窄座位的动作。",
+    "origin": {
+      "summary": "《最强大脑》的起身片段于2022成为模仿素材，当事人解释并非故意耍酷。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "出场动作",
+        "轻松模仿"
+      ],
+      "example": "拿个快递也要有请潘周聃式登场。",
+      "avoid": [
+        "不能由剪辑判断当事人傲慢",
+        "不要用危险扭转动作模仿"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-pan",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "节目原始片段日期未独立核验；2022为再传播阶段。"
+  },
+  {
+    "id": "recent-digital-pickle",
+    "term": "电子榨菜",
+    "aliases": [],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "吃饭时配着看的视频、剧集或听的音频，强调熟悉、陪伴或轻松下饭。",
+    "origin": {
+      "summary": "“榨菜”被借作佐餐内容的比喻，2022报道已有B站用户的使用实例。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "挑选轻松视频",
+        "说明观看习惯"
+      ],
+      "example": "这期闲聊正好当今天的电子榨菜。",
+      "avoid": [
+        "不能据此贬低作品质量",
+        "不要把“下饭”与游戏失误梗混为一义"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "mid-rice-friendly"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-pickle",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "已阅读全文；仅支持本条所述释义、来源背景或站内使用，未声称唯一首创。"
+      },
+      {
+        "source_id": "recent-src-pickle-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "没有确认唯一造词者。"
+  },
+  {
+    "id": "recent-black-fan",
+    "term": "小黑子露出鸡脚了",
+    "aliases": [
+      "小黑子",
+      "露出鸡脚",
+      "鸡脚"
+    ],
+    "category": "guichu",
+    "era": "2021-2026",
+    "meaning": "模拟粉丝识破反串者，把“露出马脚”改成与鸡相关的谐音。",
+    "origin": {
+      "summary": "由蔡徐坤相关二创和反串语境发展，2022站内已有科普投稿。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释明星二创",
+        "识别反串语气"
+      ],
+      "example": "这句话是在套“小黑子露出鸡脚”的格式。",
+      "avoid": [
+        "不用于追着真人辱骂",
+        "不能从一句话判断粉籍或真实动机"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "针对真人",
+      "反串",
+      "贬称"
+    ],
+    "relations": [
+      "mid-chicken-beauty"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-black-fan",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-black-fan-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "作为识别词条收录；不扩写谐音辱骂清单。"
+  },
+  {
+    "id": "recent-macarthur",
+    "term": "五星上将麦克阿瑟评价",
+    "aliases": [
+      "五星评论家"
+    ],
+    "category": "guichu",
+    "era": "2021-2026",
+    "meaning": "伪纪录片用历史或影视画面配虚构点评，营造夸张的权威感。",
+    "origin": {
+      "summary": "2022末“大型纪录片”系列传播，后大量采用AI旁白与《长津湖》演员画面。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释伪纪录片",
+        "创作明确虚构的夸张旁白"
+      ],
+      "example": "这段是“五星评论家”式伪纪录片，点评是作者编的。",
+      "avoid": [
+        "不能当作麦克阿瑟真实名言",
+        "不能把演员画面当历史原片",
+        "事实报道不可伪造权威背书"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "伪造名言",
+      "AI配音"
+    ],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-macarthur",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage",
+          "date"
+        ],
+        "note": "已阅读全文；仅支持本条所述释义、来源背景或站内使用，未声称唯一首创。"
+      }
+    ],
+    "notes": "来源明确说首个创作者不可考；此项仅核验传播模式。",
+    "tags": [
+      "大型纪录片XX传奇",
+      "大型纪录片"
+    ]
+  },
+  {
+    "id": "recent-muscle-jinlun",
+    "term": "肌肉金轮",
+    "aliases": [
+      "金轮"
+    ],
+    "category": "guichu",
+    "era": "2021-2026",
+    "meaning": "把大司马脸部与肌肉形象组合的反差二创称呼。",
+    "origin": {
+      "summary": "2021斗鱼活动已使用“肌肉金轮”，并明确肌肉并非本人真实身体。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释换脸二创",
+        "回顾直播梗"
+      ],
+      "example": "这是肌肉金轮式的换脸反差。",
+      "avoid": [
+        "不要把合成人体当真实照片",
+        "不据合成图评价本人身体"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "合成肖像"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-jinlun",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "尚缺首个站内作品与素材授权链，不确认二创首发者。"
+  },
+  {
+    "id": "recent-hachimi",
+    "term": "哈基米",
+    "aliases": [
+      "哈吉米",
+      "hachimi"
+    ],
+    "category": "acg",
+    "era": "2021-2026",
+    "meaning": "原作语境关联蜂蜜歌；跨圈后常称呼可爱动物，也成为调音音乐的音节符号。",
+    "origin": {
+      "summary": "《赛马娘》东海帝皇的蜂蜜歌，经2022B站调音和2023宠物配乐扩散。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "解释动画来源",
+        "宠物配乐",
+        "调音二创"
+      ],
+      "example": "这段哈基米配乐取的是蜂蜜歌的音节，画面里的猫是后来的搭配。",
+      "avoid": [
+        "不能把“哈基米是猫”写成日语词典释义",
+        "也不要否认宠物义已实际存在",
+        "具体音乐版权需另核"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "recent-mambo",
+      "recent-north-south-beans",
+      "recent-maodie",
+      "recent-cat-meme"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-hachimi",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage",
+          "date"
+        ],
+        "note": "已阅读全文；仅支持本条所述释义、来源背景或站内使用，未声称唯一首创。"
+      }
+    ],
+    "notes": "最早将配乐用于猫视频的作者未知；源义、宠物义、音乐义分开理解。"
+  },
+  {
+    "id": "recent-too-cool",
+    "term": "泰裤辣",
+    "aliases": [
+      "泰酷辣",
+      "太酷啦"
+    ],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "“太酷啦”的谐音，既可夸酷，也常用于模仿夸张自我表达。",
+    "origin": {
+      "summary": "2023王琳凯演唱会讲话片段被B站等平台二创。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "特别的创意",
+        "有意识模仿舞台口吻"
+      ],
+      "example": "把旧电脑改成鱼缸展示机，泰裤辣。",
+      "avoid": [
+        "不能将反讽当真诚赞美",
+        "不要衍生到针对本人身份的辱骂"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "人物模仿"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang23-commercial",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "二手文章支持传播关联，未核到最早二创。"
+  },
+  {
+    "id": "recent-really",
+    "term": "尊嘟假嘟",
+    "aliases": [
+      "尊嘟",
+      "假嘟"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "“真的假的”的可爱化谐音，轻松表达惊讶或怀疑。",
+    "origin": {
+      "summary": "2023宠物表情包和社交平台传播，相关报道列出微博来源线索。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "熟人聊天",
+        "可爱表情包"
+      ],
+      "example": "尊嘟假嘟，今天真的提前放假？",
+      "avoid": [
+        "正式核验需直接问事实",
+        "不要用卖萌语气回应严肃损失"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang23-commercial",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "未取得最早微博原帖；不把宠物图片来源认定为已获授权。"
+  },
+  {
+    "id": "recent-attention-grabber",
+    "term": "显眼包",
+    "aliases": [],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "在人群里特别突出、爱表现或活跃气氛的人；可亲昵，也可批评抢风头。",
+    "origin": {
+      "summary": "方言色彩称呼在2023社交媒体广泛流行。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "团队搞笑时刻",
+        "朋友表演"
+      ],
+      "example": "大家都站好了，就你这个显眼包还在挥手。",
+      "avoid": [
+        "对不熟悉的人可能构成贬低",
+        "不要直接推断性格诊断"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang23-commercial",
+        "claims": [
+          "meaning"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-slang23",
+        "claims": [
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "媒体对平台首创有不同简化说法，不采用唯一首创结论。"
+  },
+  {
+    "id": "recent-mainly-one",
+    "term": "主打一个XX",
+    "aliases": [
+      "主打一个陪伴",
+      "主打的就是一个"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "把某个特点作为自我介绍式重点，常配反差和自嘲。",
+    "origin": {
+      "summary": "2023“主打一个陪伴”等句式流行，后可替换各种特征。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "总结行为",
+        "反差吐槽"
+      ],
+      "example": "参数全没记住，主打一个参与。",
+      "avoid": [
+        "不要用空泛模板替代用户需要的具体内容"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-mainly",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "句式早期使用未精确定位。"
+  },
+  {
+    "id": "recent-gears-of-fate",
+    "term": "命运的齿轮开始转动",
+    "aliases": [
+      "命运的齿轮",
+      "齿轮开始转动"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "回看某个普通瞬间，强调它后来成了转折，也可反差自嘲。",
+    "origin": {
+      "summary": "2023前后对照视频与回忆文案推动这类叙事句式传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "成长回顾",
+        "经历转折",
+        "反转剪辑"
+      ],
+      "example": "那天随手拍下第一条视频，命运的齿轮开始转动。",
+      "avoid": [
+        "不要把巧合写成可证明的因果",
+        "不得编造人物经历来套模板"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-fate",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "相似成句早已见于文艺作品，首创不可由2023流行倒推。"
+  },
+  {
+    "id": "recent-far-ahead",
+    "term": "遥遥领先",
+    "aliases": [],
+    "category": "tech",
+    "era": "2021-2026",
+    "meaning": "模仿产品发布会的强烈领先宣称；既可赞叹，也可反讽。",
+    "origin": {
+      "summary": "关联余承东发布会口头表达，2023科技话题中广泛传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "科技发布会二创",
+        "明显领先的游戏局面"
+      ],
+      "example": "这个离线加载速度，评论区已经开始刷遥遥领先了。",
+      "avoid": [
+        "不能替代性能测量",
+        "不得把营销口号变成产品事实"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "营销事实混淆"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-far-ahead",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "普通成语更早存在；不以2023作为造词年。"
+  },
+  {
+    "id": "recent-dig-dig",
+    "term": "挖呀挖呀挖",
+    "aliases": [
+      "挖呀挖"
+    ],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "借儿歌节奏描绘重复操作或可爱动作，也被改编为各种劳动场景。",
+    "origin": {
+      "summary": "2023幼教唱跳视频带动传播，歌词和教学歌曲本身更早。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "重复动作剪辑",
+        "轻松音乐改编"
+      ],
+      "example": "这个挖土镜头一出来，弹幕就接上了挖呀挖。",
+      "avoid": [
+        "不要把热门演唱者自动当作词曲作者",
+        "不续写整首歌词"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "歌词片段"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang23",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "该来源主要确认年度流行；词曲原始作者与最早传播待单独核验。"
+  },
+  {
+    "id": "recent-start-genshin",
+    "term": "原神，启动",
+    "aliases": [
+      "原神启动",
+      "启动！"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "以夸张仪式感宣布开始玩游戏，也可替换成其他事情的启动口号。",
+    "origin": {
+      "summary": "2023口播片段被二创，随后被部分玩家重新采用。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "游戏开场",
+        "明确的口号模仿"
+      ],
+      "example": "任务清完了，原神，启动。",
+      "avoid": [
+        "不能将使用者一概贴成玩家刻板形象",
+        "无关内容勿刷屏"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "玩家群体标签"
+    ],
+    "relations": [
+      "recent-you-are-right"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-start-genshin",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-start-genshin-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "站内“原版本人”标题未完成身份核验，不能单凭标题判断首发。"
+  },
+  {
+    "id": "recent-subject-three",
+    "term": "科目三",
+    "aliases": [
+      "广西科目三"
+    ],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "网络舞蹈称呼，常见快速脚步、手部动作与特定配乐；在驾考语境仍指道路驾驶考试。",
+    "origin": {
+      "summary": "“广西科目三”舞蹈于2023广泛传播，名称起源有多种冲突说法。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "舞蹈二创",
+        "解释同名歧义"
+      ],
+      "example": "这段说的是舞蹈科目三，不是驾考。",
+      "avoid": [
+        "不把婚礼起源或驾考庆祝故事写成定论",
+        "实际表演按场地与身体条件选择"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-subject-three",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "保留来源分歧；不以流行程度论断艺术价值。"
+  },
+  {
+    "id": "recent-cat-meme",
+    "term": "猫meme",
+    "aliases": [
+      "猫Meme",
+      "猫meme小剧场"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "用猫咪动态素材、音效和字幕演绎生活故事的短视频形式，不是单一猫梗。",
+    "origin": {
+      "summary": "既有网络猫素材经组合叙事，2024在B站形成大量日常和经历类作品。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "生活经历复述",
+        "虚构短剧",
+        "解释视觉语言"
+      ],
+      "example": "这一段用猫meme演了新员工找会议室的过程。",
+      "avoid": [
+        "不要将故事默认当真实自述",
+        "素材可检索不等于可自由商用"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [
+      "素材许可",
+      "故事真实性"
+    ],
+    "relations": [
+      "recent-hachimi"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-cats",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage",
+          "date"
+        ],
+        "note": "已阅读全文；仅支持本条所述释义、来源背景或站内使用，未声称唯一首创。"
+      }
+    ],
+    "notes": "happy猫、香蕉猫等属于素材家族，来源与许可各自核验。"
+  },
+  {
+    "id": "recent-city",
+    "term": "city不city",
+    "aliases": [
+      "好city啊",
+      "City不City"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "把city当形容词，问场景是否都市、时髦、洋气或有气氛。",
+    "origin": {
+      "summary": "2024外国博主旅行对话的语音和句式传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "城市旅行",
+        "夜景",
+        "反差场景"
+      ],
+      "example": "这条夜市街够不够city？",
+      "avoid": [
+        "不是对地区居民素质的评级",
+        "不要用作签证或政策说明"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "流行义与英语city的通常词性不同；B站起点未核验。"
+  },
+  {
+    "id": "recent-hard-control",
+    "term": "硬控我XX秒",
+    "aliases": [
+      "硬控",
+      "被硬控了"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "从游戏控制术语借来，形容内容吸引力强，让人暂时挪不开注意。",
+    "origin": {
+      "summary": "游戏术语跨到观看体验，2024进入年度流行语。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "沉浸片段",
+        "精彩表演",
+        "解压内容"
+      ],
+      "example": "这个机械结构把我硬控了三十秒。",
+      "avoid": [
+        "描述真实强制控制时勿混淆",
+        "夸张时长不当作实际统计"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "跨圈流行不等于游戏术语始于2024。"
+  },
+  {
+    "id": "recent-shuilingling",
+    "term": "水灵灵地XX",
+    "aliases": [
+      "就这么水灵灵地",
+      "水灵灵的"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "为普通动作添活泼或突然的感觉，也可用轻快语气反衬尴尬。",
+    "origin": {
+      "summary": "2024偶像视频中的说法被改写成可替换的动作模板。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "新动态",
+        "轻松自嘲",
+        "动作反差"
+      ],
+      "example": "我就这么水灵灵地坐错了车。",
+      "avoid": [
+        "事故等严肃场合不要用轻快模板淡化影响"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "来源只描述偶像视频背景，不给出未经核实的首发日期。"
+  },
+  {
+    "id": "recent-office-vibe",
+    "term": "班味",
+    "aliases": [
+      "班味儿",
+      "去班味"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "工作疲惫、拘谨和职业惯性在生活中的外显，自嘲意味较强。",
+    "origin": {
+      "summary": "职场经验讨论推动这一比喻流行，2024进入多个词语榜单。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "下班自嘲",
+        "职场日常"
+      ],
+      "example": "一开口就是会议纪要，班味有点重。",
+      "avoid": [
+        "不要用来贬低劳动者外貌",
+        "不能据此诊断健康或心理问题"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "劳动处境"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24-sixth",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "未核验B站最早使用记录。"
+  },
+  {
+    "id": "recent-relaxed-vibe",
+    "term": "松弛感",
+    "aliases": [],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "在压力或公开场面仍显得自然从容的状态。",
+    "origin": {
+      "summary": "2024报道以日常和运动场景解释，词语本身在此前已流行。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "表演状态",
+        "日常交流",
+        "轻松拍摄"
+      ],
+      "example": "这个访谈像朋友聊天，松弛感很足。",
+      "avoid": [
+        "不能要求承压者必须轻松",
+        "不把镜头状态当个人全部生活"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24-sixth",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "没有把2024榜单当首创证据。 用于评价作品气质的扩展义待补具体用例。"
+  },
+  {
+    "id": "recent-little-expert",
+    "term": "小孩哥/小孩姐",
+    "aliases": [
+      "小孩哥",
+      "小孩姐"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "对年纪小却熟练、清醒或表现出成熟能力的孩子的趣味尊称。",
+    "origin": {
+      "summary": "2024报道把该称呼用于技能或表现突出的儿童。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "少年高手",
+        "孩子出色表现"
+      ],
+      "example": "这位小孩姐讲题比我清楚多了。",
+      "avoid": [
+        "不对未成年人施加成人表现压力",
+        "不挖掘或曝光隐私"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "未成年人"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "正文对本词有专门释义段落；只支持该有限含义和报道节点，不证明B站首用。"
+      }
+    ],
+    "notes": "需补B站原始使用样本；不声称2024才首次出现。"
+  },
+  {
+    "id": "recent-greek-god",
+    "term": "古希腊掌管XX的神",
+    "aliases": [
+      "掌管XX的神"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "用虚构神职夸某人在某方面突出，也可夸张自嘲。",
+    "origin": {
+      "summary": "以古希腊神职为比喻的填空句式，2024报道已记录其用法；神话分工不等于该网络句式的造词链。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "夸朋友技能",
+        "自嘲习惯"
+      ],
+      "example": "你就是古希腊掌管找文件的神。",
+      "avoid": [
+        "不能当真实希腊神话知识",
+        "避免把现实族群宗教当嘲弄对象"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24-sixth",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "没有可确证的唯一原帖。"
+  },
+  {
+    "id": "recent-stealth-vibe",
+    "term": "偷感很重",
+    "aliases": [
+      "偷感",
+      "超绝偷感"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "形容谨慎、畏缩或不想被关注的姿态，通常用于自嘲，不等于盗窃。",
+    "origin": {
+      "summary": "2024网络语境将“偷”借作状态描写。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "偷偷练习",
+        "不想被围观",
+        "尴尬姿态"
+      ],
+      "example": "第一次进健身房，走到哪都偷感很重。",
+      "avoid": [
+        "不能据动作指控偷盗",
+        "不羞辱社交困难者"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24-language",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "正文对本词有专门释义段落；只支持该有限含义和报道节点，不证明B站首用。"
+      }
+    ],
+    "notes": "状态隐喻不能用于事实指控。"
+  },
+  {
+    "id": "recent-guaranteed",
+    "term": "包的",
+    "aliases": [
+      "包XX的",
+      "包赢的"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "“保证、肯定”的短答；可扩成“包XX的”，也能用于反讽失败。",
+    "origin": {
+      "summary": "方言与游戏评论相互推动，2024被年度语言报道记录。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "朋友约定",
+        "游戏判断",
+        "轻松接话"
+      ],
+      "example": "今晚一起开黑？包的。",
+      "avoid": [
+        "不把玩笑保证用于价格、收益或交付承诺",
+        "负面词填空可能含嘲讽"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24-language",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "报道的“某博主评论区”未能独立定位，不认定首创者。"
+  },
+  {
+    "id": "recent-gold-content",
+    "term": "含金量还在上升",
+    "aliases": [
+      "含金量上升",
+      "含金量越来越高"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "随着后续事件发生，重新发现某次成绩、作品或判断更有价值。",
+    "origin": {
+      "summary": "2024年度网络用语榜列出该表达；榜单本身不解释这里登记的具体释义。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "比赛回顾",
+        "作品重评",
+        "前后对照"
+      ],
+      "example": "新纪录一出，那场逆风胜利的含金量还在上升。",
+      "avoid": [
+        "不能用梗掩盖评价标准",
+        "确切价值或因果仍需具体依据"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "recent-src-gold",
+        "claims": [
+          "date"
+        ],
+        "note": "中国作家网2024榜单仅列出该表达；只支持榜单时间节点，不支持具体释义。"
+      }
+    ],
+    "notes": "榜单证实流行，不证明最早来源。 现唯一来源只在榜单列名，没有解释价值随事件重新评估的具体含义；保留线索，不作已核事实回答。"
+  },
+  {
+    "id": "recent-hongwen",
+    "term": "红温",
+    "aliases": [
+      "红温了",
+      "温度上来了"
+    ],
+    "category": "esports",
+    "era": "2021-2026",
+    "meaning": "借游戏过热状态描述激动、尴尬或恼怒到脸红；也会被用来挑衅。",
+    "origin": {
+      "summary": "与《英雄联盟》兰博过热机制相连的游戏说法跨圈传播，2024进入流行语报道。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "竞技失误",
+        "自嘲紧张",
+        "轻松反差"
+      ],
+      "example": "又按错快捷键，我自己先红温了。",
+      "avoid": [
+        "不要凭表情断言真实情绪",
+        "对方不适时停止挑衅"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "情绪挑衅"
+    ],
+    "relations": [
+      "recent-po-fang"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang24-language",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "不把官方释义中的“相对中性”理解为任何场合都不会冒犯。"
+  },
+  {
+    "id": "recent-mambo",
+    "term": "曼波",
+    "aliases": [
+      "マンボ",
+      "Manbo"
+    ],
+    "category": "acg",
+    "era": "2021-2026",
+    "meaning": "关联待兼诗歌剧哼唱和Q版形象的音声梗，后进入调音与抽象配音。",
+    "origin": {
+      "summary": "《赛马娘》角色待兼诗歌剧的台词和二创传播；与东海帝皇的哈基米来源不同。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "解释马娘二创",
+        "角色配音",
+        "调音音乐"
+      ],
+      "example": "这段曼波素材指待兼诗歌剧，不能直接认成东海帝皇。",
+      "avoid": [
+        "曼波并非角色正式姓名",
+        "不要把所有动物都解释为原作角色"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [],
+    "relations": [
+      "recent-hachimi",
+      "recent-north-south-beans"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-mambo",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "首条站内二创与具体传播峰值待核。"
+  },
+  {
+    "id": "recent-north-south-beans",
+    "term": "哈基米南北绿豆",
+    "aliases": [
+      "南北绿豆",
+      "哈基米哦南北绿豆"
+    ],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "以空耳音节组成的调音、翻唱和配音模板；通常不在谈真实豆类。",
+    "origin": {
+      "summary": "哈基米相关音节经二创重组，2025B站作品和商业借用均有记录。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "调音音乐",
+        "抽象配音",
+        "解释空耳"
+      ],
+      "example": "这里的南北绿豆是音乐空耳，不是在介绍食材产地。",
+      "avoid": [
+        "不能据空耳教日语",
+        "商业食品同名不改变音乐出处"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "音乐素材许可"
+    ],
+    "relations": [
+      "recent-hachimi",
+      "recent-mambo"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-beans",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-beans-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "每首改编的旋律、音色与作者应分别标注，不笼统归于同一原曲。"
+  },
+  {
+    "id": "recent-skill-gomoku",
+    "term": "技能五子棋",
+    "aliases": [],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "技能五子棋相关喜剧、AI谱曲与拼贴二创的称呼。",
+    "origin": {
+      "summary": "2025相关表演、AI歌曲与二创传播，B站播客已有讨论。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释抽象喜剧",
+        "规则反差",
+        "游戏改编"
+      ],
+      "example": "这局已经不是正常五子棋，是技能五子棋。",
+      "avoid": [
+        "不要把二创规则当标准五子棋规则",
+        "歌曲与原表演不能混为同一作者"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-gomoku",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-gomoku-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "原表演与AI歌曲的先后和作者链尚未完整核验。 棋盘技能机制和说明口吻待原节目核验；2026回顾不能代替观看2025表演。"
+  },
+  {
+    "id": "recent-tier-list",
+    "term": "从夯到拉",
+    "aliases": [
+      "夯到拉",
+      "夯",
+      "拉完了"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "把对象按“夯、顶级、人上人、NPC、拉完了”等档位做主观趣味排名。",
+    "origin": {
+      "summary": "中文网络中的五档趣味排名模板；B站已有专门解释与使用投稿。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "主观排行",
+        "游戏角色或作品讨论"
+      ],
+      "example": "我按个人口味把这些零食从夯到拉排一遍。",
+      "avoid": [
+        "不能把趣味档位当客观测评",
+        "不要用NPC或人上人给现实群体划价值等级"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "人格等级化"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-tier-sina",
+        "claims": [
+          "meaning"
+        ],
+        "note": "全文支持五档顺序、各档含义和主观排名用法；不据此认定唯一源头或起始日期。"
+      },
+      {
+        "source_id": "recent-src-tier-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "投稿元数据支持B站解释视频的存在及发布日期；未观看视频，不据此认定最早出处。"
+      }
+    ],
+    "notes": "五档名称属于常见版本，不代表唯一格式；不认定2025是Tier list概念起点。"
+  },
+  {
+    "id": "recent-best-lamb",
+    "term": "最棒的小羊",
+    "aliases": [
+      "我是最棒的小羊"
+    ],
+    "category": "acg",
+    "era": "2021-2026",
+    "meaning": "借懒羊羊等童年形象，肯定普通人的努力和成长，常用来鼓励自己。",
+    "origin": {
+      "summary": "2025懒羊羊画面与个人经历文案合流成模仿模板。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "日常自我鼓励",
+        "完成小目标"
+      ],
+      "example": "今天把拖了很久的事做完了，我也是最棒的小羊。",
+      "avoid": [
+        "对别人的现实痛苦不要只丢一句模板",
+        "不可把童年IP素材默认视作无版权"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-lamb",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "未核验最早配图文案和B站传播起点。"
+  },
+  {
+    "id": "recent-luffa-soup",
+    "term": "丝瓜汤",
+    "aliases": [
+      "丝瓜汤文学",
+      "喝点丝瓜汤"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "借反复劝喝汤的短剧，指回应者无视对方明确意愿、以“为你好”压过沟通。",
+    "origin": {
+      "summary": "2025一人分饰家庭成员的短视频带动“丝瓜汤”反转和改编。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "分析家庭对话",
+        "识别循环劝说"
+      ],
+      "example": "我在说今天很累，他一直劝我喝汤，这段像丝瓜汤式对话。",
+      "avoid": [
+        "不是丝瓜汤真实医疗功效的证据",
+        "不要据短剧给所有父母贴标签"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "家庭关系",
+      "医疗误读"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-soup",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-gomoku",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "已读报道的对话机制；最早投稿与逐字台词未独立核验。"
+  },
+  {
+    "id": "recent-human-vibe",
+    "term": "活人感",
+    "aliases": [],
+    "category": "tech",
+    "era": "2021-2026",
+    "meaning": "形容表达有具体经历、情绪和不整齐的个性，反感过度模板化或机械化。",
+    "origin": {
+      "summary": "2025流行语讨论把它与AI时代的内容体验联系起来。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "评价创作风格",
+        "修改机械文案"
+      ],
+      "example": "保留这句具体感受，读起来更有活人感。",
+      "avoid": [
+        "评价应针对可观察到的表达风格，不推断创作者身份",
+        "不应伪造经历来制造真实感"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang25",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "这是审美和体验用词。"
+  },
+  {
+    "id": "recent-prefabricated",
+    "term": "预制XX",
+    "aliases": [
+      "预制回复",
+      "预制人生",
+      "预制人"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "把“预制菜”比喻移到内容、生活或反应上，批评套路化和缺少新鲜感。",
+    "origin": {
+      "summary": "2025年度流行语资料收录“预制XX”扩展结构。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "模板内容评价",
+        "固定反应吐槽"
+      ],
+      "example": "每个问题都答同一句，像预制回复。",
+      "avoid": [
+        "真实食品问题与内容比喻要分开",
+        "评价应针对具体内容，不推断创作主体"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "身份贬称"
+    ],
+    "relations": [
+      "recent-human-vibe"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang25",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "“预制人”容易直接贬低他人，识别时可解释，默认不用于称呼真人。"
+  },
+  {
+    "id": "recent-composed-or-rushed",
+    "term": "从从容容，游刃有余",
+    "aliases": [
+      "匆匆忙忙，连滚带爬"
+    ],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "把理想中的从容与现实中的匆忙对照，用来调侃做事状态。",
+    "origin": {
+      "summary": "王世坚旧质询片段经歌曲改编，在2025再次广泛传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "忙乱日常",
+        "计划与现实对比",
+        "音乐二创"
+      ],
+      "example": "计划里从容，实际一路赶车，今天这首歌有画面了。",
+      "avoid": [
+        "不要把改编歌词当原始完整发言",
+        "不要自动附加现实政治立场"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "歌词片段",
+      "政治素材"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-song25",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-slang25",
+        "claims": [
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "未核原质询日期；歌曲改编与原发言分别归属。",
+    "tags": [
+      "没出息"
+    ]
+  },
+  {
+    "id": "recent-check-cards",
+    "term": "我要验牌",
+    "aliases": [
+      "验牌",
+      "牌没有问题"
+    ],
+    "category": "film",
+    "era": "2021-2026",
+    "meaning": "借电影台词要求检查规则、凭证或真假，也可对离谱结果开玩笑。",
+    "origin": {
+      "summary": "来自1991《赌侠Ⅱ之上海滩赌圣》，2026通过二创翻红并进入B站春晚高频弹幕。",
+      "date": "1991",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "游戏随机结果",
+        "核对凭证",
+        "夸张反应"
+      ],
+      "example": "三次都抽到同一张？我要验牌。",
+      "avoid": [
+        "实际质疑要说清依据",
+        "不能用梗断言作弊"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-card-check",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-gala26",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "2026是再传播证据，不是台词产生年份。"
+  },
+  {
+    "id": "recent-real-person",
+    "term": "我是真人",
+    "aliases": [],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "在节目和AI讨论语境中，强调或戏仿“这不是机器生成的”；必须看具体场景。",
+    "origin": {
+      "summary": "2026B站春晚单场统计将其列为高频弹幕之一。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释春晚弹幕",
+        "真人与AI的戏剧反差"
+      ],
+      "example": "这段“我是真人”是弹幕互动，不能据此完成身份认证。",
+      "avoid": [
+        "一句自称不能替代具体语境判断",
+        "账号身份判断不属于该梗的含义"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "recent-src-gala26",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站春晚直播弹幕总数达1.33亿，年轻人发送“啊？”最多：platform_usage,date（full）。统计只证明2026春晚使用，尚未完整核验节目原话与更早梗源；不认定年度弹幕。"
+  },
+  {
+    "id": "recent-sauce-duck",
+    "term": "雪山狐狸酱板鸭",
+    "aliases": [
+      "酱板鸭复仇",
+      "雪山救狐狸",
+      "预制菜复仇"
+    ],
+    "category": "film",
+    "era": "2021-2026",
+    "meaning": "按报恩故事铺垫，突然由不起眼的物品出场复仇，靠身份反转产生笑点。",
+    "origin": {
+      "summary": "2026AI武侠风短剧“雪山救狐狸”及大量替换版本传播。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "解释AI短剧",
+        "编写原创反转",
+        "识别同一叙事模板"
+      ],
+      "example": "故事看着像狐狸报恩，来客却是被留在雪地的行李箱。",
+      "avoid": [
+        "生成剧情要标清虚构",
+        "不可把第三方原片和演员肖像直接当免费素材"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [
+      "AI影像",
+      "素材许可"
+    ],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-duck",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "已阅读全文；仅支持本条所述释义、来源背景或站内使用，未声称唯一首创。"
+      },
+      {
+        "source_id": "recent-src-duck-news",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "2026-03-19全文报道支持短剧反转、替换模板及B站传播；最初品牌投稿和许可链尚未核到。"
+  },
+  {
+    "id": "recent-green-alien-cat",
+    "term": "外星小绿猫",
+    "aliases": [
+      "小绿猫舞"
+    ],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "2026盘点中出现的绿色外星猫形象及舞蹈模仿标签；更细的原作与语义待核。",
+    "origin": {
+      "summary": "2026报道和B站上半年盘点有记录，未确认最初作者和动画来源。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "识别当年盘点提到的标签"
+      ],
+      "example": "这个标题里的外星小绿猫需要结合具体视频确认版本。",
+      "avoid": [
+        "不要凭标签臆造原动画设定或首创者"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "recent-src-green-cat",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-green-cat-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "只取得二手描述和盘点索引；应先补原片、首发记录及不同同名形象的消歧。"
+  },
+  {
+    "id": "recent-chongqing-visa",
+    "term": "重庆落地签",
+    "aliases": [],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "用“入城仪式”比喻重庆机车后座夜景打卡；不是真实出入境签证。",
+    "origin": {
+      "summary": "2026重庆媒体报道及B站上半年盘点有记录。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "解释旅行视频标题",
+        "城市打卡梗"
+      ],
+      "example": "标题说落地签，实际展示的是机车夜景拍摄。",
+      "avoid": [
+        "不得当作签证政策答复",
+        "不为拍摄模仿危险行车动作"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [
+      "签证歧义",
+      "交通模仿"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-chongqing",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-green-cat-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "直接页面打开超时，仅核到可读索引；首创时间未知。"
+  },
+  {
+    "id": "recent-maodie",
+    "term": "圆头耄耋",
+    "aliases": [
+      "耄耋",
+      "圆头猫爹"
+    ],
+    "category": "guichu",
+    "era": "2021-2026",
+    "meaning": "以圆头橘猫形象和“哈气”等反应构成的梗家族；“耄耋”在此不按高龄老人义理解。",
+    "origin": {
+      "summary": "2025猫咪二创与哈基米音乐语境有传播记录，形象来源细节存在社区争议。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "识别猫咪表情包",
+        "解释同字异义"
+      ],
+      "example": "这里说的耄耋是猫咪梗，不是在谈老人年龄。",
+      "avoid": [
+        "不得用作虐待动物的遮掩称呼",
+        "不传播未经证实的猫咪死因或饲养者指控"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "动物伤害语境",
+      "指控未证"
+    ],
+    "relations": [
+      "recent-hachimi"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-maodie",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-maodie-community",
+        "claims": [
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "原视频及连续饲养记录未核；不收录血腥素材、群聊入口或推测性死因。"
+  },
+  {
+    "id": "recent-love-self",
+    "term": "爱你老己",
+    "aliases": [
+      "老己",
+      "爱你，老己"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "把自己叫作“老己”，用朋友式口吻温和地关怀自己。",
+    "origin": {
+      "summary": "2025年末相关报道和B站标题已有记录。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "自我鼓励",
+        "给自己适度奖励"
+      ],
+      "example": "今天按时吃了饭，爱你老己。",
+      "avoid": [
+        "不通过编造经历制造真实感",
+        "不要用自爱口号回避对他人的具体责任"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-love-self",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-love-self-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "没有确定首创记录；年度流行词不构成心理治疗建议。完成小事或奖励自己的例句是原创用法示范，不表示来源提供了使用频率统计。"
+  },
+  {
+    "id": "recent-so-what",
+    "term": "那咋了",
+    "aliases": [
+      "那咋了？"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "用反问表示“不必因此否定自己”或“不在乎该评价”，也可能是拒绝沟通。",
+    "origin": {
+      "summary": "方言短句更早存在，2024以拒绝内耗的短视频用法流行。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "自嘲失败后接话",
+        "面对无关评价"
+      ],
+      "example": "这次没拿第一，那咋了，下次再练。",
+      "avoid": [
+        "不能拿来敷衍真实损失或合理质询",
+        "需看双方是否接受这种语气"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-naza",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "不确定最早平台和作者；普通反问与流行模板应消歧。"
+  },
+  {
+    "id": "recent-bella-warden",
+    "term": "枝江典狱长",
+    "aliases": [
+      "地狱管家婆"
+    ],
+    "category": "vtuber",
+    "era": "2021-2026",
+    "meaning": "对A-SOUL贝拉严格督促队友这一节目形象的夸张称呼。",
+    "origin": {
+      "summary": "贝拉管零食等公开直播谈话衍生的粉丝玩笑，后来官方剪辑也使用。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "A-SOUL成员互动",
+        "贝拉相关切片"
+      ],
+      "example": "这段又是拉姐督促大家，标题用了枝江典狱长。",
+      "avoid": [
+        "只限已知角色节目语境",
+        "不可当作真实囚禁或虐待指控"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "真人角色界限"
+    ],
+    "relations": [
+      "recent-bella-captain"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-asoul-year",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "来源完整叙述该梗及B站切片语境；未指定首条评论日期。"
+  },
+  {
+    "id": "recent-little-ava",
+    "term": "XX小向晚",
+    "aliases": [
+      "小向晚",
+      "害羞小向晚"
+    ],
+    "category": "vtuber",
+    "era": "2021-2026",
+    "meaning": "以某种状态加“小向晚”命名向晚切片的二创标题家族。",
+    "origin": {
+      "summary": "“害羞小向晚”等B站剪辑逐渐形成系列标题格式。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "向晚直播切片",
+        "粉丝二创命名"
+      ],
+      "example": "今天的剪辑可以叫认真小向晚。",
+      "avoid": [
+        "不要依据标题推断中之人性格或生活",
+        "避免把别人的切片冒充官方"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-asoul-year",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "条目只解释系列命名，不认定每条同名作品的作者或先后。"
+  },
+  {
+    "id": "recent-wenjing-solo",
+    "term": "文静千里走单骑",
+    "aliases": [
+      "文静单骑",
+      "千里走单骑（文静）"
+    ],
+    "category": "vtuber",
+    "era": "2021-2026",
+    "meaning": "围绕文静向公司争取资源的社区故事的称呼；事件内情未证实。",
+    "origin": {
+      "summary": "2021末至2022的社区叙事与报道传播了该称呼；事件内情的报道有分歧。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "识别文静历史切片",
+        "解释国V社区叙事"
+      ],
+      "example": "这里的千里走单骑是粉丝对一段争取资源故事的命名。",
+      "avoid": [
+        "不能把粉丝叙事当经过独立调查的公司事实",
+        "不传播中之人身份、行程细节或个人指控"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "公司纠纷",
+      "中之人隐私",
+      "未证指控"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-wenjing-story",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-wenjing-caution",
+        "claims": [
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-wenjing-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "BB姬在2022报道中明确称相关企划传闻真实性存疑；记录称呼，不裁定劳动纠纷。"
+  },
+  {
+    "id": "recent-galactic-bat",
+    "term": "银河球棒侠",
+    "aliases": [
+      "银河棒球侠"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "《崩坏：星穹铁道》开拓者的搞怪称号，社区也常写成“银河棒球侠”。",
+    "origin": {
+      "summary": "游戏主角的自称进入玩家讨论和B站二创，2023站内投稿已有记录。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "星铁剧情讨论",
+        "开拓者二创",
+        "物理主角展示"
+      ],
+      "example": "银河球棒侠这一棍，给战斗收了尾。",
+      "avoid": [
+        "先区分主角称号与同名活动",
+        "不要把同人剧情当官方设定"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [
+      "recent-trash-literature"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-sr-nicknames",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-sr-bat-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "首版对话未完整核验；球棒侠与棒球侠可用于检索，但不要自动替换所有正式活动名。"
+  },
+  {
+    "id": "recent-trash-literature",
+    "term": "垃圾桶文学",
+    "aliases": [],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "星铁角色与垃圾桶互动产生的怪趣味文本及相关二创家族。",
+    "origin": {
+      "summary": "游戏内可互动垃圾桶形成玩家话题，后有B站“王之一桶”等创作。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "星铁地图探索",
+        "垃圾桶主题同人",
+        "官方玩梗"
+      ],
+      "example": "先把战斗任务交了，再去读这一片的垃圾桶文学。",
+      "avoid": [
+        "二创台词与游戏正文要区分",
+        "不要把所有垃圾桶角色都称为主角"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [
+      "recent-galactic-bat"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-sr-trash",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-sr-trash-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-sr-nicknames",
+        "claims": [
+          "meaning"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "“垃圾桶之王”亦是主角自称或作品角色标签，需结合具体作品消歧。",
+    "tags": [
+      "垃圾桶之王（星铁）",
+      "王之一桶"
+    ]
+  },
+  {
+    "id": "recent-why-not-buy",
+    "term": "既见未来，为何不Buy",
+    "aliases": [
+      "既见未来，为何不拜",
+      "为何不buy"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "用“拜”与英语buy谐音，把黑神话宣传片台词改成想购买或支持作品的玩笑。",
+    "origin": {
+      "summary": "2021《黑神话：悟空》宣传片台词经玩家改写，B站已有对应解释视频。",
+      "date": "2021",
+      "precision": "year",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "游戏宣传片讨论",
+        "自愿消费的玩笑",
+        "初音未来双关二创"
+      ],
+      "example": "演示看完心动了，为何不Buy还得先看看配置。",
+      "avoid": [
+        "不把粉丝口号当产品质量结论",
+        "不对他人施加必须购买的压力"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-game-memes21",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-buy-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "原片台词与购买谐音分层解释；不采当时文章对未发布剧情的猜测。"
+  },
+  {
+    "id": "recent-guangzhi-save",
+    "term": "广智救我",
+    "aliases": [
+      "广智铠甲合体"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "玩家遇险时呼唤广智变身救场的戏称，依赖其独立血条等战斗机制。",
+    "origin": {
+      "summary": "《黑神话：悟空》2024发售后流行，8月25日已有B站热搜报道。",
+      "date": "2024",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "黑神话战斗实况",
+        "失败自嘲",
+        "救场二创"
+      ],
+      "example": "血条见底了，广智救我。",
+      "avoid": [
+        "别把变身说成另一个玩家自动救援",
+        "攻略应写清版本和操作条件"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [
+      "recent-i-will-help"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-guangzhi",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "媒体正文支持玩法、梗义与B站传播；未认定首喊者。"
+  },
+  {
+    "id": "recent-i-will-help",
+    "term": "我来助你",
+    "aliases": [
+      "黄风大圣我来助你"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "黑神话语境下常指黄风大圣跃下助战的画面，后用于气势十足或反差式帮忙。",
+    "origin": {
+      "summary": "来自《黑神话：悟空》黄金国支线，2024形成B站动画和表情包二创。",
+      "date": "2024",
+      "precision": "year",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "黄风大圣相关片段",
+        "援助动作梗图",
+        "朋友协作"
+      ],
+      "example": "你负责排版，我来助你查错字。",
+      "avoid": [
+        "普通日常句不必都解释成梗",
+        "不要拿助战梗替代真正求助回应"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [
+      "recent-guangzhi-save"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-game-memes24",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-help-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "相关媒体正文与站内解释索引相符；未复制完整台词段落。"
+  },
+  {
+    "id": "recent-ban-magnus",
+    "term": "为什么不ban猛犸",
+    "aliases": [
+      "不ban猛犸",
+      "猛犸不上ban但我要上班"
+    ],
+    "category": "esports",
+    "era": "2021-2026",
+    "meaning": "追问Dota2关键比赛为何不禁用猛犸英雄，后借指漏掉显而易见的应对。",
+    "origin": {
+      "summary": "2021TI10决赛后，围绕LGD对Team Spirit选人决策产生的观赛情绪梗。",
+      "date": "2021",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "TI10复盘",
+        "Dota弹幕",
+        "事后反思模板"
+      ],
+      "example": "又被同一个套路抓到，弹幕开始问为什么不ban猛犸。",
+      "avoid": [
+        "赛事输赢不能归结成单一梗",
+        "不可据此指控假赛或骚扰选手家人"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "选手攻击",
+      "未证假赛指控"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-mammoth",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-mammoth-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "ban在这里是比赛禁用；精确日期涉及赛地与北京时间差异，本条只记年份。"
+  },
+  {
+    "id": "recent-no-armor-deagle",
+    "term": "不听不听，无甲沙鹰",
+    "aliases": [
+      "无甲沙鹰"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "CS语境下调侃经济不足仍执意买沙漠之鹰、却不买护甲的操作。",
+    "origin": {
+      "summary": "2020B站专栏标题及登记资料已有相关记录；后续CS2持续使用需另补具体用例。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "游戏经济决策",
+        "朋友约定的自嘲",
+        "失败集锦"
+      ],
+      "example": "这一把还想无甲沙鹰？先和队友统一经济。",
+      "avoid": [
+        "不能把玩笑当通用最优打法",
+        "不以段位或一句梗辱骂玩家"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-deagle",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-deagle-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "本分片仅作检索导航，2020记录不证明近期持续传播；首创日期与后续CS2用例仍待核。"
+  },
+  {
+    "id": "recent-zywoo-musicbox",
+    "term": "载物的音乐盒",
+    "aliases": [
+      "载物音乐盒",
+      "豆豆音乐盒"
+    ],
+    "category": "esports",
+    "era": "2021-2026",
+    "meaning": "CS社区对apEX场上夸张反应的戏称；具体触发场景待原片核验。",
+    "origin": {
+      "summary": "CS电竞报道将apEX与该称呼联系；2023B站已有解释视频的标题记录，尚未核完整动作原片。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "CS职业赛观赛",
+        "apEX与ZywOo相关切片"
+      ],
+      "example": "镜头里的apEX又有夸张反应，评论提到了“载物的音乐盒”。",
+      "avoid": [
+        "不要误认实际做动作的人是ZywOo",
+        "比赛表情不能证明场下人格"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "选手人格推断"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-musicbox",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-musicbox-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "载物通常指ZywOo，音乐盒在此指apEX的反应；首次解说和完整动作原片尚未核验。 所引文字没有证明动作总由ZywOo得分触发，也没有核验“自动播放”的具体原片。"
+  },
+  {
+    "id": "recent-ccb-template",
+    "term": "XX笑传之CCB",
+    "aliases": [
+      "电棍笑传之CCB",
+      "踩踩背",
+      "CCB"
+    ],
+    "category": "guichu",
+    "era": "2021-2026",
+    "meaning": "以“笑传之”加CCB首字母结构做题名或回复的无厘头替换模板。",
+    "origin": {
+      "summary": "由《豌豆笑传》踩踩背片段及电棍二创衍生；2025再次扩散，二创简介保留2023原稿线索。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "电棍二创标题识别",
+        "缩写替换",
+        "抽象游戏评论"
+      ],
+      "example": "烘焙笑传之搓搓饼。",
+      "avoid": [
+        "不要把CCB一律解释为辱骂",
+        "不以“梗规则”围攻不会用的人",
+        "避免借无障碍符号嘲笑残障者"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "粗俗变体",
+      "残障符号误用"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-ccb",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-ccb-bili",
+        "claims": [
+          "origin",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "2023-07-13仅为二创简介提供的原投稿线索，未据此填确定起源日期；2025不是已核实的首创年。"
+  },
+  {
+    "id": "recent-wuwa-formula",
+    "term": "鸣潮公式",
+    "aliases": [
+      "秧秧公式",
+      "后方是这样的"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "以“一方只要做某事，另一方要考虑的很多”形成轻重倒置的反讽句式。",
+    "origin": {
+      "summary": "2024《鸣潮》剧情对话在玩家中引发争议并被改写成模板。",
+      "date": "2024",
+      "precision": "year",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "游戏文案讨论",
+        "工作分工反讽",
+        "解释模板句"
+      ],
+      "example": "排练者只要背熟台词，遥控器要考虑的可就多了。",
+      "avoid": [
+        "不要自动判断说话者真认同轻视劳动的观点",
+        "不将文案争议升级为玩家群体辱骂"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "劳动轻视反讽",
+      "游戏圈对立"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-game-memes24",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-wuwa-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "原句、反讽改写与普通分工陈述应分开；不引用完整原台词。"
+  },
+  {
+    "id": "recent-shawarma",
+    "term": "沙威玛之歌",
+    "aliases": [],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "《沙威玛传奇》主题音乐及其魔性中文配音衍生的翻唱、调音和经营游戏梗。",
+    "origin": {
+      "summary": "2024游戏与配乐传播，B站出现多种相关二创。",
+      "date": "2024",
+      "precision": "year",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "音乐区调音",
+        "经营游戏实况",
+        "食物名称消歧"
+      ],
+      "example": "店还没开，弹幕已经开始点沙威玛之歌了。",
+      "avoid": [
+        "沙威玛也是现实食物，不是只有游戏含义",
+        "不复刻整段歌词或默认音源可商用"
+      ]
+    },
+    "lifecycle": "periodic",
+    "sensitivity": [
+      "音乐版权"
+    ],
+    "relations": [],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-game-memes24",
+        "claims": [
+          "meaning",
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "这里只确认游戏配乐梗义和2024传播；主题曲最初作者与授权链须单独查询。",
+    "tags": [
+      "沙威玛传奇",
+      "沙威玛"
+    ]
+  },
+  {
+    "id": "recent-ning-wall",
+    "term": "对宁谈墙",
+    "aliases": [
+      "对宁弹墙"
+    ],
+    "category": "esports",
+    "era": "2021-2026",
+    "meaning": "把“对牛弹琴”改写成围绕Ning与王多多“城墙”比喻争议的谐音评价。",
+    "origin": {
+      "summary": "2024英雄联盟世界赛期间的解说与直播争议被观众概括成此词。",
+      "date": "2024",
+      "precision": "year",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "S14历史视频",
+        "解说争议复盘",
+        "识别谐音"
+      ],
+      "example": "这段视频标题的对宁谈墙，指的是那次城墙比喻争论。",
+      "avoid": [
+        "先还原发言上下文",
+        "不能以梗断言某人智力、学历或职业能力"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "真人贬损",
+      "主播争议"
+    ],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-game-memes24",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-ning-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "只解释指代与传播，不采盘点文章的站队或人格评价。"
+  },
+  {
+    "id": "recent-wenjing-aunt",
+    "term": "文静阿姨",
+    "aliases": [],
+    "category": "vtuber",
+    "era": "2021-2026",
+    "meaning": "在相应虚拟主播社区中指文静的称呼；“阿姨”不等于已核验年龄。",
+    "origin": {
+      "summary": "社区解释页有此称呼，但未找到可靠材料说明最初命名原因。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
+    },
+    "usage": {
+      "contexts": [
+        "虚拟主播昵称消歧",
+        "文静相关评论"
+      ],
+      "example": "这里的文静阿姨是主播称呼，不是亲属关系。",
+      "avoid": [
+        "不要推断中之人年龄、婚姻或亲属关系",
+        "不把同名普通人关联到虚拟主播"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "年龄推断",
+      "中之人隐私"
+    ],
+    "relations": [
+      "recent-wenjing-solo"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-wenjing-aunt",
+        "claims": [
+          "meaning"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "原生称呼时间、命名理由及站内昵称用例尚缺原始直播记录；文静在B站活动不等于每个昵称都已核清。不采用解释站对公司纠纷的武断归因。"
+  },
+  {
+    "id": "recent-bella-captain",
+    "term": "A-SOUL队长的含金量",
+    "aliases": [
+      "队长的含金量（贝拉）"
+    ],
+    "category": "vtuber",
+    "era": "2021-2026",
+    "meaning": "粉丝在贝拉展示舞蹈或队长作用时使用的赞叹。",
+    "origin": {
+      "summary": "A-SOUL初期的队长与舞蹈担当设定，经直播表现成为社区固定夸法。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "贝拉舞蹈剪辑",
+        "团队合作片段"
+      ],
+      "example": "这个收尾动作稳，队长的含金量又体现了。",
+      "avoid": [
+        "不借夸一人贬低其他成员",
+        "不把节目角色等同全部现实劳动分工"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [],
+    "relations": [
+      "recent-bella-warden",
+      "recent-gold-content"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-asoul-year",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      }
+    ],
+    "notes": "完整专栏记录了此称呼及B站直播切片语境；未声称贝拉首创“含金量”这一通用词。"
+  },
+  {
+    "id": "recent-will-thank",
+    "term": "我真的会谢",
+    "aliases": [
+      "真的会谢"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "借“谢”表达无语、厌烦或被折腾到的感受，通常不是真心致谢。",
+    "origin": {
+      "summary": "2022年语言年度报道把它归于微博用语，明确与旅游英语视频中的“栓Q”有不同来源；两者后来合流成“我真的栓Q”。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "吐槽小插曲",
+        "解释反讽感谢"
+      ],
+      "example": "文件刚改完又收到新版需求，我真的会谢。",
+      "avoid": [
+        "正式致谢时避免反讽造成误读",
+        "不能把报道中的微博来源概括成已确认的全网首创者"
+      ]
+    },
+    "lifecycle": "classic",
+    "sensitivity": [],
+    "relations": [
+      "recent-shuanq"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-slang22",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "“栓Q”词群段落分别解释微博表达“我真的会谢”、旅游英语视频“栓Q”和二者合流；没有给首发账号及B站早期用例。"
+      }
+    ],
+    "notes": "释义和不同源关系有全文报道；尚缺原微博与B站最早用例，2022是报道锚点，不当成确定造词年。"
+  },
+  {
+    "id": "extra-hmm-scream",
+    "term": "哼哼啊啊啊",
+    "aliases": [
+      "哼哼啊啊啊啊啊",
+      "嗯哼哼啊啊啊"
+    ],
+    "category": "guichu",
+    "era": "2021-2026",
+    "meaning": "模仿夸张叫声的文字或音效梗，常与目力先辈的拼贴画面关联，也泛用于失控、惊叫或反差剪辑。",
+    "origin": {
+      "summary": "站内考据明确常见目力画面和叫声音轨属于后期拼接，不是野兽先辈原片同一片段的完整原声。现有材料未证实音轨的确切原始出处。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "识别拼贴音效",
+        "解释夸张叫声弹幕"
+      ],
+      "example": "画面和叫声是后配组合，不能据此认定原角色说过这些声音。",
+      "avoid": [
+        "不要把音轨误署给画面人物。",
+        "非相关视频、严肃求助或真实惊恐场景不刷此句。"
+      ]
+    },
+    "lifecycle": "contextual",
+    "sensitivity": [
+      "成人来源",
+      "真人音画错配"
+    ],
+    "relations": [
+      "extra-yajusenpai"
+    ],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "extra-src-bili-inmu-guide",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "2021年站内解释音画拼接。"
+      }
+    ],
+    "notes": "当前索引按2021年已核解释页归档，不表示梗在2021年诞生。仍缺原音轨、首次合成作品和更早中文用例；目力先辈是相关视觉形态，不等于全部叫声都来自同一素材。",
+    "tags": [
+      "目力先辈"
+    ]
+  }
+]

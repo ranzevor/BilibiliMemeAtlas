@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "version": "0.1.0",
+  "knowledge_cutoff": "2026-10-27",
+  "language": "zh-CN",
+  "coverage_start": "2009",
+  "coverage_mode": "curated-historical-catalogue",
+  "year_interpretation": "era为索引时期，origin.date为其summary明确说明的起源节点；不得互换",
+  "license_status": "MIT",
+  "license_scope": "project-owned-material-only",
+  "third_party_rights": "retained-by-respective-rightsholders"
+}
