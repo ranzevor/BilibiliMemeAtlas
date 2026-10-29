@@ -2,6 +2,8 @@
 
 适用风险包括不可信资料诱导执行、越界读写、恶意更新提案、数据泄漏、归档篡改、目录替换竞态和恢复失败。
 
+可通过 [GitHub 私密漏洞报告](https://github.com/ranzevor/BilibiliMemeAtlas/security/advisories/new)提交最小复现、受影响版本和影响范围。该入口需要登录 GitHub；也可使用以下安全邮箱。
+
 若发现执行外部资料中的命令、越出技能目录读取、数据来源泄漏、恶意URL或发行物被篡改，请将最小复现、影响文件和版本发送给维护者：ranzevor@gmail.com。
 
 Report security vulnerabilities privately to ranzevor@gmail.com.

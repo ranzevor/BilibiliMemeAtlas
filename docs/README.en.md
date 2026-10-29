@@ -3,23 +3,47 @@
 
 # BilibiliMemeAtlas
 
-A Chinese-first catalogue for historical Bilibili memes, danmaku language, remix material, ACG, games and esports, livestream culture, and expressions that travel across communities. The offline corpus records meanings, aliases, transmission relationships, usage boundaries, and source indexes. Precise provenance and additions still require reading the relevant public sources. Runtime and development checks use the Python 3.10+ standard library.
+An [Agent Skills](https://agentskills.io/specification) package for AI agents, with a Chinese-first catalogue for historical Bilibili memes, danmaku language, remix material, ACG, games and esports, livestream culture, and expressions that travel across communities. The offline corpus records meanings, aliases, transmission relationships, usage boundaries, and source indexes. Precise provenance and additions still require reading the relevant public sources. Runtime and development checks use the Python 3.10+ standard library.
 
-The current project version is recorded in [`references/metadata.json`](../references/metadata.json), and the Skill name is `bilibili-meme-atlas`. This is not a census of every Bilibili meme, an account-interaction tool, a video downloader, or an unattended scraper.
+The Skill name is `bilibili-meme-atlas`. Its version is recorded in [`references/metadata.json`](../references/metadata.json).
 
-## Project status and boundaries
+## Quick start
 
-Maturity is **0.x / pre-1.0**. The project is for users and maintainers who need offline lookup, evidence-aware explanation, and maintainable historical Bilibili meme data. The acceptance baseline is: deterministic projections match their inputs; project and corpus validation passes; the complete behavioral test suite passes; archives rebuild deterministically and verify against the source tree; factual lookup excludes `candidate` records by default; and the repository does not bundle third-party complete works without an applicable right to do so. Compatibility and breaking-change handling are described in [Compatibility (Chinese)](COMPATIBILITY.md).
+Send this prompt to your agent:
 
-In scope are offline lookup, catalogue maintenance, public-source checking, deterministic archives, and local install/recovery. Account actions, video downloading, unattended scraping, real-time popularity monitoring, and redistribution of third-party media are out of scope. Source loss, `partial`/`candidate` evidence, fixed platform endpoint availability, and changes in third-party rights remain explicit maintenance risks. Runtime remains CPython 3.10+ standard library only.
+```text
+Read and follow this installation guide to install bilibili-meme-atlas for the agent I am currently using:
+https://raw.githubusercontent.com/ranzevor/BilibiliMemeAtlas/main/AGENT_INSTALL.md
+Use the current project by default. Follow this host's supported installation and loading mechanism, then verify one offline lookup.
+```
+
+Once installed, give the agent a task in natural language:
+
+```text
+Use bilibili-meme-atlas to explain “爷青回”, its common contexts, and the sources recorded in the corpus.
+```
+
+```text
+This video recreates a childhood game scene in its remake. Use bilibili-meme-atlas to write three natural, short danmaku comments.
+```
+
+```text
+Use bilibili-meme-atlas to trace the original material, remix techniques, and transmission of “金坷垃”. Cite sources supporting each claim.
+```
+
+The agent loads `SKILL.md` for the task, then reads the scripts and resources it needs. The [Agent installation guide (Chinese)](../AGENT_INSTALL.md) covers release verification, host-specific destinations, and first-use checks. See [local lifecycle](INSTALL.en.md) for upgrades, removal, and recovery.
+
+## Scope
+
+In scope are offline lookup, catalogue maintenance, public-source checking, deterministic archives, and local installation/recovery. Account actions, video downloading, unattended scraping, real-time popularity monitoring, and redistribution of third-party media are out of scope. Compatibility and versioning rules are described in [Compatibility (Chinese)](COMPATIBILITY.md).
 
 Most corpus and maintenance documentation is Chinese-first. Links below are marked when no English full-text counterpart is provided.
 
 [中文](../README.md) · [Skill](../SKILL.md) · [Catalogue (Chinese)](../references/catalog.md) · [History (Chinese)](../references/history-map.md) · [Year index (Chinese)](../references/history-index.md) · [Sources (JSON; Chinese fields)](../references/sources.json) · [Usage (Chinese)](../references/usage.md) · [Installation](INSTALL.en.md) · [Maintenance (Chinese)](MAINTENANCE.md) · [Verification (Chinese)](VERIFICATION.md) · [Release bytes (Chinese)](RELEASING.md) · [Rights](../CONTENT_RIGHTS.md)
 
-## Quick lookup
+## Script interface
 
-Replace `SKILL_DIR` with this project directory. Keep the quotes when the path contains spaces; the commands can run from another working directory.
+These commands are for agents and maintenance tools. `SKILL_DIR` is the actual installed skill directory. Keep the quotes when the path contains spaces; the commands can run from another working directory.
 
 ```bash
 python3 "SKILL_DIR/scripts/atlas.py" search '爷青回'

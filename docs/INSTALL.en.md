@@ -1,4 +1,6 @@
-# Release verification and local lifecycle
+# Skill installation and local lifecycle
+
+Start with the [README prompt](README.en.md#quick-start) or the [Agent installation guide (Chinese)](../AGENT_INSTALL.md). This page documents release verification and the directory lifecycle.
 
 Use only the versioned `bilibili-meme-atlas-vX.Y.Z.zip` asset from a published release. A hosting provider's generated source archive is not the deterministic Skill archive. Bootstrap also requires a source checkout at the exact repository and resolved tag commit that passed the installable-release check; run `scripts/install.py` from that checkout, never from an archive extracted before verification. Before installation, complete the checks in [RELEASING.md](RELEASING.md): the repository, resolved tag target, release notes, asset names, sizes, and trusted SHA-256 digests must match the approved local release object.
 
@@ -16,6 +18,28 @@ python3 "$SKILL_DIR/scripts/install.py" install "$ARCHIVE" \
 ```
 
 The fixed target is `$PARENT/bilibili-meme-atlas`. Installation verifies the archive digest, member boundary, complete project contract, and deterministic projections before replacing that target.
+
+## Host discovery and use
+
+The [Agent installation guide (Chinese)](../AGENT_INSTALL.md) provides the complete agent-executed flow. Agent Skills specifies the format inside a skill directory. Discovery locations, project or user scope, reload steps, and explicit invocation syntax belong to the host.
+
+Choose `--parent` from the current host's documentation. A host supporting project-scoped `.agents/skills` can use:
+
+```text
+<project>/.agents/skills/bilibili-meme-atlas/
+├── SKILL.md
+├── scripts/
+├── references/
+└── … (all other files from the complete release)
+```
+
+Confirm that the host discovers and loads the installed skill, then use a natural-language request:
+
+```text
+Use bilibili-meme-atlas to explain “金坷垃”, appropriate usage, and the sources recorded in the local corpus.
+```
+
+The host may also select the skill from a matching task description. Verify directory installation, host discovery, and task completion separately. Follow the host's reload or new-session instructions when needed. See [compatibility (Chinese)](COMPATIBILITY.md#agent-skills-与宿主适配) for the optional `agents/openai.yaml` adapter.
 
 ## Identity-bound upgrade or rollback
 

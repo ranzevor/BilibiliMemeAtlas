@@ -55,8 +55,8 @@ EXPECTED_INTERFACE = {
     "icon_large": "assets/icon.png",
 }
 PROJECT_FILES = frozenset("""
-.gitattributes .gitignore CODE_OF_CONDUCT.md CONTENT_RIGHTS.md CONTRIBUTING.md LICENSE README.md SECURITY.md SKILL.md
-.github/ISSUE_TEMPLATE/bug.yml .github/ISSUE_TEMPLATE/entry.yml .github/pull_request_template.md
+.gitattributes .gitignore AGENT_INSTALL.md CODE_OF_CONDUCT.md CONTENT_RIGHTS.md CONTRIBUTING.md LICENSE README.md SECURITY.md SKILL.md
+.github/dependabot.yml .github/ISSUE_TEMPLATE/bug.yml .github/ISSUE_TEMPLATE/entry.yml .github/pull_request_template.md
 .github/workflows/local-lifecycle-verify.yml .github/workflows/release-byte-verify.yml .github/workflows/verify.yml
 agents/openai.yaml assets/cover.webp assets/icon.png
 docs/COMPATIBILITY.md docs/DEPENDENCIES.md docs/INSTALL.md docs/INSTALL.en.md docs/MAINTENANCE.md docs/README.en.md

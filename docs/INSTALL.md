@@ -1,4 +1,6 @@
-# 本地归档、安装、升级与恢复
+# Skill 安装与本地生命周期
+
+快速入口见 [README](../README.md#快速开始)，供 Agent 执行的完整流程见 [Agent 安装指南](../AGENT_INSTALL.md)。本页提供发行核对、归档和目录生命周期接口。
 
 ## 从已发布版本安装
 
@@ -31,6 +33,28 @@ python3 scripts/install.py install /已有目录/bilibili-meme-atlas.zip \
 ```
 
 安装器先核对完整归档摘要，再限制成员根目录、路径、类型、数量、逐文件大小和总展开大小。它拒绝绝对路径、路径穿越、控制字符、Windows 保留名、符号链接、特殊文件、大小写冲突、未登记文件和缺少文件。内容在同一父目录暂存并通过完整项目校验后，才替换固定目标。
+
+## 宿主发现与调用
+
+给 Agent 的完整安装步骤见 [Agent 安装指南](../AGENT_INSTALL.md)。Agent Skills 规定技能目录内的格式；实际发现目录、安装范围、刷新方式和显式调用语法由宿主决定。
+
+按当前宿主文档选择 `--parent`。例如，支持项目级 `.agents/skills` 的宿主可使用：
+
+```text
+<项目>/.agents/skills/bilibili-meme-atlas/
+├── SKILL.md
+├── scripts/
+├── references/
+└── …（完整发行中的其余文件）
+```
+
+完成安装后，确认宿主实际发现并加载了技能，再用自然语言调用：
+
+```text
+使用 bilibili-meme-atlas 解释“金坷垃”的含义和合适用法，并核对本地来源。
+```
+
+宿主也可按技能描述为匹配的任务选择该技能。安装成功、宿主发现与实际任务完成分别核对；需要刷新或新会话时，按当前宿主的步骤处理。`agents/openai.yaml` 的适配范围见[兼容性](COMPATIBILITY.md#agent-skills-与宿主适配)。
 
 ## 身份绑定的升级
 

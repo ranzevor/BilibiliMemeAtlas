@@ -14,9 +14,9 @@ The object-level registry is [`references/rights.json`](references/rights.json).
 
 - `references/sources.json` 中的标题、发布方、日期和 URL 用于定位外部资料。项目许可不覆盖链接的新闻、视频、弹幕、配音、音乐、歌词、图片、人物肖像或第三方创作。
 - 梗名、短台词和作品名用于识别、说明与索引；项目许可不转授这些外部表达、人物形象、商标或音视频素材本身的权利。
-- “哔哩哔哩”及相关标识的商标权不由本项目许可。本项目描述 B站文化，不表示与平台官方存在关联。
+- “哔哩哔哩”及相关标识的商标权由相应权利人保留。
 
-Source titles, publishers, dates, and URLs identify external material. The project license does not cover linked articles, videos, comments, dubbing, music, lyrics, images, portraits, third-party creations, characters, or trademarks. Bilibili-related names identify the subject matter and do not imply official affiliation.
+Source titles, publishers, dates, and URLs identify external material. The project license does not cover linked articles, videos, comments, dubbing, music, lyrics, images, portraits, third-party creations, characters, or trademarks.
 
 ## 收录范围 / Inclusion boundary
 

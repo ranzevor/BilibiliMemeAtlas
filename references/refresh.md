@@ -120,5 +120,5 @@ python3 scripts/verify.py
 ## 平台资料
 
 - [B站开放平台文档](https://open.bilibili.com/doc)说明正式开发者接口；本项目不申请账号权限。
-- [公开热门列表端点的社区文档](https://github.com/pskdje/bilibili-API-collect/blob/main/docs/video_ranking/popular.md)只用于说明可尝试的免登录读取端点，不构成服务等级保证。
+- [公开热门列表端点的社区文档](https://github.com/pskdje/bilibili-API-collect/blob/main/docs/video_ranking/popular.md)说明可尝试的免登录读取端点。
 - 原发布页、创作者公开说明和有日期的同时期报道按实际读取范围逐条登记；项目不复制未获许可的媒体素材。

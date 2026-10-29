@@ -236,7 +236,7 @@ class ProjectContractTests(unittest.TestCase):
     def test_user_facing_docs_do_not_embed_release_sha256_values(self):
         concrete = re.compile(r"(?<![A-Za-z0-9])[a-f0-9]{64}(?![A-Za-z0-9])")
         paths = [ROOT / name for name in (
-            "README.md", "SKILL.md", "CONTENT_RIGHTS.md", "CONTRIBUTING.md",
+            "README.md", "SKILL.md", "AGENT_INSTALL.md", "CONTENT_RIGHTS.md", "CONTRIBUTING.md",
             "CODE_OF_CONDUCT.md", "SECURITY.md",
         )]
         paths.extend(sorted((ROOT / "docs").glob("*.md")))
@@ -286,7 +286,6 @@ class ProjectContractTests(unittest.TestCase):
                 with self.subTest(path=relative, target=target):
                     self.assertTrue((path.parent / target).resolve().is_file())
         english = (ROOT / "docs" / "README.en.md").read_text(encoding="utf-8")
-        self.assertIn("0.x / pre-1.0", english)
         for label in ("Catalogue (Chinese)", "Maintenance (Chinese)",
                       "Verification (Chinese)", "Dependencies (Chinese)"):
             self.assertIn(label, english)
@@ -322,7 +321,15 @@ class ProjectContractTests(unittest.TestCase):
                 else:
                     self.assertIn("runs-on: ubuntu-24.04", text)
                 self.assertIn('python: ["3.10", "3.13"]', text)
-                self.assertIn("actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0", text)
+                actions = re.findall(
+                    r"^[ \t]*(?:-[ \t]+)?uses:[ \t]*(\S+)(?:[ \t]+#.*)?[ \t]*$", text, re.MULTILINE)
+                self.assertEqual(len(actions), 2)
+                self.assertEqual(
+                    {action.split("@", 1)[0] for action in actions},
+                    {"actions/checkout", "actions/setup-python"})
+                for action in actions:
+                    self.assertRegex(
+                        action, r"^actions/(?:checkout|setup-python)@[0-9a-f]{40}\Z")
                 self.assertIn("python-version: ${{ matrix.python }}", text)
                 self.assertIn("run: python -VV", text)
                 self.assertIn("persist-credentials: false", text)
