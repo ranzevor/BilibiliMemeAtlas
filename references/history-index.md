@@ -31,7 +31,7 @@
 
 ## 研究队列
 
-当前队列277条，包含所有非 `verified`、缺少 `meaning/origin/platform_usage` 全文登记或 `origin.date` 未知的记录。队列之外的记录仍须按具体来源判断词义、别名、风险和材料局限。
+当前队列291条，包含所有非 `verified`、缺少 `meaning/origin/platform_usage` 全文登记或 `origin.date` 未知的记录。队列之外的记录仍须按具体来源判断词义、别名、风险和材料局限。
 
 ```bash
 python3 "SKILL_DIR/scripts/history.py" --output OUTPUT_DIR/history.json

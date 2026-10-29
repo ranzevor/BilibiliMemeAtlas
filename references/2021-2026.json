@@ -4497,5 +4497,786 @@
     "tags": [
       "目力先辈"
     ]
+  },
+  {
+    "id": "recent-26-shanshenbu",
+    "term": "闪身步",
+    "aliases": [
+      "闪身步舞蹈",
+      "闪两步"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "原为安徽花鼓灯的快速侧向转移训练动作；2026年秋旧教学片段翻红，弹幕借突然闪开的身法调侃躲避、走位和夸张转场。",
+    "origin": {
+      "summary": "由北京舞蹈学院民族民间舞旧教材的赵铁春示范片段引发再创作；教材动作来自安徽花鼓灯，教学片段并非2026年新拍。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "舞步模仿",
+        "游戏躲技能",
+        "突然侧移转场"
+      ],
+      "example": "这个走位快得像练过闪身步。",
+      "avoid": [
+        "勿把传统民间舞说成纯搞笑动作",
+        "突然猛拧膝关节模仿有受伤风险"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [
+      "recent-26-gouxiong"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-dance-interview",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "采访教材参与者，确认传统舞来源与旧教材再传播。"
+      },
+      {
+        "source_id": "recent-src-26-shanshen-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "站内9月解说投稿可见，未读取视频正文。"
+      }
+    ],
+    "notes": "教材录制和2018年网络上传是不同节点；B站最早二创及单一爆发源未核实。"
+  },
+  {
+    "id": "recent-26-gouxiong",
+    "term": "狗熊哆嗦毛",
+    "aliases": [
+      "狗熊哆嗦毛舞步"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "山东鼓子秧歌中快速抖动、拍鼓意象的舞蹈动作俗称；旧教学视频2026年秋翻红后被用于节奏模仿、喜剧剪辑。",
+    "origin": {
+      "summary": "旧民族民间舞教学录像由明文军示范；动作属于山东鼓子秧歌，名称为民间叫法，并非B站网友临时造词。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "舞蹈模仿",
+        "节奏卡点",
+        "传统文化科普"
+      ],
+      "example": "背景音乐一响，他就开始狗熊哆嗦毛。",
+      "avoid": [
+        "勿与安徽花鼓灯的闪身步混作同一种舞种",
+        "引用原教学素材仍涉及原视频权利"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [
+      "recent-26-shanshenbu"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-dance-interview",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "当年教材参与者解释该名称与山东鼓子秧歌渊源。"
+      },
+      {
+        "source_id": "recent-src-26-gouxiong-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "9月站内有关两种舞蹈翻红的视频索引。"
+      }
+    ],
+    "notes": "未确认原教材出版年份及B站首次剪辑作者。"
+  },
+  {
+    "id": "recent-26-world-tour",
+    "term": "XX世界巡演",
+    "aliases": [
+      "世界巡演",
+      "世界巡演渲染大赛",
+      "世界巡回演唱会"
+    ],
+    "category": "guichu",
+    "era": "2021-2026",
+    "meaning": "用AI视频把原本不会举办演唱会的人物、角色或物体放进大型演唱会舞台，标题套用“某某世界巡演”，形成连续的荒诞视频模板。",
+    "origin": {
+      "summary": "2026年9月B站可见多人物“世界巡演”生成视频和解说投稿；迈克尔·杰克逊式演唱会舞台被借作视觉参照，唯一最早制作者尚不明。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "AI人物二创",
+        "演唱会舞台模板",
+        "鬼畜反差剪辑"
+      ],
+      "example": "连游戏里的NPC都安排上世界巡演了。",
+      "avoid": [
+        "人物参加巡演是虚构演绎，勿当作真实活动",
+        "不能据画面推断音频也由AI生成",
+        "真人形象二创应尊重相关权益"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "candidate",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-tour-explainer",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "站内讨论“世界巡演”渲染大赛，但未阅读视频内容。"
+      },
+      {
+        "source_id": "recent-src-26-tour-hawking",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "9月AI多人物巡演投稿合集标题列示不同变体。"
+      },
+      {
+        "source_id": "recent-src-26-tour-michael",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "另有真人形象巡演投稿索引。"
+      }
+    ],
+    "notes": "已确认多条同时期站内视频索引；尚缺可读取正文来支持完整模板释义和具体渲染制作链，暂列候选。"
+  },
+  {
+    "id": "recent-26-zhuanben",
+    "term": "专是专本是本",
+    "aliases": [
+      "专是专，本是本，而我专升本",
+      "而我专升本"
+    ],
+    "category": "music",
+    "era": "2021-2026",
+    "meaning": "把“专科”“本科”“专升本”循环押韵对照的废话说唱句式，以一本正经的优越口吻反讽学历鄙视链和升本后划清身份的姿态。",
+    "origin": {
+      "summary": "本轮可核实传播节点为上饒天選之子2026年9月28日B站相关说唱投稿；不认定学历段子与这组字词为其首次发明。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "origin"
+    },
+    "usage": {
+      "contexts": [
+        "废话文学说唱",
+        "专升本话题",
+        "身份优越感反讽"
+      ],
+      "example": "这段讨论怎么突然进入专是专本是本模式了。",
+      "avoid": [
+        "不能据段子口吻评价所有专升本学生",
+        "不要将演绎角色说法当成作者现实立场"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-zhuan-rap-bili",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "B站原作者投稿的标题、日期、废话说唱标签。"
+      },
+      {
+        "source_id": "recent-src-26-zhuan-rap-dict",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "全文解释对仗句法及学历反讽语义。"
+      }
+    ],
+    "notes": "能确认本轮具体投稿及衍生用法，尚无足够材料证明全网首次流行节点。"
+  },
+  {
+    "id": "recent-26-suanle",
+    "term": "算了嘛警官",
+    "aliases": [
+      "算了嘛，警官"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "《谭谈交通》片段中反复回避出示驾照的口头语；“有驾照—请出示—算了嘛”的对话循环被截取为求饶、装糊涂和流程图表情梗。",
+    "origin": {
+      "summary": "素材来自早年的《谭谈交通》节目；2026年9月至10月在短视频平台与B站被重新剪辑传播，不属于当年新拍摄的节目。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "循环对答",
+        "流程图整活",
+        "被要求拿证据时的自嘲"
+      ],
+      "example": "刚说自己准备好了，一要看成果就开始算了嘛警官。",
+      "avoid": [
+        "不能用段子鼓励现实交通违法",
+        "不得将旧节目片段发布日期写作本轮转载日期"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-tantan-discussion",
+        "claims": [
+          "meaning"
+        ],
+        "note": "公开短视频评论摘要记录有驾照却拒绝出示的典型循环。"
+      },
+      {
+        "source_id": "recent-src-26-tantan-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "9月B站可检索到同台词再传播片段。"
+      }
+    ],
+    "notes": "原节目准确期次、原片版权与本轮跨平台传播先后未确证。"
+  },
+  {
+    "id": "recent-26-feidudu",
+    "term": "你的胆子真是肥嘟嘟的",
+    "aliases": [
+      "胆子肥嘟嘟",
+      "肥嘟嘟的"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "把“胆子真肥”说成软萌的“胆子真是肥嘟嘟的”，常叠加美团黄色袋鼠形象和夸张配音，戏谑别人过于大胆。",
+    "origin": {
+      "summary": "网络聊天截图和袋鼠表情包在2026年8月已传播，9月品牌玩梗与B站配音投稿继续扩散；聊天记录真实性未核实。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "反差萌吐槽",
+        "外卖袋鼠表情包",
+        "开学和朋友互损"
+      ],
+      "example": "敢把我的闹钟全关了，你的胆子真是肥嘟嘟的。",
+      "avoid": [
+        "不要把流传聊天截图当作已证实真实订单",
+        "真实冲突时避免借软萌话术掩盖威胁"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-feidudu-report",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "9月文章解释短语、黄色袋鼠表情包和品牌跟进，明确原聊天截图真实性疑点。"
+      },
+      {
+        "source_id": "recent-src-26-feidudu-dubbing",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "9月B站配音演员对开学场景的再创作标题。"
+      }
+    ],
+    "notes": "8月已经走红，收录的是9月仍活跃的跨圈传播；原截图真伪与首创者未核实。"
+  },
+  {
+    "id": "recent-26-bushaoxin",
+    "term": "吃了不烧心",
+    "aliases": [
+      "不烧心",
+      "贵是贵点但吃了不烧心"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "AI摆摊餐饮短剧中对坚持好原料的摊主的夸赞台词；脱离餐饮后泛指让人安心、品质靠谱的体验，也可反称“烧心”讽刺翻车。",
+    "origin": {
+      "summary": "2026年秋多部模板化AI餐饮短剧反复出现这类对白，经跨平台二创传到B站；不属于某一部确定唯一首作。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "品质靠谱的幽默夸赞",
+        "AI短剧拟声",
+        "反向烧心吐槽"
+      ],
+      "example": "这段剪辑节奏稳，贵点也看得不烧心。",
+      "avoid": [
+        "比喻不等于食品卫生或健康检测结论",
+        "勿把“烧心”医学症状与玩梗语义混为一谈"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [
+      "recent-26-hongguoti"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-bushaoxin-chinanews",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "中新社报道反复出现的良心摊主情节及跨平台泛化语义。"
+      },
+      {
+        "source_id": "recent-src-26-bushaoxin-dict",
+        "claims": [
+          "meaning"
+        ],
+        "note": "全文说明“烧心”正反向玩梗。"
+      },
+      {
+        "source_id": "recent-src-26-bushaoxin-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "2026年10月B站相关解说视频索引。"
+      }
+    ],
+    "notes": "AI短剧属于多作品共用模板，尚无可证实的最早视频或唯一原作者。"
+  },
+  {
+    "id": "recent-26-hongguoti",
+    "term": "红果体",
+    "aliases": [
+      "规矩体",
+      "先把规矩立住"
+    ],
+    "category": "community",
+    "era": "2021-2026",
+    "meaning": "对一类AI短剧的套路化叙事和台词节奏的称呼：摊主坚守规矩、廉价竞争、对手翻车、顾客回头；网友模仿这套句式改写各种事件。",
+    "origin": {
+      "summary": "2026年国庆前后AI餐饮创业短剧密集扩散，被网友统称红果体或规矩体；与单句“不烧心”有重叠但不是同义词。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "公式化短剧调侃",
+        "剧情模板二创",
+        "一本正经立规矩"
+      ],
+      "example": "连修个键盘都要先把规矩立住，红果体味太浓了。",
+      "avoid": [
+        "不能把平台上全部短剧都当成AI作品",
+        "不要把戏剧性经营情节作为现实商家证据"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [
+      "recent-26-bushaoxin"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-hongguoti-dict",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "全文解释固定剧情序列和红果体、规矩体的用法。"
+      },
+      {
+        "source_id": "recent-src-26-bushaoxin-chinanews",
+        "claims": [
+          "meaning"
+        ],
+        "note": "媒体独立报道短剧中的反复对白模板。"
+      },
+      {
+        "source_id": "recent-src-26-hongguoti-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "B站有同类台词组合二创的公开视频元数据。"
+      }
+    ],
+    "notes": "同类作品较多，尚无可核实的统一首创作者或单一原片。"
+  },
+  {
+    "id": "recent-26-boji",
+    "term": "薄肌理论",
+    "aliases": [
+      "薄肌教父",
+      "薄肌俱乐部"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "以精瘦、肌肉有线条的体型为原点，把身材偏好夸张上升为自信乃至人生答案的抽象“理论”，常用于调侃成功学式说辞。",
+    "origin": {
+      "summary": "可核的本轮节点是邵艾伦Alan于2026年8月29日在B站发布的薄肌话题视频；普通形容词“薄肌”并非因此新造。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "健身区争论",
+        "万能成功学调侃",
+        "XX理论系列"
+      ],
+      "example": "今天连我的代码评审都要先讨论薄肌理论了。",
+      "avoid": [
+        "勿当作医学、健身或人生成功的必然规律",
+        "调侃不应升级为身材羞辱"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [
+      "recent-26-dashui",
+      "recent-26-huangmao"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-boji-dict",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "全文记述8月29日站内传播视频和“薄肌万能答案”的戏仿语义。"
+      },
+      {
+        "source_id": "recent-src-26-lifestyle-theories-report",
+        "claims": [
+          "meaning"
+        ],
+        "note": "光明日报正文分析薄肌及其他理论式玩梗。"
+      },
+      {
+        "source_id": "recent-src-26-boji-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "原传播视频可核公开列表链接，未读取视频实录。"
+      }
+    ],
+    "notes": "8月29日为本轮可核节点而非薄肌概念起源，作者完整论述及更早模仿链未逐项核读。"
+  },
+  {
+    "id": "recent-26-dashui",
+    "term": "大水理论",
+    "aliases": [
+      "强者喝大水",
+      "全网进入大水时代"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "用随身拎大瓶白水、少喝甜饮料的举动配“强者喝大水”式口号，将普通习惯夸成身份态度、生活哲学的玩笑。",
+    "origin": {
+      "summary": "2026年10月上旬该形式先见于抖音话题并扩散到B站，与薄肌等XX理论组成同类模板；不能以其名义推断科学饮水量。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "生活方式自嘲",
+        "强弱对照反讽",
+        "抽象理论串梗"
+      ],
+      "example": "写完两百行代码开始研究大水理论，我先去倒一杯。",
+      "avoid": [
+        "一次性大量灌水并非保健建议",
+        "不要用喝水习惯给人划分高低"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [
+      "recent-26-boji",
+      "recent-26-huangmao"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-dashui-report",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "羊城晚报全文说明10月5日抖音话题与“弱者/强者”叙事。"
+      },
+      {
+        "source_id": "recent-src-26-lifestyle-theories-report",
+        "claims": [
+          "meaning"
+        ],
+        "note": "光明日报全文将其列入XX理论玩梗现象。"
+      },
+      {
+        "source_id": "recent-src-26-theories-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "B站已有薄肌、大水理论联合讨论投稿元数据。"
+      }
+    ],
+    "notes": "抖音节点不等于B站首次出现时间；饮水具体健康适用条件不属于梗史事实。"
+  },
+  {
+    "id": "recent-26-huangmao",
+    "term": "黄毛理论",
+    "aliases": [
+      "黄毛式生活哲学"
+    ],
+    "category": "life",
+    "era": "2021-2026",
+    "meaning": "并非真的建议染黄发，而是借“黄毛”刻板反差强调敢做决定、不端着、减少内耗的抽象生活“理论”，常与薄肌、大水理论并列。",
+    "origin": {
+      "summary": "2026年10月与其他XX理论共同传播；光明日报文章说明其概念和反讽式命名，B站同月讨论该话题。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "imported"
+    },
+    "usage": {
+      "contexts": [
+        "XX理论串梗",
+        "讨论行动力",
+        "戏仿成功学"
+      ],
+      "example": "项目终于上线，他说这叫黄毛理论的执行力。",
+      "avoid": [
+        "不要把外貌、发色等同人格品质",
+        "不是鼓励冒险或无视他人边界"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [
+      "recent-26-boji",
+      "recent-26-dashui"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-lifestyle-theories-report",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "全文解释其并非染发而是某种心态式表达，属于XX理论家族。"
+      },
+      {
+        "source_id": "recent-src-26-huangmao-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "10月B站长谈标题提及黄毛理论。"
+      }
+    ],
+    "notes": "发起人及最早传播节点未核实；B站材料只核标题。"
+  },
+  {
+    "id": "recent-26-bluefish",
+    "term": "蓝色大肥鱼",
+    "aliases": [
+      "DeepSeek鲸鱼娘",
+      "DeepSeek娘",
+      "大肥鱼"
+    ],
+    "category": "acg",
+    "era": "2021-2026",
+    "meaning": "对DeepSeek相关蓝色鲸鱼拟人化同人角色的戏称；Q版角色在AI社区衍生出吃白饭、求Token等人格化玩笑，2026年秋在B站广泛被用作账号头像。",
+    "origin": {
+      "summary": "社区创作链涉及早期鲸鱼原创形象、DeepSeek元素的二创和后续Q版塑造；2026年秋形象在B站扩大传播，不是DeepSeek官方发布的拟人IP。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "adaptation"
+    },
+    "usage": {
+      "contexts": [
+        "AI模型拟人化",
+        "二次元同人",
+        "B站评论区鲸鱼头像"
+      ],
+      "example": "这条评论一股蓝色大肥鱼求加餐的口吻。",
+      "avoid": [
+        "不要将民间同人当作DeepSeek官方设定",
+        "具体画师署名与许可不可由昵称代替"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [
+      "recent-26-yuzai"
+    ],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-bluefish-origins",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "10月追踪报道区分鲸鱼原创、后续二创与官方Logo，不把二创视为官设。"
+      },
+      {
+        "source_id": "recent-src-26-fish-ai-report",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "爱范儿报道B站科技区大量使用该头像和昵称的账号。"
+      },
+      {
+        "source_id": "recent-src-26-bluefish-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "9月B站已有介绍这一称呼的投稿。"
+      }
+    ],
+    "notes": "不同创作者的形象、许可、优先权仍有争论；不得仅凭报道将全部衍生作品归属于同一作者。"
+  },
+  {
+    "id": "recent-26-yuzai",
+    "term": "鱼灾",
+    "aliases": [
+      "B站鱼灾",
+      "赛博鱼灾",
+      "赛博鱼塘"
+    ],
+    "category": "tech",
+    "era": "2021-2026",
+    "meaning": "2026年10月B站部分科技区评论区涌现大量“蓝色大肥鱼”风格账号，以AI Agent自动阅读、总结和留言，网友将这种密集出现与相互互动戏称“鱼灾”。",
+    "origin": {
+      "summary": "2026年10月中下旬，多种AI自动运营账号与B站浏览评论插件被关注；DeepSeek鲸鱼娘形象是视觉标志之一，事件与角色形象早期诞生应分开。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "B站AI评论区",
+        "Agent账号识别",
+        "养鱼与捕鱼玩笑"
+      ],
+      "example": "今天这个技术视频下面又是一片鱼灾，半屏都是本鲸。",
+      "avoid": [
+        "不能因为头像或昵称相似就判定所有用户是机器人",
+        "不要把媒体个案写成全站官方统计",
+        "不要鼓励未经同意的自动化刷屏"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [
+      "recent-26-bluefish"
+    ],
+    "evidence_status": "verified",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-fish-ai-report",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "爱范儿全文报道10月B站评论区具体观察、相关工具及由此产生的鱼灾称呼。"
+      },
+      {
+        "source_id": "recent-src-26-fish-firsthand",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "开发者自述所见现象及应对，提供独立的实践视角。"
+      }
+    ],
+    "notes": "已核实的是公开报道与当事人陈述中的现象，不代表每个同头像账号都属于AI或平台已确认事件规模。"
+  },
+  {
+    "id": "recent-26-delta-call",
+    "term": "三角洲——牛X",
+    "aliases": [
+      "三角洲牛X",
+      "三角洲牛逼"
+    ],
+    "category": "game",
+    "era": "2021-2026",
+    "meaning": "《三角洲行动》周年音乐会玩家一呼一应的口号：先喊“三角洲”，再由周围玩家接“牛X”，形成游戏圈现场暗号与后续玩梗。",
+    "origin": {
+      "summary": "2026年9月《三角洲行动》二周年音乐会现场形成可核的集体应答，媒体报道其从零星喊法变成整齐回应；站内同期有社区热梗回顾。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "amplifier"
+    },
+    "usage": {
+      "contexts": [
+        "三角洲周年活动",
+        "同好应答",
+        "游戏社区自嘲"
+      ],
+      "example": "有人喊三角洲，后排立即接上牛X。",
+      "avoid": [
+        "不能以现场口号代表全体玩家对游戏运营的态度",
+        "勿把现场庆典当成全站年度热梗排名"
+      ]
+    },
+    "lifecycle": "volatile",
+    "sensitivity": [],
+    "relations": [],
+    "evidence_status": "partial",
+    "evidence": [
+      {
+        "source_id": "recent-src-26-delta-festival",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "17173全文记录音乐会现场的引出口号和集体回应。"
+      },
+      {
+        "source_id": "recent-src-26-delta-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "同期B站有三角洲社区热梗合集；未证明该合集必含此特定现场口号。"
+      }
+    ],
+    "notes": "目前最强证据对应特定庆典，缺后续B站不同投稿独立复用该口号的可检索正文。"
   }
 ]

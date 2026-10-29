@@ -7,37 +7,37 @@
     "metadata.json"
   ],
   "statistics": {
-    "version": "0.1.0",
-    "knowledge_cutoff": "2026-10-27",
-    "entries": 289,
-    "sources": 257,
+    "version": "0.1.1",
+    "knowledge_cutoff": "2026-10-29",
+    "entries": 303,
+    "sources": 286,
     "by_evidence": {
-      "candidate": 51,
-      "partial": 194,
-      "verified": 44
+      "candidate": 52,
+      "partial": 206,
+      "verified": 45
     },
     "by_era": {
       "2009-2015": 86,
       "2016-2020": 111,
-      "2021-2026": 92
+      "2021-2026": 106
     },
     "by_category": {
-      "acg": 28,
-      "community": 83,
+      "acg": 29,
+      "community": 87,
       "esports": 11,
       "film": 15,
-      "game": 23,
-      "guichu": 40,
-      "life": 29,
+      "game": 24,
+      "guichu": 41,
+      "life": 34,
       "live": 14,
-      "music": 35,
-      "tech": 4,
+      "music": 36,
+      "tech": 5,
       "vtuber": 7
     },
     "source_access": {
-      "full": 88,
-      "metadata": 35,
-      "snippet": 134
+      "full": 101,
+      "metadata": 50,
+      "snippet": 135
     },
     "coverage": "按年代与分区组织的收录集；未建立全站历史梗总量，不计算全量覆盖率"
   }
