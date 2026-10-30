@@ -85,8 +85,8 @@ def markdown_index(root=ROOT, *, as_of=None, active_update_lock=False,
         lines.append(f'| {year} | {populated} | {anchors} |')
     lines += [
         '', '## 研究队列', '',
-        f"当前队列{len(data['research_queue'])}条，包含所有非 `verified`、缺少 `meaning/origin/platform_usage` 全文登记或 `origin.date` 未知的记录。队列之外的记录仍须按具体来源判断词义、别名、风险和材料局限。", ''
-        '队列按待补证、部分核实、已核实但仍有缺口排序；同一状态再按时期、分类及ID排序。顺序用于研究排程，不代表当前热度、首次出现或证据质量的数值排名。', ''
+        f"当前队列{len(data['research_queue'])}条，包含所有非 `verified`、缺少 `meaning/origin/platform_usage` 全文登记或 `origin.date` 未知的记录。队列之外的记录仍须按具体来源判断词义、别名、风险和材料局限。", '',
+        '队列按待补证、部分核实、已核实但仍有缺口排序；同一状态再按时期、分类及ID排序。顺序用于研究排程，不代表当前热度、首次出现或证据质量的数值排名。', '',
         '| 序号 | 词条 | ID | 时期 / 分类 | 资料状态 | 缺少全文命题 | 具体缺口 |',
         '| ---: | --- | --- | --- | --- | --- | --- |',
     ]
@@ -101,10 +101,10 @@ def markdown_index(root=ROOT, *, as_of=None, active_update_lock=False,
         )
     lines += [
         '',
-        '缺口与来源须按完整词条复核；机器可读的队列提供source_urls等字段，使用以下只读命令取得。', ''
+        '缺口与来源须按完整词条复核；机器可读的队列提供source_urls等字段，使用以下只读命令取得。', '',
         '```bash',
         'python3 "SKILL_DIR/scripts/history.py" --output OUTPUT_DIR/history.json',
-        '```', ''
+        '```', '',
         f"输出为{len(data['cells'])}个年份×分类格及确定性排序队列。只读本地数据，输出必须是新文件；完整词条及来源由查询工具或JSON分片读取。", ''
     ]
     return '\n'.join(lines)
