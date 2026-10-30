@@ -30,7 +30,9 @@ python3 scripts/verify.py
 单独运行技术子集：
 
 ```bash
-python3 -B -m unittest -v tests.test_package tests.test_install tests.test_release
+python3 -B -m unittest discover -s tests -p "test_package.py" -v
+python3 -B -m unittest discover -s tests -p "test_install.py" -v
+python3 -B -m unittest discover -s tests -p "test_release.py" -v
 ```
 
 ## 归档回读
