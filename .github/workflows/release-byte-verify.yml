@@ -29,4 +29,4 @@ jobs:
       - name: Validate project boundary
         run: python scripts/validate.py
       - name: Test source, notes, archive, checksum and readback comparisons
-        run: python -m unittest -v tests.test_release
+        run: python -m unittest discover -s tests -p "test_release.py" -v
