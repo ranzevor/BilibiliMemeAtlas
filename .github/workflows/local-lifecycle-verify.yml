@@ -1,6 +1,8 @@
 name: Verify local archive and directory lifecycle
 on:
   workflow_dispatch:
+  pull_request:
+    branches: ["main"]
 permissions:
   contents: read
 concurrency:

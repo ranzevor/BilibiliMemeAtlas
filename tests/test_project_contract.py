@@ -323,19 +323,20 @@ class ProjectContractTests(unittest.TestCase):
         for name in required_assets:
             self.assertIn(f"assets/{name}", rights)
 
-    def test_manual_ci_is_read_only_hosted_verification(self):
+    def test_pr_and_manual_ci_are_read_only_hosted_verification(self):
         workflows = ROOT / ".github" / "workflows"
         self.assertEqual(
             {path.name for path in workflows.iterdir()},
             {"verify.yml", "local-lifecycle-verify.yml", "release-byte-verify.yml"})
         forbidden = (
             "self-hosted", "contents: write", "secrets.", "actions/upload",
-            "git push", "gh release", "curl ", "wget ",
+            "git push", "gh release", "curl ", "wget ", "pull_request_target:",
         )
         for path in workflows.iterdir():
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):
                 self.assertIn("workflow_dispatch:", text)
+                self.assertIn('  pull_request:\n    branches: ["main"]\n', text)
                 self.assertIn("  contents: read", text)
                 if path.name == "verify.yml":
                     self.assertIn("runs-on: ${{ matrix.os }}", text)

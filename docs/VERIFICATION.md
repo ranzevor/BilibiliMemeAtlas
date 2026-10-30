@@ -14,7 +14,7 @@ python3 scripts/verify.py
 
 ## 合并检查
 
-变更通过 PR 进入主分支。维护者在待合并提交上手动运行以下三个工作流；候选分支须包含当前 `main`，提交更新后重新运行检查。
+变更通过 PR 进入主分支。创建、重新打开或更新面向 `main` 的 PR 时，自动运行以下三个工作流；候选分支须包含当前 `main`。检查验证 GitHub 为该 PR 生成的测试合并提交。
 
 | 工作流 | 矩阵范围 | 必需汇总检查 |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ python3 scripts/verify.py
 
 每个汇总检查等待整个矩阵完成，只有全部矩阵作业成功才通过。主分支将这三个检查绑定到 GitHub Actions；合并还须完成必要审批和讨论处理。调整矩阵时保留汇总检查名称；修改名称时同步主分支规则。
 
-来自 fork 的 PR 先审查差异，再将同一候选提交推送到本仓库的审查分支并手动运行工作流；检查须对应 PR 的准确提交。
+来自 fork 的 PR 使用同一组检查；GitHub 要求批准工作流运行时，维护者先审查差异再批准。工作流保留手动入口供单独验证；合并门禁使用 PR 事件触发的检查结果，失败后可重跑该次 PR 工作流。仅手动派发的结果无法满足[GitHub 的必需检查要求](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks#checks-from-some-workflow-jobs-are-not-evaluated)。
 
 ## 分层检查
 
