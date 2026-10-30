@@ -17,7 +17,7 @@ python3 "$SKILL_DIR/scripts/install.py" install "$ARCHIVE" \
   --parent "$PARENT"
 ```
 
-The fixed target is `$PARENT/bilibili-meme-atlas`. Installation verifies the archive digest, member boundary, complete project contract, and deterministic projections before replacing that target.
+The fixed target is `$PARENT/bilibili-meme-atlas`. Installation checks the trusted archive digest, fixed root, `SKILL.md` entry, portable member paths, regular file types, namespace conflicts, and size limits. Cache, VCS, and pending corpus-update members are rejected. Staged and installed files must match every member and byte of that verified archive. Source, corpus, adapter, rights, and projection checks run when preparing the corresponding release.
 
 ## Host discovery and use
 
@@ -43,7 +43,7 @@ The host may also select the skill from a matching task description. Verify dire
 
 ## Identity-bound upgrade or rollback
 
-Obtain the exact current-directory identity, then install another verified release archive while binding the replacement to that identity. This same operation can roll back to a previously published release. The replaced directory remains as a hidden backup beside the target.
+Obtain the exact current-directory identity, then install another verified release archive while binding the replacement to that identity. Identity uses stable relative file paths, lengths, and content digests independently of the current source file list, adapter wording, or projection generator. Added files change the identity; extra empty directories are rejected. This same operation can roll back to a previously published release. The replaced directory remains as a hidden backup beside the target.
 
 ```bash
 CURRENT_IDENTITY=$(python3 "$SKILL_DIR/scripts/install.py" identity \

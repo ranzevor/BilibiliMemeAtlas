@@ -15,7 +15,7 @@ from zipfile import ZIP_STORED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from package import (PackageError, archive_name, build_archive, source_files,
+from package import (PackageError, archive_name, build_archive, capture_files, source_files,
                      verify_archive)
 import package as package_module
 from test_contracts import copy_project_fixture, create_symlink
@@ -93,6 +93,34 @@ class PackageTests(unittest.TestCase):
         self.assertEqual(report["sha256"], hashlib.sha256(original).hexdigest())
         self.assertNotEqual(
             report["sha256"], hashlib.sha256(archive_path.read_bytes()).hexdigest())
+
+    def test_capture_is_independent_of_current_source_file_contract(self):
+        copy = self.base / "previous-files"
+        copy_project_fixture(copy)
+        (copy / "AGENT_INSTALL.md").unlink()
+        (copy / ".github/dependabot.yml").unlink()
+        renamed = copy / "historical-maintenance"
+        renamed.mkdir()
+        (copy / ".github/pull_request_template.md").rename(renamed / "review.md")
+        captured = capture_files(copy)
+        self.assertIn("historical-maintenance/review.md", captured)
+        self.assertNotIn("AGENT_INSTALL.md", captured)
+        with self.assertRaises(PackageError):
+            source_files(copy)
+
+    def test_capture_rejects_empty_directories_and_pending_update_members(self):
+        copy = self.base / "captured"
+        copy_project_fixture(copy)
+        empty = copy / "extra-empty"
+        empty.mkdir()
+        with self.assertRaisesRegex(PackageError, "空目录"):
+            capture_files(copy)
+        empty.rmdir()
+        lock = copy / ".atlas-update.lock"
+        lock.mkdir()
+        (lock / "operation.json").write_bytes(b"{}\n")
+        with self.assertRaisesRegex(PackageError, "更新"):
+            capture_files(copy)
 
     def test_unknown_file_and_cache_are_rejected(self):
         copy = self.base / "bilibili-meme-atlas"

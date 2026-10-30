@@ -11,7 +11,8 @@ import sys
 
 sys.dont_write_bytecode = True
 
-from package import PackageError, source_files, verify_archive, version_of
+from package import (PackageError, capture_files, source_files, verify_archive,
+                     version_of)
 
 ROOT = Path(__file__).resolve().parents[1]
 FORMAT = "bilibili-meme-atlas-release/v1"
@@ -188,7 +189,7 @@ def validate_manifest(value) -> dict:
 def _checked_local(manifest, source_root, notes, assets_dir=None):
     """Return the exact note and asset bytes that passed the fixed manifest."""
     manifest = validate_manifest(manifest)
-    files = source_files(Path(source_root))
+    files = capture_files(Path(source_root))
     if version_of(files) != manifest["version"]:
         raise ReleaseError("源码版本与发行清单不一致")
     if snapshot_identity(files) != manifest["source"]:
