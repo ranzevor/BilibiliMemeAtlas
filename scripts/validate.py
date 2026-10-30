@@ -73,6 +73,9 @@ tests/test_contracts.py tests/test_hardening.py tests/test_history.py
 tests/test_install.py tests/test_package.py tests/test_project_contract.py tests/test_release.py
 tests/test_research.py tests/test_transactions.py tests/test_update.py
 """.split())
+PROJECT_FILES_0_1_0 = PROJECT_FILES - {
+    "AGENT_INSTALL.md", ".github/dependabot.yml",
+}
 PROJECT_DIRECTORIES = frozenset({
     ".github", ".github/ISSUE_TEMPLATE", ".github/workflows",
     "agents", "assets", "docs", "references", "scripts", "tests",
@@ -181,7 +184,16 @@ def validate_project_files(root: Path = ROOT, *, active_update_lock=False):
                 errors.append(f"项目文件超过体积上限: {relative}")
         except OSError as exc:
             errors.append(f"项目文件无法读取属性: {relative}: {exc}")
-    missing = PROJECT_FILES - seen
+    required = PROJECT_FILES
+    if "references/metadata.json" in seen:
+        try:
+            metadata = load_json(root / "references/metadata.json")
+        except (CatalogueError, OSError, ValueError):
+            pass
+        else:
+            if isinstance(metadata, dict) and metadata.get("version") == "0.1.0":
+                required = PROJECT_FILES_0_1_0
+    missing = required - seen
     if missing:
         errors.append("项目缺少文件: " + ", ".join(sorted(missing)))
     if "LICENSE" in seen:

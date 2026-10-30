@@ -23,7 +23,8 @@ from update import UpdateError
 import update as updater
 import writer_lock
 from writer_lock import writer_lease
-from test_contracts import create_symlink
+from test_contracts import copy_project_fixture, create_symlink
+from build import projections
 
 
 class InstallTests(unittest.TestCase):
@@ -69,6 +70,53 @@ class InstallTests(unittest.TestCase):
         self.assertFalse(target.exists())
         os.replace(removed["backup"], target)
         self.assertEqual(validate_installation(target), initial["identity"])
+
+    def test_previous_release_file_set_upgrade_failure_and_restore(self):
+        legacy = self.base / "legacy-source"
+        copy_project_fixture(legacy)
+        for name in ("AGENT_INSTALL.md", ".github/dependabot.yml"):
+            (legacy / name).unlink()
+        metadata_path = legacy / "references/metadata.json"
+        metadata = json.loads(metadata_path.read_bytes())
+        metadata["version"] = "0.1.0"
+        metadata_path.write_bytes((json.dumps(
+            metadata, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+        for name, text in projections(legacy).items():
+            (legacy / name).write_bytes(text.encode("utf-8"))
+        archive = self.base / "legacy.zip"
+        report = build_archive(legacy, archive)
+        initial = install(archive, self.parent, report["sha256"])
+        target = self.parent / NAME
+        self.assertEqual(tree_identity(target), initial["identity"])
+
+        upgraded = install(
+            self.archive, self.parent, self.report["sha256"],
+            expected_current=initial["identity"])
+        previous = Path(upgraded["backup"])
+        self.assertEqual(validate_installation(previous), initial["identity"])
+        self.assertTrue((target / "AGENT_INSTALL.md").is_file())
+        removed = uninstall(self.parent, upgraded["identity"])
+        self.assertEqual(tree_identity(Path(removed["backup"])), upgraded["identity"])
+        os.replace(previous, target)
+        self.assertEqual(validate_installation(target), initial["identity"])
+
+        original = installer.validate_installation
+
+        def fail_new_readback(root):
+            if Path(root) == target and (target / "AGENT_INSTALL.md").exists():
+                raise PackageError("synthetic new-version readback failure")
+            return original(root)
+
+        with patch("install.validate_installation", side_effect=fail_new_readback):
+            with self.assertRaisesRegex(PackageError, "readback failure"):
+                install(
+                    self.archive, self.parent, self.report["sha256"],
+                    expected_current=initial["identity"])
+        self.assertEqual(validate_installation(target), initial["identity"])
+        self.assertFalse((self.parent / LOCK_NAME).exists())
+        failed = list(self.parent.glob(f".{NAME}.failed-*"))
+        self.assertEqual(len(failed), 1)
+        self.assertTrue((failed[0] / "AGENT_INSTALL.md").is_file())
 
     def test_bad_checksum_never_creates_target(self):
         with self.assertRaisesRegex(PackageError, "校验和"):

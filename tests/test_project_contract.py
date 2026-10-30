@@ -96,6 +96,31 @@ def png_rgba_pixels(path):
 
 
 class ProjectContractTests(unittest.TestCase):
+    def test_previous_file_set_does_not_relax_current_or_base_requirements(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "bilibili-meme-atlas"
+            copy_project_fixture(root)
+            for name in ("AGENT_INSTALL.md", ".github/dependabot.yml"):
+                (root / name).unlink()
+            path = root / "references/metadata.json"
+            metadata = json.loads(path.read_bytes())
+            for version in ("0.1.1", "0.2.0", "0.1.0"):
+                metadata["version"] = version
+                path.write_bytes((json.dumps(
+                    metadata, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+                errors = validate_project_files(root)
+                if version == "0.1.0":
+                    self.assertEqual(errors, [])
+                else:
+                    self.assertTrue(any("AGENT_INSTALL.md" in error for error in errors))
+                    self.assertTrue(any("dependabot.yml" in error for error in errors))
+            unknown = root / "scripts/unknown.py"
+            unknown.write_bytes(b"pass\n")
+            self.assertTrue(any("未登记文件" in error for error in validate_project_files(root)))
+            unknown.unlink()
+            (root / "LICENSE").unlink()
+            self.assertTrue(any("LICENSE" in error for error in validate_project_files(root)))
+
     def test_complete_skill_is_exactly_whitelisted(self):
         actual = set(source_files(ROOT))
         self.assertEqual(validate_project_files(ROOT), [])
