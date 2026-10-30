@@ -12,6 +12,20 @@ python3 scripts/verify.py
 
 `build.py --check` 比较确定性派生文件；`validate.py` 检查当前源码的 Skill 入口、宿主适配元数据、项目文件边界、语料结构、来源、日期和跨记录引用；`verify.py` 在前两项通过后运行全部行为与负例测试，并输出语料统计。安装器按已核对归档比较实际成员字节；目录身份与固定发行回读不重新执行新版源码内容规则。
 
+## 合并检查
+
+变更通过 PR 进入主分支。维护者在待合并提交上手动运行以下三个工作流；候选分支须包含当前 `main`，提交更新后重新运行检查。
+
+| 工作流 | 矩阵范围 | 必需汇总检查 |
+| --- | --- | --- |
+| `verify.yml` | Ubuntu 24.04、Windows Server 2022 × Python 3.10／3.13 | `Project gate` |
+| `local-lifecycle-verify.yml` | Ubuntu 24.04 × Python 3.10／3.13 | `Lifecycle gate` |
+| `release-byte-verify.yml` | Ubuntu 24.04 × Python 3.10／3.13 | `Release bytes gate` |
+
+每个汇总检查等待整个矩阵完成，只有全部矩阵作业成功才通过。主分支将这三个检查绑定到 GitHub Actions；合并还须完成必要审批和讨论处理。调整矩阵时保留汇总检查名称；修改名称时同步主分支规则。
+
+来自 fork 的 PR 先审查差异，再将同一候选提交推送到本仓库的审查分支并手动运行工作流；检查须对应 PR 的准确提交。
+
 ## 分层检查
 
 | 入口 | 主要合同 |

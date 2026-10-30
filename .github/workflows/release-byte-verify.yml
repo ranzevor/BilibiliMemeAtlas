@@ -8,6 +8,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   verify:
+    name: Release bytes (Python ${{ matrix.python }})
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     strategy:
@@ -30,3 +31,17 @@ jobs:
         run: python scripts/validate.py
       - name: Test source, notes, archive, checksum and readback comparisons
         run: python -m unittest discover -s tests -p "test_release.py" -v
+
+  gate:
+    name: Release bytes gate
+    if: ${{ always() }}
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 1
+    permissions: {}
+    steps:
+      - name: Require successful matrix
+        env:
+          MATRIX_RESULT: ${{ needs.verify.result }}
+        shell: bash
+        run: test "$MATRIX_RESULT" = success
