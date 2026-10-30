@@ -5,16 +5,18 @@
 ## 顺序
 
 1. **取得当前基线。** 运行 `python3 scripts/update.py fingerprint`，后续提案只对该语料版本有效。
-2. **发现线索。** 可使用 `scripts/update.py discover` 读取有界热门列表，或使用 `scripts/research.py search` / `inspect` 读取公开元数据。拒绝、限流、登录要求或验证码出现时停止该入口，不绕过。
-3. **识别梗而不是视频。** 从独立用例判断表达、二创模板或素材族是否形成稳定语义；区分原素材、再次翻红、跨平台导入和新传播。
-4. **查重与溯源。** 使用 `atlas.py search --include-candidates`、`get`、`sources.json` 及内容页查重。标题或元数据只登记为 `metadata`；搜索摘要登记为 `snippet`；只有实际读到相关正文才登记为 `full`。
-5. **形成提案。** 复用已有来源 ID，记录来源支持的命题和具体局限。不要复制长篇原文、长台词、歌词、私人资料或账号凭据。
-6. **预览后应用。** 先运行 `preview` 并核对增改对象、时期和变更文件；只有当前任务允许修改知识库时才运行 `apply --write`。完成后运行 `scripts/verify.py`。
+2. **读取并选择研究队列。** 先使用 `scripts/history.py` 或[研究队列索引](history-index.md#研究队列)定位已有证据缺口，依当前队列顺序选择研究对象。用户明确指定词条、主题或时间范围时，在相应范围内先查队列和已收录记录，不把未调查的热门内容当成已有队列项。
+3. **针对对象发现来源。** 按选中对象使用 `scripts/research.py search` / `inspect` 读取公开元数据；确需补充全新线索时才用 `scripts/update.py discover` 的有界热门列表。拒绝、限流、登录要求或验证码出现时停止该入口，不绕过。
+4. **识别梗而不是视频。** 从独立用例判断表达、二创模板或素材族是否形成稳定语义；区分原素材、再次翻红、跨平台导入和新传播。
+5. **查重与溯源。** 使用 `atlas.py search --include-candidates`、`get`、`sources.json` 及内容页查重。标题或元数据只登记为 `metadata`；搜索摘要登记为 `snippet`；只有实际读到相关正文才登记为 `full`。
+6. **形成提案。** 复用已有来源 ID，记录来源支持的命题和具体局限。不要复制长篇原文、长台词、歌词、私人资料或账号凭据。
+7. **预览后应用。** 先运行 `preview` 并核对增改对象、时期和变更文件；只有当前任务允许修改知识库时才运行 `apply --write`。完成后运行 `scripts/verify.py`。
 
 ## 命令
 
 ```bash
 python3 scripts/update.py fingerprint
+python3 scripts/history.py --output OUTPUT_DIR/history.json
 python3 scripts/update.py discover --pages 1 --output OUTPUT_DIR/popular.json
 python3 scripts/research.py search '金坷垃' --output OUTPUT_DIR/search.json
 python3 scripts/research.py inspect BV1kt411a7oz --output OUTPUT_DIR/inspect.json

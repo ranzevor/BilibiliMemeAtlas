@@ -8,7 +8,7 @@ from pathlib import Path
 
 sys.dont_write_bytecode = True
 
-from atlas import ROOT, CatalogueError, _load_catalogue_snapshot
+from atlas import ROOT, CatalogueError, LABELS, _load_catalogue_snapshot
 
 CATEGORIES = ('community','acg','guichu','game','live','music','film','life','tech','esports','vtuber')
 
@@ -66,6 +66,7 @@ def markdown_index(root=ROOT, *, as_of=None, active_update_lock=False,
         '本表按当前语料生成。分区为本库检索分类，不等同于B站历年官方分区。', '',
         '单元格只索引 `origin.date` 为该年、`era` 包含该年且登记 `full/date` 命题的记录；`full` 标记不等于所有命题均已独立确认。无命中不表示该年不存在来源或使用，`date=null` 的传播节点不计入。这里不是诞生或B站首发清单，也不计算覆盖率。', '',
         '`date_supported_entry_ids` 是输出字段名，只表示登记为 `full/date` 且通过日期/时期索引条件；不表示词条的其他命题均已确认。', '',
+        '2026年已收录的传播事件未必具备带全文日期证据的起源节点；可从[历史与梗族导航](history-map.md#2026年夏末至秋季的已收录传播)查阅近期传播主题。逐年表中的零命中不能解释为当年没有梗。', '',
         '## 逐年入口', '',
         '| 年 | 有登记日期命题的分类格 / 11 | 研究锚点（至多4项） |',
         '| --- | ---: | --- |',
@@ -84,10 +85,26 @@ def markdown_index(root=ROOT, *, as_of=None, active_update_lock=False,
         lines.append(f'| {year} | {populated} | {anchors} |')
     lines += [
         '', '## 研究队列', '',
-        f"当前队列{len(data['research_queue'])}条，包含所有非 `verified`、缺少 `meaning/origin/platform_usage` 全文登记或 `origin.date` 未知的记录。队列之外的记录仍须按具体来源判断词义、别名、风险和材料局限。", '',
+        f"当前队列{len(data['research_queue'])}条，包含所有非 `verified`、缺少 `meaning/origin/platform_usage` 全文登记或 `origin.date` 未知的记录。队列之外的记录仍须按具体来源判断词义、别名、风险和材料局限。", ''
+        '队列按待补证、部分核实、已核实但仍有缺口排序；同一状态再按时期、分类及ID排序。顺序用于研究排程，不代表当前热度、首次出现或证据质量的数值排名。', ''
+        '| 序号 | 词条 | ID | 时期 / 分类 | 资料状态 | 缺少全文命题 | 具体缺口 |',
+        '| ---: | --- | --- | --- | --- | --- | --- |',
+    ]
+    for position, item in enumerate(data['research_queue'], 1):
+        term = item['term'].replace('|', '\\|').replace('\n', ' ')
+        gap = item['gap'].replace('|', '\\|').replace('\n', ' ')
+        missing = '、'.join(item['missing_full_claims']) or '无'
+        lines.append(
+            f"| {position} | {term} | `{item['entry_id']}` | "
+            f"{item['era']} / {item['category']} | {LABELS[item['status']]} | "
+            f"{missing} | {gap or '无'} |"
+        )
+    lines += [
+        '',
+        '缺口与来源须按完整词条复核；机器可读的队列提供source_urls等字段，使用以下只读命令取得。', ''
         '```bash',
         'python3 "SKILL_DIR/scripts/history.py" --output OUTPUT_DIR/history.json',
-        '```', '',
+        '```', ''
         f"输出为{len(data['cells'])}个年份×分类格及确定性排序队列。只读本地数据，输出必须是新文件；完整词条及来源由查询工具或JSON分片读取。", ''
     ]
     return '\n'.join(lines)
