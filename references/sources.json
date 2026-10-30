@@ -94,8 +94,8 @@
     "publisher": "界面新闻",
     "source_type": "secondary",
     "access_level": "full",
-    "checked_at": "2026-10-23",
-    "supports": "蓝蓝路与金坷垃的素材来源、孔明王朗系列及B站传播。",
+    "checked_at": "2026-10-30",
+    "supports": "蓝蓝路与金坷垃的素材来源、孔明王朗系列及B站传播；正文还记载绯色toy于2015年2月将成龙广告与《我的滑板鞋》同步剪辑。",
     "limitations": "2021年回顾文章；只摘取可核事实，未采用其关于唯一最早、创作门槛或授权的评价。"
   },
   {
@@ -113,12 +113,12 @@
     "id": "early-src-guichu-history",
     "title": "中国鬼畜破圈简史",
     "url": "https://tech.sina.cn/2020-08-26/detail-iivhuipp0838575.d.html?vt=4",
-    "publisher": "新浪科技转载",
+    "publisher": "真心编辑部／极客公园，新浪科技转载",
     "source_type": "secondary",
-    "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "元首德语空耳“我到河北省来”、葛平联动与早期金坷垃创作。",
-    "limitations": "检索摘要；空耳不等于德语真实含义。"
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "正文记载元首电影片段、德语空耳与葛平联动、B站经典视频中的万恶之源弹幕，以及2019年小米在B站发布财报版《恋爱循环》。",
+    "limitations": "只采用所述素材、表达与具体传播用例；不采用文化唯一起源、授权或商业效果的概括，空耳不等于德语真实含义。"
   },
   {
     "id": "early-src-german-boy",
@@ -225,10 +225,10 @@
     "url": "https://news.enorth.com.cn/system/2014/01/28/011645231.shtml",
     "publisher": "北方网转载沈阳晚报",
     "source_type": "primary",
-    "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "2014年1月报道“大力出奇迹”网络视频及当事采访。",
-    "limitations": "词条只解释梗源，不转述违法行为细节或提供药物使用信息。"
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "2014年1月28日刊载的采访正文记载《大力出奇迹》视频在当年元旦期间传播，并说明相关受访者与口头表达。",
+    "limitations": "报道支持当时传播及采访语境，不证明这句话此前不存在，也不以案件日期代替视频首播或B站投稿日。"
   },
   {
     "id": "early-src-xueyi",
@@ -357,10 +357,10 @@
     "url": "https://www.jiemian.com/article/2019712.html",
     "publisher": "界面新闻",
     "source_type": "primary",
-    "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "墨韵2014年古筝改编《千本樱》及跨器乐二创传播。",
-    "limitations": "作者采访摘要；不使用时点播放量作当前指标。"
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "2018年3月28日采访正文记录墨韵于2014年7月在B站发布古筝改编《千本樱》，并说明创作、练习及站内传播过程。",
+    "limitations": "采访中的播放量属于当时统计，不作为当前指标；墨韵的改编投稿日不能替代2011年原曲投稿日。"
   },
   {
     "id": "early-src-leek",
@@ -393,7 +393,7 @@
     "access_level": "metadata",
     "checked_at": "2026-10-23",
     "supports": "白金迪斯科、井口裕香、伪物语、2012年歌曲的对应说明。",
-    "limitations": "后期转载；原专辑资料未补，不能作为最早B站传播证据。"
+    "limitations": "后期转载的作品说明仅作元数据；不能作为最早B站传播证据，也不替代版权方发行资料。"
   },
   {
     "id": "early-src-skate-shoes",
@@ -424,9 +424,9 @@
     "publisher": "冴羽獠／哔哩哔哩",
     "source_type": "primary",
     "access_level": "metadata",
-    "checked_at": "2026-10-23",
-    "supports": "早期音MAD标题及入站必刷标识。",
-    "limitations": "2010年信息由历史报道交叉支持；未播放和逐帧辨认原素材。"
+    "checked_at": "2026-10-30",
+    "supports": "B站稿件列出上传者冴羽獠、2010年12月18日日期、入站必刷标识，简介标注Niconico原作编号sm13060333。",
+    "limitations": "仅核公开标题、简介与投稿元数据，未播放；上传者不等于原作者，标签也不能替代原片内容核查。"
   },
   {
     "id": "early-src-bili-17",
@@ -3155,5 +3155,269 @@
     "checked_at": "2026-10-29",
     "supports": "2026年8月27日站内投稿标题已经使用“专是专本是本”，早于同年9月28日相关说唱投稿。",
     "limitations": "仅公开索引标题与投稿日期，不能据此断定其为全网首创，也未观看视频正文。"
+  },
+  {
+    "id": "early-src-german-wiktionary",
+    "title": "德國骨科",
+    "url": "https://zh.wiktionary.org/wiki/%E5%BE%B7%E5%9C%8B%E9%AA%A8%E7%A7%91",
+    "publisher": "维基词典",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "词典正文解释ACG语境中兄妹及兄弟间恋爱题材的隐语，并列出骨科、德骨等近义称呼。",
+    "limitations": "词源段复述网络传闻，不作为事件真实性、首帖日期或B站首传的证明。"
+  },
+  {
+    "id": "early-src-pseudo-siblings",
+    "title": "怎么又是伪骨科，每部都长得差不多",
+    "url": "https://www.huxiu.com/article/4874670.html",
+    "publisher": "镜象娱乐／虎嗅",
+    "source_type": "secondary",
+    "access_level": "snippet",
+    "checked_at": "2026-10-30",
+    "supports": "检索可见文章正文片段把伪骨科题材与没有血缘的兄妹情感设定对应。",
+    "limitations": "内容页读取失败；只登记检索片段用于区分设定，不采用剧集热度、行业规模或最初造词归因。"
+  },
+  {
+    "id": "early-src-lancer-mooncell",
+    "title": "FGO黑话·梗·成句／从者相关／幸运E",
+    "url": "https://fgo.wiki/w/FGO%E9%BB%91%E8%AF%9D%C2%B7%E6%A2%97%C2%B7%E6%88%90%E5%8F%A5/%E4%BB%8E%E8%80%85%E7%9B%B8%E5%85%B3/%E5%B9%B8%E8%BF%90E",
+    "publisher": "Mooncell",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "专业社区正文将幸运E与库丘林、迪卢木多的角色属性及剧情遭遇对应，并说明这一枪兵梗不能概括全部Lancer。",
+    "limitations": "社区整理用于解释角色梗，不证明中文句式的最早创造者或首次传播日期。"
+  },
+  {
+    "id": "early-src-lancer-bili-quiz",
+    "title": "自古枪兵的幸运值是多少 B站硬核会员答题答案",
+    "url": "https://m.ali213.net/news/gl2301/988105.html",
+    "publisher": "游侠手游",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "2023年1月12日攻略正文列出B站硬核会员题目“自古枪兵幸运值是多少”及答案E，提供该句在B站答题语境中的用例。",
+    "limitations": "第三方攻略不是平台官方题库；不采用文中将所有枪兵都概括为幸运E的泛化解释。"
+  },
+  {
+    "id": "early-src-nico-official",
+    "title": "MEMBER | ラブライブ！スクールアイドルフェスティバル ～after school ACTIVITY～ わいわい！Home Meeting!!",
+    "url": "https://www.jp.square-enix.com/lovelive-sifacns/member.html",
+    "publisher": "SQUARE ENIX／Love Live! 项目",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "矢泽妮可的官方角色介绍直接使用其标志性口号にっこにっこにー，并列出角色与声优对应。",
+    "limitations": "角色介绍支持口号归属，不确定原动画首次出现的集数或中文首传。"
+  },
+  {
+    "id": "early-src-nico-pose",
+    "title": "矢澤にこ",
+    "url": "https://www.goodsmile.info/ja/product/5579/%E7%9F%A2%E6%BE%A4%E3%81%AB%E3%81%93.html",
+    "publisher": "Good Smile Company",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "授权商品说明将矢泽妮可的にっこにっこにー口号与代表性手势对应，说明造型参照广播CD封面。",
+    "limitations": "商品说明不是原动画台词实录，也不证明该手势首次创作时间。"
+  },
+  {
+    "id": "early-src-nico-event",
+    "title": "「ラブライブ！」μ’s in Wonder zone レポート",
+    "url": "https://www.lovelive-anime.jp/otonokizaka/news.php?offset=1689",
+    "publisher": "Love Live! 官方",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "2013年3月12日的官方活动报道记录3月10日活动中德井空使用にっこにっこにー与观众互动。",
+    "limitations": "活动报道证明2013年的公开使用，不将活动日当作口号诞生日。"
+  },
+  {
+    "id": "early-src-red-blue-explainer",
+    "title": "“自古红蓝出CP”是什么意思？",
+    "url": "https://acg17.com/80687.html",
+    "publisher": "ACG17",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "2022年解释文章将红、蓝发色或服装代表色的角色配对与该句对应，说明它是同人配对表达。",
+    "limitations": "只采用配对含义；文中关于作品带动流行的回顾不证明该句的首创或唯一原作。"
+  },
+  {
+    "id": "early-src-god-sync-definition",
+    "title": "神oo",
+    "url": "https://moegirl.uk/%E7%A5%9Eoo",
+    "publisher": "萌娘百科镜像",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "“神同步”段解释动作、步调、MAD音画及不同情节之间高度吻合的用法。",
+    "limitations": "实际读取的是社区镜像；它不包含早期B站标签版本记录，不能反推最初用语年代。"
+  },
+  {
+    "id": "early-src-little-education-2014",
+    "title": "这一年 一起用过的流行语",
+    "url": "https://news.12371.cn/2014/12/18/ARTI1418868138687952.shtml",
+    "publisher": "共产党员网转载山西日报",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "2014年12月18日文章解释“我读书少，你别骗我”的自嘲、反讽及不要欺负老实人的语用。",
+    "limitations": "文章对李小龙电影的归因未与原片逐句核对；不以该报道确定最早影视台词或B站首传。"
+  },
+  {
+    "id": "early-src-all-source-caijing",
+    "title": "万物，皆可鬼畜？",
+    "url": "https://www.mycaijing.com/article/detail/450613?source_id=40",
+    "publisher": "《财经》",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "报道用“万恶之源”指称《最终鬼畜蓝蓝路》这一经典二创源头，展示该词在鬼畜文化中的戏称用法。",
+    "limitations": "只采用素材源头的语用和具体用例，不采用文章对整个鬼畜文化唯一起源的概括。"
+  },
+  {
+    "id": "early-src-dali-meaning",
+    "title": "大力出奇迹（网络流行语）",
+    "url": "https://wapbaike.baidu.com/item/%E5%A4%A7%E5%8A%9B%E5%87%BA%E5%A5%87%E8%BF%B9/49872355",
+    "publisher": "百度百科",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "引申含义段区分用蛮力造成意外损坏与用夸张力量完成高难度动作两种调侃用法。",
+    "limitations": "只采用引申含义，不将百科概述中的2013年起源说法视为已经核实的最早传播日期。"
+  },
+  {
+    "id": "early-src-downfall-parodies",
+    "title": "Hitler's \"Downfall\" Parodies",
+    "url": "https://knowyourmeme.com/memes/hitlers-downfall-parodies",
+    "publisher": "Know Your Meme",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "正文说明该系列改写字幕取自2004年电影Der Untergang的地堡发怒片段，并整理多语种网络改编。",
+    "limitations": "仅采用电影场景与改字幕形式，不把百科整理的最早视频列表认作穷尽首创调查，也不把导演评价当作素材使用许可。"
+  },
+  {
+    "id": "early-src-geping-2020",
+    "title": "蓝猫配音演员葛平入驻b站，希望大家继续“鬼畜创作”",
+    "url": "https://k.sina.cn/article_5729156460_1557bfd6c02001aqt5.html?from=game&subch=ogame",
+    "publisher": "手谈姬／新浪",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "正文描述葛平自我介绍、讲述与小朋友见面经历的录像如何被提取为鬼畜素材，并记录其在AcFun与B站的早期传播。",
+    "limitations": "不采用文中未经原始节目核对的2002年视频日期；作者对部分二创的态度不等于向所有使用者授予素材许可。"
+  },
+  {
+    "id": "early-src-kuroko-nico-ranking",
+    "title": "月刊音MADランキング＃32【2010年12月】",
+    "url": "https://w.atwiki.jp/onseimad/pages/364.html",
+    "publisher": "音声MAD wiki",
+    "source_type": "community",
+    "access_level": "metadata",
+    "checked_at": "2026-10-30",
+    "supports": "同期月榜列出《危険な黒子》、Niconico编号sm13060333及2010年12月18日投稿日期，与B站稿件简介中的编号相符。",
+    "limitations": "榜单仅提供作品、编号和日期元数据；未读取原片，不以排行榜名次或标题证明完整素材内容及原作者身份。"
+  },
+  {
+    "id": "early-src-cirno-song-meaning",
+    "title": "チルノのパーフェクトさんすう教室",
+    "url": "https://danmakuwiki.com/%E3%83%81%E3%83%AB%E3%83%8E%E3%81%AE%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88%E3%81%95%E3%82%93%E3%81%99%E3%81%86%E6%95%99%E5%AE%A4",
+    "publisher": "東方ダンマクカグラ有志攻略Wiki",
+    "source_type": "community",
+    "access_level": "snippet",
+    "checked_at": "2026-10-30",
+    "supports": "检索摘要解释琪露诺试图教授算术却暴露笨拙的歌曲主题，并将作品与IOSYS同人曲关联。",
+    "limitations": "内容页返回403，未取得正文；只登记摘要所支持的歌曲主题，不借此核实歌词、舞蹈动作或B站传播。"
+  },
+  {
+    "id": "early-src-cirno-cover",
+    "title": "みんなのパーフェクトチルパ天国 - チルノのパーフェクトさんすう教室カバーアルバム",
+    "url": "https://armageddong.wixsite.com/cirnolove",
+    "publisher": "IOSYS",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "官方专辑介绍说明12组音乐人对《琪露诺的完美算术教室》进行翻唱、重新编曲与混音，证明衍生改编系列。",
+    "limitations": "2019年专辑是后续改编，不代替原曲、2008年MV或B站首传时间；未核舞蹈原编舞。"
+  },
+  {
+    "id": "early-src-luotianyi-character",
+    "title": "最前线｜B站增持虚拟偶像“洛天依”母公司股份，成为控股股东",
+    "url": "https://www.36kr.com/p/1722850377729",
+    "publisher": "36氪／夜叶",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "2018年9月21日正文将洛天依的吃货殿下称呼与B站UP主H.K.君制作的《千年食谱颂》对应，并说明粉丝歌曲补充角色设定。",
+    "limitations": "只采用角色称呼、歌曲与创作者的关系；正文未列原曲和PV的具体投稿日期，不据企业投资或商业分析推断作品权利。"
+  },
+  {
+    "id": "early-src-renai-official",
+    "title": "「化物語 音楽全集Songs&Soundtracks」発売決定",
+    "url": "https://www.monogatari-series.com/bakemonogatari/info/",
+    "publisher": "《化物语》官方",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "官方公告说明音乐全集收录动画主題歌，明确《恋愛サーキュレーション》由千石抚子（花泽香菜）演唱，meg rock作词、神前晓作曲编曲。",
+    "limitations": "2011年音乐全集是一次收录发行，不是歌曲首次在动画出现的日期；未核原动画首播集数。"
+  },
+  {
+    "id": "early-src-renai-disc",
+    "title": "化物語 第四巻／なでこスネイク",
+    "url": "https://www.monogatari-series.com/bddvdcd/detail/?id=2243",
+    "publisher": "《物语系列》官方",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "官方商品说明列出2010年1月27日发行的第四卷及其特典CD收录主题歌《恋愛サーキュレーション》。",
+    "limitations": "这是该卷商品发行日，不作为歌曲首次播出或B站首传日期。"
+  },
+  {
+    "id": "early-src-platinum-official",
+    "title": "「白金ディスコ」着うた配信開始！",
+    "url": "https://www.aniplex.co.jp/lineup/nisemonogatari/news/detail/?id=13490",
+    "publisher": "Aniplex／《伪物语》官方",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "2012年3月2日公告说明阿良良木月火（井口裕香）演唱的《白金ディスコ》是つきひフェニックス篇片头曲，铃声自3月3日配信。",
+    "limitations": "铃声配信公告不等于电视首次播出、完整单曲首次发行或B站首传。"
+  },
+  {
+    "id": "early-src-platinum-disc",
+    "title": "偽物語 第五巻／つきひフェニックス（下）",
+    "url": "https://www.aniplex.co.jp/lineup/nisemonogatari/products/detail/?id=2763",
+    "publisher": "Aniplex",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "官方商品说明列出2012年7月25日第五卷及其特典CD收录《白金ディスコ》。",
+    "limitations": "影碟特典发行晚于3月的铃声配信节点，不能称为歌曲唯一首次公开时间。"
+  },
+  {
+    "id": "early-src-senbonzakura-official",
+    "title": "千本桜-SENBONZAKURA- 10周年記念 OFFICIAL SITE",
+    "url": "https://whiteflame.jp/10th-senbonzakura/",
+    "publisher": "WhiteFlame／千本桜十周年项目",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "作者方介绍明确《千本桜》为黒うさP制作、初音未来演唱，2011年9月17日投稿，并介绍翻唱、舞蹈、演奏等衍生创作。",
+    "limitations": "官方原作投稿日与中文转载、2014年古筝改编是不同节点；页面没有调查B站最早转载者。"
+  },
+  {
+    "id": "early-src-skate-interview",
+    "title": "网红迭代②｜现代生活的闯入者：庞麦郎的进击和孤独",
+    "url": "https://www.thepaper.cn/newsDetail_forward_1571525",
+    "publisher": "澎湃新闻／张维、黄芳、蒋晨悦",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-30",
+    "supports": "2016年12月1日采访记载庞麦郎于2014年5月在虾米音乐上传《我的滑板鞋》，当年夏季走红，并描述歌曲的追梦叙事及口语化演唱。",
+    "limitations": "只采用歌曲创作、上传与传播相关段落；2014年上传不等于开始创作，不纳入身份争议、私人生活或人物健康推测。"
   }
 ]

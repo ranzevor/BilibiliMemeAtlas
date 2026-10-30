@@ -340,7 +340,7 @@
       "真人关系误判"
     ],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-tencent-danmu",
@@ -348,9 +348,16 @@
           "platform_usage"
         ],
         "note": "2015年腾讯正文在弹幕列举中出现此词组；仅支持列名用例，不解释红蓝角色配对含义。"
+      },
+      {
+        "source_id": "early-src-red-blue-explainer",
+        "claims": [
+          "meaning"
+        ],
+        "note": "正文明确解释角色代表色与同人配对的关系。"
       }
     ],
-    "notes": "2015年腾讯正文只在弹幕列举中出现该词组，未解释红蓝角色配对；首次造词、具体原作和早期跨站传播链也没有来源支持。"
+    "notes": "已补红蓝代表色角色配对的释义；2015年弹幕文章支持既有用例，首次造词和早期跨站传播链仍待补。"
   },
   {
     "id": "early-serious-lose",
@@ -464,7 +471,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-geping-source",
@@ -472,9 +479,23 @@
           "platform_usage"
         ],
         "note": "早期素材视频标题使用该说法。"
+      },
+      {
+        "source_id": "early-src-all-source-caijing",
+        "claims": [
+          "meaning"
+        ],
+        "note": "正文以经典二创源头说明这一戏称。"
+      },
+      {
+        "source_id": "early-src-guichu-history",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "正文记载B站经典视频中的“万恶之源”弹幕。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 [万恶之源]葛平 吴克 小光头的由来：platform_usage（metadata）。标题可证用例，精确造词者未知。"
+    "notes": "正文报道与站内素材标题已支持二创源头的戏称；该表达何时开始在中文视频圈使用仍缺早期记录。"
   },
   {
     "id": "early-site-treasure",
@@ -556,7 +577,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-synchronization",
@@ -564,9 +585,16 @@
           "platform_usage"
         ],
         "note": "原页面含神同步标签。"
+      },
+      {
+        "source_id": "early-src-god-sync-definition",
+        "claims": [
+          "meaning"
+        ],
+        "note": "正文解释动作、音画和情节同步的不同用法。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 卡密SAMA的抹杀循环：platform_usage（metadata）。词义为剪辑语境归纳；最早年代尚缺原始标签历史。"
+    "notes": "已补动作与音画高度吻合的释义；2010年作品页的标签可作站内用例，但标签添加时间和最早使用年代仍未核实。"
   },
   {
     "id": "early-jinkela",
@@ -648,7 +676,7 @@
     "relations": [
       "early-wuke"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-geping-column",
@@ -664,9 +692,18 @@
           "platform_usage"
         ],
         "note": "素材页身份和早期投稿线索。"
+      },
+      {
+        "source_id": "early-src-geping-2020",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "正文描述素材内容、二创方式与A/B站传播；不采用未核的摄制年。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 鬼畜区的前世今生:创造的时代：origin,platform_usage（snippet）；[万恶之源]葛平 吴克 小光头的由来：platform_usage（metadata）。仅取得社区回顾摘要与旧素材页线索；原节目录像、摄制时间和完整台词未直接核看。"
+    "notes": "已补自我介绍及见面经历素材形成鬼畜系列的正文；原节目录像摄制时间、最早剪辑与“葛炮”旧称的形成记录仍待补。"
   },
   {
     "id": "early-wuke",
@@ -750,18 +787,27 @@
       "early-hebei",
       "early-soramimi"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "early-src-guichu-history",
         "claims": [
+          "meaning",
           "origin",
           "platform_usage"
         ],
-        "note": "解释电影素材与中文德语空耳。"
+        "note": "正文解释电影场景、德语空耳及B站传播；不将空耳当翻译。"
+      },
+      {
+        "source_id": "early-src-downfall-parodies",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "正文解释电影片段与多语种改字幕二创。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 中国鬼畜破圈简史：origin,platform_usage（snippet）。目前只核回顾摘要；电影原片与最早中文/B站二创传播链未直接核实。"
+    "notes": "电影素材、改字幕形式及中文空耳/B站传播已有正文支持；空耳不是德语翻译，未将任何已见二创认定为中文或全网首作。"
   },
   {
     "id": "early-hebei",
@@ -804,10 +850,10 @@
           "origin",
           "platform_usage"
         ],
-        "note": "摘要明确列出河北空耳及葛平联动。"
+        "note": "正文明确列出河北空耳及葛平联动；只支持中文二创用法，不支持德语本义。"
       }
     ],
-    "notes": "空耳及葛平联动有摘要证据；未核原片声音或最早二创，不能当成德语翻译。",
+    "notes": "正文已说明德语空耳及葛平联动；未核原片声音或最早二创，不能当成德语翻译。",
     "tags": [
       "气死偶咧"
     ]
@@ -1278,7 +1324,7 @@
     ],
     "category": "guichu",
     "era": "2009-2015",
-    "meaning": "用“用力就能解决”式的夸张口气形容粗放操作；早期同名素材与受访者有关。",
+    "meaning": "用夸张的力量形容操作结果：既可调侃蛮力造成意外损坏，也可赞叹强力完成高难度动作；同名采访素材与“大力哥”有关。",
     "origin": {
       "summary": "2014年前后网络采访片段成为鬼畜素材；现有记录不将该素材断言为成语式说法的唯一首创。",
       "date": null,
@@ -1301,7 +1347,7 @@
       "药物滥用背景"
     ],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-dali",
@@ -1310,9 +1356,16 @@
           "date"
         ],
         "note": "同期采访记载2014年传播。"
+      },
+      {
+        "source_id": "early-src-dali-meaning",
+        "claims": [
+          "meaning"
+        ],
+        "note": "正文分别解释蛮力导致损坏与完成高难度动作的用法。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 最搞笑劫匪“大力哥”接受采访：“雷语”频出：origin,date（snippet）。缺具体早期B站二创原稿。"
+    "notes": "同期采访正文已核2014年初的传播，词典正文补足蛮力操作的褒贬两种用法；原采访首播时间与早期B站二创仍待补。"
   },
   {
     "id": "early-xueyi-door",
@@ -1541,7 +1594,7 @@
     "relations": [
       "early-millennium-food-song"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-foodsong-original",
@@ -1560,9 +1613,18 @@
           "platform_usage"
         ],
         "note": "7月13日原曲+PV元数据。"
+      },
+      {
+        "source_id": "early-src-luotianyi-character",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "报道明确将吃货殿下称呼归于B站UP主H.K.君的《千年食谱颂》。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 【洛天依】千年食谱颂：meaning,date,platform_usage（metadata）；【洛天依】千年食谱颂 原曲+PV 【H.K.君】：origin,date,platform_usage（metadata）。原曲与PV日期不同；不将7月13日直接称为歌曲唯一首发日。",
+    "notes": "正文已补称呼、洛天依与H.K.君歌曲的对应关系；2012年原曲与PV日期仍来自投稿元数据，两次投稿不能合并成同一首发节点。",
     "tags": [
       "千年食谱颂"
     ]
@@ -1631,11 +1693,11 @@
     ],
     "category": "music",
     "era": "2009-2015",
-    "meaning": "黒うさP的Vocaloid作品名称，在B站有器乐改编、翻唱及以“千本×”命名的鬼畜。",
+    "meaning": "黒うさP制作、初音未来演唱的Vocaloid作品，形成翻唱、舞蹈与器乐改编等二创；墨韵的古筝改编是B站代表传播用例。",
     "origin": {
-      "summary": "2011年作品进入中文视频站；2014年墨韵古筝改编是代表传播节点之一。",
-      "date": "2011",
-      "precision": "year",
+      "summary": "作者方记载原作于2011年9月17日投稿；B站同年已有转载，2014年墨韵古筝改编是后续代表传播节点。",
+      "date": "2011-09-17",
+      "precision": "exact",
       "bilibili_role": "amplifier"
     },
     "usage": {
@@ -1652,7 +1714,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "early-src-senbonzakura",
@@ -1669,10 +1731,19 @@
           "platform_usage",
           "date"
         ],
-        "note": "2014年古筝改编采访。"
+        "note": "采访正文记载墨韵2014年7月将古筝改编上传B站，区别于2011年原作。"
+      },
+      {
+        "source_id": "early-src-senbonzakura-official",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "作者方正文明确原作创作者、演唱者及2011年9月17日投稿。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 『黒うさ』千本桜『PV』：origin,date,platform_usage（metadata）；B站敲钟前夜，我们和三位UP主聊了聊：platform_usage,date（snippet）。2011年原作背景与2014年改编节点有元数据/采访摘要；日方首发页与B站最早传播未核全。"
+    "notes": "作者方已支持原作与2011年9月17日投稿，采访正文支持墨韵2014年B站古筝改编；原作日不等于B站首次转载日，历史播放量不作当前指标。"
   },
   {
     "id": "early-leekspin",
@@ -1725,7 +1796,7 @@
     ],
     "category": "music",
     "era": "2009-2015",
-    "meaning": "《化物语》相关角色歌曲及其宅舞、翻唱、音MAD的共同参照；常用来营造甜美反差。",
+    "meaning": "《化物语》中千石抚子（花泽香菜）演唱的主题歌，也是宅舞、翻唱与音MAD改编的常见参照；甜美原曲与反差画面常被组合使用。",
     "origin": {
       "summary": "原曲属于动画角色歌曲，B站2012年已有咬人猫宅舞等投稿。",
       "date": null,
@@ -1747,7 +1818,7 @@
     "relations": [
       "early-god-sync"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "early-src-love-dance",
@@ -1763,9 +1834,32 @@
           "platform_usage"
         ],
         "note": "2010年已有同曲音MAD。"
+      },
+      {
+        "source_id": "early-src-renai-official",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "官方公告明确动画主题歌、演唱角色与创作人员。"
+      },
+      {
+        "source_id": "early-src-renai-disc",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "2010年1月27日影碟特典收录节点，不是歌曲诞生日。"
+      },
+      {
+        "source_id": "early-src-guichu-history",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "正文记载小米于2019年12月18日在B站发布财报版《恋爱循环》。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 【咬人猫】恋爱循环❤第八作の舞蹈~喵：platform_usage,date（metadata）；卡密SAMA的抹杀循环：platform_usage（metadata）。现有材料未包含歌曲版权方原发行页。"
+    "notes": "原曲归属、演唱角色与B站改编已有正文支持；2010年影碟特典和2011年音乐全集是不同发行节点，均不代替动画首次播出或B站首传。"
   },
   {
     "id": "early-platinum-disco",
@@ -1776,7 +1870,7 @@
     ],
     "category": "music",
     "era": "2009-2015",
-    "meaning": "《伪物语》相关歌曲与舞蹈，也常用于和风旋律的音MAD改编。",
+    "meaning": "《伪物语》つきひフェニックス篇由阿良良木月火（井口裕香）演唱的片头曲；在中文ACG语境中也指围绕该曲的宅舞和音MAD改编。",
     "origin": {
       "summary": "2012年作品在中文ACG圈传播，咬人猫后续投稿已链接其白金迪斯科前作。",
       "date": "2012",
@@ -1798,7 +1892,7 @@
     "relations": [
       "early-ordinary-disco"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-platinum",
@@ -1815,9 +1909,26 @@
           "platform_usage"
         ],
         "note": "2012年投稿指向既有白金迪斯科前作。"
+      },
+      {
+        "source_id": "early-src-platinum-official",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "正文明确片头曲归属与2012年3月铃声配信。"
+      },
+      {
+        "source_id": "early-src-platinum-disc",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "2012年7月影碟特典是另一发行节点，不能替代3月配信。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 【白金迪斯科/伪物语】【中日字幕】：meaning,origin,date（metadata）；【咬人猫】恋爱循环❤第八作の舞蹈~喵：platform_usage（metadata）。作品与2012年宅舞互链目前为元数据证据；原专辑、原编舞与B站最早用例未核全。"
+    "notes": "官方公告已补动画篇章、演唱角色及2012年配信和特典发行；早期B站宅舞仍只有投稿元数据，原编舞与首次站内传播待补。"
   },
   {
     "id": "early-skate-shoes",
@@ -1853,7 +1964,7 @@
     "relations": [
       "early-duang"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "early-src-skate-shoes",
@@ -1862,9 +1973,26 @@
           "date"
         ],
         "note": "研究回顾2014传播及Duang改编。"
+      },
+      {
+        "source_id": "early-src-skate-interview",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "采访正文说明追梦歌曲、2014年5月虾米上传及夏季走红。"
+      },
+      {
+        "source_id": "early-src-jiemian-guichu",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文描述绯色toy将洗发水广告与《我的滑板鞋》同步剪辑成B站Duang作品。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 后现代语境下我国“神曲”现象研究：origin,date（snippet）。2014为走红节点，原始创作与发行日未定。"
+    "notes": "采访正文支持2014年上传和走红，鬼畜报道支持B站Duang改编关系；上传、走红和开始创作是不同节点，未填写未经核定的精确首发日。"
   },
   {
     "id": "early-gangnam-style",
@@ -1919,10 +2047,10 @@
     "era": "2009-2015",
     "meaning": "B站早期以白井黑子相关素材制作的音MAD代表作，标题常作为老站记忆的指代。",
     "origin": {
-      "summary": "冴羽獠2010年投稿的作品；后被列入入站必刷。",
+      "summary": "B站由冴羽獠于2010年12月18日上传，简介标注Niconico原作sm13060333；日方同期榜单记录了同一作品，冴羽獠是该B站稿件的上传者，不能据此认定为原作者。",
       "date": "2010",
       "precision": "year",
-      "bilibili_role": "origin"
+      "bilibili_role": "imported"
     },
     "usage": {
       "contexts": [
@@ -1944,21 +2072,29 @@
       {
         "source_id": "early-src-kuroko",
         "claims": [
-          "meaning",
-          "platform_usage"
+          "platform_usage",
+          "date"
         ],
-        "note": "原作品页标题与经典标识。"
+        "note": "B站稿件标题、上传者、2010年12月18日日期及简介中的Niconico编号；不是原作者署名证明。"
       },
       {
         "source_id": "early-src-bili-17",
         "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "回顾记录2010年B站投稿节点；文中提到上传者，不据此归因为原作作者。"
+      },
+      {
+        "source_id": "early-src-kuroko-nico-ranking",
+        "claims": [
           "origin",
           "date"
         ],
-        "note": "回顾确认2010年与作者。"
+        "note": "日方同期音MAD榜单提供同一原作编号及2010年12月18日节点；读取范围为榜单元数据。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 危险的黑子：meaning,platform_usage（metadata）；17年只做一件事，为什么B站越活越扎实？：origin,date（snippet）。作品元数据与回顾摘要相互支持作者和2010年节点；未播放核对素材，最早页面版本未补。"
+    "notes": "B站稿件简介与日方同期榜单均指向sm13060333，已纠正上传者与原作者混同；原片内容及可支持完整释义的正文仍待补，原作者身份不据转载者署名推定。"
   },
   {
     "id": "early-cirno-nine",
@@ -2039,7 +2175,7 @@
     "relations": [
       "early-cirno-nine"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-iosys",
@@ -2048,9 +2184,23 @@
           "date"
         ],
         "note": "作者官方活动史。"
+      },
+      {
+        "source_id": "early-src-cirno-song-meaning",
+        "claims": [
+          "meaning"
+        ],
+        "note": "摘要明确描述算术教学与角色反差，非仅以⑨绰号代替歌曲释义。"
+      },
+      {
+        "source_id": "early-src-cirno-cover",
+        "claims": [
+          "meaning"
+        ],
+        "note": "官方介绍直接确认翻唱、重新编曲和混音系列。"
       }
     ],
-    "notes": "官方资料只支持MV公开日期；已登记释义来源仅解释⑨绰号，不支持该曲主题、舞蹈或二创系列。"
+    "notes": "官方活动史支持2008年10月25日MV公开，歌曲主题有专业社区摘要、后续改编有官方专辑说明；舞蹈原编舞及早期B站传播仍待补。"
   },
   {
     "id": "early-nyanpasu",
@@ -2168,7 +2318,7 @@
     "lifecycle": "contextual",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-nico",
@@ -2177,9 +2327,31 @@
           "date"
         ],
         "note": "2013商品资料的同期关联。"
+      },
+      {
+        "source_id": "early-src-nico-official",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "官方角色介绍直接给出口号和角色归属。"
+      },
+      {
+        "source_id": "early-src-nico-pose",
+        "claims": [
+          "meaning"
+        ],
+        "note": "商品说明明确代表性口号与手势。"
+      },
+      {
+        "source_id": "early-src-nico-event",
+        "claims": [
+          "date"
+        ],
+        "note": "官方报道提供2013年3月10日活动用例，不作为最早出现日期。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 Love Live! Perfect Visual Collection: Smile：origin,date（metadata）。原动画台词与早期B站二创需要继续补证。"
+    "notes": "角色官方介绍、授权商品说明和2013年活动报道已支持口号及动作归属；原动画首次台词与早期B站二创传播仍待补。"
   },
   {
     "id": "early-power-five",
@@ -2509,7 +2681,7 @@
     ],
     "category": "acg",
     "era": "2009-2015",
-    "meaning": "Fate圈对部分Lancer角色低幸运和遭遇的夸张概括，后来调侃倒霉的持枪角色。",
+    "meaning": "Fate圈对库丘林、迪卢木多等Lancer角色低幸运及剧情遭遇的夸张概括，也用于调侃倒霉的枪兵；并非所有Lancer的幸运属性都是E。",
     "origin": {
       "summary": "从角色属性表和故事遭遇衍生；2013年中文社区已见此句。",
       "date": null,
@@ -2530,7 +2702,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "early-src-lancer",
@@ -2538,9 +2710,24 @@
           "date"
         ],
         "note": "同期问答可证已存在。"
+      },
+      {
+        "source_id": "early-src-lancer-mooncell",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "正文区分库丘林、迪卢木多的幸运E与其他枪兵。"
+      },
+      {
+        "source_id": "early-src-lancer-bili-quiz",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "正文记录B站硬核会员题目；仅采用题目及答案用例。"
       }
     ],
-    "notes": "释义仍需角色官方资料与早期B站用例补证；现有2013问答不能证明来源链。"
+    "notes": "已核的是特定Fate角色的属性梗与B站答题用例，不把夸张句式当作全体Lancer的属性规则；2013年问答是既有用语记录，不是首创证明。"
   },
   {
     "id": "early-kugimiya-syndrome",
@@ -2740,12 +2927,11 @@
     "id": "early-german-orthopedics",
     "term": "德国骨科",
     "aliases": [
-      "骨科",
-      "伪骨科"
+      "骨科"
     ],
     "category": "acg",
     "era": "2009-2015",
-    "meaning": "ACG语境中暗指亲属间恋爱设定；“伪骨科”常指后来揭示无血缘的类似设定。",
+    "meaning": "ACG语境中暗指血缘亲属间的恋爱设定；“伪骨科”指名义上是兄妹等亲属、实际没有血缘的类似设定，两者需要区分。",
     "origin": {
       "summary": "流传的起源故事涉及所谓2012年网络传闻，现有材料未确认原帖和事件真实性。",
       "date": null,
@@ -2769,7 +2955,7 @@
       "未经证实传闻"
     ],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-german-orthopedics",
@@ -2777,9 +2963,26 @@
           "meaning"
         ],
         "note": "社区材料说明流传中的解释。"
+      },
+      {
+        "source_id": "early-src-german-wiktionary",
+        "claims": [
+          "meaning"
+        ],
+        "note": "词典正文支持血缘亲属题材义。"
+      },
+      {
+        "source_id": "early-src-pseudo-siblings",
+        "claims": [
+          "meaning"
+        ],
+        "note": "无血缘的伪骨科属于相关变体，不作为完全同义别名。"
       }
     ],
-    "notes": "缺可核原始来源；仅用于识别语义，不能回答确定首创者或首发日。"
+    "notes": "已补亲属恋爱隐语与无血缘变体的区分；最初造词记录、传闻真实性和早期B站用例仍未核定。",
+    "tags": [
+      "伪骨科"
+    ]
   },
   {
     "id": "early-equipment-ok",
@@ -3319,7 +3522,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-2014-list",
@@ -3327,9 +3530,17 @@
           "date"
         ],
         "note": "年度传播锚点；具体用法为语境归纳。"
+      },
+      {
+        "source_id": "early-src-little-education-2014",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "同期正文解释自嘲、反讽语气并提供2014年使用节点。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 年度十大“流行语”“新词语”“网络用语”反映世情民意：date（full）。影视词源和早期B站用例仍待补。"
+    "notes": "2014年同期解释已支持自嘲与质疑语气；报道中的影视归因仍需原片核对，早期B站使用记录待补。"
   },
   {
     "id": "early-ranbingluan",
@@ -4191,7 +4402,7 @@
     "relations": [
       "early-food-princess"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-foodsong-original",
@@ -4211,8 +4422,17 @@
           "platform_usage"
         ],
         "note": "原曲+PV为另一投稿，日期2012-07-13。"
+      },
+      {
+        "source_id": "early-src-luotianyi-character",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "正文说明歌曲由B站UP主H.K.君制作，并形成洛天依的吃货称呼；没有给出投稿日。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 【洛天依】千年食谱颂：meaning,origin,date,platform_usage（metadata）；【洛天依】千年食谱颂 原曲+PV 【H.K.君】：origin,date,platform_usage（metadata）。登记读取范围仅为投稿元数据，未播放原曲/PV或逐项核对全部创作人员；不据二创页面确定歌曲在全网的最早公开时间。"
+    "notes": "正文已补歌曲、创作者与吃货殿下设定的关系；2012年6月29日原曲与7月13日PV仍按各自投稿元数据记录，未核完整原曲及全部创作署名。"
   }
 ]
