@@ -68,3 +68,108 @@ class HistoryTests(unittest.TestCase):
             output=linked/'history.json'
             self.assertEqual(main(['--output',str(output)]),2)
             self.assertFalse((real/'history.json').exists())
+
+
+class HistoricalEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_related_family_terms_are_not_exact_aliases(self):
+        from atlas import get_entries, search
+        entry = self.by_id['early-german-orthopedics']
+        self.assertNotIn('伪骨科', entry['aliases'])
+        self.assertIn('伪骨科', entry['tags'])
+        self.assertEqual(get_entries(self.entries, '伪骨科'), [])
+        result = search(self.entries, '伪骨科')
+        self.assertIn(entry['id'], [row['entry']['id'] for row in result['results']])
+
+    def test_lancer_attribute_is_not_universalized(self):
+        entry = self.by_id['early-lancer-luck']
+        self.assertIn('库丘林', entry['meaning'])
+        self.assertIn('迪卢木多', entry['meaning'])
+        self.assertIn('并非所有Lancer', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['early-src-lancer-mooncell']['claims'])
+        self.assertEqual(refs['early-src-lancer-bili-quiz']['claims'], ['platform_usage'])
+
+    def test_kuroko_uploader_is_not_promoted_to_original_creator(self):
+        from atlas import search
+        entry = self.by_id['early-kuroko']
+        self.assertEqual(entry['origin']['bilibili_role'], 'imported')
+        self.assertIn('sm13060333', entry['origin']['summary'])
+        self.assertEqual(entry['evidence_status'], 'candidate')
+        self.assertFalse(any(
+            'meaning' in ref['claims'] and
+            self.sources[ref['source_id']]['access_level'] in ('full', 'snippet')
+            for ref in entry['evidence']))
+        result = search(self.entries, entry['term'])
+        self.assertNotIn(entry['id'], [row['entry']['id'] for row in result['results']])
+        self.assertGreaterEqual(result['candidate_matches_excluded'], 1)
+        included = search(self.entries, entry['term'], include_candidates=True)
+        self.assertIn(entry['id'], [row['entry']['id'] for row in included['results']])
+
+    def test_senbonzakura_author_date_is_separate_from_arrangement(self):
+        entry = self.by_id['early-senbonzakura']
+        self.assertEqual(entry['origin']['date'], '2011-09-17')
+        self.assertEqual(entry['origin']['precision'], 'exact')
+        original = self.sources['early-src-senbonzakura-official']
+        self.assertEqual((original['source_type'], original['access_level']), ('primary', 'full'))
+        self.assertIn('2011年9月17日', original['supports'])
+        arrangement = self.sources['early-src-guzheng']
+        self.assertEqual(arrangement['access_level'], 'full')
+        self.assertIn('2014年7月', arrangement['supports'])
+
+    def test_song_and_pv_keep_separate_dates(self):
+        entry = self.by_id['early-millennium-food-song']
+        self.assertEqual(entry['origin']['date'], '2012-06-29')
+        self.assertIn('2012-07-13', entry['origin']['summary'])
+        self.assertNotEqual(entry['id'], self.by_id['early-food-princess']['id'])
+        self.assertEqual(self.sources['early-src-luotianyi-character']['access_level'], 'full')
+        self.assertIn('未列原曲和PV的具体投稿日期',
+                      self.sources['early-src-luotianyi-character']['limitations'])
+
+    def test_music_distribution_nodes_are_not_collapsed(self):
+        self.assertIn('2010年1月27日', self.sources['early-src-renai-disc']['supports'])
+        self.assertIn('2011年', self.sources['early-src-renai-official']['limitations'])
+        self.assertIn('3月3日', self.sources['early-src-platinum-official']['supports'])
+        self.assertIn('2012年7月25日', self.sources['early-src-platinum-disc']['supports'])
+        self.assertEqual(self.by_id['early-love-circulation']['origin']['date'], None)
+        self.assertEqual(self.by_id['early-platinum-disco']['origin']['date'], '2012')
+
+    def test_upgraded_meanings_are_available_to_default_search(self):
+        from atlas import search
+        identifiers = (
+            'early-german-orthopedics', 'early-lancer-luck', 'early-nico-nico-ni',
+            'early-red-blue-cp', 'early-god-sync', 'early-little-education',
+            'early-source-of-all', 'early-dali', 'early-downfall', 'early-geping',
+            'early-cirno-classroom', 'early-food-princess', 'early-love-circulation',
+            'early-millennium-food-song', 'early-platinum-disco',
+            'early-senbonzakura', 'early-skate-shoes',
+        )
+        for identifier in identifiers:
+            with self.subTest(identifier=identifier):
+                entry = self.by_id[identifier]
+                result = search(self.entries, entry['term'])
+                self.assertIn(identifier, [row['entry']['id'] for row in result['results']])
+
+    def test_verified_records_with_unknown_dates_remain_queued(self):
+        queued = {row['entry_id'] for row in matrix()['research_queue']}
+        unknown = [entry for entry in self.entries
+                   if entry['evidence_status'] == 'verified' and entry['origin']['date'] is None]
+        self.assertTrue(unknown)
+        for entry in unknown:
+            with self.subTest(identifier=entry['id']):
+                self.assertIn(entry['id'], queued)
+        self.assertNotIn('early-senbonzakura', queued)
+
+    def test_shared_source_reading_range_is_synchronized(self):
+        source = self.sources['early-src-guichu-history']
+        self.assertEqual(source['access_level'], 'full')
+        entry = self.by_id['early-hebei']
+        self.assertNotIn('摘要', entry['notes'])
+        for ref in entry['evidence']:
+            if ref['source_id'] == source['id']:
+                self.assertNotIn('摘要', ref['note'])

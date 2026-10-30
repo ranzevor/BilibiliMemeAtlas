@@ -7,14 +7,14 @@
     "metadata.json"
   ],
   "statistics": {
-    "version": "0.1.2",
-    "knowledge_cutoff": "2026-10-29",
+    "version": "0.1.3",
+    "knowledge_cutoff": "2026-10-30",
     "entries": 303,
-    "sources": 287,
+    "sources": 311,
     "by_evidence": {
-      "candidate": 52,
-      "partial": 206,
-      "verified": 45
+      "candidate": 35,
+      "partial": 218,
+      "verified": 50
     },
     "by_era": {
       "2009-2015": 86,
@@ -35,9 +35,9 @@
       "vtuber": 7
     },
     "source_access": {
-      "full": 101,
-      "metadata": 51,
-      "snippet": 135
+      "full": 125,
+      "metadata": 52,
+      "snippet": 134
     },
     "coverage": "按年代与分区组织的收录集；未建立全站历史梗总量，不计算全量覆盖率"
   }
