@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from package import build_archive
 import package as package_module
+import validate as validate_module
 from release import (ReleaseError, check_local, describe, expected_checksums,
                      prepare_installable_request, prepare_request, read_json,
                      validate_manifest, verify_installable_observation,
@@ -83,6 +84,20 @@ class ReleaseTests(unittest.TestCase):
                     side_effect=change_before_second_scan):
                 with self.assertRaisesRegex(ValueError, "捕获期间"):
                     describe(source, self.notes)
+
+    def test_fixed_manifest_readback_is_independent_of_new_source_rules(self):
+        with patch.object(
+                validate_module, "PROJECT_FILES",
+                validate_module.PROJECT_FILES | {"docs/new-maintenance.md"}):
+            with self.assertRaisesRegex(ValueError, "缺少文件"):
+                describe(ROOT, self.notes, self.assets)
+            bodies = check_local(self.manifest, ROOT, self.notes, self.assets)
+            self.assertEqual(bodies[self.archive.name], self.archive.read_bytes())
+        with patch("build.projections", side_effect=ValueError("new projection rules")):
+            with self.assertRaisesRegex(ValueError, "new projection"):
+                describe(ROOT, self.notes, self.assets)
+            bodies = check_local(self.manifest, ROOT, self.notes, self.assets)
+            self.assertEqual(bodies[self.archive.name], self.archive.read_bytes())
 
     def test_prepare_request_and_verify_observation(self):
         request = prepare_request(self.manifest, ROOT, self.notes, self.assets)

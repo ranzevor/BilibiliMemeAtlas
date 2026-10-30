@@ -10,7 +10,7 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
-from zipfile import ZipFile, ZipInfo
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -18,12 +18,22 @@ import install as installer
 from install import (LOCK_NAME, NAME, RECORD_NAME, archive_files, install,
                      recover, recovery_info, tree_identity, uninstall,
                      validate_installation)
-from package import PackageError, build_archive
+from package import PackageError, build_archive, capture_files
 from update import UpdateError
 import update as updater
 import writer_lock
 from writer_lock import writer_lease
 from test_contracts import create_symlink
+from validate import validate_project_files
+
+
+def write_member_archive(path, files):
+    with ZipFile(path, "w") as archive:
+        for name, body in sorted(files.items()):
+            item = ZipInfo(NAME + "/" + name)
+            item.external_attr = 0o100644 << 16
+            archive.writestr(item, body)
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 class InstallTests(unittest.TestCase):
@@ -69,6 +79,170 @@ class InstallTests(unittest.TestCase):
         self.assertFalse(target.exists())
         os.replace(removed["backup"], target)
         self.assertEqual(validate_installation(target), initial["identity"])
+
+    def variant(self, label, transform):
+        with ZipFile(self.archive) as archive:
+            files = {item.filename[len(NAME) + 1:]: archive.read(item)
+                     for item in archive.infolist()}
+        transform(files)
+        path = self.base / (label + ".zip")
+        return path, write_member_archive(path, files), files
+
+    def test_three_file_sets_upgrade_rollback_and_manual_restore(self):
+        def previous(files):
+            del files["AGENT_INSTALL.md"]
+            del files[".github/dependabot.yml"]
+
+        def following(files):
+            files["docs/examples/query.md"] = b"# Offline query examples\n"
+            files[".github/PULL_REQUEST_TEMPLATE/default.md"] = files.pop(
+                ".github/pull_request_template.md")
+            del files["tests/test_release.py"]
+
+        old_archive, old_digest, old_files = self.variant("previous", previous)
+        next_archive, next_digest, next_files = self.variant("following", following)
+        initial = install(old_archive, self.parent, old_digest)
+        target = self.parent / NAME
+        self.assertEqual(capture_files(target), old_files)
+        self.assertTrue(validate_project_files(target))
+        upgraded = install(
+            self.archive, self.parent, self.report["sha256"],
+            expected_current=initial["identity"])
+        old_backup = Path(upgraded["backup"])
+        self.assertEqual(capture_files(old_backup), old_files)
+        self.assertEqual(tree_identity(old_backup), initial["identity"])
+        following_result = install(
+            next_archive, self.parent, next_digest,
+            expected_current=upgraded["identity"])
+        self.assertEqual(capture_files(target), next_files)
+        result = subprocess.run(
+            [sys.executable, str(target / "scripts/atlas.py"), "stats"],
+            cwd=self.base, capture_output=True, check=False,
+            env={**os.environ, "PYTHONDONTWRITEBYTECODE": "1", "PYTHONUTF8": "1"})
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads(result.stdout)["entries"], 303)
+        self.assertEqual(tree_identity(target), following_result["identity"])
+        rolled_back = install(
+            old_archive, self.parent, old_digest,
+            expected_current=following_result["identity"])
+        self.assertEqual(rolled_back["identity"], initial["identity"])
+        removed = uninstall(self.parent, rolled_back["identity"])
+        self.assertEqual(capture_files(Path(removed["backup"])), old_files)
+        self.assertTrue(old_backup.resolve().is_relative_to(self.base.resolve()))
+        self.assertTrue(target.resolve().is_relative_to(self.base.resolve()))
+        os.replace(old_backup, target)
+        self.assertEqual(tree_identity(target), initial["identity"])
+
+    def test_previous_file_set_is_restored_after_new_readback_failure(self):
+        def previous(files):
+            del files["AGENT_INSTALL.md"]
+            del files[".github/dependabot.yml"]
+
+        archive, digest, expected = self.variant("previous", previous)
+        initial = install(archive, self.parent, digest)
+        target = self.parent / NAME
+        original = installer.validate_installation
+
+        def fail_new_readback(path, **options):
+            if Path(path) == target and (target / "AGENT_INSTALL.md").exists():
+                raise PackageError("synthetic new-version readback failure")
+            return original(path, **options)
+
+        with patch("install.validate_installation", side_effect=fail_new_readback):
+            with self.assertRaisesRegex(PackageError, "readback failure"):
+                install(
+                    self.archive, self.parent, self.report["sha256"],
+                    expected_current=initial["identity"])
+        self.assertEqual(capture_files(target), expected)
+        self.assertEqual(tree_identity(target), initial["identity"])
+        self.assertFalse((self.parent / LOCK_NAME).exists())
+        failed = list(self.parent.glob(f".{NAME}.failed-*"))
+        self.assertEqual(len(failed), 1)
+        self.assertTrue((failed[0] / "AGENT_INSTALL.md").is_file())
+
+    def test_identity_and_removal_do_not_reapply_source_content_rules(self):
+        def historical(files):
+            files["references/catalog.md"] = b"# Previous catalogue rendering\n"
+            files["agents/openai.yaml"] = files["agents/openai.yaml"].replace(
+                "B站热梗知识库".encode("utf-8"), b"Previous display name")
+            files["references/metadata.json"] = b"previous metadata representation\n"
+
+        archive, digest, expected = self.variant("historical-content", historical)
+        result = install(archive, self.parent, digest)
+        target = self.parent / NAME
+        self.assertEqual(capture_files(target), expected)
+        self.assertEqual(tree_identity(target), result["identity"])
+        removed = uninstall(self.parent, result["identity"])
+        self.assertEqual(tree_identity(Path(removed["backup"])), result["identity"])
+
+    def test_archive_member_omission_cannot_reuse_original_digest(self):
+        archive, _digest, _files = self.variant(
+            "omitted", lambda files: files.pop("scripts/atlas.py"))
+        with self.assertRaisesRegex(PackageError, "校验和"):
+            install(archive, self.parent, self.report["sha256"])
+        self.assertFalse((self.parent / NAME).exists())
+
+    def test_staging_readback_checks_exact_archive_bytes(self):
+        original = installer.validate_installation
+
+        def corrupt_stage(path, **options):
+            (Path(path) / "SKILL.md").write_bytes(b"changed after unpacking\n")
+            return original(path, **options)
+
+        with patch("install.validate_installation", side_effect=corrupt_stage):
+            with self.assertRaisesRegex(PackageError, "字节与归档不一致"):
+                install(self.archive, self.parent, self.report["sha256"])
+        self.assertFalse((self.parent / NAME).exists())
+        self.assertFalse((self.parent / LOCK_NAME).exists())
+
+    def test_extra_file_or_empty_directory_blocks_identity_bound_replacement(self):
+        result = install(self.archive, self.parent, self.report["sha256"])
+        target = self.parent / NAME
+        extra = target / "user-content.txt"
+        extra.write_bytes(b"retained user content\n")
+        self.assertNotEqual(tree_identity(target), result["identity"])
+        with self.assertRaises(PackageError):
+            uninstall(self.parent, result["identity"])
+        self.assertTrue(extra.is_file())
+        extra.unlink()
+        empty = target / "unrecorded-empty"
+        empty.mkdir()
+        with self.assertRaisesRegex(PackageError, "空目录"):
+            tree_identity(target)
+        with self.assertRaises(PackageError):
+            install(self.archive, self.parent, self.report["sha256"],
+                    expected_current=result["identity"])
+        self.assertTrue(empty.is_dir())
+
+    def test_archive_rejects_portable_namespace_conflicts_and_control_members(self):
+        cases = (
+            {"folder/a.txt": b"a", "FOLDER/b.txt": b"b"},
+            {"file": b"a", "file/nested.txt": b"b"},
+            {".GIT/config": b"data"},
+            {"scripts/__pycache__/cached.pyc": b"data"},
+            {".atlas-update.lock/operation.json": b"data"},
+        )
+        for index, members in enumerate(cases):
+            path = self.base / f"namespace-{index}.zip"
+            digest = write_member_archive(path, {"SKILL.md": b"entry", **members})
+            with self.subTest(members=members), self.assertRaises(PackageError):
+                archive_files(path, digest)
+
+    def test_archive_count_file_and_expanded_size_limits(self):
+        path = self.base / "limits.zip"
+        files = {"SKILL.md": b"entry", "data.bin": b"x" * 2049}
+        digest = write_member_archive(path, files)
+        with patch("install.MAX_FILES", 1), self.assertRaises(PackageError):
+            archive_files(path, digest)
+        with patch("install.MAX_PROJECT_FILE_BYTES", 4), self.assertRaises(PackageError):
+            archive_files(path, digest)
+        with ZipFile(path, "w", compression=ZIP_DEFLATED) as archive:
+            for name, body in files.items():
+                archive.writestr(NAME + "/" + name, body)
+        self.assertLess(path.stat().st_size, 2048)
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        with patch("install.MAX_ARCHIVE_BYTES", 2048), self.assertRaises(PackageError):
+            archive_files(path, digest)
 
     def test_bad_checksum_never_creates_target(self):
         with self.assertRaisesRegex(PackageError, "校验和"):
@@ -270,8 +444,8 @@ class InstallTests(unittest.TestCase):
         target = self.parent / NAME
         original = installer.validate_installation
 
-        def fail_target_readback(path):
-            identity = original(path)
+        def fail_target_readback(path, **options):
+            identity = original(path, **options)
             if Path(path) == target:
                 raise PackageError("synthetic target readback failure")
             return identity
@@ -343,12 +517,12 @@ class InstallTests(unittest.TestCase):
         original_object = installer._directory_object
         observed = []
 
-        def fail_readback(path):
+        def fail_readback(path, **options):
             if Path(path) == target:
                 value = target.stat()
                 observed.append((value.st_dev, value.st_ino))
                 raise PackageError("synthetic target readback failure")
-            return original_validate(path)
+            return original_validate(path, **options)
 
         def unreadable_target(path):
             if Path(path) == target:
@@ -376,10 +550,10 @@ class InstallTests(unittest.TestCase):
         original_validate = installer.validate_installation
         replaced = False
 
-        def fail_readback(path):
+        def fail_readback(path, **options):
             if Path(path) == target:
                 raise PackageError("synthetic target readback failure")
-            return original_validate(path)
+            return original_validate(path, **options)
 
         def replace_during_move(source, destination):
             nonlocal replaced
@@ -411,7 +585,7 @@ class InstallTests(unittest.TestCase):
         original = installer.validate_installation
         replaced = False
 
-        def replace_before_readback(path):
+        def replace_before_readback(path, **options):
             nonlocal replaced
             if Path(path) == target and not replaced:
                 replaced = True
@@ -419,7 +593,7 @@ class InstallTests(unittest.TestCase):
                 target.mkdir()
                 (target / "owned.txt").write_bytes(b"unknown replacement")
                 raise PackageError("synthetic target replacement")
-            return original(path)
+            return original(path, **options)
 
         with patch("install.validate_installation", side_effect=replace_before_readback):
             with self.assertRaisesRegex(PackageError, "保留待恢复状态"):
@@ -509,7 +683,7 @@ class InstallTests(unittest.TestCase):
     def test_invalid_archive_members_enter_the_parser(self):
         cases = (
             (NAME + "/../escape", 0),
-            (NAME + "/scripts/unknown.py", 0),
+            (NAME + "/.git/config", 0),
             ("Other/SKILL.md", 0),
             (NAME + "/SKILL.md", 0o120777),
             (NAME + "/CON", 0),
@@ -525,11 +699,11 @@ class InstallTests(unittest.TestCase):
             with self.subTest(name=name), self.assertRaises(PackageError):
                 archive_files(path, digest)
 
-    def test_missing_required_file_rejected_before_target_creation(self):
+    def test_missing_skill_entry_rejected_before_target_creation(self):
         bad = self.base / "missing.zip"
         with ZipFile(self.archive) as source, ZipFile(bad, "w") as destination:
             for item in source.infolist():
-                if item.filename != NAME + "/scripts/atlas.py":
+                if item.filename != NAME + "/SKILL.md":
                     destination.writestr(item, source.read(item.filename))
         digest = hashlib.sha256(bad.read_bytes()).hexdigest()
         with self.assertRaises(PackageError):
@@ -603,6 +777,24 @@ class RecoveryTests(unittest.TestCase):
         raw = installer._write_record(self.lock, value)
         self.record_digest = hashlib.sha256(raw).hexdigest()
         return lease
+
+    def test_recovery_of_previous_file_set_keeps_identity_and_stage(self):
+        for name in ("AGENT_INSTALL.md", ".github/dependabot.yml"):
+            (self.target / name).unlink()
+        (self.target / "references/catalog.md").write_bytes(
+            b"# Previous catalogue rendering\n")
+        self.identity = tree_identity(self.target)
+        self.create_scene()
+        info = recovery_info(self.parent)
+        self.assertEqual(info["state"], "recovery_pending")
+        result = recover(
+            self.parent, self.record_digest, backup=self.backup,
+            expected_backup=self.identity, acknowledge_stopped_writers=True)
+        self.assertEqual(result["identity"], self.identity)
+        self.assertEqual(tree_identity(self.target), self.identity)
+        self.assertFalse((self.target / "AGENT_INSTALL.md").exists())
+        self.assertEqual((self.stage / "retained.txt").read_bytes(), b"retained")
+        self.assertFalse(self.lock.exists())
 
     def test_recovery_restores_backup_and_keeps_staged_content(self):
         self.create_scene()

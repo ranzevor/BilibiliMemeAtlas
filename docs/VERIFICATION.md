@@ -10,7 +10,7 @@ python3 scripts/validate.py
 python3 scripts/verify.py
 ```
 
-`build.py --check` 比较确定性派生文件；`validate.py` 检查 Skill 入口、五个界面字段、项目文件边界、语料结构、来源、日期和跨记录引用；`verify.py` 在前两项通过后运行全部行为与负例测试，并输出语料统计。
+`build.py --check` 比较确定性派生文件；`validate.py` 检查当前源码的 Skill 入口、宿主适配元数据、项目文件边界、语料结构、来源、日期和跨记录引用；`verify.py` 在前两项通过后运行全部行为与负例测试，并输出语料统计。安装器按已核对归档比较实际成员字节；目录身份与固定发行回读不重新执行新版源码内容规则。
 
 ## 分层检查
 
@@ -24,8 +24,8 @@ python3 scripts/verify.py
 | `tests/test_transactions.py` | 中断恢复和计划后原始输入变化 |
 | `tests/test_project_contract.py` | 文件、模式、当前语料摘要一致性、界面和固定摘要值边界 |
 | `tests/test_package.py` | 确定性归档、成员字节、路径和输出边界 |
-| `tests/test_install.py` | 安装、升级、卸载、回滚、租约和恢复竞态 |
-| `tests/test_release.py` | 源码、说明、资产、清单、校验和与回读负例 |
+| `tests/test_install.py` | 安装字节回读、连续文件集合升级与回退、卸载、未知目标保护、租约和恢复竞态 |
+| `tests/test_release.py` | 源码、说明、资产、固定清单与新版源码规则分离、校验和及回读负例 |
 
 单独运行技术子集：
 

@@ -18,14 +18,12 @@ from zipfile import BadZipFile, ZipFile
 
 sys.dont_write_bytecode = True
 
-from build import projections
-from package import (MAX_ARCHIVE_BYTES, NAME, PackageError, archive_name,
-                     source_files)
-from validate import MAX_PROJECT_FILE_BYTES, allowed_project_path, validate_all
+from package import (MAX_ARCHIVE_BYTES, MAX_FILES, MAX_PROJECT_FILE_BYTES,
+                     NAME, PackageError, archive_name, capture_files,
+                     validate_members)
 from writer_lock import (WriterLockError, lock_directory_token,
                          retire_lock_directory, writer_lease)
 
-MAX_FILES = 512
 LOCK_NAME = f".{NAME}.install-lock"
 RECORD_NAME = "operation.json"
 LEASE_NAME = "lease"
@@ -43,8 +41,7 @@ def checked_path(path) -> Path:
     return path
 
 
-def tree_identity(root) -> str:
-    files = source_files(checked_path(root))
+def _files_identity(files) -> str:
     rows = [
         {"path": name, "bytes": len(data),
          "sha256": hashlib.sha256(data).hexdigest()}
@@ -53,6 +50,10 @@ def tree_identity(root) -> str:
     serialized = json.dumps(
         rows, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(serialized.encode("utf-8")).hexdigest()
+
+
+def tree_identity(root) -> str:
+    return _files_identity(capture_files(checked_path(root)))
 
 
 def archive_files(archive, expected_sha256: str) -> dict[str, bytes]:
@@ -80,9 +81,8 @@ def archive_files(archive, expected_sha256: str) -> dict[str, bytes]:
             if not info.filename.startswith(prefix):
                 raise PackageError("归档必须只有固定项目根目录")
             relative = info.filename[len(prefix):]
-            if (archive_name(relative) != info.filename
-                    or not allowed_project_path(relative)):
-                raise PackageError(f"文件不在项目边界内: {relative}")
+            if archive_name(relative) != info.filename:
+                raise PackageError(f"归档路径无效: {relative}")
             folded = relative.casefold()
             if folded in seen:
                 raise PackageError("归档路径重复或大小写冲突")
@@ -96,24 +96,18 @@ def archive_files(archive, expected_sha256: str) -> dict[str, bytes]:
                     or total > MAX_ARCHIVE_BYTES):
                 raise PackageError("归档展开内容超过体积限制")
             files[relative] = zipped.read(info)
-    for name in files:
-        parts = name.split("/")
-        if any("/".join(parts[:index]) in files
-               for index in range(1, len(parts))):
-            raise PackageError("归档文件与目录冲突")
+    validate_members(files)
+    if "SKILL.md" not in files:
+        raise PackageError("归档缺少 SKILL.md")
     return files
 
 
-def validate_installation(root) -> str:
-    root = Path(root)
-    errors = validate_all(root)
-    if errors:
-        raise PackageError("目录内容无效：" + "; ".join(errors))
-    for name, text in projections(root).items():
-        path = root / name
-        if not path.is_file() or path.read_bytes() != text.encode("utf-8"):
-            raise PackageError(f"确定性派生文件损坏或过期: {name}")
-    return tree_identity(root)
+def validate_installation(root, *, expected_files=None) -> str:
+    """Compare one captured directory with the verified archive when supplied."""
+    observed = capture_files(checked_path(root))
+    if expected_files is not None and observed != expected_files:
+        raise PackageError("安装目录成员或字节与归档不一致")
+    return _files_identity(observed)
 
 
 def _lock(parent: Path):
@@ -236,7 +230,7 @@ def _install_locked(archive, parent, expected_sha256: str, *, expected_current=N
             with path.open("xb") as handle:
                 handle.write(data)
             os.chmod(path, 0o644)
-        identity = validate_installation(stage)
+        identity = validate_installation(stage, expected_files=files)
         staged_object = _directory_object(stage)
         if target.exists():
             if tree_identity(target) != expected_current:
@@ -263,7 +257,7 @@ def _install_locked(archive, parent, expected_sha256: str, *, expected_current=N
                 if target.exists() or target.is_symlink():
                     raise PackageError("升级移动期间目标路径已出现")
             os.replace(stage, target)
-            if (validate_installation(target) != identity
+            if (validate_installation(target, expected_files=files) != identity
                     or _directory_object(target) != staged_object):
                 raise PackageError("安装回读身份不一致")
             if backup and tree_identity(backup) != expected_current:
