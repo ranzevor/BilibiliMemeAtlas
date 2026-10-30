@@ -1,6 +1,8 @@
 name: Verify project
 on:
   workflow_dispatch:
+  pull_request:
+    branches: ["main"]
 permissions:
   contents: read
 concurrency:
@@ -8,6 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   verify:
+    name: Project (${{ matrix.os }}, Python ${{ matrix.python }})
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     strategy:
@@ -34,3 +37,17 @@ jobs:
         run: python scripts/validate.py
       - name: Run complete verification
         run: python scripts/verify.py
+
+  gate:
+    name: Project gate
+    if: ${{ always() }}
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 1
+    permissions: {}
+    steps:
+      - name: Require successful matrix
+        env:
+          MATRIX_RESULT: ${{ needs.verify.result }}
+        shell: bash
+        run: test "$MATRIX_RESULT" = success
