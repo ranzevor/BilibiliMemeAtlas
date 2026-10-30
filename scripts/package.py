@@ -16,13 +16,15 @@ from zipfile import BadZipFile, ZIP_STORED, ZipFile, ZipInfo
 
 sys.dont_write_bytecode = True
 
-from validate import (MAX_PROJECT_FILE_BYTES, allowed_project_path,
-                      project_paths, root_git_token, validate_all)
+from validate import (MAX_PROJECT_FILE_BYTES, TRANSIENT_DIRECTORIES,
+                      allowed_project_path, project_paths, root_git_token,
+                      validate_all)
 
 ROOT = Path(__file__).resolve().parents[1]
 NAME = "bilibili-meme-atlas"
 TIMESTAMP = (1980, 1, 1, 0, 0, 0)
 MAX_ARCHIVE_BYTES = 32 * 1024 * 1024
+MAX_FILES = 512
 
 
 class PackageError(ValueError):
@@ -116,6 +118,48 @@ def _capture_project(root: Path):
     return files, directories
 
 
+def validate_members(files: dict[str, bytes], directories=None) -> set[str]:
+    """Check portable file paths and the directory closure of a byte snapshot."""
+    if not 1 <= len(files) <= MAX_FILES:
+        raise PackageError("文件数量不合法")
+    implied = set()
+    folded_paths = {}
+    total = 0
+    for relative, body in files.items():
+        archive_name(relative)
+        parts = relative.split("/")
+        folded_parts = {part.casefold() for part in parts}
+        if folded_parts & (TRANSIENT_DIRECTORIES | {".git"}):
+            raise PackageError(f"目录含缓存或版本管理成员: {relative}")
+        if ".atlas-update.lock" in folded_parts:
+            raise PackageError("知识更新仍活动或待恢复")
+        for index in range(1, len(parts) + 1):
+            prefix = "/".join(parts[:index])
+            folded = prefix.casefold()
+            if folded in folded_paths and folded_paths[folded] != prefix:
+                raise PackageError("成员路径存在大小写冲突")
+            folded_paths[folded] = prefix
+            if index < len(parts):
+                implied.add(prefix)
+        if not isinstance(body, bytes) or len(body) > MAX_PROJECT_FILE_BYTES:
+            raise PackageError(f"单文件超过体积限制或不是字节: {relative}")
+        total += len(body)
+        if total > MAX_ARCHIVE_BYTES:
+            raise PackageError("文件总大小超过体积限制")
+    if set(files) & implied:
+        raise PackageError("文件与目录路径冲突")
+    if directories is not None and set(directories) != implied:
+        raise PackageError("目录集合与文件不一致，不能包含额外空目录")
+    return implied
+
+
+def capture_files(root: Path = ROOT) -> dict[str, bytes]:
+    """Capture stable portable bytes independently of current source contracts."""
+    files, directories = _capture_project(Path(root))
+    validate_members(files, directories)
+    return files
+
+
 def _validate_snapshot(files, directories):
     """Validate the exact captured bytes in an isolated project tree."""
     with tempfile.TemporaryDirectory(
@@ -142,8 +186,8 @@ def _validate_snapshot(files, directories):
 def source_files(root: Path = ROOT) -> dict[str, bytes]:
     """Capture and validate the exact bytes returned for packaging."""
     root = Path(root)
-    files, directories = _capture_project(root)
-    _validate_snapshot(files, directories)
+    files = capture_files(root)
+    _validate_snapshot(files, validate_members(files))
     for relative in files:
         if not allowed_project_path(relative):
             raise PackageError(f"项目文件边界无效: {relative}")
