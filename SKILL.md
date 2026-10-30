@@ -37,6 +37,7 @@ python3 "SKILL_DIR/scripts/atlas.py" stats
 | --- | --- |
 | [平台与社区语境](references/platform.md) | 需要区分弹幕、评论、UP主、分区或互动方式 |
 | [历史与梗族导航](references/history-map.md) | 跨年代追梗、梳理素材族或定位年度弹幕 |
+| [研究队列与年份索引](references/history-index.md) | 依据现有证据缺口选择研究顺序；逐年起源日期索引不等于传播榜单 |
 | [表达与消歧](references/usage.md) | 接梗、改写、语气判断、跨圈表达或争议用法 |
 | [2009—2015](references/2009-2015.json) | 早期 ACG、弹幕共同语和经典鬼畜 |
 | [2016—2020](references/2016-2020.json) | 影视鬼畜、直播、游戏与跨圈扩散 |
@@ -65,7 +66,7 @@ python3 "SKILL_DIR/scripts/atlas.py" stats
 
 ## 公开来源核查与维护
 
-只有用户明确要求维护知识库时才修改文件。按[维护接口](references/refresh.md)进行发现、来源核对、预览和应用；榜单、标题、搜索摘要与视频元数据只是线索，不能自动生成词条或提高资料等级。
+只有用户明确要求维护知识库时才修改文件。先按[研究队列](references/history-index.md#研究队列)选择已有待补证目标，再按[维护接口](references/refresh.md)进行定向来源核对、预览和应用。用户明确指定范围时先查该范围内已收录条目与队列，必要时再发现新线索；榜单、标题、搜索摘要与视频元数据不能自动生成词条或提高资料等级。
 
 ```bash
 python3 "SKILL_DIR/scripts/research.py" search '金坷垃' --output OUTPUT_DIR/search.json

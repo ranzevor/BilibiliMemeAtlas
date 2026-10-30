@@ -24,6 +24,32 @@ class HistoryTests(unittest.TestCase):
         self.assertIn(f"当前队列{len(data['research_queue'])}条",text)
         self.assertIn(f"输出为{len(data['cells'])}个年份×分类格",text)
         self.assertEqual(text,(ROOT/'references'/'history-index.md').read_text(encoding='utf-8'))
+    def test_markdown_queue_lists_every_entry_in_priority_order(self):
+        queue=matrix()['research_queue']
+        section=markdown_index().split('## 研究队列\n',1)[1]
+        ids=[line.split(' | `',1)[1].split('`',1)[0]
+             for line in section.splitlines()
+             if line.startswith('| ') and ' | `' in line]
+        self.assertEqual(ids,[item['entry_id'] for item in queue])
+        self.assertEqual(len(ids),len(set(ids)))
+        self.assertTrue(any(item['status']=='candidate' for item in queue))
+        self.assertIn('2026年已收录的传播事件',markdown_index())
+
+    def test_2026_navigation_covers_existing_autumn_batch(self):
+        from atlas import load_catalogue
+        entries,_,_=load_catalogue(ROOT)
+        page=(ROOT/'references'/'history-map.md').read_text(encoding='utf-8')
+        section=page.split('## 2026年夏末至秋季的已收录传播\n',1)[1].split('\n## ',1)[0]
+        entry_ids=('recent-26-shanshenbu','recent-26-gouxiong','recent-26-world-tour',
+                   'recent-26-zhuanben','recent-26-suanle','recent-26-feidudu',
+                   'recent-26-bushaoxin','recent-26-hongguoti','recent-26-boji',
+                   'recent-26-dashui','recent-26-huangmao','recent-26-bluefish',
+                   'recent-26-yuzai','recent-26-delta-call')
+        by_id={entry['id']:entry for entry in entries}
+        for entry_id in entry_ids:
+            with self.subTest(entry_id=entry_id):
+                self.assertIn(by_id[entry_id]['term'],section)
+
     def test_output_must_be_new_and_outside_project(self):
         inside=ROOT/'history-output.json'
         inside.unlink(missing_ok=True)
