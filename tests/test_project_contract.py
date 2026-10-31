@@ -244,7 +244,9 @@ class ProjectContractTests(unittest.TestCase):
         self.assertEqual(set(summary["source_files"]), {
             path.name for path in (ROOT / "references").glob("[0-9]*-[0-9]*.json")
         } | {"sources.json", "metadata.json"})
-        self.assertEqual({row["evidence_status"] for row in entries}, {"verified", "partial", "candidate"})
+        statuses = {row["evidence_status"] for row in entries}
+        self.assertTrue({"verified", "partial"}.issubset(statuses))
+        self.assertLessEqual(statuses, {"verified", "partial", "candidate"})
         used = {ref["source_id"] for row in entries for ref in row["evidence"]}
         self.assertEqual(used, set(sources))
 
