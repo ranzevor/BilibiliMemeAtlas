@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "version": "0.1.5",
-  "knowledge_cutoff": "2026-10-31",
+  "knowledge_cutoff": "2026-11-01",
   "language": "zh-CN",
   "coverage_start": "2009",
   "coverage_mode": "curated-historical-catalogue",
