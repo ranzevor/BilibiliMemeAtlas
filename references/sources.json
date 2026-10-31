@@ -1171,10 +1171,54 @@
     "url": "https://www.j-cast.com/2019/09/19367997.html",
     "publisher": "J-CAST新闻",
     "source_type": "secondary",
-    "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "2007年School Days最终话停播及Nice boat再现的历史。",
-    "limitations": "回顾报道；不需要转述现实案件细节，不补写4chan首帖。"
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "J-CAST 2019年9月19日回顾记载，2007年9月19日深夜tvk以北欧环境影像替代《School Days》最终话，画面中的峡湾客船截图被发布到4chan，海外用户回复“Nice boat.”，该评论随后成为事件代称。",
+    "limitations": "回顾性报道，不包含可核验的4chan原始帖或发帖者身份；不证明B站最早使用时间。"
+  },
+  {
+    "id": "early-src-niceboat-bili-2020",
+    "title": "Sekai Project的世界",
+    "url": "https://www.bilibili.com/opus/398348419887882367",
+    "publisher": "触乐（B站专栏转载）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2020年6月8日发布于B站的触乐专栏专门解释“好船（Nice Boat）”梗，记录《School Days》最终话被风景片替代，以及niconico用户在船景出现时大量发送“Nice Boat”的历史使用场景。",
+    "limitations": "B站转载文章记录的是原始niconico弹幕场景，不证明该梗在B站的最早投稿、最早弹幕或早期站内传播规模。"
+  },
+  {
+    "id": "early-src-niceboat-gigazine-2009",
+    "title": "「中に誰もいませんよ…」、鮮烈な結末を迎えた「School Days」の最終話がGyaOで本日から配信",
+    "url": "https://gigazine.net/news/20090216_school_days_finales/",
+    "publisher": "GIGAZINE",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2009年2月16日报道称，地上波停播后替代播出的船景截图引发海外匿名论坛“Nice boat.”评论，并指出该词入围2007年网络流行语大赏最终候选。",
+    "limitations": "回顾性媒体报道，未提供4chan原帖链接；不能据此确认精确首发时间或发帖者。"
+  },
+  {
+    "id": "early-src-niceboat-hatena-2007",
+    "title": "School Days 放送休止騒動の特徴",
+    "url": "https://anond.hatelabo.jp/20070920055101",
+    "publisher": "はてな匿名ダイアリー",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2007年9月20日的同期文章记录《School Days》最终话临时停播、替换风景影像，并写明4chan用户对船景截图评论“Nice boat.”；说明该说法当时已在讨论中流传。",
+    "limitations": "同期个人文章，不是4chan原始讨论串；只能确认2007年9月20日已有该说法的公开记录，不能确认首个发帖者。"
+  },
+  {
+    "id": "early-src-niceboat-upi-2007",
+    "title": "Japanese TV cancels 'School Days' finale",
+    "url": "https://www.upi.com/Entertainment_News/2007/09/19/Japanese-TV-cancels-School-Days-finale/32911190249908/",
+    "publisher": "United Press International",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "UPI于2007年9月19日的同期报道确认TV Kanagawa取消《School Days》最终话播出，其他地面电视台也考虑或采取停播措施。",
+    "limitations": "报道确认停播事件及当时背景，不涉及“Nice boat.”短语的起源或后续网络传播。"
   },
   {
     "id": "early-src-nico",

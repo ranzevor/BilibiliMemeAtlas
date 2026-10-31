@@ -584,3 +584,29 @@ class MadokaContractQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-madoka']['access_level'], 'full')
         self.assertIn('B站', self.sources['early-src-madoka']['supports'])
         self.assertIn('中文最早译本', entry['notes'])
+
+
+class NiceBoatQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_nice_boat_has_contemporaneous_origin_and_spread_sources(self):
+        entry = self.by_id['early-nice-boat']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertEqual(entry['origin']['date'], '2007')
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-niceboat-hatena-2007']['claims'])
+        self.assertEqual(self.sources['early-src-niceboat-hatena-2007']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-niceboat-gigazine-2009']['access_level'], 'full')
+        self.assertIn('4chan原始讨论串', entry['notes'])
+
+    def test_nice_boat_has_a_bilibili_hosted_usage_record_without_claiming_early_bilibili_origin(self):
+        entry = self.by_id['early-nice-boat']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-niceboat-bili-2020']['claims'])
+        self.assertEqual(self.sources['early-src-niceboat-bili-2020']['access_level'], 'full')
+        self.assertIn('不证明该梗在B站的最早投稿', self.sources['early-src-niceboat-bili-2020']['limitations'])
+        self.assertIn('B站早期投稿/弹幕记录', entry['notes'])
