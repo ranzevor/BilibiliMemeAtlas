@@ -636,3 +636,29 @@ class NicoNicoNiQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-nico-bili-2014']['access_level'], 'metadata')
         self.assertIn('2013年9月24日', self.sources['early-src-nico-bili-2013']['supports'])
         self.assertIn('2014年4月21日', self.sources['early-src-nico-bili-2014']['supports'])
+
+
+class MamiDeathFlagQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_mami_phrase_has_official_episode_and_broadcast_sources(self):
+        entry = self.by_id['early-nothing-to-fear']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertEqual(entry['origin']['date'], '2011')
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-mami-official-ep3']['claims'])
+        self.assertIn('date', refs['early-src-mami-nitroplus-2011']['claims'])
+        self.assertEqual(self.sources['early-src-mami-official-ep3']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-mami-nitroplus-2011']['access_level'], 'full')
+
+    def test_mami_phrase_is_not_misattributed_as_her_last_words(self):
+        entry = self.by_id['early-nothing-to-fear']
+        self.assertIn('ティロ・フィナーレ', entry['notes'])
+        self.assertIn('真正临终前', entry['origin']['summary'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-mami-bili-article-2021']['claims'])
+        self.assertEqual(self.sources['early-src-mami-bili-article-2021']['access_level'], 'full')
