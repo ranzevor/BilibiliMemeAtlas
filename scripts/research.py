@@ -89,9 +89,11 @@ def collect(action, value, *, opener=None, now=None):
         if exc.fp is not None:
             try:
                 body = exc.read(MAX_RESPONSE_BYTES + 1)
+                if not isinstance(body, bytes):
+                    raise TypeError('拒绝响应正文不是字节数据')
                 receipt['body_bytes'] = len(body)
                 receipt['body_sha256'] = hashlib.sha256(body).hexdigest()
-            except (TimeoutError, OSError) as body_error:
+            except (TimeoutError, OSError, TypeError) as body_error:
                 receipt['error_body_read_error'] = str(body_error)[:500]
             finally:
                 exc.close()

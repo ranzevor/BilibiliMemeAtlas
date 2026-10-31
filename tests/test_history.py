@@ -100,16 +100,14 @@ class HistoricalEvidenceTests(unittest.TestCase):
         entry = self.by_id['early-kuroko']
         self.assertEqual(entry['origin']['bilibili_role'], 'imported')
         self.assertIn('sm13060333', entry['origin']['summary'])
-        self.assertEqual(entry['evidence_status'], 'candidate')
-        self.assertFalse(any(
-            'meaning' in ref['claims'] and
-            self.sources[ref['source_id']]['access_level'] in ('full', 'snippet')
-            for ref in entry['evidence']))
+        self.assertIn('上传者', entry['origin']['summary'])
+        self.assertEqual(entry['evidence_status'], 'partial')
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertEqual(self.sources['early-src-kuroko-materials']['access_level'], 'full')
+        self.assertIn('meaning', refs['early-src-kuroko-materials']['claims'])
+        self.assertNotIn('origin', refs['early-src-kuroko-materials']['claims'])
         result = search(self.entries, entry['term'])
-        self.assertNotIn(entry['id'], [row['entry']['id'] for row in result['results']])
-        self.assertGreaterEqual(result['candidate_matches_excluded'], 1)
-        included = search(self.entries, entry['term'], include_candidates=True)
-        self.assertIn(entry['id'], [row['entry']['id'] for row in included['results']])
+        self.assertIn(entry['id'], [row['entry']['id'] for row in result['results']])
 
     def test_senbonzakura_author_date_is_separate_from_arrangement(self):
         entry = self.by_id['early-senbonzakura']
@@ -173,3 +171,139 @@ class HistoricalEvidenceTests(unittest.TestCase):
         for ref in entry['evidence']:
             if ref['source_id'] == source['id']:
                 self.assertNotIn('摘要', ref['note'])
+
+
+class MidEraEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, cls.metadata = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_supported_queue_entries_are_available_to_default_search(self):
+        from atlas import search
+        identifiers = (
+            'early-kuroko', 'mid-face-position', 'mid-thanks-treat', 'mid-excellent',
+            'mid-forgive', 'mid-good-grief', 'mid-heart-pierced', 'mid-i-can',
+            'mid-landlord-son', 'mid-lawyer-letter', 'mid-main-start',
+            'mid-standard-ending', 'mid-take-photo', 'mid-teary', 'mid-welcome-home',
+            'mid-famous-scene', 'mid-rich-power', 'mid-such-operation',
+            'mid-mianjin-family', 'mid-nianshi-king', 'mid-no-work',
+            'mid-soul-injection', 'mid-pretty-warning', 'mid-shadow-lord',
+            'mid-battle-song', 'mid-call', 'mid-deja-vu', 'mid-different-song',
+            'mid-singing-awe', 'mid-skr',
+        )
+        for identifier in identifiers:
+            with self.subTest(identifier=identifier):
+                entry = self.by_id[identifier]
+                result = search(self.entries, entry['term'])
+                self.assertIn(identifier, [row['entry']['id'] for row in result['results']])
+
+    def test_candidate_filter_is_independent_of_a_corpus_status_change(self):
+        from copy import deepcopy
+        from atlas import search
+        entries = deepcopy(self.entries)
+        entry = next(row for row in entries if row['id'] == 'early-kuroko')
+        entry['evidence_status'] = 'candidate'
+        result = search(entries, entry['term'])
+        self.assertNotIn(entry['id'], [row['entry']['id'] for row in result['results']])
+        self.assertGreaterEqual(result['candidate_matches_excluded'], 1)
+        result = search(entries, entry['term'], include_candidates=True)
+        self.assertIn(entry['id'], [row['entry']['id'] for row in result['results']])
+
+    def test_partial_without_meaning_evidence_is_rejected_without_writing(self):
+        from copy import deepcopy
+        from update import UpdateError, digest_record, fingerprint, plan
+        original = self.by_id['early-kuroko']
+        replacement = deepcopy(original)
+        replacement['evidence'] = [
+            ref for ref in replacement['evidence'] if 'meaning' not in ref['claims']
+        ]
+        before = fingerprint(ROOT)
+        proposal = {
+            'format': 'bilibili-meme-atlas-update/v1',
+            'base_manifest_sha256': before,
+            'checked_at': self.metadata['knowledge_cutoff'],
+            'sources': [],
+            'entries': [{'action': 'replace', 'before_sha256': digest_record(original),
+                         'record': replacement}],
+        }
+        with self.assertRaisesRegex(UpdateError, '释义'):
+            plan(ROOT, proposal)
+        self.assertEqual(fingerprint(ROOT), before)
+
+    def test_related_labels_remain_searchable_without_becoming_exact_aliases(self):
+        from atlas import get_entries, search
+        cases = (
+            ('mid-forgive', '原谅色'),
+            ('mid-rich-power', '为所欲为'),
+            ('mid-no-work', '窃格瓦拉'),
+        )
+        for identifier, label in cases:
+            with self.subTest(identifier=identifier, label=label):
+                entry = self.by_id[identifier]
+                self.assertNotIn(label, entry['aliases'])
+                self.assertIn(label, entry['tags'])
+                self.assertNotIn(identifier, [row['id'] for row in get_entries(self.entries, label)])
+                result = search(self.entries, label)
+                self.assertIn(identifier, [row['entry']['id'] for row in result['results']])
+
+    def test_danmaku_meanings_retain_context_and_polarity(self):
+        self.assertIn('弹幕颜色', self.by_id['mid-face-position']['meaning'])
+        self.assertIn('美食', self.by_id['mid-battle-song']['meaning'])
+        self.assertIn('调侃', self.by_id['mid-singing-awe']['meaning'])
+        self.assertIn('不是打电话', self.by_id['mid-call']['meaning'])
+        self.assertIn('竹鼠', self.by_id['mid-pretty-warning']['meaning'])
+
+    def test_remix_and_source_material_have_separate_creators(self):
+        entry = self.by_id['mid-nianshi-king']
+        for name in ('小可儿', '赵本山', '疯猴PME'):
+            self.assertIn(name, entry['origin']['summary'])
+        self.assertEqual(entry['origin']['bilibili_role'], 'adaptation')
+        self.assertEqual(entry['origin']['date'], '2018-02-11')
+        reference = next(ref for ref in entry['evidence']
+                         if ref['source_id'] == 'mid-src-nianshi-authors')
+        self.assertNotIn('date', reference['claims'])
+        self.assertEqual(self.sources['mid-src-nianshi']['access_level'], 'metadata')
+
+    def test_representative_publication_and_event_dates_are_not_coining_dates(self):
+        self.assertEqual(self.by_id['mid-mianjin-family']['origin']['date'], '2018-03-23')
+        self.assertIn('不是原选秀', self.by_id['mid-mianjin-family']['origin']['summary'])
+        self.assertEqual(self.by_id['mid-lawyer-letter']['origin']['date'], '2019-04-12')
+        self.assertIn('不是短语', self.by_id['mid-lawyer-letter']['notes'])
+        self.assertIsNone(self.by_id['mid-welcome-home']['origin']['date'])
+        self.assertIsNone(self.by_id['mid-good-grief']['origin']['date'])
+
+    def test_song_composition_performance_and_platform_dates_remain_distinct(self):
+        deja = self.by_id['mid-deja-vu']
+        self.assertIsNone(deja['origin']['date'])
+        source = self.sources['mid-src-dejavu-rodgers-interview']
+        self.assertIn('1997', source['supports'])
+        self.assertIn('创作', source['limitations'])
+        self.assertIn('不等同', source['limitations'])
+        different = self.by_id['mid-different-song']
+        self.assertIn('大壮演唱', different['origin']['summary'])
+        self.assertIn('高进作曲', different['origin']['summary'])
+        self.assertEqual(self.sources['mid-src-different-credits']['access_level'], 'metadata')
+        self.assertEqual(different['evidence_status'], 'partial')
+
+    def test_shared_source_body_support_and_existing_reference_note_agree(self):
+        self.assertEqual(self.sources['mid-src-2017-publisher']['access_level'], 'full')
+        entry = self.by_id['mid-prawn']
+        reference = next(ref for ref in entry['evidence']
+                         if ref['source_id'] == 'mid-src-2017-publisher')
+        self.assertIn('正文', reference['note'])
+        self.assertNotIn('摘要', reference['note'])
+        self.assertEqual(self.sources['mid-src-kubenchina']['access_level'], 'full')
+        reference = next(ref for ref in self.by_id['mid-mianjin-family']['evidence']
+                         if ref['source_id'] == 'mid-src-kubenchina')
+        self.assertEqual(set(reference['claims']), {'meaning', 'origin', 'platform_usage'})
+
+    def test_unresolved_first_dates_remain_in_research_queue(self):
+        queued = {row['entry_id'] for row in matrix()['research_queue']}
+        for identifier in ('mid-no-work', 'mid-pretty-warning', 'mid-deja-vu'):
+            with self.subTest(identifier=identifier):
+                entry = self.by_id[identifier]
+                self.assertEqual(entry['evidence_status'], 'verified')
+                self.assertIsNone(entry['origin']['date'])
+                self.assertIn(identifier, queued)

@@ -229,7 +229,7 @@
     "aliases": [],
     "category": "film",
     "era": "2016-2020",
-    "meaning": "具有辨识度、值得记住或被反复引用的片段。",
+    "meaning": "指辨识度高、让人印象深刻或被反复引用的经典片段，既可赞叹也可调侃反差。",
     "origin": {
       "summary": "2019年度B站弹幕名单收录；首创与更早演变未核。",
       "date": null,
@@ -248,7 +248,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual19",
@@ -257,9 +257,17 @@
           "date"
         ],
         "note": "正文列出词名；具体语义为本库按通行语境编写，榜单不直接详释。"
+      },
+      {
+        "source_id": "mid-src-2019-danmu-lens",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文以经典、令人难忘的片段解释名场面。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 AWSL，名场面，逮虾户：B站2019年度弹幕公布：platform_usage,date（full）。已核当年站内存在；尚缺单独的含义与起源考据。"
+    "notes": "2019年正文解释了经典、可辨认片段的用法；最早中文转用与特定名场面的原作出处需分别核对。"
   },
   {
     "id": "mid-teary",
@@ -267,7 +275,7 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "被内容感动、难过或怀旧到眼眶湿润的表达。",
+    "meaning": "表示被内容触动到眼中含泪，常用于感动、伤感或怀旧的片段。",
     "origin": {
       "summary": "2019年度B站弹幕名单收录；首创与更早演变未核。",
       "date": null,
@@ -286,7 +294,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual19",
@@ -295,9 +303,17 @@
           "date"
         ],
         "note": "正文列出词名；具体语义为本库按通行语境编写，榜单不直接详释。"
+      },
+      {
+        "source_id": "mid-src-2019-danmu-lens",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文解释含泪的情感反应。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 AWSL，名场面，逮虾户：B站2019年度弹幕公布：platform_usage,date（full）。已核当年站内存在；尚缺单独的含义与起源考据。"
+    "notes": "2019年弹幕释义有正文支持；首次造词和更早跨平台转用未核，不据一条弹幕推断全部观众感受。"
   },
   {
     "id": "mid-excellent",
@@ -305,7 +321,7 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "对巧妙安排、技巧或出人意料的接法表示赞叹，也可反讽。",
+    "meaning": "对巧妙、出人意料却又合理的安排表示赞叹，也可被用于敷衍或反讽，需结合上下文判断。",
     "origin": {
       "summary": "2019年度B站弹幕名单收录；首创与更早演变未核。",
       "date": null,
@@ -324,7 +340,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual19",
@@ -333,9 +349,17 @@
           "date"
         ],
         "note": "正文列出词名；具体语义为本库按通行语境编写，榜单不直接详释。"
+      },
+      {
+        "source_id": "mid-src-2019-danmu-lens",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文解释赞叹巧思及可能的敷衍语气。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 AWSL，名场面，逮虾户：B站2019年度弹幕公布：platform_usage,date（full）。已核当年站内存在；尚缺单独的含义与起源考据。"
+    "notes": "2019年弹幕释义有正文支持；具体作者的使用不能证明其创造了这一表达，首次用例仍未确定。"
   },
   {
     "id": "mid-welcome-home",
@@ -343,7 +367,7 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "对熟悉人物、系列或观众的回归表示亲近和欢迎。",
+    "meaning": "以回家的比喻欢迎熟悉的人物、节目或创作者归来，表达重逢、亲近和归属感。",
     "origin": {
       "summary": "2019年度B站弹幕名单收录；首创与更早演变未核。",
       "date": null,
@@ -362,7 +386,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual19",
@@ -371,9 +395,18 @@
           "date"
         ],
         "note": "正文列出词名；具体语义为本库按通行语境编写，榜单不直接详释。"
+      },
+      {
+        "source_id": "mid-src-welcome-home-return",
+        "claims": [
+          "meaning",
+          "platform_usage",
+          "date"
+        ],
+        "note": "同期报道记录2019年2月节目回归与欢迎回家弹幕；不是短语起源日。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 AWSL，名场面，逮虾户：B站2019年度弹幕公布：platform_usage,date（full）。已核当年站内存在；尚缺单独的含义与起源考据。"
+    "notes": "2019年节目回归时的站内弹幕有同期报道；普通问候语及其他影视引用不能归为同一个确定起源。"
   },
   {
     "id": "mid-i-can",
@@ -381,7 +414,7 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "在欣赏人物、设计或作品时表示喜欢、愿意接受；也可能只是普通的能力表达。",
+    "meaning": "在欣赏人物、物品或作品时表示喜欢、认可或愿意接受；普通句子中的我可以也可能只是在说明能力。",
     "origin": {
       "summary": "2019年度B站弹幕名单收录；首创与更早演变未核。",
       "date": null,
@@ -400,7 +433,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual19",
@@ -409,9 +442,17 @@
           "date"
         ],
         "note": "正文列出词名；具体语义为本库按通行语境编写，榜单不直接详释。"
+      },
+      {
+        "source_id": "mid-src-2019-danmu-ruye",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文将该句对应为对人或物的喜欢，不采用唯一艺人源头说法。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 AWSL，名场面，逮虾户：B站2019年度弹幕公布：platform_usage,date（full）。已核当年站内存在；尚缺单独的含义与起源考据。"
+    "notes": "2019年站内偏好表达有正文解释；首次网络转用与不同社群的传播顺序未核定，不能把它自动解释为现实同意。"
   },
   {
     "id": "mid-soul-injection",
@@ -419,7 +460,7 @@
     "aliases": [],
     "category": "guichu",
     "era": "2016-2020",
-    "meaning": "某个标志性声音、画面或细节加入后，作品突然有了关键特征。",
+    "meaning": "某个关键动作、声音或细节加入后，让片段突然变得有趣、有辨识度，观众借此称赞二创效果。",
     "origin": {
       "summary": "2019年度B站弹幕名单收录；首创与更早演变未核。",
       "date": null,
@@ -438,7 +479,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual19",
@@ -447,9 +488,17 @@
           "date"
         ],
         "note": "正文列出词名；具体语义为本库按通行语境编写，榜单不直接详释。"
+      },
+      {
+        "source_id": "mid-src-2019-danmu-lens",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文解释一个动作或话语使视频变得有趣的效果。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 AWSL，名场面，逮虾户：B站2019年度弹幕公布：platform_usage,date（full）。已核当年站内存在；尚缺单独的含义与起源考据。"
+    "notes": "2019年弹幕正文解释关键细节改变观看效果的用法；最早命名与不同视频中的具体关键元素仍需分别核对。"
   },
   {
     "id": "mid-main-start",
@@ -457,7 +506,7 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "提示重点内容、高潮或真正笑点开始，有时反讽前面都是铺垫。",
+    "meaning": "提示视频进入重点、高潮或真正值得看的段落，也可用反差口吻把前面的内容当作铺垫。",
     "origin": {
       "summary": "2019年度B站弹幕名单收录；首创与更早演变未核。",
       "date": null,
@@ -476,7 +525,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual19",
@@ -485,9 +534,17 @@
           "date"
         ],
         "note": "正文列出词名；具体语义为本库按通行语境编写，榜单不直接详释。"
+      },
+      {
+        "source_id": "mid-src-2019-danmu-lens",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文解释从铺垫转入重点段落的提示用法。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 AWSL，名场面，逮虾户：B站2019年度弹幕公布：platform_usage,date（full）。已核当年站内存在；尚缺单独的含义与起源考据。"
+    "notes": "2019年弹幕语义有正文解释；普通片头提示与戏谑用法需按语境区分，网络转用的最早记录未核。"
   },
   {
     "id": "mid-standard-ending",
@@ -495,7 +552,7 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "结尾落在观众已熟悉的固定套路或预期结果上。",
+    "meaning": "看到符合熟悉套路、既定剧情或观众预期的收尾时使用的评论，不表示所有作品都有同一结局。",
     "origin": {
       "summary": "2019年度B站弹幕名单收录；首创与更早演变未核。",
       "date": null,
@@ -514,7 +571,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual19",
@@ -523,9 +580,17 @@
           "date"
         ],
         "note": "正文列出词名；具体语义为本库按通行语境编写，榜单不直接详释。"
+      },
+      {
+        "source_id": "mid-src-2019-danmu-ruye",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文解释符合剧情或观众预期的结尾。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 AWSL，名场面，逮虾户：B站2019年度弹幕公布：platform_usage,date（full）。已核当年站内存在；尚缺单独的含义与起源考据。"
+    "notes": "2019年正文解释了熟悉套路式收尾；不同系列的具体结局和最早用语记录需分别核对。"
   },
   {
     "id": "mid-deja-vu",
@@ -536,9 +601,9 @@
     ],
     "category": "music",
     "era": "2016-2020",
-    "meaning": "歌曲《Deja Vu》的中文空耳；在漂移、急转弯或高速剪辑中识别速度感配乐。",
+    "meaning": "Dave Rodgers歌曲《Deja Vu》的中文空耳，常用于漂移、追逐或突然加速的剪辑，也可把速度感配乐用于滑稽反差。",
     "origin": {
-      "summary": "2019 B站年度弹幕名单列此词；歌曲和赛车文化的详细前史未在本条核全。",
+      "summary": "歌曲由Dave Rodgers创作演唱，与动画《Initial D》配乐及后续漂移剪辑关联；2018年中文文章已解释逮虾户空耳，2019年B站年度弹幕收录。",
       "date": null,
       "precision": "unknown",
       "bilibili_role": "imported"
@@ -556,7 +621,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "mid-src-annual19",
@@ -565,9 +630,24 @@
           "date"
         ],
         "note": "词名入榜。"
+      },
+      {
+        "source_id": "mid-src-dejavu-explainer",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "正文解释歌曲空耳、动画关联和快速移动场景，不限定为真实汽车漂移。"
+      },
+      {
+        "source_id": "mid-src-dejavu-rodgers-interview",
+        "claims": [
+          "origin"
+        ],
+        "note": "作者访谈支持歌曲与《Initial D》的关系，区分创作年和后来的模因传播。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 AWSL，名场面，逮虾户：B站2019年度弹幕公布：platform_usage,date（full）。歌手、发行年份、动画插入位置仍需原唱片或版权方材料；暂不填写精确起源。"
+    "notes": "歌曲创作者、动画关联与中文空耳含义有正文支持；访谈中的1997年是创作年，不等于唱片首发或中文首传，最早B站混剪仍未核定。"
   },
   {
     "id": "mid-face-position",
@@ -577,7 +657,7 @@
     ],
     "category": "acg",
     "era": "2016-2020",
-    "meaning": "用角色代表色、应援色或外观表明偏爱的一方。",
+    "meaning": "通过选择角色对应的弹幕颜色表达支持，颜色常取自角色发色或服装；不是仅凭外观判断立场。",
     "origin": {
       "summary": "2018年度B站弹幕名单收录；不是该年首创的证明。",
       "date": null,
@@ -596,7 +676,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual18",
@@ -605,9 +685,17 @@
           "date"
         ],
         "note": "正文列名，语义未逐词展开。"
+      },
+      {
+        "source_id": "mid-src-2018-danmu-ifanr",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文解释弹幕颜色与角色应援的对应。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站发布年度弹幕排行榜，真实、真香上榜：platform_usage,date（full）。已有2018站内传播锚点；单项更早来源与语义原始证据尚缺。"
+    "notes": "2018年站内用法与颜色应援含义有正文支持；最早造词、标签和跨站传播顺序仍缺原始记录。"
   },
   {
     "id": "mid-take-photo",
@@ -615,7 +703,7 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "在难得或知名场面留下到此一游式的参与记录。",
+    "meaning": "在经典、精彩或值得留念的视频位置发弹幕，表示自己曾在这里参与观看，类似到此一游式留念。",
     "origin": {
       "summary": "2018年度B站弹幕名单收录；不是该年首创的证明。",
       "date": null,
@@ -634,7 +722,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual18",
@@ -643,9 +731,17 @@
           "date"
         ],
         "note": "正文列名，语义未逐词展开。"
+      },
+      {
+        "source_id": "mid-src-2018-danmu-ifanr",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文解释经典场面和视频末尾的合影式参与。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站发布年度弹幕排行榜，真实、真香上榜：platform_usage,date（full）。已有2018站内传播锚点；单项更早来源与语义原始证据尚缺。"
+    "notes": "2018年正文说明视频名场面及片尾的弹幕留念用法；不是现实合照，最早网络转用仍未核定。"
   },
   {
     "id": "mid-singing-awe",
@@ -653,7 +749,7 @@
     "aliases": [],
     "category": "music",
     "era": "2016-2020",
-    "meaning": "声音刚出现就令人惊艳，尤其用于唱功或音色。",
+    "meaning": "一开口说话或唱歌就让人惊讶，常赞叹唱功或音色，也可调侃唱声不理想或声线反差，褒贬要看语境。",
     "origin": {
       "summary": "2018年度B站弹幕名单收录；不是该年首创的证明。",
       "date": null,
@@ -662,17 +758,18 @@
     },
     "usage": {
       "contexts": [
-        "歌声初现"
+        "歌声初现",
+        "配音与声线反差"
       ],
-      "example": "第一句就稳住了，开口跪。",
+      "example": "第一句就把我惊到了，开口跪。",
       "avoid": [
-        "不按性别或外貌预设声音好坏。"
+        "结合上下文判断赞叹或调侃，不按性别或外貌预设声音。"
       ]
     },
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual18",
@@ -681,9 +778,16 @@
           "date"
         ],
         "note": "正文列名，语义未逐词展开。"
+      },
+      {
+        "source_id": "mid-src-singing-awe-meaning",
+        "claims": [
+          "meaning"
+        ],
+        "note": "正文区分好听、调侃及角色声线反差，不把开口跪一律解释为称赞。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站发布年度弹幕排行榜，真实、真香上榜：platform_usage,date（full）。已有2018站内传播锚点；单项更早来源与语义原始证据尚缺。"
+    "notes": "社区正文解释正向赞叹与反差调侃；最早出处和各场景的使用链仍不明，不能仅凭词语判定对声音的评价方向。"
   },
   {
     "id": "mid-battle-song",
@@ -691,7 +795,7 @@
     "aliases": [],
     "category": "music",
     "era": "2016-2020",
-    "meaning": "熟悉的激昂音乐响起，预示高光、反击或高潮。",
+    "meaning": "熟悉或具有特定意义的背景音乐响起，让观众预期情节进入关键段落；也用于美食等非战斗场景，并不限定同一首音乐。",
     "origin": {
       "summary": "2018年度B站弹幕名单收录；不是该年首创的证明。",
       "date": null,
@@ -700,17 +804,19 @@
     },
     "usage": {
       "contexts": [
+        "关键场景配乐",
+        "美食视频",
         "战斗剪辑"
       ],
-      "example": "前奏来了，战歌起。",
+      "example": "熟悉的吃饭配乐来了，战歌起。",
       "avoid": [
-        "不要把所有高燃音乐误认成同一首作品。"
+        "不要把所有高燃或关键场景音乐误认成同一首作品。"
       ]
     },
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual18",
@@ -719,9 +825,17 @@
           "date"
         ],
         "note": "正文列名，语义未逐词展开。"
+      },
+      {
+        "source_id": "mid-src-2018-danmu-huxiu",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文以美食节目中的特定配乐说明战歌起，不作为唯一词源。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站发布年度弹幕排行榜，真实、真香上榜：platform_usage,date（full）。已有2018站内传播锚点；单项更早来源与语义原始证据尚缺。"
+    "notes": "2018年正文记录《孤独的美食家》等非战斗语境；具体音乐和作品应分别辨认，最早造词记录未核。"
   },
   {
     "id": "mid-thanks-treat",
@@ -729,7 +843,7 @@
     "aliases": [],
     "category": "acg",
     "era": "2016-2020",
-    "meaning": "看完喜爱的作品、甜蜜情节或美食内容后表示满足与感谢。",
+    "meaning": "在美食等视频结束时表达观看后的满足与感谢，借用饭后致谢的说法回应创作者。",
     "origin": {
       "summary": "2018年度B站弹幕名单收录；不是该年首创的证明。",
       "date": null,
@@ -738,17 +852,18 @@
     },
     "usage": {
       "contexts": [
-        "观看后致谢"
+        "美食视频片尾致谢",
+        "观看后表达满足"
       ],
-      "example": "这一段太满足了，多谢款待。",
+      "example": "这一集看得很满足，多谢款待。",
       "avoid": [
-        "对涉及真人的内容不要自动赋予性暗示。"
+        "不因出现饭后致谢语就自动赋予性暗示。"
       ]
     },
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual18",
@@ -757,20 +872,27 @@
           "date"
         ],
         "note": "正文列名，语义未逐词展开。"
+      },
+      {
+        "source_id": "mid-src-2018-danmu-huxiu",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文记载《人生一串》片尾弹幕向制作团队致谢。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站发布年度弹幕排行榜，真实、真香上榜：platform_usage,date（full）。已有2018站内传播锚点；单项更早来源与语义原始证据尚缺。"
+    "notes": "《人生一串》等美食视频的片尾致谢语境有正文支持；更早网络转用和其他作品语境未逐一核定。"
   },
   {
     "id": "mid-forgive",
     "term": "当然是选择原谅他",
     "aliases": [
-      "选择原谅他",
-      "原谅色"
+      "选择原谅他"
     ],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "表面劝人原谅、实际常带无奈或讽刺；绿帽相关用法牵涉伴侣不忠暗示。",
+    "meaning": "在感情话题中借劝人原谅的口吻表达无奈、自嘲或讽刺；原谅色是相关颜色隐语，不是这句话的完全同义词。",
     "origin": {
       "summary": "2017 B站年度弹幕记录其流行；首创链路未核。",
       "date": null,
@@ -792,7 +914,7 @@
       "受害者嘲讽"
     ],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual17",
@@ -801,9 +923,20 @@
           "date"
         ],
         "note": "列为2017年度热词。"
+      },
+      {
+        "source_id": "mid-src-2017-danmu-yys",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文说明该句在B站感情话题中的自嘲用法。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站发布2017年度弹幕：前三名的脑洞突破天际：platform_usage,date（full）。语义与演变待单独原始材料。"
+    "notes": "2017年站内感情话题与二创用法有正文支持；最早原帖及不同变体的形成先后仍未核定。",
+    "tags": [
+      "原谅色"
+    ]
   },
   {
     "id": "mid-landlord-son",
@@ -811,7 +944,7 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "对角色憨厚、天真或不谙世事表现的戏谑称呼，语境不同可显亲昵或贬损。",
+    "meaning": "带亲昵或调侃语气形容人物憨直、蠢萌的表现，不是对真实家庭身份或智力的判定。",
     "origin": {
       "summary": "2017 B站年度热词有此项；起源未核。",
       "date": null,
@@ -832,7 +965,7 @@
       "贬称"
     ],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-annual17",
@@ -841,9 +974,17 @@
           "date"
         ],
         "note": "榜单列名，未给唯一来源。"
+      },
+      {
+        "source_id": "mid-src-2017-danmu-yys",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文明确该称呼在榜单语境中侧重蠢萌，而不是字面傻。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站发布2017年度弹幕：前三名的脑洞突破天际：platform_usage,date（full）。只有当年流行锚点，起源与角色归属未核。"
+    "notes": "2017年B站用法有正文说明；不将某个角色剪辑认定为唯一源头，首次命名记录仍缺。"
   },
   {
     "id": "mid-true-fragrance",
@@ -908,11 +1049,11 @@
     "id": "mid-rich-power",
     "term": "有钱真的可以为所欲为",
     "aliases": [
-      "为所欲为"
+      "有钱可以为所欲为"
     ],
     "category": "film",
     "era": "2016-2020",
-    "meaning": "用财富与限制的反差进行夸张吐槽，常作表情包句式。",
+    "meaning": "借影视台词夸张调侃财富带来的选择和行动空间，也用于面对明显财富差距时的自嘲。",
     "origin": {
       "summary": "2018表情包报道将其与真香、不打工并列；现有材料未核实原影视素材。",
       "date": null,
@@ -932,7 +1073,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-xiang",
@@ -941,21 +1082,30 @@
           "date"
         ],
         "note": "摘要明确2018模板传播，但未核 B站首发。"
+      },
+      {
+        "source_id": "mid-src-rich-power-explainer",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "摘要解释反差、自嘲及影视关联；不据此填写原片日期。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 小吴王境泽世纪同框：大型真香警告现场：platform_usage,date（snippet）。缺原剧集台词和首发记录；现为有传播锚点的待补来源条目。"
+    "notes": "释义与《读心神探》的关联目前来自可读摘要；原剧逐字台词、最早表情包和B站首传仍未核定。",
+    "tags": [
+      "为所欲为"
+    ]
   },
   {
     "id": "mid-no-work",
     "term": "打工是不可能打工的",
-    "aliases": [
-      "窃格瓦拉"
-    ],
+    "aliases": [],
     "category": "guichu",
     "era": "2016-2020",
-    "meaning": "援引采访口吻表达拒绝、摆烂或自嘲，常用“不可能X”的句型改写。",
+    "meaning": "引用采访中拒绝打工的句子，后被改编成鬼畜、表情包和不同版本的拒绝式玩笑；窃格瓦拉是人物相关称呼，不是句子的同义词。",
     "origin": {
-      "summary": "来自周某受访片段，后被多平台二创传播；2020入驻B站报道回顾该语录。",
+      "summary": "来自周某受访时拒绝打工的片段，经鬼畜、音乐混编和表情包传播；2020年报道记录了其在B站的使用。",
       "date": null,
       "precision": "unknown",
       "bilibili_role": "amplifier"
@@ -975,7 +1125,7 @@
       "犯罪新闻素材"
     ],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "mid-src-work",
@@ -991,9 +1141,29 @@
           "date"
         ],
         "note": "2018表情包传播摘要。"
+      },
+      {
+        "source_id": "mid-src-no-work-chuapp",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "正文记录拒绝打工的采访语录及B站二创背景，不采用未经原片核对的精确首播日。"
+      },
+      {
+        "source_id": "mid-src-no-work-remix",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文记录衍生段子、音乐改编及表情包，不复述无关人物经历。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 真香？永不打工男子快手吸粉百万后登陆B站：origin,platform_usage（snippet）；小吴王境泽世纪同框：大型真香警告现场：date（snippet）。原采访首播日期和原片未核，故不填年份。"
+    "notes": "语录、采访背景与B站改编有正文记录；原采访首播和各二创首发未核，不把人物称呼、原话和改写句混为一体。",
+    "tags": [
+      "窃格瓦拉"
+    ]
   },
   {
     "id": "mid-human-copy",
@@ -1240,7 +1410,7 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "把正式法律函件的语气转成夸张玩笑；在B站历史语境常指2019相关争议。",
+    "meaning": "把正式法律函件的警告语气用于夸张调侃；B站2019年相关争议中，观众将律师函警告作为弹幕和二创用语。",
     "origin": {
       "summary": "2019-04-12 蔡徐坤工作室转发律师告知函的事件推动站内相关玩梗。",
       "date": "2019-04-12",
@@ -1265,7 +1435,7 @@
     "relations": [
       "mid-chicken-beauty"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "mid-src-lawyer",
@@ -1274,9 +1444,26 @@
           "date"
         ],
         "note": "新闻记载工作室转发行为与日期。"
+      },
+      {
+        "source_id": "mid-src-lawyer-letter-usage",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文解释正式函件表达被转作网络调侃的用法。"
+      },
+      {
+        "source_id": "mid-src-lawyer-letter-bili2019",
+        "claims": [
+          "origin",
+          "date",
+          "platform_usage"
+        ],
+        "note": "同期报道记录4月12日事件与随后B站弹幕用例；不采用最早或唯一归因。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 蔡徐坤工作室向B站发律师函，称存在涉嫌故意诽谤等内容：origin,date（full）。事件日期已核；短语本身更早是否存在尚未核。"
+    "notes": "2019年4月12日是已记录的函件事件节点，不是短语首次产生的日期；更早网络使用仍待追溯。"
   },
   {
     "id": "mid-pan",
@@ -1739,9 +1926,9 @@
     "aliases": [],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "表示惊讶、感叹或被某种夸张程度震住，语气可赞可讽。",
+    "meaning": "表示惊讶、感叹的口头表达，网络中也可用于吐槽或调侃出人意料的事情，褒贬取决于语境。",
     "origin": {
-      "summary": "2020跨平台热梗盘点收录，并明确其网络源头不明。",
+      "summary": "既有感叹语在网络语境中被广泛用于表达惊讶和吐槽，2020年年度用语说明记录了这一用法。",
       "date": null,
       "precision": "unknown",
       "bilibili_role": "amplifier"
@@ -1759,7 +1946,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-cross20",
@@ -1768,9 +1955,17 @@
           "date"
         ],
         "note": "2020名单及出处不明表述。"
+      },
+      {
+        "source_id": "mid-src-2020-language-cp",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "发布方说明语义及进入网络前的口头使用背景，不指定唯一创造者。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 快乐星球出圈，B站抖音谁是造梗机器？：platform_usage,date（full）。为既有口语的流行化，缺单一首创证据。"
+    "notes": "年度用语说明支持感叹语义及相声等口头表达背景；普通口语的历史不以2020年榜单为起点，B站首次用例未核。"
   },
   {
     "id": "mid-dragon-king",
@@ -2014,7 +2209,7 @@
     "aliases": [],
     "category": "life",
     "era": "2016-2020",
-    "meaning": "在华农语境中，赞某物漂亮常让观众联想到接下来被挑中、带走或烹饪的反差。",
+    "meaning": "在华农兄弟视频语境中，把竹鼠被称赞漂亮与随后被烹饪的反差联系起来，用来调侃或预告视频走向。",
     "origin": {
       "summary": "华农兄弟视频衍生梗；回顾报道明确记录2018走红与漂亮警告二创。",
       "date": null,
@@ -2033,7 +2228,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "mid-src-huanong",
@@ -2050,9 +2245,17 @@
           "date"
         ],
         "note": "正文列出漂亮警告并指出B站鬼畜传播；未详释具体语义。"
+      },
+      {
+        "source_id": "mid-src-pretty-warning-meaning",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "正文直接把漂亮警告与视频中竹鼠被称赞漂亮的情节对应，不泛化到所有物品。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 初代乡村网红华农兄弟，鼠年还是想好好养竹鼠：origin（full）；B站沉不下去：origin,platform_usage,date（full）。已核词名与梗族；解释仍需原片逐句核对，不以采访背景单独证明。"
+    "notes": "正文解释了竹鼠语境中的漂亮与烹饪反差；原片完整对白、最早弹幕以及对其他对象的扩展用法未核。"
   },
   {
     "id": "mid-wuhu",
@@ -2579,9 +2782,9 @@
     ],
     "category": "guichu",
     "era": "2016-2020",
-    "meaning": "由选秀演唱片段和二创组合形成的鬼畜素材组，烤面筋的反复唱法尤其易识别。",
+    "meaning": "将面筋哥与波澜哥的选秀演唱素材组合、调音形成的鬼畜作品族；代表作品用烤面筋的反复唱法制造节奏与反差。",
     "origin": {
-      "summary": "2018 B站《我的烤面筋，融化你的心！》组合两位选秀人物素材，引发传播。",
+      "summary": "2018年B站《我的烤面筋，融化你的心！》将两位选秀人物的素材组合改编；代表投稿元数据日期为2018-03-23，不是原选秀素材的诞生日期。",
       "date": "2018-03-23",
       "precision": "exact",
       "bilibili_role": "adaptation"
@@ -2599,7 +2802,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-mianjin",
@@ -2612,12 +2815,14 @@
       {
         "source_id": "mid-src-kubenchina",
         "claims": [
-          "origin"
+          "meaning",
+          "origin",
+          "platform_usage"
         ],
-        "note": "报道摘要解释选秀素材再传播。"
+        "note": "正文说明选秀素材、两人组合二创与2018年B站传播；不采用未经原片核对的参赛年份。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 面筋哥×波澜哥：我的烤面筋，融化你的心！：platform_usage,date（metadata）；B站反蔡徐坤正义背后，二次元平台内容隐忧犹存：origin（snippet）。日期是代表二创投稿，不是两位歌手或素材的诞生时间。"
+    "notes": "组合身份及B站二创有正文支持；2018年3月23日来自代表投稿元数据，原选秀期次和完整台词未逐一核对，不能把二创组合当真人共同经历。"
   },
   {
     "id": "mid-nianshi-king",
@@ -2627,9 +2832,9 @@
     ],
     "category": "guichu",
     "era": "2016-2020",
-    "meaning": "赵本山等小品台词经音乐化拼接的代表性鬼畜，常以开头句代指作品。",
+    "meaning": "小可儿将赵本山春晚小品语音编排为鬼畜歌曲的作品，所用原曲由疯猴PME创作；观众也以开头短句指代该作品。",
     "origin": {
-      "summary": "B站代表投稿于2018-02-11发布；素材来自既有小品。",
+      "summary": "小可儿以赵本山春晚小品为素材制作，原曲来自疯猴PME；B站代表投稿元数据记为2018-02-11，后续翻唱与报道日期另计。",
       "date": "2018-02-11",
       "precision": "exact",
       "bilibili_role": "adaptation"
@@ -2647,7 +2852,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-nianshi",
@@ -2657,9 +2862,18 @@
           "date"
         ],
         "note": "标题、日期与创作介绍可见于索引。"
+      },
+      {
+        "source_id": "mid-src-nianshi-authors",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "报道分别说明小可儿的二创、赵本山小品素材及疯猴PME原曲；没有给出精确投稿日。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 赵本山：我就是念诗之王！改革春风吹满地：origin,platform_usage,date（metadata）。未观看原投稿；原始台词的逐句出处待核。"
+    "notes": "作品、素材和创作分工有正文支持；2018年2月11日来自投稿元数据，原小品逐句出处与完整音轨尚未核对。"
   },
   {
     "id": "mid-different-song",
@@ -2667,9 +2881,9 @@
     "aliases": [],
     "category": "music",
     "era": "2016-2020",
-    "meaning": "由歌曲副歌进入对比语境，突出人物、处境或结果的差异。",
+    "meaning": "借大壮演唱的同名歌曲及其配乐，调侃自己与他人在处境、表现或结果上的差异，常形成反差或自嘲。",
     "origin": {
-      "summary": "2017年B站全明星鬼畜投稿已使用这首歌曲和句式。",
+      "summary": "2017年B站全明星鬼畜投稿已使用这首歌曲；原曲由大壮演唱，音乐平台元数据标注高进作曲。歌曲发行与站内改编分别记录。",
       "date": "2017",
       "precision": "year",
       "bilibili_role": "adaptation"
@@ -2687,7 +2901,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-different",
@@ -2696,9 +2910,24 @@
           "date"
         ],
         "note": "2017-12-08代表投稿元数据。"
+      },
+      {
+        "source_id": "mid-src-different-meaning",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "正文解释歌曲作为恶搞配乐后转为反差表达，不据原创歌曲一词推断词曲作者。"
+      },
+      {
+        "source_id": "mid-src-different-credits",
+        "claims": [
+          "origin"
+        ],
+        "note": "音乐平台检索元数据列出大壮与作曲高进，不作为完整音轨核验。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 全明星：我们不一样：platform_usage,date（metadata）。歌曲发行与站内最早改编未独立核全。"
+    "notes": "反差表达有正文支持；音乐平台检索元数据区分大壮演唱与高进作曲，原曲发行和B站改编是不同节点，最早改编仍未核。"
   },
   {
     "id": "mid-new-treasure-island",
@@ -2753,7 +2982,7 @@
     ],
     "category": "life",
     "era": "2016-2020",
-    "meaning": "三个人影随《爱河》舞动的短视频模因；名称借用游戏角色的分身联想。",
+    "meaning": "以《爱河》配乐和三重分身舞为特征的短视频及其翻跳、鬼畜系列；影流之主的称呼借用了游戏角色分身的联想。",
     "origin": {
       "summary": "2019年短视频在B站被搬运与鬼畜改编，随后原表演者也以相关称呼活动。",
       "date": "2019",
@@ -2773,7 +3002,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "verified",
     "evidence": [
       {
         "source_id": "mid-src-shadow",
@@ -2783,9 +3012,19 @@
           "date"
         ],
         "note": "报道摘要可见2019站内传播及配乐。"
+      },
+      {
+        "source_id": "mid-src-shadow-gcores",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage",
+          "date"
+        ],
+        "note": "正文区分抖音原表演、搬入B站后的题名和后续二创；日期仅用于2019年传播节点。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 影流之主B站爆火，为何土味视频间歇性走红：origin,platform_usage,date（snippet）。原账号、最早视频和命名者未取得全文证明。"
+    "notes": "2019年正文支持舞蹈、配乐、搬运及二创传播；原账号最初上传和命名者的完整原始记录未核，不把回顾报道当全网首创证明。"
   },
   {
     "id": "mid-criminal-zhang",
@@ -3567,7 +3806,7 @@
           "origin",
           "date"
         ],
-        "note": "发布方摘要说明变体演变。"
+        "note": "发布方正文说明相关表达的变体演变；最早游戏原帖仍未核。"
       }
     ],
     "notes": "首个表情、玩家与B站首发仍缺。"
@@ -3580,7 +3819,7 @@
     ],
     "category": "music",
     "era": "2016-2020",
-    "meaning": "为喜欢的表演、人物或作品应援；源于演出应援文化，网络使用可泛指支持。",
+    "meaning": "为喜欢的表演者、人物或作品应援；来自演出中呼喊、挥动荧光棒等互动方式，网络中可泛指支持，不是打电话。",
     "origin": {
       "summary": "2017官方网络用语名单见证其普及；不是2017年才产生的应援方式。",
       "date": null,
@@ -3600,7 +3839,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-2017-official",
@@ -3608,9 +3847,17 @@
           "date"
         ],
         "note": "名单含打call。"
+      },
+      {
+        "source_id": "mid-src-2017-publisher",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "发布方解释台下应援与网络支持义，不把2017年榜单日期当作应援文化起点。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 汉语盘点：十大网络用语发布：date（snippet）。现有材料只支持榜单存在，含义及演出文化前史须补专业来源。"
+    "notes": "发布方正文说明演出应援和泛化支持义；最早演出文化记录、中文转用和B站早期用例仍需补充。"
   },
   {
     "id": "mid-heart-pierced",
@@ -3620,7 +3867,7 @@
     ],
     "category": "community",
     "era": "2016-2020",
-    "meaning": "熟人语气地表示话戳中难处、事实令人难受或产生共鸣。",
+    "meaning": "以老铁称呼朋友或熟人，表示对方的话或眼前事情触及难处、让自己心里难受，常带自嘲或诉苦语气。",
     "origin": {
       "summary": "2017年官方网络用语名单收录；更早直播社群来源未核。",
       "date": null,
@@ -3639,7 +3886,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-2017-official",
@@ -3647,9 +3894,17 @@
           "date"
         ],
         "note": "2017名单列名。"
+      },
+      {
+        "source_id": "mid-src-2017-publisher",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "发布方解释方言称呼、心理感受与诉苦语气；不指定最早直播者。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 汉语盘点：十大网络用语发布：date（snippet）。缺释义原始材料和B站代表使用记录。"
+    "notes": "2017年发布方正文解释老铁与扎心的组合含义；更早直播原件和B站代表性早期用例仍未核定。"
   },
   {
     "id": "mid-such-operation",
@@ -3657,7 +3912,7 @@
     "aliases": [],
     "category": "game",
     "era": "2016-2020",
-    "meaning": "惊讶于意想不到的技巧、解法或荒诞做法。",
+    "meaning": "对出乎意料的技巧、解法或做法表示惊讶；可赞叹高明，也可调侃离谱操作。",
     "origin": {
       "summary": "2017官方网络用语名单有记录，网络使用不限于游戏。",
       "date": null,
@@ -3676,7 +3931,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-2017-official",
@@ -3684,9 +3939,17 @@
           "date"
         ],
         "note": "2017名单列名。"
+      },
+      {
+        "source_id": "mid-src-2017-publisher",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "发布方说明从游戏操作到其他意外做法的语义扩展。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 汉语盘点：十大网络用语发布：date（snippet）。缺单独词义来源和B站传播锚点。"
+    "notes": "2017年发布方正文解释了游戏中的赞叹与吐槽及其跨圈用法；最早原帖和B站早期使用样本仍待补。"
   },
   {
     "id": "mid-freestyle",
@@ -3736,7 +3999,7 @@
     "aliases": [],
     "category": "music",
     "era": "2016-2020",
-    "meaning": "说唱中拟声和口头表达在中文网上被反复引用，也有“是个”等谐音仿写。",
+    "meaning": "说唱等语境中的拟声表达，在中文综艺和网络中也被用来表示认可、佩服或赞扬；拟声义和衍生赞叹义需区分。",
     "origin": {
       "summary": "2018综艺语境推动其中文模因传播；拟声词本身早于此。",
       "date": "2018",
@@ -3756,7 +4019,7 @@
     "lifecycle": "classic",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "mid-src-noodles",
@@ -3772,9 +4035,18 @@
           "date"
         ],
         "note": "2018名单列名。"
+      },
+      {
+        "source_id": "mid-src-skr-2018-definition",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "年度说明解释轮胎摩擦拟声及2018年综艺带动的赞叹用法，不证明最早造词。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 China’s Hottest New Song Is a Rap About Noodles：origin,date（full）；2018年十大网络用语发布：锦鲤、杠精、skr上榜：date（snippet）。更早英语说唱使用史和B站首发未核。"
+    "notes": "2018年年度解释支持拟声与中文赞叹用法；英语前史、中文谐音变体和B站最早使用仍未核，不以入榜年当作词语诞生年。"
   },
   {
     "id": "mid-big-bowl",

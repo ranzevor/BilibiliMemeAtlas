@@ -1204,10 +1204,10 @@
     "url": "https://www.cp.com.cn/Content/2017/12-19/0813461065.html",
     "publisher": "商务印书馆",
     "source_type": "primary",
-    "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "2017 名单及皮皮虾我们走的游戏表达演变。",
-    "limitations": "直开超时；只核摘要。"
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "发布方正文公布2017年度网络用语，并解释打call的演出应援及支持义、扎心了老铁的称呼与诉苦语气、还有这种操作的游戏和跨圈用法，以及皮皮虾我们走的表达演变。",
+    "limitations": "年度榜单与解释不等于B站专门传播记录，也不证明每个表达的唯一首创者；原始帖子、直播与更早演出记录需分别核对。"
   },
   {
     "id": "mid-src-2018-words",
@@ -1237,10 +1237,10 @@
     "url": "https://www.jiemian.com/article/3044539.html",
     "publisher": "界面新闻",
     "source_type": "secondary",
-    "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "面筋哥、波澜哥的选秀素材于2018在B站二创走红。",
-    "limitations": "仅核检索摘要；原选秀年份不据单篇文章定案。"
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "正文说明面筋哥与波澜哥的选秀演唱素材经《我的烤面筋，融化你的心！》等二创于2018年在B站传播。",
+    "limitations": "只采用素材组合与站内传播；文中波澜哥参赛年份未与原节目核对，不采用该年份断言；历史播放量不作当前数据。"
   },
   {
     "id": "mid-src-work",
@@ -3419,5 +3419,247 @@
     "checked_at": "2026-10-30",
     "supports": "2016年12月1日采访记载庞麦郎于2014年5月在虾米音乐上传《我的滑板鞋》，当年夏季走红，并描述歌曲的追梦叙事及口语化演唱。",
     "limitations": "只采用歌曲创作、上传与传播相关段落；2014年上传不等于开始创作，不纳入身份争议、私人生活或人物健康推测。"
+  },
+  {
+    "id": "mid-src-2018-danmu-huxiu",
+    "title": "B站公布2018年度弹幕，怎么全是我的屏蔽词",
+    "url": "https://www.huxiu.com/article/278692.html",
+    "publisher": "敲敲格／虎嗅",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "正文解释用弹幕颜色支持角色的颜表立、特定背景音乐响起时的战歌起，以及《人生一串》片尾多谢款待的致谢用法。",
+    "limitations": "采用具体用例与释义；不采用作者对所有用户、热词寿命或文化价值的概括，也不认定这些用例为首创。"
+  },
+  {
+    "id": "mid-src-2018-danmu-ifanr",
+    "title": "B 站发布年度弹幕，2018 过于「真实」了",
+    "url": "https://www.ifanr.com/1153734",
+    "publisher": "爱范儿",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "正文解释颜表立的弹幕颜色应援、合影的留念式参与，以及美食视频结束后多谢款待的感谢与满足；也说明战歌起对应熟悉的背景音乐。",
+    "limitations": "只采用词义和站内语境；文中对特定作品源头的回顾没有独立原帖支持，不据此确定最早造词。"
+  },
+  {
+    "id": "mid-src-2019-danmu-lens",
+    "title": "B站发布年度弹幕热词，还需要解释吗？",
+    "url": "https://m.thepaper.cn/newsDetail_forward_5148354",
+    "publisher": "Lens／澎湃号",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "正文分项解释泪目、名场面、妙啊、正片开始、标准结局和注入灵魂，给出这些表达在2019年B站弹幕中的用法。",
+    "limitations": "采用有限语义解释，不采用文章的戏谑引文、群体评价或单一起源归因；作品出现时间与短语首次使用须另核。"
+  },
+  {
+    "id": "mid-src-2019-danmu-ruye",
+    "title": "B站2019年度10大弹幕热词，你都知道它们的含义吗？",
+    "url": "https://www.sohu.com/a/359806055_100036910",
+    "publisher": "儒爷说／搜狐号",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "文章解释我可以用于表达对人或物的喜欢，以及标准结局指符合熟悉套路或观众预期的收尾。",
+    "limitations": "社区释义不证明最初说话者；不采用对某个艺人或视频作者独占首创的归因。"
+  },
+  {
+    "id": "mid-src-2020-language-cp",
+    "title": "“汉语盘点2020”之年度十大网络用语发布",
+    "url": "https://www.cp.com.cn/Content/2020/12-09/0936445885.html",
+    "publisher": "商务印书馆",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "年度用语说明将好家伙解释为表达惊讶的感叹语，并记录它从相声等口头表达进入网络的使用背景。",
+    "limitations": "年度发布说明不证明该普通感叹语始于2020年，也不确认唯一创造者或B站最早用例。"
+  },
+  {
+    "id": "mid-src-2017-danmu-yys",
+    "title": "B站10亿弹幕 为何囍字最热？",
+    "url": "https://top.sina.cn/zx/2018-01-02/tnews-ifyqefvx1346998.d.html",
+    "publisher": "游研社／新浪",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "回顾2017年B站弹幕，说明当然是选择原谅他在感情话题中的自嘲用法，以及地主家的傻儿子指蠢萌表现而非字面智力或家庭身份。",
+    "limitations": "只采用具体词义及站内使用；不采用娱乐圈群体概括、最早CP排名或文化价值判断。"
+  },
+  {
+    "id": "mid-src-lawyer-letter-usage",
+    "title": "道方图说 | 知识产权警告函是如何异化为商业诋毁？",
+    "url": "https://funtolaw.com/view.php?id=370",
+    "publisher": "广东方图律师事务所／梁楚婷",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "文章开头说明律师函警告被用于B站弹幕等语境，观众借正式函件语气调侃表演或二创可能引起的争议。",
+    "limitations": "仅采用公开文字对网络用语的观察，不把文中个案法律分析转作所有二创的权利结论。"
+  },
+  {
+    "id": "mid-src-lawyer-letter-bili2019",
+    "title": "蔡徐坤鬼畜区C位出道 “鸡你太美”凭啥“血洗”B站？",
+    "url": "https://tech.sina.com.cn/csj/2019-04-17/doc-ihvhiewr6537914.shtml",
+    "publisher": "刺猬公社／新浪创事记",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2019年4月17日报道记载4月12日工作室发出律师告知函，并明确描述随后B站弹幕出现律师函警告、顶风作案等表达。",
+    "limitations": "采用事件与弹幕用例；不采用人物能力评价、首例诉讼说法或以函件主张代替法院认定。"
+  },
+  {
+    "id": "early-src-kuroko-materials",
+    "title": "B站“鬼畜区艺术第一人”非他莫属！",
+    "url": "https://wapbaike.baidu.com/tashuo/browse/content?id=375a76c4ca5e68b9f1b9d19d",
+    "publisher": "隔夜也很宅／百度百科TA说",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "正文以白井黑子的声音素材说明鬼畜作品，并将《危险的黑子》列为B站早期搬运的经典音MAD。",
+    "limitations": "只采用素材角色、作品身份与搬运背景；不采用标题的排名，不由文章讨论的其他创作者推定本作原作者，也未直接播放原片。"
+  },
+  {
+    "id": "mid-src-rich-power-explainer",
+    "title": "有钱真的可以为所欲为是什么意思 出处哪里哪部作品",
+    "url": "https://www.mnw.cn/news/ent/2188111.html",
+    "publisher": "闽南网",
+    "source_type": "secondary",
+    "access_level": "snippet",
+    "checked_at": "2026-10-31",
+    "supports": "检索摘要解释借有钱人的行动空间与普通人形成反差的自嘲，并将流行句式与电视剧《读心神探》关联。",
+    "limitations": "正文请求超时，只登记实际可读摘要；没有逐句核对原剧、原始表情包或B站首传，不填写精确起源日。"
+  },
+  {
+    "id": "mid-src-welcome-home-return",
+    "title": "《暴走大事件》回归复播：网友齐呼欢迎回家",
+    "url": "https://news.mydrivers.com/1/613/613807.htm",
+    "publisher": "快科技／上方文Q",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2019年2月2日报道记载节目于2月1日晚在B站恢复更新，观众以欢迎回家弹幕回应，提供欢迎节目回归的具体用例。",
+    "limitations": "采用回归与弹幕用法，不将该次事件当作普通问候语或网络表达的首创，也不转述无关争议。"
+  },
+  {
+    "id": "mid-src-nianshi-authors",
+    "title": "B站出现第二个播放量破亿视频：“念诗之王”",
+    "url": "https://www.ithome.com/0/667/283.htm",
+    "publisher": "IT之家／孤城",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2023年1月12日报道明确作品由小可儿于2018年上传，以赵本山春晚小品为素材，原曲来自疯猴PME。",
+    "limitations": "只采用作品、素材和创作分工；报道给出的是2018年而非精确投稿日，历史播放量不作当前统计。"
+  },
+  {
+    "id": "mid-src-no-work-chuapp",
+    "title": "窃·格瓦拉出狱了，人们还记得切·格瓦拉吗？",
+    "url": "https://www.chuapp.com/article/287158.html",
+    "publisher": "触乐／刺猬先生",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2020年正文记录周某拒绝打工的采访句、窃格瓦拉称呼和B站鬼畜传播，并区分被引用的真人与其他历史人物。",
+    "limitations": "只采用语录、称呼和二创传播；原采访完整录像及首播尚未核对，不纳入人物私生活和文章后续政治类比。"
+  },
+  {
+    "id": "mid-src-no-work-remix",
+    "title": "“这辈子不可能打工男子”出狱了 司法所将对其重点关注",
+    "url": "https://www.cnbeta.com.tw/articles/funny/968917.htm",
+    "publisher": "TechWeb／cnBeta转载",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2020年正文说明采访语录被改写为不同段子、与《我的滑板鞋》混合成歌曲，并成为B站鬼畜与表情包素材。",
+    "limitations": "采用改编形式，不将二创台词还原为原采访连续发言；原片首播时间和每个改编版本作者未核。"
+  },
+  {
+    "id": "mid-src-pretty-warning-meaning",
+    "title": "短视频眼中的新农村：没有土味喊麦，手工耿、华农兄弟等倍受热捧",
+    "url": "https://www.jiemian.com/article/2545528.html",
+    "publisher": "三声／吴睿，界面JMedia",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "正文将漂亮警告与华农兄弟视频中以竹鼠漂亮为理由引出的烹饪反差对应，说明观众如何理解这一称呼。",
+    "limitations": "只采用视频梗的表达机制，不把所有拍摄理由断言为编造，也不以该文确定最早弹幕或原片逐字内容。"
+  },
+  {
+    "id": "mid-src-shadow-gcores",
+    "title": "“奥利给”、“影 流 之 主”B站刷屏，土味才是鬼畜的归宿？",
+    "url": "https://www.gcores.com/articles/117582",
+    "publisher": "ACGx／机核",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2019年11月29日正文说明《爱河》配乐、三重分身舞、抖音素材搬入B站后的命名及翻跳和二创，区分原表演者与搬运者。",
+    "limitations": "报道中的原上传月份和账号对应是回顾叙述，不作为最早上传穷尽证明；只采用有限传播链，不采外貌评价和平台总体归因。"
+  },
+  {
+    "id": "mid-src-dejavu-explainer",
+    "title": "逮虾户是什么梗 逮虾户是什么意思",
+    "url": "https://m.ali213.net/news/gl1811/282779.html",
+    "publisher": "游侠手游",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2018年11月21日正文解释逮虾户是《Deja Vu》的中文空耳，联系《头文字D》、赛车剪辑及动物追逐等快速移动场景。",
+    "limitations": "文章未定位最早中文空耳作者或首个混剪；举例说明用法，不证明所有使用该音乐的视频同源。"
+  },
+  {
+    "id": "mid-src-dejavu-rodgers-interview",
+    "title": "The Eurobeat of Dave Rodgers Pioneered ’90s J-Pop",
+    "url": "https://daily.bandcamp.com/lifetime-achievement/dave-rodgers-lifetime-achievement",
+    "publisher": "Bandcamp Daily／Patrick St. Michel",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2023年访谈确认Dave Rodgers与《Deja Vu》的创作演唱关系、歌曲用于《Initial D》及漂移模因传播；作者将1997年称为歌曲创作年。",
+    "limitations": "1997是采访中的创作年份，不等同唱片首发、动画使用或B站传播日期；不收录歌词或把后续重录专辑当原版发行。"
+  },
+  {
+    "id": "mid-src-different-meaning",
+    "title": "破壁 | 来看看这些95后流行语 你能懂几句?",
+    "url": "https://www.sohu.com/a/237423502_505816",
+    "publisher": "媒介360／搜狐号",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2018年6月23日正文解释大壮演唱的《我们不一样》被用作反差视频配乐，句子转为调侃自己与他人境遇不同的表达。",
+    "limitations": "采用语义和演唱关联；文章的原创歌曲表述不能单独证明大壮拥有词曲创作署名，具体署名另据音乐平台记录。"
+  },
+  {
+    "id": "mid-src-different-credits",
+    "title": "我们不一样 — 大壯",
+    "url": "https://www.joox.com/hk/single/ZgXNlV0yYWe4Po9uzoPJpw%3D%3D",
+    "publisher": "JOOX",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-10-31",
+    "supports": "搜索可见曲目元数据列出大壮、2017年6月6日及作曲高进，提供演唱者与作曲者的区分。",
+    "limitations": "曲目正文未能取得，仅登记检索可见元数据；平台日期不作为全网最早公开时间，不复制歌词。"
+  },
+  {
+    "id": "mid-src-singing-awe-meaning",
+    "title": "开口跪",
+    "url": "https://moegirl.uk/%E5%BC%80%E5%8F%A3%E8%B7%AA",
+    "publisher": "萌娘百科公开镜像",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "正文区分开口即惊艳的赞叹、唱声出乎意料的调侃和声线反差，条目将出处列为不明。",
+    "limitations": "采用实际读取的镜像释义，不以镜像更新时间确定词源，不转述针对具体人物外貌或唱功的贬损评价。"
+  },
+  {
+    "id": "mid-src-skr-2018-definition",
+    "title": "汉语盘点：2018年十大网络用语发布",
+    "url": "https://xz.chsi.com.cn/xz/zyts/201812/20181221/1748790435.html",
+    "publisher": "学信网（转新华网／教育部网站）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "转载的年度用语说明解释skr原为轮胎摩擦拟声，2018年综艺传播中被用于表示认可、佩服和赞扬。",
+    "limitations": "年度解释不证明英语拟声词始于2018年；没有建立B站首用或所有中文谐音变体的传播链。"
   }
 ]

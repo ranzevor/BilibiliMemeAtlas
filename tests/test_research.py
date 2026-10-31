@@ -40,6 +40,17 @@ class ResearchTests(unittest.TestCase):
         opener = Opener(HTTPError('https://api.bilibili.com', 412, 'blocked', {}, None))
         r = collect('search', '合成测试', opener=opener)
         self.assertEqual((r['status'], r['http_status']), ('refused', 412))
+    def test_text_error_body_preserves_http_refusal_without_a_false_digest(self):
+        body = io.StringIO('synthetic rejection text')
+        opener = Opener(HTTPError('https://api.bilibili.com', 412, 'blocked', {}, body))
+        receipt = collect('search', '合成测试', opener=opener)
+        self.assertEqual((receipt['status'], receipt['http_status']), ('refused', 412))
+        self.assertEqual(len(opener.calls), 1)
+        self.assertIn('error_body_read_error', receipt)
+        self.assertNotIn('body_bytes', receipt)
+        self.assertNotIn('body_sha256', receipt)
+        self.assertTrue(body.closed)
+
     def test_malformed_response_is_unavailable(self):
         for data in [b'not json', b'[]', b'{"code":true}', b'{"code":0,"data":null}']:
             self.assertEqual(collect('search', '测试', opener=Opener(data))['status'], 'unavailable')
