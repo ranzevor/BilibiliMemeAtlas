@@ -2045,7 +2045,7 @@
     ],
     "category": "guichu",
     "era": "2009-2015",
-    "meaning": "B站早期以白井黑子相关素材制作的音MAD代表作，标题常作为老站记忆的指代。",
+    "meaning": "以《某科学的超电磁炮》白井黑子声音为素材的早期音MAD作品，作品名也用于指代B站经典投稿。",
     "origin": {
       "summary": "B站由冴羽獠于2010年12月18日上传，简介标注Niconico原作sm13060333；日方同期榜单记录了同一作品，冴羽獠是该B站稿件的上传者，不能据此认定为原作者。",
       "date": "2010",
@@ -2067,7 +2067,7 @@
     "relations": [
       "early-site-treasure"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "early-src-kuroko",
@@ -2092,9 +2092,17 @@
           "date"
         ],
         "note": "日方同期音MAD榜单提供同一原作编号及2010年12月18日节点；读取范围为榜单元数据。"
+      },
+      {
+        "source_id": "early-src-kuroko-materials",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "正文说明白井黑子声音素材及早期B站搬运作品，不据此指定原作者。"
       }
     ],
-    "notes": "B站稿件简介与日方同期榜单均指向sm13060333，已纠正上传者与原作者混同；原片内容及可支持完整释义的正文仍待补，原作者身份不据转载者署名推定。"
+    "notes": "作品释义有正文材料支持；原片完整内容、原作者身份和最早传播仍需原始材料。B站上传者与原作者分别记录。"
   },
   {
     "id": "early-cirno-nine",
