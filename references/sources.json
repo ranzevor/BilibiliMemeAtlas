@@ -1091,13 +1091,57 @@
   {
     "id": "early-src-madoka",
     "title": "bilibili宣布独家代理《魔法少女小圆》正版手游",
-    "url": "https://www.chuapp.com/mobile/247389.html",
+    "url": "https://www.chuapp.com/?c=Article&a=index&id=247389",
     "publisher": "触乐",
     "source_type": "secondary",
-    "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "2011年作品与B站相关用语“契约成为魔法少女”“已经没什么好害怕了”。",
-    "limitations": "2016年报道可回顾作品与用语，未定位中文译句首次出现日。"
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2016年6月2日触乐文章标题直接使用“和我签订契约成为魔法少女吧”，正文称《魔法少女小圆》TV动画在B站播放量超过300万，并将该句列为作品衍生的热门ACG用语。",
+    "limitations": "该文是2016年的回顾性报道，支持该中文句式已进入B站ACG语境；不证明中文最早译本、B站最早投稿或最早弹幕记录。"
+  },
+  {
+    "id": "early-src-madoka-hujiang-2014",
+    "title": "热词：与我定下契约，成为○○吧！",
+    "url": "https://jp.hujiang.com/riyucihui/p626682/",
+    "publisher": "沪江日语（译自 nanapi）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2014年7月30日双语文章引用日文原句，给出中文译法“与我定下契约，成为魔法少女吧！”，称该台词当时在网络流行，并解释“与我定下契约，成为○○吧”的扩展用法及丘比的招募话术。",
+    "limitations": "记录的是该文采用的中文译法，不证明“和我签订契约”这一具体措辞的最早译本或中文首创日期。"
+  },
+  {
+    "id": "early-src-madoka-netbuzz-2011",
+    "title": "网络流行语大赏2011：金奖为「ポポポポ～ン」",
+    "url": "https://nlab.itmedia.co.jp/cont/articles/3223058/",
+    "publisher": "ねとらぼ（ITmedia）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2011年12月1日报道网络流行语大赏2011结果，铜奖为“僕と契約して、◯◯になってよ！”，并说明该填空模板来自《魔法少女小圆》丘比的招募台词。",
+    "limitations": "奖项记录的是日文填空模板，不是中文译句或原句唯一版本；不提供中文社区首发证据。"
+  },
+  {
+    "id": "early-src-madoka-nitroplus-2011",
+    "title": "「魔法少女まどか☆マギカ」放送開始！",
+    "url": "https://www.nitroplus.co.jp/news/2011/1884.php",
+    "publisher": "Nitroplus",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "Nitroplus于2011年1月7日发布的官方公告确认该动画于1月6日25:25在MBS开播，并列出TBS及CBC的后续播出时间。",
+    "limitations": "确认动画首播安排，不单独证明中文译句的形成时间或网络传播起点。"
+  },
+  {
+    "id": "early-src-madoka-official-ep1",
+    "title": "第1话「僕と契約して魔法少女になってよ！」",
+    "url": "https://www.madoka-magica.com/tv/story/?id=01",
+    "publisher": "《魔法少女小圆》动画官方网站（Magica Quartet / Aniplex）",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "动画官方网站的第1话页面标题直接列出「僕と契約して魔法少女になってよ！」，确认该台词与第1话的关联及日文原句。",
+    "limitations": "页面当前为动画官方网站的TV Edition页面；用于核对第1话标题及原句，不单独提供中文译本或首播日期。"
   },
   {
     "id": "early-src-marisa-remix",

@@ -14,7 +14,7 @@
 | --- | ---: | --- |
 | 2009 | 0 | 本索引条件未命中；需继续研究，不表示不存在材料 |
 | 2010 | 2 | 给力（early-geili）；日和中文配音（early-hiyori-dub） |
-| 2011 | 2 | 膝盖中了一箭（early-arrow-knee）；千本樱（early-senbonzakura） |
+| 2011 | 3 | 和我签订契约，成为魔法少女吧（early-madoka-contract）；膝盖中了一箭（early-arrow-knee）；千本樱（early-senbonzakura） |
 | 2012 | 2 | 白金迪斯科（early-platinum-disco）；元芳，你怎么看（early-yuanfang） |
 | 2013 | 0 | 本索引条件未命中；需继续研究，不表示不存在材料 |
 | 2014 | 2 | 我也是醉了（early-also-drunk）；画面太美我不敢看（early-too-beautiful）；张全蛋（early-zhang-quandan） |
@@ -46,10 +46,10 @@
 | 5 | 德国骨科 | `early-german-orthopedics` | 2009-2015 / acg | 部分核实 | 无 | 已由维基词典和B站2018年专栏核实该词的血缘兄妹题材义及流传的2012年微博起源叙事，并找到B站2015年10月10日投稿用例。原始微博帖、事件真实性、最早传播链和B站更早用例仍未核实；2012年日期仅是被反复转述的起源说法，不作为已证实的诞生日期。 |
 | 6 | 日和中文配音 | `early-hiyori-dub` | 2009-2015 / acg | 部分核实 | 无 | 已由2010年三篇同期报道交叉核实CUCN201等配音组的本土化改配方式、成员与早期网络传播；B站2014年4月18日合集元数据明确区分前9集CUCN201与其他配音者。该合集页面当前仅能读取元数据，不能据此确认B站最早上传或完整合集内容；2010年为配音组传播节点。 |
 | 7 | 钉宫病 | `early-kugimiya-syndrome` | 2009-2015 / acg | 部分核实 | platform_usage | 2008年5月和9月的中文论坛记录、2008年8月搜狐资料及2009年3月动漫报道证明该称呼在中文声优粉丝文化中的早期流通。二手资料将命名节点追溯至2007年9月28日Sofmap告示牌，但原始告示和首创者尚未取得。B站搜索索引列出2010年1月31日标题含“釘宮病”的投稿，另有2010年3月24日投稿当前带该标签；这些索引/标签材料不能证明B站首发或标签添加日期。 |
-| 8 | 和我签订契约，成为魔法少女吧 | `early-madoka-contract` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 作品与站内传播目前只核报道摘要；原片译句版本及中文首次使用未定位。 |
+| 8 | 和我签订契约，成为魔法少女吧 | `early-madoka-contract` | 2009-2015 / acg | 部分核实 | 无 | 已核实日文原句、第1话归属、2011年首播年份、2011年网络流行语大赏的衍生模板，以及2014年中文译法和2016年B站使用记录。中文最早译本、具体字幕版本及B站最早投稿或弹幕记录尚未定位，因此保留部分核实状态。 |
 | 9 | Nice boat | `early-nice-boat` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 2007年事件由日媒回顾摘要支持；未核最初讨论帖和早期B站用例。 |
 | 10 | Nico Nico Ni | `early-nico-nico-ni` | 2009-2015 / acg | 部分核实 | platform_usage | 角色官方介绍、授权商品说明和2013年活动报道已支持口号及动作归属；原动画首次台词与早期B站二创传播仍待补。 |
-| 11 | 已经没什么好害怕的了 | `early-nothing-to-fear` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 目前由报道摘要支持作品归属；未逐句核原片、中文译本与首次站内用例。 |
+| 11 | 已经没什么好害怕的了 | `early-nothing-to-fear` | 2009-2015 / acg | 部分核实 | 无 | 目前由报道摘要支持作品归属；未逐句核原片、中文译本与首次站内用例。 |
 | 12 | 喵帕斯 | `early-nyanpasu` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 有2014年同期回顾摘要；日语原素材和B站首次传播未核实。 |
 | 13 | 人被杀就会死 | `early-people-die` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 汉译与英文字幕存在版本差异；不写唯一首译。 |
 | 14 | 战五渣 | `early-power-five` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 原作场景与缩略语由社区摘要解释；未直接核漫画页或B站早期实例。 |
