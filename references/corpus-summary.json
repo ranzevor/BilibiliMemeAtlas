@@ -7,13 +7,12 @@
     "metadata.json"
   ],
   "statistics": {
-    "version": "0.1.4",
+    "version": "0.1.5",
     "knowledge_cutoff": "2026-10-31",
     "entries": 303,
-    "sources": 333,
+    "sources": 340,
     "by_evidence": {
-      "candidate": 5,
-      "partial": 243,
+      "partial": 248,
       "verified": 55
     },
     "by_era": {
@@ -35,8 +34,8 @@
       "vtuber": 7
     },
     "source_access": {
-      "full": 147,
-      "metadata": 53,
+      "full": 153,
+      "metadata": 54,
       "snippet": 133
     },
     "coverage": "按年代与分区组织的收录集；未建立全站历史梗总量，不计算全量覆盖率"
