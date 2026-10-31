@@ -494,3 +494,29 @@ class GermanOrthopedicsQueueEvidenceTests(unittest.TestCase):
         self.assertIn('2015年10月10日', self.sources['early-src-german-bili-2015']['supports'])
         self.assertIsNone(entry['origin']['date'])
         self.assertIn('原始微博帖', entry['notes'])
+
+
+class HiyoriDubQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_hiyori_dub_distinguishes_fan_localization_from_original_dialogue(self):
+        entry = self.by_id['early-hiyori-dub']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('本土化版本', entry['meaning'])
+        self.assertIn('并非按日文原文逐句翻译', entry['origin']['summary'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-hiyori-interview']['claims'])
+        self.assertEqual(self.sources['early-src-hiyori-nanfang-2010']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-hiyori-beijing-2010']['access_level'], 'full')
+
+    def test_hiyori_dub_has_a_dated_bilibili_collection_record(self):
+        entry = self.by_id['early-hiyori-dub']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-hiyori-bili']['claims'])
+        self.assertEqual(self.sources['early-src-hiyori-bili']['access_level'], 'metadata')
+        self.assertIn('2014-04-18', self.sources['early-src-hiyori-bili']['supports'])
+        self.assertIn('不能据此确认B站最早上传', entry['notes'])
