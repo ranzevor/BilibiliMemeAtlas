@@ -869,6 +869,72 @@
     "limitations": "是粉丝文化用语，非医疗诊断；原造词记录未补。"
   },
   {
+    "id": "early-src-kugimiya-360-2017",
+    "title": "《东京战纪》主角情报：钉宫理惠献声铃屋什造",
+    "url": "https://u.360.cn/news/article/245001/",
+    "publisher": "360游戏",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2017年7月25日文章完整说明钉宫病是对钉宫理惠代表角色及其声音的粉丝戏称，复述2007年9月28日Sofmap告示牌的命名说法，并提及2007年C73的相关商品。",
+    "limitations": "属于回顾性二手资料，支持该称谓的通行解释及被转述的命名节点，不提供Sofmap原始告示或最初发帖者身份。"
+  },
+  {
+    "id": "early-src-kugimiya-bili-2010-index",
+    "title": "B站搜索索引：釘宮病重症患者",
+    "url": "https://search.bilibili.com/all?keyword=%E9%92%89%E5%AE%AB%E7%90%86%E6%83%A0",
+    "publisher": "哔哩哔哩视频搜索",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-10-31",
+    "supports": "B站搜索索引当前列出投稿者“真红の瞳”的视频“釘宮病重症患者”，投稿日期为2010年1月31日，显示播放量约33.2万、评论219条。",
+    "limitations": "目前取得的是B站搜索结果索引而非视频详情页，未返回稳定BV号；搜索结果可能变化。可作为早期站内使用线索，不作为B站首发或当前互动量的长期统计依据。"
+  },
+  {
+    "id": "early-src-kugimiya-bili-2010-tag",
+    "title": "〖搬运〗〖零之使魔第一季〗〖全集〗",
+    "url": "https://www.bilibili.com/video/BV1tx411c7P7/",
+    "publisher": "哔哩哔哩投稿者 鈴科百合子",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-10-31",
+    "supports": "B站投稿公开搜索结果显示该视频于2010年3月24日发布，页面当前标签包括“钉宫病”“钉宫”“后宫”“零之使魔”等。",
+    "limitations": "视频上传日期与当前标签添加日期不是同一事实；仅证明该2010年视频目前被平台标签关联到钉宫病，不能证明标签在上传当日已存在或B站最早使用。"
+  },
+  {
+    "id": "early-src-kugimiya-cari-2008-may",
+    "title": "钉宫姐姐生日快乐（钉宫FAN必进啊）",
+    "url": "https://bbs.yamibo.com/thread-78851-1-1.html",
+    "publisher": "百合会论坛",
+    "source_type": "community",
+    "access_level": "snippet",
+    "checked_at": "2026-10-31",
+    "supports": "2008年5月30日论坛帖子已直接引用“钉宫氏病毒过敏性脑膜炎”“Kugimiya Disease”及“钉宫病”说明，表明该称呼在2008年上半年已进入中文动漫爱好者社区。",
+    "limitations": "当前读取范围为搜索索引摘要；帖子正文注明引用百科资料，属于同期使用记录，不是独立的词源原件或首创者证明。"
+  },
+  {
+    "id": "early-src-kugimiya-cari-2008-sep",
+    "title": "钉宫病患交流区",
+    "url": "https://cforum1.cari.com.my/forum.php?mod=viewthread&tid=1343610",
+    "publisher": "佳礼资讯网动漫论坛",
+    "source_type": "community",
+    "access_level": "snippet",
+    "checked_at": "2026-10-31",
+    "supports": "论坛楼主于2008年9月17日创建“钉宫病患交流区”，正文直接使用“钉宫病”“钉宫病毒”等称呼，并有多名用户以患者身份参与讨论。",
+    "limitations": "当前读取范围为搜索索引摘要；楼主注明部分资料转自百度百科，证明当时中文社区的使用和接受，不证明词语首创。"
+  },
+  {
+    "id": "early-src-kugimiya-sohu-2008",
+    "title": "声优钉宫理惠个人资料(图)",
+    "url": "https://dm.sohu.com/20080825/n259198563.shtml",
+    "publisher": "搜狐动漫",
+    "source_type": "secondary",
+    "access_level": "snippet",
+    "checked_at": "2026-10-31",
+    "supports": "2008年8月25日中文声优资料文章记载，2007年9月28日日本Sofmap店铺告示牌将钉宫代表角色统称为“钉宫病”或“钉宫病毒”，并提及2007年12月30日C73面向钉宫病患者的《ツンデレカルタ》。",
+    "limitations": "检索摘要可见相关段落，但原页面当前无法稳定读取；对Sofmap告示牌及C73活动的描述属于二手转述，不是原始告示照片或活动目录。"
+  },
+  {
     "id": "early-src-kuroko",
     "title": "危险的黑子",
     "url": "https://www.bilibili.com/video/BV1Bx411c7hB/",

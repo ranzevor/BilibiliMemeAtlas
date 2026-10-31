@@ -520,3 +520,38 @@ class HiyoriDubQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-hiyori-bili']['access_level'], 'metadata')
         self.assertIn('2014-04-18', self.sources['early-src-hiyori-bili']['supports'])
         self.assertIn('不能据此确认B站最早上传', entry['notes'])
+
+
+class KugimiyaSyndromeQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_kugimiya_syndrome_is_a_fandom_term_not_a_medical_condition(self):
+        entry = self.by_id['early-kugimiya-syndrome']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('粉丝文化', entry['meaning'])
+        self.assertIn('并非医学诊断', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['early-src-kugimiya-360-2017']['claims'])
+        self.assertEqual(self.sources['early-src-kugimiya-360-2017']['access_level'], 'full')
+
+    def test_kugimiya_syndrome_has_dated_2008_chinese_community_records(self):
+        entry = self.by_id['early-kugimiya-syndrome']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['early-src-kugimiya-cari-2008-may']['claims'])
+        self.assertIn('meaning', refs['early-src-kugimiya-cari-2008-sep']['claims'])
+        self.assertIn('2008年5月30日', self.sources['early-src-kugimiya-cari-2008-may']['supports'])
+        self.assertIn('2008年9月17日', self.sources['early-src-kugimiya-cari-2008-sep']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('原始告示', entry['origin']['summary'])
+
+    def test_kugimiya_syndrome_has_early_bilibili_indexed_use_without_claiming_first_use(self):
+        entry = self.by_id['early-kugimiya-syndrome']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-kugimiya-bili-2010-index']['claims'])
+        self.assertEqual(self.sources['early-src-kugimiya-bili-2010-index']['access_level'], 'metadata')
+        self.assertIn('2010年1月31日', self.sources['early-src-kugimiya-bili-2010-index']['supports'])
+        self.assertIn('不作为B站首发', self.sources['early-src-kugimiya-bili-2010-index']['limitations'])
