@@ -1144,6 +1144,72 @@
     "limitations": "页面当前为动画官方网站的TV Edition页面；用于核对第1话标题及原句，不单独提供中文译本或首播日期。"
   },
   {
+    "id": "early-src-mami-atwiki",
+    "title": "もう何も恐くない",
+    "url": "https://w.atwiki.jp/madomagi/pages/109.html",
+    "publisher": "魔法少女まどか☆マギカ ファンサイト@WIKI",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "条目明确说明该句既是第3话副标题，也是巴麻美在该集中的台词；解释其因紧接着的悲剧性结局而成为网络上的死亡flag，并指出麻美真正临终说出的是「ティロ・フィナーレ」。",
+    "limitations": "粉丝维基对作品与网络用法的整理，不替代动画原片；用于核对语境和纠正常见的“临终遗言”误传。"
+  },
+  {
+    "id": "early-src-mami-bili-article-2021",
+    "title": "〖盘点〗《魔法少女小圆》的十个高能片段",
+    "url": "https://www.bilibili.com/read/cv12511342/",
+    "publisher": "哔哩哔哩专栏作者",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "B站2021年专栏将第3话麻美说出“已经没有什么好害怕的了”后不久遭遇剧情反转的场景称为知名flag，解释其对作品基调转折和观众观感的影响。",
+    "limitations": "属于2021年回顾性社区文章，支持该句在B站内容中的flag用法，不证明最早站内使用或中文首译。"
+  },
+  {
+    "id": "early-src-mami-bili-bangumi",
+    "title": "魔法少女小圆",
+    "url": "https://www.bilibili.com/bangumi/media/md2539",
+    "publisher": "哔哩哔哩番剧",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-01",
+    "supports": "B站番剧页面将第3话标题译为“已经没什么好害怕了”，并列出整部动画的角色、集数和2011年开播信息。",
+    "limitations": "平台番剧元数据确认官方页面采用的中文标题与剧集归属，不证明该中文译句的最早出现或B站最早弹幕。"
+  },
+  {
+    "id": "early-src-mami-motonator",
+    "title": "もう何も恐くないの元ネタって？",
+    "url": "https://motonator.com/297",
+    "publisher": "Motonator",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "文章引用巴麻美与鹿目圆的对话，记录她在得知不再孤单后说出「体が軽い…こんな幸せな気持ちで戦うなんて初めて…もう何も恐くない！」并解释其随后成为死亡flag式用法。",
+    "limitations": "回顾性网络梗解释，引用台词用于释义，不提供中文首译或最早传播记录。"
+  },
+  {
+    "id": "early-src-mami-nitroplus-2011",
+    "title": "「魔法少女まどか☆マギカ」第3話放送開始！",
+    "url": "https://www.nitroplus.co.jp/news/2011/1902.php",
+    "publisher": "Nitroplus",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "Nitroplus于2011年1月20日发布的官方公告确认第3话「もう何も恐くない」于当晚25:35在MBS播出，TBS于1月21日播出。",
+    "limitations": "确认该集的标题与播出安排，不单独证明该台词的中文译法或后续网络用法。"
+  },
+  {
+    "id": "early-src-mami-official-ep3",
+    "title": "第3話「もう何も恐くない」",
+    "url": "https://www.madoka-magica.com/tv/archives/story/index.html",
+    "publisher": "《魔法少女小圆》动画官方网站（Magica Quartet / Aniplex）",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "动画官方网站将第3话正式标题列为「もう何も恐くない」，并提供该集官方剧情介绍，确认短语与《魔法少女小圆》第3话的对应关系。",
+    "limitations": "官方页面直接证明剧集标题和剧情梗概，不单独提供中文译法或网络梗传播范围。"
+  },
+  {
     "id": "early-src-marisa-remix",
     "title": "【明日方舟手书】拉普兰德偷走了重要的东西",
     "url": "https://www.bilibili.com/video/BV13z411B7AU/",

@@ -2604,26 +2604,32 @@
     "id": "early-nothing-to-fear",
     "term": "已经没什么好害怕的了",
     "aliases": [
-      "已经没有什么好怕的了"
+      "已经没有什么好怕的了",
+      "已经没有什么好害怕的了",
+      "もう何も恐くない",
+      "もう何も怖くない",
+      "巴麻美死亡flag"
     ],
     "category": "acg",
     "era": "2009-2015",
-    "meaning": "先表现自信，后因剧情转折被用作“立下危险预兆”的反讽；也可能只是普通鼓励。",
+    "meaning": "巴麻美在《魔法少女小圆》第3话中得知鹿目圆愿意与她并肩战斗后，说出的安心与喜悦之语。由于这句话之后剧情迅速发生悲剧性反转，网络上常将其用作“死亡flag”：人物刚表达无所畏惧、终于安心或迎来幸福，随后便遭遇危险或反转。",
     "origin": {
-      "summary": "与《魔法少女小圆》巴麻美相关的经典台词。",
-      "date": null,
-      "precision": "unknown",
+      "summary": "出自《魔法少女小圆》第3话，日文标题及台词为「もう何も恐くない」。巴麻美在得知自己不再孤单、鹿目圆将与她并肩战斗后说出这句话；MBS于2011年1月20日25:35播出该集。由于台词后紧接着的剧情反转，该句逐渐被观众当作死亡flag使用。麻美真正临终前说出的是「ティロ・フィナーレ」，并非这句。",
+      "date": "2011",
+      "precision": "year",
       "bilibili_role": "imported"
     },
     "usage": {
       "contexts": [
-        "讨论角色flag",
-        "自嘲盲目乐观"
+        "讨论《魔法少女小圆》第3话及巴麻美的经典场景",
+        "人物在危险前表达安心、无所畏惧时，用作反讽式死亡flag",
+        "自嘲刚觉得事情顺利、准备充分，可能马上迎来反转"
       ],
-      "example": "存档以后才敢说这句，没存档先别立flag。",
+      "example": "这次准备得这么充分，已经没什么好害怕的了。",
       "avoid": [
-        "不要无提示泄露作品关键转折。",
-        "真在安慰害怕的人时避免阴阳怪气。"
+        "注意作品关键剧情剧透",
+        "不要把这句误说成巴麻美真正的临终遗言",
+        "现实中安慰处于恐惧或危险中的人时，不要用死亡flag语气调侃"
       ]
     },
     "lifecycle": "classic",
@@ -2636,16 +2642,54 @@
     "evidence_status": "partial",
     "evidence": [
       {
-        "source_id": "early-src-madoka",
+        "source_id": "early-src-mami-official-ep3",
         "claims": [
           "meaning",
-          "origin",
+          "origin"
+        ],
+        "note": "动画官方网站确认第3话正式标题「もう何も恐くない」及剧集归属。"
+      },
+      {
+        "source_id": "early-src-mami-nitroplus-2011",
+        "claims": [
+          "date"
+        ],
+        "note": "Nitroplus官方公告确认第3话于2011年1月20日25:35在MBS播出。"
+      },
+      {
+        "source_id": "early-src-mami-atwiki",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "粉丝维基确认该句是巴麻美在第3话中的台词及其死亡flag语义，并纠正真正临终台词是「ティロ・フィナーレ」。"
+      },
+      {
+        "source_id": "early-src-mami-motonator",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "全文梗源解释记录了台词上下文及其成为死亡flag的反讽用法。"
+      },
+      {
+        "source_id": "early-src-mami-bili-bangumi",
+        "claims": [
+          "meaning",
           "platform_usage"
         ],
-        "note": "报道列为作品衍生用语。"
+        "note": "B站番剧页面将第3话标题译为“已经没什么好害怕了”，确认平台采用的中文标题。"
+      },
+      {
+        "source_id": "early-src-mami-bili-article-2021",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "B站2021年专栏直接将该句解释为知名flag，提供可定位的站内社区用法。"
       }
     ],
-    "notes": "目前由报道摘要支持作品归属；未逐句核原片、中文译本与首次站内用例。"
+    "notes": "动画官方网站与Nitroplus官方公告核实第3话标题及2011年播出节点；粉丝维基和梗源文章核实巴麻美台词上下文、死亡flag用法，并确认该句不是她真正的临终遗言。B站番剧页提供中文标题，2021年B站专栏明确将其作为知名flag讨论。中文最早译本及B站最早投稿/弹幕记录尚未定位，故保持部分核实。"
   },
   {
     "id": "early-wind-noisy",
