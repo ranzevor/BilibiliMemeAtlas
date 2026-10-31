@@ -3045,22 +3045,24 @@
     ],
     "category": "acg",
     "era": "2009-2015",
-    "meaning": "与《School Days》最终话停播时替代风景画面有关的老梗，也可指让人联想到该事件的船景。",
+    "meaning": "最初指《School Days》最终话原定播出时，电视台临时以北欧峡湾等环境影像替代节目，画面中的客船引发4chan用户评论“Nice boat.”。后来用于指代这起停播事件，也被用作对节目临时换播、内容中断或意外出现船景的反讽表达；中文常译为“好船”。",
     "origin": {
-      "summary": "2007年动画播出事件后形成的跨语种网络笑点，早于B站。",
+      "summary": "2007年9月19日深夜，tvk临时以北欧环境影像替代《School Days》最终话，画面中的峡湾客船截图被发布到4chan，随后出现“Nice boat.”评论。2007年9月20日的同期文章已记录该评论及其讨论；2009年GIGAZINE回顾称该词入围2007年网络流行语大赏最终候选。2020年B站专栏转载触乐文章回顾了该事件，并记录niconico用户在船景出现时大量发送该短语。4chan原始讨论串和首位发帖者尚未定位。",
       "date": "2007",
       "precision": "year",
       "bilibili_role": "imported"
     },
     "usage": {
       "contexts": [
-        "动画史",
-        "旧宅圈梗解释"
+        "解释《School Days》最终话停播及其替代风景影像的动画史事件",
+        "在节目临时换播、内容中断或突然出现船景时作反讽评论",
+        "讨论“Nice boat.”及中文“好船”的跨平台传播"
       ],
-      "example": "这个好船梗指的是当年的替代播出画面，不是普通赞船。",
+      "example": "直播突然切成海景画面，弹幕里有人刷起了 Nice boat.",
       "avoid": [
-        "避免在现实受害事件下玩梗。",
-        "首看观众注意剧透。"
+        "不要在现实暴力案件或真实受害者相关语境中玩梗",
+        "普通船景不自动构成该梗，须有停播、替换或相关作品语境",
+        "向首次观看《School Days》的观众解释时注意结局剧透"
       ]
     },
     "lifecycle": "contextual",
@@ -3072,16 +3074,50 @@
     "evidence_status": "partial",
     "evidence": [
       {
+        "source_id": "early-src-niceboat-upi-2007",
+        "claims": [
+          "origin",
+          "date"
+        ],
+        "note": "2007年9月19日同期新闻确认TVK取消最终话播出，作为事件背景的同期记录。"
+      },
+      {
+        "source_id": "early-src-niceboat-hatena-2007",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "2007年9月20日同期文章记录风景替代画面、4chan船景截图及“Nice boat.”评论，是目前已定位的早期公开文字记录之一。"
+      },
+      {
+        "source_id": "early-src-niceboat-gigazine-2009",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "2009年报道确认该词已成为网络流行语，并记录其入围2007年网络流行语大赏最终候选。"
+      },
+      {
         "source_id": "early-src-niceboat",
         "claims": [
           "meaning",
           "origin",
           "date"
         ],
-        "note": "日文媒体回顾2007年事件。"
+        "note": "J-CAST回顾明确说明客船截图被发布到4chan，海外用户回复“Nice boat.”，并成为事件代称。"
+      },
+      {
+        "source_id": "early-src-niceboat-bili-2020",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "B站2020年专栏直接介绍“好船（Nice Boat）”梗，并回顾原始niconico弹幕使用场景；不据此认定B站早期首发。"
       }
     ],
-    "notes": "2007年事件由日媒回顾摘要支持；未核最初讨论帖和早期B站用例。"
+    "notes": "已由2007年同期文章、2009年回顾及2019年J-CAST报道交叉核实停播替代画面、4chan船景评论和早期传播；2020年B站专栏转载触乐文章，提供可定位的站内内容使用记录。尚未找到4chan原始讨论串、首位发帖者、最早中文译法及B站早期投稿/弹幕记录，因此保留部分核实状态。"
   },
   {
     "id": "early-gachimuchi",
