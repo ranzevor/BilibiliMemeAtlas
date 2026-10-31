@@ -662,3 +662,27 @@ class MamiDeathFlagQueueEvidenceTests(unittest.TestCase):
         refs = {ref['source_id']: ref for ref in entry['evidence']}
         self.assertIn('platform_usage', refs['early-src-mami-bili-article-2021']['claims'])
         self.assertEqual(self.sources['early-src-mami-bili-article-2021']['access_level'], 'full')
+
+
+class NyanpasuQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_nyanpasu_has_creator_and_production_explanations(self):
+        entry = self.by_id['early-nyanpasu']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('未采用的第1话分镜', entry['origin']['summary'])
+        self.assertEqual(self.sources['early-src-nyanpasu-febri-creator']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-nyanpasu-mantan-2013']['access_level'], 'full')
+
+    def test_nyanpasu_has_official_award_and_early_bilibili_usage(self):
+        entry = self.by_id['early-nyanpasu']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('date', refs['early-src-nyanpasu-kadokawa-award-2013']['claims'])
+        self.assertIn('platform_usage', refs['early-src-nyanpasu-bili-2013']['claims'])
+        self.assertEqual(self.sources['early-src-nyanpasu-bili-2013']['access_level'], 'metadata')
+        self.assertIn('2013年12月14日', self.sources['early-src-nyanpasu-bili-2013']['supports'])
