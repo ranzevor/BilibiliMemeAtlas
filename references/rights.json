@@ -817,6 +817,34 @@
       "relicensed_by_project": false
     },
     {
+      "source_id": "early-src-nico-2010-pv-variant",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-nico-2013-event-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-nico-bili-2013",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-nico-bili-2014",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
       "source_id": "early-src-nico-event",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
@@ -824,7 +852,21 @@
       "relicensed_by_project": false
     },
     {
+      "source_id": "early-src-nico-lantis-2010",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
       "source_id": "early-src-nico-official",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-nico-origin-analysis-2020",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,

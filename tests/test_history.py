@@ -610,3 +610,29 @@ class NiceBoatQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-niceboat-bili-2020']['access_level'], 'full')
         self.assertIn('不证明该梗在B站的最早投稿', self.sources['early-src-niceboat-bili-2020']['limitations'])
         self.assertIn('B站早期投稿/弹幕记录', entry['notes'])
+
+
+class NicoNicoNiQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_nico_phrase_distinguishes_early_variant_from_standardized_form(self):
+        entry = self.by_id['early-nico-nico-ni']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('にこにこにー', entry['origin']['summary'])
+        self.assertIn('にっこにっこにー', entry['origin']['summary'])
+        self.assertEqual(self.sources['early-src-nico-origin-analysis-2020']['access_level'], 'full')
+
+    def test_nico_phrase_has_dated_early_bilibili_usage_records(self):
+        entry = self.by_id['early-nico-nico-ni']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-nico-bili-2013']['claims'])
+        self.assertIn('platform_usage', refs['early-src-nico-bili-2014']['claims'])
+        self.assertEqual(self.sources['early-src-nico-bili-2013']['access_level'], 'metadata')
+        self.assertEqual(self.sources['early-src-nico-bili-2014']['access_level'], 'metadata')
+        self.assertIn('2013年9月24日', self.sources['early-src-nico-bili-2013']['supports'])
+        self.assertIn('2014年4月21日', self.sources['early-src-nico-bili-2014']['supports'])
