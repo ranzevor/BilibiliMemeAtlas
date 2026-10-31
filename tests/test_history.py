@@ -384,3 +384,30 @@ class AkarinQueueEvidenceTests(unittest.TestCase):
         self.assertIn('2011年8月13日', entry['notes'])
         self.assertIn('不是B站首发', entry['notes'])
         self.assertIsNone(entry['origin']['date'])
+
+
+class CirnoNineQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_cirno_nine_is_grounded_in_the_original_manual(self):
+        entry = self.by_id['early-cirno-nine']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('琪露诺', entry['meaning'])
+        self.assertIn('9.バカ', entry['origin']['summary'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-cirno-manual']['claims'])
+        self.assertEqual(self.sources['early-src-cirno-manual']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-cirno-touhou-media']['access_level'], 'full')
+
+    def test_cirno_nine_has_a_dated_early_bilibili_usage_record(self):
+        entry = self.by_id['early-cirno-nine']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-cirno-bili-2010']['claims'])
+        self.assertEqual(self.sources['early-src-cirno-bili-2010']['access_level'], 'metadata')
+        self.assertIn('2010年9月6日', self.sources['early-src-cirno-bili-2010']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('不证明中文首创者', entry['notes'])

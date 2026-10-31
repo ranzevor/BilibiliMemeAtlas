@@ -264,6 +264,17 @@
     "limitations": "专业社区引述原设；登记读取范围不含游戏原说明书。"
   },
   {
+    "id": "early-src-cirno-bili-2010",
+    "title": "〖NICO老物〗DXM ⑨destiny～最強チルノのターン",
+    "url": "https://www.bilibili.com/video/BV1Hx411c7sc/",
+    "publisher": "哔哩哔哩投稿者 光之绅士",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-10-31",
+    "supports": "B站投稿页面公开元数据显示，该投稿于2010年9月6日16:03:16发布，标题直接使用“⑨”并指向琪露诺；简介注明原Niconico作品编号sm7926074。",
+    "limitations": "仅核验标题、投稿日期和公开简介；不据此推断视频正文、弹幕或B站最早使用记录。"
+  },
+  {
     "id": "early-src-cirno-cover",
     "title": "みんなのパーフェクトチルパ天国 - チルノのパーフェクトさんすう教室カバーアルバム",
     "url": "https://armageddong.wixsite.com/cirnolove",
@@ -275,6 +286,28 @@
     "limitations": "2019年专辑是后续改编，不代替原曲、2008年MV或B站首传时间；未核舞蹈原编舞。"
   },
   {
+    "id": "early-src-cirno-forum-2009",
+    "title": "有關⑨ 跟萃香的小ネタ",
+    "url": "https://forum.gamer.com.tw/G2.php?bsn=10039&lorder=22&parent=1743&sn=397",
+    "publisher": "巴哈姆特东方Project系列讨论区",
+    "source_type": "community",
+    "access_level": "snippet",
+    "checked_at": "2026-10-31",
+    "supports": "检索到的帖子记录显示，2009年10月16日已有“琪露诺＝⑨”的圈内称呼说明。",
+    "limitations": "当前读取范围为检索摘要，作为同期跨站用例线索，不单独承担词义或起源结论。"
+  },
+  {
+    "id": "early-src-cirno-manual",
+    "title": "東方花映塚 ～ Phantasmagoria of Flower View. 官方在线说明书",
+    "url": "https://cdn.steamstatic.com/steam/apps/1420810/manuals/th09_manual.pdf?t=1650869433",
+    "publisher": "上海爱丽丝幻乐团（Steam发行页面提供的游戏说明书）",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "官方说明书“画面说明”图中以圈号⑨标注琪露诺所在位置，图下第9项原文为“バカ”；直接支持琪露诺与⑨、笨蛋标注的对应关系。",
+    "limitations": "说明书证明原作中的标注，不单独证明该称呼在中文社区的首创者、传播起点或精确形成日期。"
+  },
+  {
     "id": "early-src-cirno-song-meaning",
     "title": "チルノのパーフェクトさんすう教室",
     "url": "https://danmakuwiki.com/%E3%83%81%E3%83%AB%E3%83%8E%E3%81%AE%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88%E3%81%95%E3%82%93%E3%81%99%E3%81%86%E6%95%99%E5%AE%A4",
@@ -284,6 +317,17 @@
     "checked_at": "2026-10-30",
     "supports": "检索摘要解释琪露诺试图教授算术却暴露笨拙的歌曲主题，并将作品与IOSYS同人曲关联。",
     "limitations": "内容页返回403，未取得正文；只登记摘要所支持的歌曲主题，不借此核实歌词、舞蹈动作或B站传播。"
+  },
+  {
+    "id": "early-src-cirno-touhou-media",
+    "title": "東方原作を振り返る『東方花映塚 ～ Phantasmagoria of Flower View.』",
+    "url": "https://touhougarakuta.com/article/220616/",
+    "publisher": "東方我楽多叢誌",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2022年6月16日文章明确解释⑨称呼源于《东方花映塚》说明图：图中琪露诺对应第9项，注释为“9.バカ”，此后形成琪露诺＝笨蛋＝⑨的昵称关系。",
+    "limitations": "回顾性专题文章，用于解释官方原始材料及称呼形成，不证明中文首创者或最早传播日期。"
   },
   {
     "id": "early-src-coach",
