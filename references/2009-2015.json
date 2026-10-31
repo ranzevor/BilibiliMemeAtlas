@@ -2361,25 +2361,31 @@
     "term": "Nico Nico Ni",
     "aliases": [
       "妮可妮可妮",
-      "にっこにっこにー"
+      "にっこにっこにー",
+      "にこにこにー",
+      "Niconiconi",
+      "Nico Nico Ni"
     ],
     "category": "acg",
     "era": "2009-2015",
-    "meaning": "《Love Live!》矢泽妮可的标志性卖萌口号与动作，也常被反差模仿。",
+    "meaning": "《Love Live!》矢泽妮可的招牌自我介绍与应援口号，日文以“にこ”之名和“にこにこ”（笑眯眯）构成押韵式卖萌表达，通常配合角色手势。中文常译“妮可妮可妮”，也常被粉丝模仿、剪辑或用于角色二创。",
     "origin": {
-      "summary": "关联矢泽妮可的偶像表演；2013年相关商品文字中已可见。",
+      "summary": "源自《Love Live!》矢泽妮可的偶像自我介绍。2010年首张单曲《僕らのLIVE 君とのLIFE》的PV及妮可个人介绍广播剧构成早期媒体载体；同期相关材料中的早期变体为“にこにこにー”，不应与后来固定的“にっこにっこにー”混为一谈。2020年粉丝考据指出，完整双促音形式在TV动画前后才固定，并提及2012年First LoveLive可能已出现该形式，但这一时间线索尚缺同期原始记录。2013年官方及同期活动报道确认完整形式已公开使用。",
       "date": null,
       "precision": "unknown",
-      "bilibili_role": "imported"
+      "bilibili_role": "amplifier"
     },
     "usage": {
       "contexts": [
-        "Love Live同好",
-        "动作模仿"
+        "讨论Love Live!及矢泽妮可的角色设定",
+        "模仿妮可的自我介绍、招牌口号与手势",
+        "在剪辑、鬼畜或同人创作中使用妮可式卖萌表达"
       ],
-      "example": "他一本正经地做起妮可妮可妮，反差感就来了。",
+      "example": "今天也要元气满满——妮可妮可妮！",
       "avoid": [
-        "不要把角色口号误认为视频网站niconico的官方口号。"
+        "不要将妮可妮可妮误认为视频网站niconico的官方口号",
+        "区分早期“にこにこにー”变体与后来固定的“にっこにっこにー”",
+        "不要把2010年相关变体直接当作完整双促音形式的首发证据"
       ]
     },
     "lifecycle": "contextual",
@@ -2390,10 +2396,57 @@
       {
         "source_id": "early-src-nico",
         "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "2013年Love Live!角色相关商品目录已使用Nico Nico Ni称呼并关联矢泽妮可，作为同期商品语境记录，不用于推断起源日期。"
+      },
+      {
+        "source_id": "early-src-nico-2010-pv-variant",
+        "claims": [
+          "origin"
+        ],
+        "note": "粉丝听辨指出2010年PV中出现“にこにこにー”早期变体；当前仅有摘要，且不等同于后来固定的完整形式。"
+      },
+      {
+        "source_id": "early-src-nico-2013-event-report",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2013年3rd Anniversary现场报道逐字记录徳井青空在自我介绍环节使用完整口号。"
+      },
+      {
+        "source_id": "early-src-nico-bili-2013",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "B站2013年9月24日投稿标题戏仿妮可口号，是可定位的早期站内二创实例。"
+      },
+      {
+        "source_id": "early-src-nico-bili-2014",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "B站2014年4月21日投稿标题重复妮可名字并获得高播放量，作为后续站内传播节点。"
+      },
+      {
+        "source_id": "early-src-nico-event",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "Love Live!官方2013年活动报道记录3月10日现场使用完整口号与观众互动。"
+      },
+      {
+        "source_id": "early-src-nico-lantis-2010",
+        "claims": [
           "origin",
           "date"
         ],
-        "note": "2013商品资料的同期关联。"
+        "note": "Lantis官方书目确认Love Live!首张单曲的原版发行日期为2010年8月25日，提供早期PV与角色介绍媒体的时间锚点。"
       },
       {
         "source_id": "early-src-nico-official",
@@ -2401,24 +2454,25 @@
           "meaning",
           "origin"
         ],
-        "note": "官方角色介绍直接给出口号和角色归属。"
+        "note": "SQUARE ENIX官方角色介绍直接确认矢泽妮可与“にっこにっこにー”的角色归属。"
+      },
+      {
+        "source_id": "early-src-nico-origin-analysis-2020",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "全文考据区分早期“にこにこにー”与动画前后固定的“にっこにっこにー”，并将2012年声优现场使用作为未充分核实的线索。"
       },
       {
         "source_id": "early-src-nico-pose",
         "claims": [
           "meaning"
         ],
-        "note": "商品说明明确代表性口号与手势。"
-      },
-      {
-        "source_id": "early-src-nico-event",
-        "claims": [
-          "date"
-        ],
-        "note": "官方报道提供2013年3月10日活动用例，不作为最早出现日期。"
+        "note": "授权商品说明将口号与代表性手势对应，确认其作为角色标志性动作的使用。"
       }
     ],
-    "notes": "角色官方介绍、授权商品说明和2013年活动报道已支持口号及动作归属；原动画首次台词与早期B站二创传播仍待补。"
+    "notes": "官方角色介绍和授权商品说明核实了口号及手势归属。2010年首张单曲PV可见“にこにこにー”早期变体；2020年粉丝考据指出完整形式“にっこにっこにー”在TV动画前后固定，并提及2012年First LoveLive可能已有使用，但该说法缺少同期原始记录。2013年官方及同期活动报道确认完整形式已公开使用；B站2013年9月24日和2014年4月21日投稿提供可定位的早期站内二创节点。完整形式的首创时间及最早B站用例仍未确认。"
   },
   {
     "id": "early-power-five",
