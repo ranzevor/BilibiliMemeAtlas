@@ -99,6 +99,39 @@
     "limitations": "动态社区词典；B站早期流行年代未独立核验。"
   },
   {
+    "id": "early-src-akarin-360-2015",
+    "title": "那些成为日本网络流行语的动画台词",
+    "url": "https://u.360.cn/news/article/76980/",
+    "publisher": "360游戏",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2015年11月11日文章将“阿卡林”与2011年动画《摇曳百合》及角色赤座灯里关联，并解释为对存在感稀缺的调侃。",
+    "limitations": "属于回顾性媒体整理，支持2015年已流通的解释，不提供中文首创或B站最早使用记录。"
+  },
+  {
+    "id": "early-src-akarin-bili-2011",
+    "title": "〖猎奇〗阿卡林葬礼会场",
+    "url": "https://www.bilibili.com/video/BV1Rx411c7GK/",
+    "publisher": "哔哩哔哩投稿者 夢宫",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-10-31",
+    "supports": "B站投稿页面公开元数据显示，该视频于2011年8月13日16:15:23发布，标题直接使用“阿卡林”称呼。",
+    "limitations": "仅核验投稿标题、日期和公开元数据；不据此推断视频正文、弹幕内容或B站/中文首个用例。"
+  },
+  {
+    "id": "early-src-akarin-bili-guide",
+    "title": "‘阿卡林’是个什么梗",
+    "url": "https://www.bilibili.com/opus/62667249341057709",
+    "publisher": "哔哩哔哩专栏作者 辇道增七的公主",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "专栏说明“阿卡林”来自《摇曳百合》赤座灯里，因「あかり」发音相近及角色缺乏存在感而形成称呼，并引申为“无存在感”的代名词；文中展示相关使用示例。",
+    "limitations": "2017年回顾性社区解释，支持词义与角色关联，不证明最初造词者、中文首创日期或B站最早用例。"
+  },
+  {
     "id": "early-src-all-source-caijing",
     "title": "万物，皆可鬼畜？",
     "url": "https://www.mycaijing.com/article/detail/450613?source_id=40",
