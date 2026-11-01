@@ -506,6 +506,61 @@
     "limitations": "原作与动画原创桥段有差异；不照搬夸张处刑口号。"
   },
   {
+    "id": "early-src-fff-bili-2010",
+    "title": "〖一月〗笨蛋测验召唤兽 第2话〖HKG〗",
+    "url": "https://www.bilibili.com/video/BV1xx411c7eF/",
+    "publisher": "哔哩哔哩投稿者 SelflyTV",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-10-31",
+    "supports": "B站投稿页面公开元数据显示，该视频于2010年1月24日02:51:36发布，标题为《笨蛋测验召唤兽》第2话，标签含“FFF团”并在简介中写有“FFF团的出处”。",
+    "limitations": "仅核验投稿标题、日期、标签和简介元数据，不据此推断视频完整内容或B站最早使用时间。"
+  },
+  {
+    "id": "early-src-fff-blog-2010",
+    "title": "ＦＦＦ団はチートですｗ バカとテストと召喚獣",
+    "url": "https://futomichi.blog57.fc2.com/blog-entry-445.html",
+    "publisher": "奥も太道",
+    "source_type": "community",
+    "access_level": "snippet",
+    "checked_at": "2026-10-31",
+    "supports": "2010年3月21日的动画观后记录提到B班战中出现异端审问会FFF团，证明当时该名称已进入观众讨论。",
+    "limitations": "当前页面读取遇到重定向循环，仅使用检索摘要；不据此确认原作首创或完整剧情。"
+  },
+  {
+    "id": "early-src-fff-kadokawa-spinout",
+    "title": "バカとテストと召喚獣 SPINOUT! それが僕らの日常。(2)",
+    "url": "https://www.kadokawa.co.jp/product/301302002875/",
+    "publisher": "KADOKAWA",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "KADOKAWA官方书目页记载该衍生漫画第2卷于2010年9月15日发行，作品介绍明确称本卷的主要搞笑内容涉及F班与FFF团。",
+    "limitations": "支持FFF团作为该系列正式衍生作品中的组织及2010年已存在的设定，不单独证明该组织在原作轻小说中的首次登场卷次。"
+  },
+  {
+    "id": "early-src-fff-novel4",
+    "title": "バカとテストと召喚獣４",
+    "url": "https://www.kadokawa.co.jp/product/301502000874/",
+    "publisher": "KADOKAWA",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "KADOKAWA官方书目页确认《笨蛋、测验、召唤兽》第4卷作者为井上坚二，发行日期为2008年5月30日，ISBN 9784047303416。",
+    "limitations": "官方书目页只确认书目身份与出版日期，不直接列出FFF团名称或其在卷内的首次出现位置。"
+  },
+  {
+    "id": "early-src-fff-origin-detail",
+    "title": "FFF团",
+    "url": "https://www.baike.com/wikiid/7369727544612432075",
+    "publisher": "快懂百科",
+    "source_type": "community",
+    "access_level": "snippet",
+    "checked_at": "2026-10-31",
+    "supports": "检索摘要称FFF团全名为“异端审问会·FFF团”，来自《笨蛋·测验·召唤兽》轻小说，首次出现于2008年出版的第4卷；并区分原作组织设定与动画改编中的火刑桥段。",
+    "limitations": "当前读取范围为检索摘要；卷次、组织细节及动画改编差异尚未通过原作正文逐页核对。"
+  },
+  {
     "id": "early-src-fire-before",
     "title": "网络语文更新快：“千万别报体”、“舌尖体”走红",
     "url": "https://www.chinanews.com/cul/2014/07-05/6354407.shtml",

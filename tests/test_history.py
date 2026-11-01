@@ -439,3 +439,30 @@ class CoachBasketballQueueEvidenceTests(unittest.TestCase):
         self.assertIn('2014年1月2日', self.sources['early-src-coach-bili-2014']['supports'])
         self.assertIsNone(entry['origin']['date'])
         self.assertIn('尚未定位中文首创者', entry['notes'])
+
+
+class FffGroupQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_fff_group_is_distinguished_from_anime_adaptation(self):
+        entry = self.by_id['early-fff']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('异端审问会·FFF团', entry['meaning'])
+        self.assertIn('动画改编中的火刑', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['early-src-fff-kadokawa-spinout']['claims'])
+        self.assertEqual(self.sources['early-src-fff-kadokawa-spinout']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-fff-novel4']['access_level'], 'full')
+
+    def test_fff_group_has_a_dated_early_bilibili_record(self):
+        entry = self.by_id['early-fff']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-fff-bili-2010']['claims'])
+        self.assertEqual(self.sources['early-src-fff-bili-2010']['access_level'], 'metadata')
+        self.assertIn('2010年1月24日', self.sources['early-src-fff-bili-2010']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('仍未通过原作正文', entry['notes'])
