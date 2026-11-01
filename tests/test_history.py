@@ -551,7 +551,8 @@ class KugimiyaSyndromeQueueEvidenceTests(unittest.TestCase):
     def test_kugimiya_syndrome_has_early_bilibili_indexed_use_without_claiming_first_use(self):
         entry = self.by_id['early-kugimiya-syndrome']
         refs = {ref['source_id']: ref for ref in entry['evidence']}
-        self.assertIn('platform_usage', refs['early-src-kugimiya-bili-2010-index']['claims'])
-        self.assertEqual(self.sources['early-src-kugimiya-bili-2010-index']['access_level'], 'metadata')
-        self.assertIn('2010年1月31日', self.sources['early-src-kugimiya-bili-2010-index']['supports'])
-        self.assertIn('不作为B站首发', self.sources['early-src-kugimiya-bili-2010-index']['limitations'])
+        self.assertIn('platform_usage', refs['early-src-kugimiya-bili-2010-tag']['claims'])
+        self.assertNotIn('date', refs['early-src-kugimiya-bili-2010-tag']['claims'])
+        self.assertEqual(self.sources['early-src-kugimiya-bili-2010-tag']['access_level'], 'metadata')
+        self.assertIn('标签添加时间未知', self.sources['early-src-kugimiya-bili-2010-tag']['limitations'])
+        self.assertNotIn('early-src-kugimiya-bili-2010-index', self.sources)
