@@ -520,3 +520,10 @@ class HiyoriDubQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-hiyori-bili']['access_level'], 'metadata')
         self.assertIn('2014-04-18', self.sources['early-src-hiyori-bili']['supports'])
         self.assertIn('不能据此确认B站最早上传', entry['notes'])
+        for source_id in (
+            'early-src-hiyori-interview',
+            'early-src-hiyori-nanfang-2010',
+            'early-src-hiyori-beijing-2010',
+        ):
+            self.assertNotIn('platform_usage', refs[source_id]['claims'])
+        self.assertEqual(refs['early-src-hiyori-bili']['claims'], ['platform_usage', 'date'])
