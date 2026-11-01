@@ -2143,6 +2143,13 @@
     "evidence_status": "partial",
     "evidence": [
       {
+        "source_id": "early-src-cirno",
+        "claims": [
+          "meaning"
+        ],
+        "note": "THBWiki社区词条对⑨与琪露诺昵称关系的补充整理；原始标注已由官方说明书直接核对，该摘要不承担首创或起源日期证明。"
+      },
+      {
         "source_id": "early-src-cirno-manual",
         "claims": [
           "meaning",
