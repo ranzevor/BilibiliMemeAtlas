@@ -1111,6 +1111,17 @@
     "limitations": "记录的是该文采用的中文译法，不证明“和我签订契约”这一具体措辞的最早译本或中文首创日期。"
   },
   {
+    "id": "early-src-madoka-mangapedia-quote-2017",
+    "title": "『魔法少女まどか☆マギカ』名言集",
+    "url": "https://mangapedia.com/gd/6kp3rj2xb",
+    "publisher": "マンガペディア公式",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2017年4月23日マンガペディア官方名言集列出「僕と契約して、魔法少女になってよ！」并明确标注为第1话中丘比向少女发出的契约邀请台词。",
+    "limitations": "回顾性二手资料，用于核对台词文本与第1话的归属；不替代原片或原始脚本，也不证明中文译本首创。"
+  },
+  {
     "id": "early-src-madoka-netbuzz-2011",
     "title": "网络流行语大赏2011：金奖为「ポポポポ～ン」",
     "url": "https://nlab.itmedia.co.jp/cont/articles/3223058/",
@@ -1134,14 +1145,14 @@
   },
   {
     "id": "early-src-madoka-official-ep1",
-    "title": "第1话「僕と契約して魔法少女になってよ！」",
-    "url": "https://www.madoka-magica.com/tv/story/?id=01",
-    "publisher": "《魔法少女小圆》动画官方网站（Magica Quartet / Aniplex）",
+    "title": "第1话「夢の中で逢った、ような……」",
+    "url": "https://www.madoka-magica.com/tv/youtube-streaming/story/?id=ep01",
+    "publisher": "《魔法少女小圆》TV动画官方网站",
     "source_type": "primary",
     "access_level": "full",
     "checked_at": "2026-11-01",
-    "supports": "动画官方网站的第1话页面标题直接列出「僕と契約して魔法少女になってよ！」，确认该台词与第1话的关联及日文原句。",
-    "limitations": "页面当前为动画官方网站的TV Edition页面；用于核对第1话标题及原句，不单独提供中文译本或首播日期。"
+    "supports": "2011年TV动画官方网站的故事页列出第1话正式标题「夢の中で逢った、ような……」，并提供该话剧情简介，确认原作TV动画第1话及其剧情归属。",
+    "limitations": "该页面没有将契约台词作为第1话标题，也未直接展示该句台词；用于确认原作系列的剧集信息，不单独证明具体台词文本。"
   },
   {
     "id": "early-src-marisa-remix",
