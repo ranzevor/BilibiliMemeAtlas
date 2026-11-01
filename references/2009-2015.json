@@ -2624,6 +2624,20 @@
     "evidence_status": "partial",
     "evidence": [
       {
+        "source_id": "early-src-coach-explain",
+        "claims": [
+          "origin"
+        ],
+        "note": "回顾性解释补充三井寿向安西教练表达重返篮球愿望的场景语境；未核原作原片，不用于确认具体集数或网络模板首创。"
+      },
+      {
+        "source_id": "early-src-coach",
+        "claims": [
+          "meaning"
+        ],
+        "note": "回顾报道将《灌篮高手》与“教练，我想打篮球”的流行句关联，作为语义和流行关联的补充材料；不证明早期B站传播时间或首创。"
+      },
+      {
         "source_id": "early-src-coach-hujiang-2013",
         "claims": [
           "meaning",
