@@ -355,3 +355,32 @@ class RealPersonQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['recent-src-real-person-context']['access_level'], 'full')
         self.assertIsNone(entry['origin']['date'])
         self.assertIn('首创来源', entry['notes'])
+
+
+class AkarinQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_akarin_has_full_origin_and_meaning_sources(self):
+        entry = self.by_id['early-akarin']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('赤座灯里', entry['meaning'])
+        self.assertIn('存在感低', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-akarin-bili-guide']['claims'])
+        self.assertIn('meaning', refs['early-src-akarin-360-2015']['claims'])
+        self.assertEqual(self.sources['early-src-akarin-bili-guide']['access_level'], 'full')
+
+    def test_akarin_has_a_dated_early_bilibili_example_without_claiming_first_use(self):
+        entry = self.by_id['early-akarin']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-akarin-bili-2011']['claims'])
+        self.assertEqual(self.sources['early-src-akarin-bili-2011']['access_level'], 'metadata')
+        self.assertEqual(self.sources['early-src-akarin-bili-2011']['url'], 'https://www.bilibili.com/video/BV1Rx411c7GK/')
+        self.assertIn('2011年8月13日', self.sources['early-src-akarin-bili-2011']['supports'])
+        self.assertIn('2011年8月13日', entry['notes'])
+        self.assertIn('不是B站首发', entry['notes'])
+        self.assertIsNone(entry['origin']['date'])
