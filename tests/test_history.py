@@ -675,7 +675,8 @@ class NyanpasuQueueEvidenceTests(unittest.TestCase):
         entry = self.by_id['early-nyanpasu']
         self.assertEqual(entry['evidence_status'], 'partial')
         self.assertIsNone(entry['origin']['date'])
-        self.assertIn('未采用的第1话分镜', entry['origin']['summary'])
+        self.assertIn('原本计划作为第1话的早期稿件里', entry['origin']['summary'])
+        self.assertIn('不等于已公开刊载的首发记录', entry['origin']['summary'])
         self.assertEqual(self.sources['early-src-nyanpasu-febri-creator']['access_level'], 'full')
         self.assertEqual(self.sources['early-src-nyanpasu-mantan-2013']['access_level'], 'full')
 
