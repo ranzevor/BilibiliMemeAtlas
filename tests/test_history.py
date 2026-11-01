@@ -567,12 +567,15 @@ class MadokaContractQueueEvidenceTests(unittest.TestCase):
     def test_madoka_contract_has_full_original_line_and_broadcast_year_sources(self):
         entry = self.by_id['early-madoka-contract']
         self.assertEqual(entry['evidence_status'], 'partial')
-        self.assertIn('僕と契約して魔法少女になってよ！', entry['origin']['summary'])
+        self.assertIn('僕と契約して、魔法少女になってよ！', entry['origin']['summary'])
         self.assertEqual(entry['origin']['date'], '2011')
         refs = {ref['source_id']: ref for ref in entry['evidence']}
         self.assertIn('origin', refs['early-src-madoka-official-ep1']['claims'])
+        self.assertIn('meaning', refs['early-src-madoka-mangapedia-quote-2017']['claims'])
         self.assertIn('date', refs['early-src-madoka-nitroplus-2011']['claims'])
         self.assertEqual(self.sources['early-src-madoka-official-ep1']['access_level'], 'full')
+        self.assertIn('夢の中で逢った', self.sources['early-src-madoka-official-ep1']['supports'])
+        self.assertEqual(self.sources['early-src-madoka-mangapedia-quote-2017']['access_level'], 'full')
         self.assertEqual(self.sources['early-src-madoka-nitroplus-2011']['access_level'], 'full')
 
     def test_madoka_contract_has_chinese_template_and_bilibili_usage_evidence(self):
