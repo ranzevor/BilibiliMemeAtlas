@@ -466,3 +466,31 @@ class FffGroupQueueEvidenceTests(unittest.TestCase):
         self.assertIn('2010年1月24日', self.sources['early-src-fff-bili-2010']['supports'])
         self.assertIsNone(entry['origin']['date'])
         self.assertIn('仍未通过原作正文', entry['notes'])
+
+
+class GermanOrthopedicsQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_german_orthopedics_distinguishes_blood_relation_and_pseudo_siblings(self):
+        entry = self.by_id['early-german-orthopedics']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('有血缘关系', entry['meaning'])
+        self.assertIn('伪骨科', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-german-wiktionary']['claims'])
+        self.assertIn('meaning', refs['early-src-german-bili-2018']['claims'])
+        self.assertEqual(self.sources['early-src-german-bili-2018']['access_level'], 'full')
+        self.assertIn('不能确认事件真实性', entry['origin']['summary'])
+
+    def test_german_orthopedics_has_a_dated_bilibili_usage_record(self):
+        entry = self.by_id['early-german-orthopedics']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-german-bili-2015']['claims'])
+        self.assertEqual(self.sources['early-src-german-bili-2015']['access_level'], 'metadata')
+        self.assertIn('2015年10月10日', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('原始微博帖', entry['notes'])

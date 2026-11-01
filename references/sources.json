@@ -660,6 +660,28 @@
     "limitations": "视频地址来自可见专栏引用；登记读取结果为无法访问，未播放；原摄制日期未核，不将第三方列表时间当可靠首发日期。"
   },
   {
+    "id": "early-src-german-bili-2015",
+    "title": "欧尼酱之歌",
+    "url": "https://www.bilibili.com/video/BV1Ls411278p/",
+    "publisher": "哔哩哔哩投稿者 汽水Yui",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-10-31",
+    "supports": "B站投稿页面公开元数据显示，该视频于2015年10月10日13:26:18发布，简介写有“德国骨科欢迎您”，标签包括“德国骨科”。",
+    "limitations": "仅核验标题、日期、简介和标签元数据，不据此推断视频完整内容或B站最早使用时间。"
+  },
+  {
+    "id": "early-src-german-bili-2018",
+    "title": "二次元绅士们看过来——p站美图『游戏人生』篇最终期",
+    "url": "https://www.bilibili.com/read/cv1239769/",
+    "publisher": "哔哩哔哩专栏作者 毛绒绒小纱鱼",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2018年9月30日B站专栏正文将“德国骨科”解释为血缘兄妹恋的隐语，复述2012年3月1日微博传闻的具体故事，并说明该词也用于调侃兄控、妹控。",
+    "limitations": "该专栏是2018年对流传说法的复述，不提供原始微博链接或独立证据，不能证明传闻事件真实、2012年帖子为最早用例或梗的确切首创日期。"
+  },
+  {
     "id": "early-src-german-boy",
     "title": "【传奇落幕】十多年了，德国boy终于直面自己的黑历史！",
     "url": "https://www.gcores.com/articles/98319",
