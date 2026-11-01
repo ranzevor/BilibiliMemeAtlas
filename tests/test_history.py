@@ -636,3 +636,6 @@ class NicoNicoNiQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-nico-bili-2014']['access_level'], 'metadata')
         self.assertIn('2013年9月24日', self.sources['early-src-nico-bili-2013']['supports'])
         self.assertIn('2014年4月21日', self.sources['early-src-nico-bili-2014']['supports'])
+        for source_id in ('early-src-nico-2013-event-report', 'early-src-nico-event'):
+            self.assertNotIn('platform_usage', refs[source_id]['claims'])
+            self.assertIn('date', refs[source_id]['claims'])
