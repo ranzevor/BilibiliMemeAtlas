@@ -509,6 +509,13 @@
       "relicensed_by_project": false
     },
     {
+      "source_id": "early-src-hiyori-beijing-2010",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
       "source_id": "early-src-hiyori-bili",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
@@ -517,6 +524,13 @@
     },
     {
       "source_id": "early-src-hiyori-interview",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-hiyori-nanfang-2010",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
