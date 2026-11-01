@@ -2143,6 +2143,13 @@
     "evidence_status": "partial",
     "evidence": [
       {
+        "source_id": "early-src-cirno",
+        "claims": [
+          "meaning"
+        ],
+        "note": "THBWiki社区词条对⑨与琪露诺昵称关系的补充整理；原始标注已由官方说明书直接核对，该摘要不承担首创或起源日期证明。"
+      },
+      {
         "source_id": "early-src-cirno-manual",
         "claims": [
           "meaning",
@@ -2632,6 +2639,20 @@
     "evidence_status": "partial",
     "evidence": [
       {
+        "source_id": "early-src-coach-explain",
+        "claims": [
+          "origin"
+        ],
+        "note": "回顾性解释补充三井寿向安西教练表达重返篮球愿望的场景语境；未核原作原片，不用于确认具体集数或网络模板首创。"
+      },
+      {
+        "source_id": "early-src-coach",
+        "claims": [
+          "meaning"
+        ],
+        "note": "回顾报道将《灌篮高手》与“教练，我想打篮球”的流行句关联，作为语义和流行关联的补充材料；不证明早期B站传播时间或首创。"
+      },
+      {
         "source_id": "early-src-coach-hujiang-2013",
         "claims": [
           "meaning",
@@ -2901,6 +2922,13 @@
     "relations": [],
     "evidence_status": "partial",
     "evidence": [
+      {
+        "source_id": "early-src-fff",
+        "claims": [
+          "meaning"
+        ],
+        "note": "搜狗百科社区词条补充记录FFF团名称与ACG圈恋爱戏称的关联；仅作社区资料，不用于确认原作首次登场卷次或动画火刑细节。"
+      },
       {
         "source_id": "early-src-fff-kadokawa-spinout",
         "claims": [

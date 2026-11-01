@@ -397,7 +397,7 @@ class CirnoNineQueueEvidenceTests(unittest.TestCase):
         entry = self.by_id['early-cirno-nine']
         self.assertEqual(entry['evidence_status'], 'partial')
         self.assertIn('琪露诺', entry['meaning'])
-        self.assertIn('9.バカ', entry['origin']['summary'])
+        self.assertIn('第9项写作“バカ”', entry['origin']['summary'])
         refs = {ref['source_id']: ref for ref in entry['evidence']}
         self.assertIn('origin', refs['early-src-cirno-manual']['claims'])
         self.assertEqual(self.sources['early-src-cirno-manual']['access_level'], 'full')
