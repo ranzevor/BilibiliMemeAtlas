@@ -201,6 +201,13 @@
       "relicensed_by_project": false
     },
     {
+      "source_id": "early-src-cirno-bili-2010",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
       "source_id": "early-src-cirno-cover",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
@@ -208,7 +215,28 @@
       "relicensed_by_project": false
     },
     {
+      "source_id": "early-src-cirno-forum-2009",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-cirno-manual",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
       "source_id": "early-src-cirno-song-meaning",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-cirno-touhou-media",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
