@@ -1403,9 +1403,64 @@
     "publisher": "动漫星空",
     "source_type": "secondary",
     "access_level": "snippet",
-    "checked_at": "2026-10-23",
+    "checked_at": "2026-11-01",
     "supports": "2014年中文报道用喵帕斯指向悠哉日常大王并回顾2013流行。",
-    "limitations": "未补B站首传用例或日语原获奖页。"
+    "limitations": "2014年回顾性报道，支持该词已成为作品代表性口癖并记录2013年流行节点；不提供作者对词语形成过程的直接解释，也不证明B站最早用例。"
+  },
+  {
+    "id": "early-src-nyanpasu-bili-2013",
+    "title": "短笛・大王・喵帕斯",
+    "url": "https://www.bilibili.com/video/BV1Bs411o7ra/",
+    "publisher": "哔哩哔哩投稿者 电波风",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-01",
+    "supports": "B站投稿公开元数据显示，该视频于2013年12月14日03:50:39发布，标题将“喵帕斯”与短笛大王组合，属于该词进入B站二创标题的早期可定位实例。",
+    "limitations": "仅核验投稿标题、日期和公开元数据，不据此推断视频正文或B站最早使用时间。"
+  },
+  {
+    "id": "early-src-nyanpasu-bili-2018",
+    "title": "带你了解鬼畜界的喵帕斯——悠哉日常大王（伪）",
+    "url": "https://www.bilibili.com/opus/76428294492347170",
+    "publisher": "哔哩哔哩专栏作者 感化汉库克",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2018年1月22日B站专栏直接以“喵帕斯”介绍《悠哉日常大王》，记录该词已成为站内动画与鬼畜文化中的可识别表达。",
+    "limitations": "属于2018年回顾性社区文章，不证明B站最早投稿、最早弹幕或原作首次公开使用。"
+  },
+  {
+    "id": "early-src-nyanpasu-febri-creator",
+    "title": "『のんのんびより』コミック＆TVアニメ完結記念 原作者・あっと＆川面真也監督対談②",
+    "url": "https://febri.jp/topics/nonnonbiyori_interview_2/",
+    "publisher": "Febri（原作者あっと、川面真也監督访谈）",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "原作者あっと回忆，原本打算作为第1话的早期稿件中，莲华最初说出的第一句话就是“にゃんぱすー”；编辑要求补足作品导入后，作者重新绘制了现在刊载的第1话。",
+    "limitations": "访谈说明的是未采用的早期分镜稿，不能据此确定该词第一次公开刊载或播出的日期。"
+  },
+  {
+    "id": "early-src-nyanpasu-kadokawa-award-2013",
+    "title": "2013年アニメ流行語大賞は「にゃんぱすー」が金賞に！",
+    "url": "https://prtimes.jp/main/html/rd/p/000000395.000007006.html",
+    "publisher": "KADOKAWA／メディアファクトリー",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "KADOKAWA于2013年12月3日发布公告，确认宫内莲华的台词“にゃんぱすー”获得2013年动画流行语大赏金奖，结果来自当年动画观众与原作读者投票。",
+    "limitations": "奖项证明该词在2013年已广泛流行，不证明它的首次创作、刊载或播出日期。"
+  },
+  {
+    "id": "early-src-nyanpasu-mantan-2013",
+    "title": "アニメ質問状：「のんのんびより」“にゃんぱすー”の意味は！？",
+    "url": "https://mantan-web.jp/article/20131108dog00m200066000c.html",
+    "publisher": "MANTANWEB（动画制作方访谈）",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2013年制作方访谈将“にゃんぱすー”解释为小学一年级孩子想出的、类似“早上好/你好/晚上好”合并式的问候语，可在不同时间使用。",
+    "limitations": "访谈解释的是角色台词的设定含义，不提供原作者首次写出该词的具体日期。"
   },
   {
     "id": "early-src-orz",

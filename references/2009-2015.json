@@ -2248,25 +2248,29 @@
     "term": "喵帕斯",
     "aliases": [
       "にゃんぱすー",
-      "Nyanpasu"
+      "Nyanpasu",
+      "喵帕斯"
     ],
     "category": "acg",
     "era": "2009-2015",
-    "meaning": "宫内莲华的独特问候语，也用于指代《悠哉日常大王》的轻松氛围。",
+    "meaning": "《悠哉日常大王》宫内莲华创造的独特问候语，类似把早上好、你好、晚上好合成一个词，可在不同时间使用。它以莲华天真又独特的感性为特色，后来成为作品和角色的代表性口癖，中文粉丝通常音译为“喵帕斯”。",
     "origin": {
-      "summary": "从《悠哉日常大王》角色口癖传播；2013—2014年已有流行记录。",
+      "summary": "源自《悠哉日常大王》宫内莲华的问候语。原作者あっと在2021年访谈中回忆，原本计划作为第1话的早期稿件里，莲华第一句台词就是“にゃんぱすー”；编辑要求增加作品导入后，作者重新绘制了现在刊载的第1话，因此早期稿件不等于已公开刊载的首发记录。2013年制作方访谈解释该词是小学生想出的、可在不同时段使用的合并式问候语；同年获得动画流行语大赏金奖。",
       "date": null,
       "precision": "unknown",
-      "bilibili_role": "imported"
+      "bilibili_role": "amplifier"
     },
     "usage": {
       "contexts": [
-        "轻松招呼",
-        "番剧同好交流"
+        "动画同好之间的轻松问候",
+        "模仿宫内莲华的说话方式与角色口癖",
+        "B站动画剪辑、鬼畜和相关二创标题或弹幕"
       ],
-      "example": "喵帕斯，今天也来慢慢看一集。",
+      "example": "喵帕斯！今天也慢悠悠地过吧。",
       "avoid": [
-        "陌生正式场合先用常规问候。"
+        "它是作品角色创造的口癖，不是通用标准日语问候语",
+        "正式或陌生社交场合优先使用常规问候",
+        "不要把早期未刊载分镜稿直接当成首次公开使用记录"
       ]
     },
     "lifecycle": "contextual",
@@ -2275,16 +2279,56 @@
     "evidence_status": "partial",
     "evidence": [
       {
+        "source_id": "early-src-nyanpasu-febri-creator",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "原作者访谈说明早期未采用的第1话分镜中，莲华第一句台词就是“にゃんぱすー”；现行第1话后来经过重新绘制。"
+      },
+      {
+        "source_id": "early-src-nyanpasu-mantan-2013",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "2013年制作方访谈解释其为小学生想出的、可跨时段使用的合并式问候语。"
+      },
+      {
+        "source_id": "early-src-nyanpasu-kadokawa-award-2013",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "KADOKAWA官方公告确认该词获得2013年动画流行语大赏金奖。"
+      },
+      {
+        "source_id": "early-src-nyanpasu-bili-2013",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "B站2013年12月14日投稿标题直接使用“喵帕斯”，是可定位的早期站内二创实例。"
+      },
+      {
+        "source_id": "early-src-nyanpasu-bili-2018",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "B站2018年专栏以“喵帕斯”介绍《悠哉日常大王》，记录其站内动画与鬼畜文化语境。"
+      },
+      {
         "source_id": "early-src-nyanpasu",
         "claims": [
           "meaning",
-          "origin",
+          "platform_usage",
           "date"
         ],
-        "note": "2014年同期回顾。"
+        "note": "2014年中文报道将喵帕斯作为作品代表性口癖，并回顾其2013年流行。"
       }
     ],
-    "notes": "有2014年同期回顾摘要；日语原素材和B站首次传播未核实。"
+    "notes": "原作者访谈确认未采用的早期第1话分镜中已出现“にゃんぱすー”，但该分镜经过重绘，不能直接作为首次公开刊载日期。2013年制作方访谈解释了问候语含义，KADOKAWA官方公告确认其获当年动画流行语大赏金奖；B站2013年12月14日投稿和2018年专栏提供可定位的站内使用节点。精确首个公开版本及B站最早用例仍未确定。"
   },
   {
     "id": "early-akarin",
