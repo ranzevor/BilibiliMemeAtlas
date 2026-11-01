@@ -32,7 +32,7 @@ class HistoryTests(unittest.TestCase):
              if line.startswith('| ') and ' | `' in line]
         self.assertEqual(ids,[item['entry_id'] for item in queue])
         self.assertEqual(len(ids),len(set(ids)))
-        self.assertTrue(any(item['status']=='candidate' for item in queue))
+        self.assertIn('recent-real-person', {item['entry_id'] for item in queue})
         self.assertIn('2026年已收录的传播事件',markdown_index())
 
     def test_2026_navigation_covers_existing_autumn_batch(self):
@@ -307,3 +307,51 @@ class MidEraEvidenceTests(unittest.TestCase):
                 self.assertEqual(entry['evidence_status'], 'verified')
                 self.assertIsNone(entry['origin']['date'])
                 self.assertIn(identifier, queued)
+
+
+class QueueFrontEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_real_person_usage_is_tied_to_the_actual_program(self):
+        entry = self.by_id['recent-real-person']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('《马上有奇迹》', entry['origin']['summary'])
+        self.assertIn('首创来源', entry['notes'])
+        self.assertEqual(self.sources['recent-src-gala26-program']['access_level'], 'full')
+
+    def test_world_tour_meaning_is_limited_to_creator_described_ai_video(self):
+        entry = self.by_id['recent-26-world-tour']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('音乐是否由AI生成须按具体作品判断', entry['meaning'])
+        self.assertEqual(self.sources['recent-src-26-tour-michael']['access_level'], 'full')
+        self.assertIn('尚未确定最早创作者', entry['notes'])
+
+    def test_green_cat_records_a_locatable_creator_post_without_claiming_first_origin(self):
+        entry = self.by_id['recent-green-alien-cat']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('2026年3月8日', entry['origin']['summary'])
+        self.assertEqual(self.sources['recent-src-green-cat-original-post']['access_level'], 'full')
+        self.assertIn('尚未确认绿色外星猫形象本身的创作者', entry['notes'])
+
+
+class RealPersonQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_real_person_has_full_contextual_meaning_source(self):
+        entry = self.by_id['recent-real-person']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('确认自己被看见', entry['meaning'])
+        self.assertIn('寻求即时回应', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['recent-src-real-person-context']['claims'])
+        self.assertEqual(self.sources['recent-src-real-person-context']['access_level'], 'full')
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('首创来源', entry['notes'])

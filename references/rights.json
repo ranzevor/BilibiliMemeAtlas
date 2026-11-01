@@ -33,14 +33,189 @@
   ],
   "sources": [
     {
-      "source_id": "early-src-tencent-danmu",
+      "source_id": "early-src-2013-list",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-orz",
+      "source_id": "early-src-2013-meaning",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2013-treatment",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2014-list",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2014-memes",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2015-list",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2015-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-airdrop-2015",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-akarin",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-all-source-caijing",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-areyouok",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-areyouok-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-arrow",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-badapple-history",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-bgm-2015",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-bgm-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-bili-17",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-chenqie",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-chenqie-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-china-news-guichu",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-cirno",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-cirno-cover",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-cirno-song-meaning",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-coach",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-coach-explain",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-dali",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-dali-meaning",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -61,21 +236,98 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-airdrop-2015",
+      "source_id": "early-src-disco-bili",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-kneel-2012",
+      "source_id": "early-src-disco-interview",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-geping-source",
+      "source_id": "early-src-downfall-parodies",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-elshaddai",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-excavator-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-fate-shirou",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-fff",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-fire-before",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-foodsong-original",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-foodsong-pv",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-gachimuchi",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-gachimuchi-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-gangnam",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-geping-2020",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -89,21 +341,7 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-jiemian-guichu",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-china-news-guichu",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-guichu-history",
+      "source_id": "early-src-geping-source",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -117,6 +355,83 @@
       "relicensed_by_project": false
     },
     {
+      "source_id": "early-src-german-orthopedics",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-german-wiktionary",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-god-sync-definition",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-guichu-history",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-guzheng",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-hiyori-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-hiyori-interview",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-iosys",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-jiangnan",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-jiangnan-correction",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-jiemian-guichu",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
       "source_id": "early-src-kim",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
@@ -124,7 +439,63 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-wanglang-history",
+      "source_id": "early-src-kneel-2012",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-kugimiya",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-kuroko",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-kuroko-materials",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-kuroko-nico-ranking",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-lancer",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-lancer-bili-quiz",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-lancer-mooncell",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-leek",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -159,112 +530,7 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-areyouok",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-areyouok-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-dali",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-xueyi",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-zhangquandan",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-jiangnan",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-jiangnan-correction",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-disco-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-disco-interview",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-foodsong-original",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-foodsong-pv",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-badapple-history",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-popular-history",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-senbonzakura",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-guzheng",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-leek",
+      "source_id": "early-src-little-education-2014",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -278,77 +544,7 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-platinum",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-skate-shoes",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-gangnam",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-kuroko",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-bili-17",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-cirno",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-iosys",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-nyanpasu",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-akarin",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-nico",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-powerfive",
+      "source_id": "early-src-luotianyi-character",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -362,56 +558,14 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-wind",
+      "source_id": "early-src-marisa-remix",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-coach",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-coach-explain",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-fate-shirou",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-tokiomi",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-lancer",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-kugimiya",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-fff",
+      "source_id": "early-src-marisa-song",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -425,161 +579,119 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-gachimuchi",
+      "source_id": "early-src-nico",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-gachimuchi-bili",
+      "source_id": "early-src-nico-event",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-german-orthopedics",
+      "source_id": "early-src-nico-official",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-elshaddai",
+      "source_id": "early-src-nico-pose",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-arrow",
+      "source_id": "early-src-nyanpasu",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-excavator-bili",
+      "source_id": "early-src-orz",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-2014-memes",
+      "source_id": "early-src-platinum",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-yuanfang-correction",
+      "source_id": "early-src-platinum-disc",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-2013-meaning",
+      "source_id": "early-src-platinum-official",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-2013-treatment",
+      "source_id": "early-src-popular-history",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-2013-list",
+      "source_id": "early-src-powerfive",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-2014-list",
+      "source_id": "early-src-pseudo-siblings",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-2015-list",
+      "source_id": "early-src-red-blue-explainer",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-2015-report",
+      "source_id": "early-src-renai-disc",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-bgm-2015",
+      "source_id": "early-src-renai-official",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-bgm-bili",
+      "source_id": "early-src-senbonzakura",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-chenqie",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-chenqie-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-synchronization",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-fire-before",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-hiyori-interview",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-hiyori-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-shuzo-report",
+      "source_id": "early-src-senbonzakura-official",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -600,14 +712,357 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-marisa-song",
+      "source_id": "early-src-shuzo-report",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-marisa-remix",
+      "source_id": "early-src-skate-interview",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-skate-shoes",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-synchronization",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-tencent-danmu",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-tokiomi",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-wanglang-history",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-wind",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-xueyi",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-yuanfang-correction",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-zhangquandan",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-amot-bili-guide",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-amot-bili-video",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-amot-wiki",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-bili-inmu-guide",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-bili-three-hum",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-dasima-industry",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-dasima-ithome",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-digits-jp",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-edge-mnw",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-hakushin-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-hakushin-dictionary",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-hakushin-slang",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-ig-17173",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-ig-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-inmu-2013-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-inmu-2020",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-lbw-thepaper",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-lbw-wikiquote",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-mafei-origin",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-mafei-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-no-loss-2018",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-reverse-18183",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-reverse-cnmo",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-seven-inven",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-sina-lpl",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-square-17173",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-turnback-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "extra-src-udn-inmu",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2016",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2017-danmu-yys",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2017-official",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2017-publisher",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2018-danmu-huxiu",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2018-danmu-ifanr",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2018-words",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2019-danmu-lens",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2019-danmu-ruye",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-2020-language-cp",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-abstract-interview",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-acg19",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -642,231 +1097,14 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "mid-src-memes19",
+      "source_id": "mid-src-annual20-explained",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "mid-src-acg19",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-huanong",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-douyu20",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-lol20",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-game20",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-cross20",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-dragon",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-index20",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-nianshi",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-mianjin",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-different",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-newisland",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-shadow",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-zhangsan",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-sekiro",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-sekiro-community",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-lawyer",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-xiang",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2016",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-words20",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2017-official",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2017-publisher",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2018-words",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-noodles",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-kubenchina",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-work",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-olgab",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-dame",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-dame-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-coffin-bbc",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-coffin-kym",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-digital20",
+      "source_id": "mid-src-baoguoma",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -887,6 +1125,146 @@
       "relicensed_by_project": false
     },
     {
+      "source_id": "mid-src-cards-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-cards-explained",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-coffin-bbc",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-coffin-kym",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-cross20",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-dame",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-dame-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-dasima-story",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-dejavu-explainer",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-dejavu-rodgers-interview",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-different",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-different-credits",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-different-meaning",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-digital20",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-douyu20",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-dragon",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-game20",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-huanong",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-huanong-pretty",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-index20",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
       "source_id": "mid-src-knowledge",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
@@ -901,1358 +1279,14 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "mid-src-baoguoma",
+      "source_id": "mid-src-kubenchina",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "mid-src-newrank-ma",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-annual20-explained",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-huanong-pretty",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-cards-explained",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-cards-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-dasima-story",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-layer-cow",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-yyds-retrospective",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-yyds-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-abstract-interview",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-annual21",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-annual22",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-annual23",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-annual24",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-annual25",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-slang21",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-shock21",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-bengbu",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-bengbu-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-she-niu",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-high-quality",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-happy-planet",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-diana",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-diana-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-ji",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-ji-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-slang22",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-slang22b",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-hextech",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-muyu",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-muyu-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-genshin-copy",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-genshin-copy-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-my-god",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-pan",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-pickle",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-pickle-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-black-fan",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-black-fan-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-macarthur",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-jinlun",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-hachimi",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-slang23-commercial",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-slang23",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-mainly",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-fate",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-far-ahead",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-start-genshin",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-start-genshin-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-subject-three",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-cats",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-slang24",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-slang24-sixth",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-slang24-language",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-gold",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-mambo",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-beans",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-beans-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-gomoku",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-gomoku-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-tier-sina",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-tier-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-lamb",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-soup",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-slang25",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-song25",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-card-check",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-gala26",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-duck",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-duck-news",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-green-cat-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-green-cat",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-chongqing",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-maodie",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-maodie-community",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-love-self",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-love-self-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-naza",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-annual22-report",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-annual23-report",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-annual25-report",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-asoul-year",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-wenjing-story",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-wenjing-caution",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-wenjing-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-wenjing-aunt",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-sr-nicknames",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-sr-bat-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-sr-trash",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-sr-trash-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-game-memes21",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-buy-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-guangzhi",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-game-memes24",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-help-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-mammoth",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-mammoth-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-deagle",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-deagle-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-musicbox",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-musicbox-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-ccb",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-ccb-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-wuwa-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-ning-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-udn-inmu",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-bili-inmu-guide",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-digits-jp",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-inmu-2013-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-hakushin-dictionary",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-hakushin-slang",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-hakushin-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-inmu-2020",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-amot-wiki",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-amot-bili-guide",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-amot-bili-video",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-sina-lpl",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-seven-inven",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-ig-17173",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-ig-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-reverse-cnmo",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-reverse-18183",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-dasima-ithome",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-turnback-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-square-17173",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-edge-mnw",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-no-loss-2018",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-dasima-industry",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-lbw-wikiquote",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-lbw-thepaper",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-mafei-report",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "extra-src-mafei-origin",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-dance-interview",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-shanshen-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-gouxiong-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-tour-explainer",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-tour-hawking",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-tour-michael",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-zhuan-rap-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-zhuan-rap-dict",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-tantan-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-tantan-discussion",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-feidudu-report",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-feidudu-dubbing",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-bushaoxin-chinanews",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-bushaoxin-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-bushaoxin-dict",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-hongguoti-dict",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-hongguoti-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-boji-dict",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-boji-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-lifestyle-theories-report",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-dashui-report",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-theories-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-huangmao-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-bluefish-origins",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-bluefish-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-fish-ai-report",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-fish-firsthand",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-delta-festival",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-delta-bili",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "recent-src-26-zhuan-aug27",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-german-wiktionary",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-pseudo-siblings",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-lancer-mooncell",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-lancer-bili-quiz",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-nico-official",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-nico-pose",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-nico-event",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-red-blue-explainer",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-god-sync-definition",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-little-education-2014",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-all-source-caijing",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-dali-meaning",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-downfall-parodies",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-geping-2020",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-kuroko-nico-ranking",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-cirno-song-meaning",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-cirno-cover",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-luotianyi-character",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-renai-official",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-renai-disc",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-platinum-official",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-platinum-disc",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-senbonzakura-official",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "early-src-skate-interview",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2018-danmu-huxiu",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2018-danmu-ifanr",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2019-danmu-lens",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2019-danmu-ruye",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2020-language-cp",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-2017-danmu-yys",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-lawyer-letter-usage",
+      "source_id": "mid-src-lawyer",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -2266,21 +1300,56 @@
       "relicensed_by_project": false
     },
     {
-      "source_id": "early-src-kuroko-materials",
+      "source_id": "mid-src-lawyer-letter-usage",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "mid-src-rich-power-explainer",
+      "source_id": "mid-src-layer-cow",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
     },
     {
-      "source_id": "mid-src-welcome-home-return",
+      "source_id": "mid-src-lol20",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-memes19",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-mianjin",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-newisland",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-newrank-ma",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-nianshi",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -2308,6 +1377,20 @@
       "relicensed_by_project": false
     },
     {
+      "source_id": "mid-src-noodles",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-olgab",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
       "source_id": "mid-src-pretty-warning-meaning",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
@@ -2315,35 +1398,35 @@
       "relicensed_by_project": false
     },
     {
+      "source_id": "mid-src-rich-power-explainer",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-sekiro",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-sekiro-community",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-shadow",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
       "source_id": "mid-src-shadow-gcores",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-dejavu-explainer",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-dejavu-rodgers-interview",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-different-meaning",
-      "external_rights": "retained-by-respective-rightsholders",
-      "project_use": "source-metadata-and-project-authored-claim-support",
-      "bundled_full_work": false,
-      "relicensed_by_project": false
-    },
-    {
-      "source_id": "mid-src-different-credits",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
@@ -2358,6 +1441,972 @@
     },
     {
       "source_id": "mid-src-skr-2018-definition",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-welcome-home-return",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-words20",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-work",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-xiang",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-yyds-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-yyds-retrospective",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "mid-src-zhangsan",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-bluefish-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-bluefish-origins",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-boji-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-boji-dict",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-bushaoxin-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-bushaoxin-chinanews",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-bushaoxin-dict",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-dance-interview",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-dashui-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-delta-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-delta-festival",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-feidudu-dubbing",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-feidudu-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-fish-ai-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-fish-firsthand",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-gouxiong-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-hongguoti-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-hongguoti-dict",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-huangmao-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-lifestyle-theories-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-shanshen-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-tantan-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-tantan-discussion",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-theories-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-tour-explainer",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-tour-hawking",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-tour-huangrenxun",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-tour-michael",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-zhuan-aug27",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-zhuan-rap-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-26-zhuan-rap-dict",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-annual21",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-annual22",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-annual22-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-annual23",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-annual23-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-annual24",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-annual25",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-annual25-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-asoul-year",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-beans",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-beans-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-bengbu",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-bengbu-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-black-fan",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-black-fan-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-buy-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-card-check",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-cats",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-ccb",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-ccb-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-chongqing",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-deagle",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-deagle-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-diana",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-diana-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-duck",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-duck-news",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-far-ahead",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-fate",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-gala26",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-gala26-program",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-game-memes21",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-game-memes24",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-genshin-copy",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-genshin-copy-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-gold",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-gold-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-gold-ccnu",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-gomoku",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-gomoku-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-green-cat",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-green-cat-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-green-cat-original-post",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-guangzhi",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-hachimi",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-happy-planet",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-help-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-hextech",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-high-quality",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-ji",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-ji-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-jinlun",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-lamb",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-love-self",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-love-self-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-macarthur",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-mainly",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-mambo",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-mammoth",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-mammoth-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-maodie",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-maodie-community",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-musicbox",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-musicbox-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-muyu",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-muyu-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-my-god",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-naza",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-ning-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-pan",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-pickle",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-pickle-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-real-person-context",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-she-niu",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-shock21",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-slang21",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-slang22",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-slang22b",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-slang23",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-slang23-commercial",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-slang24",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-slang24-language",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-slang24-sixth",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-slang25",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-song25",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-soup",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-sr-bat-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-sr-nicknames",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-sr-trash",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-sr-trash-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-start-genshin",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-start-genshin-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-subject-three",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-tier-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-tier-sina",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-wenjing-aunt",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-wenjing-bili",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-wenjing-caution",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-wenjing-story",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "recent-src-wuwa-bili",
       "external_rights": "retained-by-respective-rightsholders",
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
