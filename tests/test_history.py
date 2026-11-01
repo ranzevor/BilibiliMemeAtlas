@@ -411,3 +411,31 @@ class CirnoNineQueueEvidenceTests(unittest.TestCase):
         self.assertIn('2010年9月6日', self.sources['early-src-cirno-bili-2010']['supports'])
         self.assertIsNone(entry['origin']['date'])
         self.assertIn('不证明中文首创者', entry['notes'])
+
+
+class CoachBasketballQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_coach_phrase_has_full_original_scene_and_template_sources(self):
+        entry = self.by_id['early-coach-learn']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('バスケがしたいです', entry['origin']['summary'])
+        self.assertIn('教练，我想XXX', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-coach-hujiang-2013']['claims'])
+        self.assertIn('meaning', refs['early-src-coach-sina-2022']['claims'])
+        self.assertEqual(self.sources['early-src-coach-hujiang-2013']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-coach-sina-2022']['access_level'], 'full')
+
+    def test_coach_phrase_has_a_dated_early_bilibili_usage_record(self):
+        entry = self.by_id['early-coach-learn']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-coach-bili-2014']['claims'])
+        self.assertEqual(self.sources['early-src-coach-bili-2014']['access_level'], 'full')
+        self.assertIn('2014年1月2日', self.sources['early-src-coach-bili-2014']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('尚未定位中文首创者', entry['notes'])
