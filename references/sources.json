@@ -1227,9 +1227,53 @@
     "publisher": "Tokyo Otaku Mode",
     "source_type": "secondary",
     "access_level": "metadata",
-    "checked_at": "2026-10-23",
+    "checked_at": "2026-11-01",
     "supports": "2013年商品资料使用Nico Nico Ni称呼及Love Live关联。",
     "limitations": "商业目录只作作品/语句关联与同期存在证据，不作最早台词证明。"
+  },
+  {
+    "id": "early-src-nico-2010-pv-variant",
+    "title": "ラブライブ！の声と歌について",
+    "url": "https://soundhmm.blog.fc2.com/blog-entry-307.html",
+    "publisher": "soundHMM",
+    "source_type": "community",
+    "access_level": "snippet",
+    "checked_at": "2026-11-01",
+    "supports": "2013年粉丝听辨文章指出，2010年首张单曲PV约3分46秒处出现“にこにこ”重复，约4分11秒处出现“にこにこにー”变体。",
+    "limitations": "当前只能读取检索摘要，属于粉丝听辨；其记录的是早期“にこにこにー”变体，不等同于后来固定的“にっこにっこにー”。"
+  },
+  {
+    "id": "early-src-nico-2013-event-report",
+    "title": "プロジェクトスタートから3年、さらなる飛躍へ向けて『μ's 3rd Anniversary LoveLive!』レポート",
+    "url": "https://sokoani.com/archives/6020.html",
+    "publisher": "そこあに",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "2013年6月28日活动报道记录6月16日μ's 3rd Anniversary LoveLive!现场，矢泽妮可声优徳井青空在成员自我介绍环节说出“にっこにっこにー！”，观众即时回应。",
+    "limitations": "证明该口号至迟在2013年6月已作为现场固定招牌语使用，不证明首次说出日期。"
+  },
+  {
+    "id": "early-src-nico-bili-2013",
+    "title": "〖lovelive！〗妮可♂妮可♂妮~~~~~~（高能）",
+    "url": "https://www.bilibili.com/video/av770651/",
+    "publisher": "哔哩哔哩投稿者 lovehimeko",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-01",
+    "supports": "B站投稿公开元数据显示，该视频于2013年9月24日14:55:23发布，标题直接戏仿矢泽妮可的“妮可妮可妮”，标签包含矢泽妮可、Love Live。",
+    "limitations": "仅核验标题、投稿日期及公开标签；不据此推断视频正文或B站最早使用时间。"
+  },
+  {
+    "id": "early-src-nico-bili-2014",
+    "title": "妮可 妮可 妮可",
+    "url": "https://www.bilibili.com/video/BV11x411K7zK/",
+    "publisher": "哔哩哔哩投稿者 地平線の栗子",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-01",
+    "supports": "B站投稿公开元数据显示，该视频于2014年4月21日13:18:41发布，标题使用妮可名字的重复句式，页面显示播放量超过1400万并曾进入全站排行榜。",
+    "limitations": "标题是对角色名字的重复改编，页面元数据不提供视频完整内容；不据此认定B站最早使用或原句首创。"
   },
   {
     "id": "early-src-nico-event",
@@ -1238,9 +1282,20 @@
     "publisher": "Love Live! 官方",
     "source_type": "primary",
     "access_level": "full",
-    "checked_at": "2026-10-30",
+    "checked_at": "2026-11-01",
     "supports": "2013年3月12日的官方活动报道记录3月10日活动中德井空使用にっこにっこにー与观众互动。",
     "limitations": "活动报道证明2013年的公开使用，不将活动日当作口号诞生日。"
+  },
+  {
+    "id": "early-src-nico-lantis-2010",
+    "title": "『ラブライブ！』μ’s 1stシングル「僕らのLIVE 君とのLIFE」",
+    "url": "https://www.lantis.jp/release-item/LACM-34560.html",
+    "publisher": "Lantis",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-01",
+    "supports": "Lantis官方唱片页面确认《僕らのLIVE 君とのLIFE》原版于2010年8月25日发行；该单曲是Love Live!企划的首张单曲。",
+    "limitations": "当前页面是2024年复刻版书目，记载原版发行日期；不直接展示2010年PV或妮可自我介绍广播剧中的具体台词。"
   },
   {
     "id": "early-src-nico-official",
@@ -1249,9 +1304,20 @@
     "publisher": "SQUARE ENIX／Love Live! 项目",
     "source_type": "primary",
     "access_level": "full",
-    "checked_at": "2026-10-30",
+    "checked_at": "2026-11-01",
     "supports": "矢泽妮可的官方角色介绍直接使用其标志性口号にっこにっこにー，并列出角色与声优对应。",
     "limitations": "角色介绍支持口号归属，不确定原动画首次出现的集数或中文首传。"
+  },
+  {
+    "id": "early-src-nico-origin-analysis-2020",
+    "title": "ラブライブ！ 都市伝説検証",
+    "url": "https://prhythmlive.hatenadiary.com/entry/2020/01/26/013617",
+    "publisher": "はてなブログ作者 墓矢旗",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-01",
+    "supports": "文章对比早期资料与TV动画后的用法，指出初期自我介绍、杂志及漫画多使用“にこにこにー”，而“にっこにっこにー”在TV动画前后才固定；另提及声优在2012年First LoveLive已使用完整形式，但作者明确将该项作为尚未充分核实的线索。",
+    "limitations": "属于粉丝研究与资料考证，不是官方制作记录；关于2012年First LoveLive的说法没有在该文中提供同期原始录音或官方文字稿。"
   },
   {
     "id": "early-src-nico-pose",
@@ -1260,7 +1326,7 @@
     "publisher": "Good Smile Company",
     "source_type": "primary",
     "access_level": "full",
-    "checked_at": "2026-10-30",
+    "checked_at": "2026-11-01",
     "supports": "授权商品说明将矢泽妮可的にっこにっこにー口号与代表性手势对应，说明造型参照广播CD封面。",
     "limitations": "商品说明不是原动画台词实录，也不证明该手势首次创作时间。"
   },
