@@ -2411,7 +2411,6 @@
       {
         "source_id": "early-src-nico-2013-event-report",
         "claims": [
-          "platform_usage",
           "date"
         ],
         "note": "2013年3rd Anniversary现场报道逐字记录徳井青空在自我介绍环节使用完整口号。"
@@ -2435,7 +2434,6 @@
       {
         "source_id": "early-src-nico-event",
         "claims": [
-          "platform_usage",
           "date"
         ],
         "note": "Love Live!官方2013年活动报道记录3月10日现场使用完整口号与观众互动。"
