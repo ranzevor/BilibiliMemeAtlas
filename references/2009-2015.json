@@ -2879,6 +2879,13 @@
     "evidence_status": "partial",
     "evidence": [
       {
+        "source_id": "early-src-fff",
+        "claims": [
+          "meaning"
+        ],
+        "note": "搜狗百科社区词条补充记录FFF团名称与ACG圈恋爱戏称的关联；仅作社区资料，不用于确认原作首次登场卷次或动画火刑细节。"
+      },
+      {
         "source_id": "early-src-fff-kadokawa-spinout",
         "claims": [
           "meaning",
