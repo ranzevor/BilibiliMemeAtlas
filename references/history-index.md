@@ -334,4 +334,4 @@
 python3 "SKILL_DIR/scripts/history.py" --output OUTPUT_DIR/history.json
 ```
 
-输出为18年×11分类格及确定性排序队列。只读本地数据，输出必须是新文件；完整词条及来源由查询工具或JSON分片读取。
+输出为198个年份×分类格及确定性排序队列。只读本地数据，输出必须是新文件；完整词条及来源由查询工具或JSON分片读取。
