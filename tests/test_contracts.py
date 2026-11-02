@@ -197,7 +197,9 @@ class EvidenceContractTests(unittest.TestCase):
         second = source()
         second["id"] = "other-source"
         second["url"] = "https://example.org/other-material"
+        second["supports"] = "Independent synthetic origin context"
         row["evidence"][-1]["source_id"] = "other-source"
+        row["evidence"][-1]["note"] = "独立来源说明合成样本的来源背景"
         self.assertEqual(
             validate_records([row], {"test-source": source(),
                                      "other-source": second}, metadata()), [])
