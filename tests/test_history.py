@@ -339,6 +339,9 @@ class QueueFrontEvidenceTests(unittest.TestCase):
         creator = self.sources['recent-src-green-cat-original-post']
         self.assertIn('2026年3月8日', creator['supports'])
         self.assertIn('@蹦跶的阿夏', creator['supports'])
+        original_post = next(ref for ref in entry['evidence']
+                             if ref['source_id'] == 'recent-src-green-cat-original-post')
+        self.assertNotIn('platform_usage', original_post['claims'])
 
 
 class RealPersonQueueEvidenceTests(unittest.TestCase):
@@ -417,6 +420,8 @@ class CirnoNineQueueEvidenceTests(unittest.TestCase):
         self.assertIn('2010年9月6日', self.sources['early-src-cirno-bili-2010']['supports'])
         self.assertIsNone(entry['origin']['date'])
         self.assertIn('不证明中文首创者', entry['notes'])
+        self.assertNotIn('platform_usage',
+                         refs['early-src-cirno-forum-2009']['claims'])
 
 
 class CoachBasketballQueueEvidenceTests(unittest.TestCase):
@@ -474,6 +479,8 @@ class FffGroupQueueEvidenceTests(unittest.TestCase):
         self.assertIn('仍未通过原作正文', entry['notes'])
         self.assertIn('标签', self.sources['early-src-fff-bili-2010']['supports'])
         self.assertNotIn('简介', self.sources['early-src-fff-bili-2010']['supports'])
+        self.assertNotIn('platform_usage',
+                         refs['early-src-fff-blog-2010']['claims'])
 
 
 class GermanOrthopedicsQueueEvidenceTests(unittest.TestCase):
