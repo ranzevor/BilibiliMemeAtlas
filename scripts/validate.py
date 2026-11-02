@@ -593,11 +593,16 @@ def validate_records(entries, sources, metadata, *, allowed_eras=None,
         if e["evidence_status"] != "verified" and isinstance(e["notes"], str) and not e["notes"].strip():
             errors.append(f"{p}: 未全核词条必须注明具体缺口")
         full_claims = set()
+        seen_evidence_sources = set()
         for ref in evidence:
             if not object_keys(ref, {"source_id", "claims", "note"}, p + ".evidence", errors):
                 continue
             string(ref["note"], p + ".evidence.note", errors)
             sid = ref["source_id"]
+            if isinstance(sid, str):
+                if sid in seen_evidence_sources:
+                    errors.append(f"{p}: 重复来源引用 {sid}")
+                seen_evidence_sources.add(sid)
             if not isinstance(sid, str) or sid not in sources:
                 errors.append(f"{p}: 悬空来源引用")
                 continue

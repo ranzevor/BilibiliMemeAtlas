@@ -32,7 +32,7 @@ class HistoryTests(unittest.TestCase):
              if line.startswith('| ') and ' | `' in line]
         self.assertEqual(ids,[item['entry_id'] for item in queue])
         self.assertEqual(len(ids),len(set(ids)))
-        self.assertTrue(any(item['status']=='candidate' for item in queue))
+        self.assertIn('recent-real-person', {item['entry_id'] for item in queue})
         self.assertIn('2026年已收录的传播事件',markdown_index())
 
     def test_2026_navigation_covers_existing_autumn_batch(self):
@@ -307,3 +307,200 @@ class MidEraEvidenceTests(unittest.TestCase):
                 self.assertEqual(entry['evidence_status'], 'verified')
                 self.assertIsNone(entry['origin']['date'])
                 self.assertIn(identifier, queued)
+
+
+class QueueFrontEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_real_person_usage_is_tied_to_the_actual_program(self):
+        entry = self.by_id['recent-real-person']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('《马上有奇迹》', entry['origin']['summary'])
+        self.assertIn('首创来源', entry['notes'])
+        self.assertEqual(self.sources['recent-src-gala26-program']['access_level'], 'full')
+
+    def test_world_tour_meaning_is_limited_to_creator_described_ai_video(self):
+        entry = self.by_id['recent-26-world-tour']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('音乐是否由AI生成须按具体作品判断', entry['meaning'])
+        self.assertEqual(self.sources['recent-src-26-tour-michael']['access_level'], 'full')
+        self.assertIn('尚未确定最早创作者', entry['notes'])
+
+    def test_green_cat_records_a_locatable_creator_post_without_claiming_first_origin(self):
+        entry = self.by_id['recent-green-alien-cat']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('2026年3月8日', entry['origin']['summary'])
+        self.assertEqual(self.sources['recent-src-green-cat-original-post']['access_level'], 'full')
+        self.assertIn('尚未确认绿色外星猫形象本身的创作者', entry['notes'])
+        creator = self.sources['recent-src-green-cat-original-post']
+        self.assertIn('2026年3月8日', creator['supports'])
+        self.assertIn('@蹦跶的阿夏', creator['supports'])
+
+
+class RealPersonQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_real_person_has_full_contextual_meaning_source(self):
+        entry = self.by_id['recent-real-person']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('确认自己被看见', entry['meaning'])
+        self.assertIn('寻求即时回应', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['recent-src-real-person-context']['claims'])
+        self.assertEqual(self.sources['recent-src-real-person-context']['access_level'], 'full')
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('首创来源', entry['notes'])
+        context = self.sources['recent-src-real-person-context']
+        self.assertIn('妈妈我上电视了', context['supports'])
+        self.assertNotIn('看得见我吗', context['supports'])
+
+
+class AkarinQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_akarin_has_full_origin_and_meaning_sources(self):
+        entry = self.by_id['early-akarin']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('赤座灯里', entry['meaning'])
+        self.assertIn('存在感低', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-akarin-bili-guide']['claims'])
+        self.assertIn('meaning', refs['early-src-akarin-360-2015']['claims'])
+        self.assertEqual(self.sources['early-src-akarin-bili-guide']['access_level'], 'full')
+
+    def test_akarin_has_a_dated_early_bilibili_example_without_claiming_first_use(self):
+        entry = self.by_id['early-akarin']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-akarin-bili-2011']['claims'])
+        self.assertEqual(self.sources['early-src-akarin-bili-2011']['access_level'], 'metadata')
+        self.assertEqual(self.sources['early-src-akarin-bili-2011']['url'], 'https://www.bilibili.com/video/BV1Rx411c7GK/')
+        self.assertIn('2011年8月13日', self.sources['early-src-akarin-bili-2011']['supports'])
+        self.assertIn('2011年8月13日', entry['notes'])
+        self.assertIn('不是B站首发', entry['notes'])
+        self.assertIsNone(entry['origin']['date'])
+
+
+class CirnoNineQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_cirno_nine_is_grounded_in_the_original_manual(self):
+        entry = self.by_id['early-cirno-nine']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('琪露诺', entry['meaning'])
+        self.assertIn('第9项写作“バカ”', entry['origin']['summary'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-cirno-manual']['claims'])
+        self.assertEqual(self.sources['early-src-cirno-manual']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-cirno-touhou-media']['access_level'], 'full')
+
+    def test_cirno_nine_has_a_dated_early_bilibili_usage_record(self):
+        entry = self.by_id['early-cirno-nine']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-cirno-bili-2010']['claims'])
+        self.assertEqual(self.sources['early-src-cirno-bili-2010']['access_level'], 'metadata')
+        self.assertIn('2010年9月6日', self.sources['early-src-cirno-bili-2010']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('不证明中文首创者', entry['notes'])
+
+
+class CoachBasketballQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_coach_phrase_has_full_original_scene_and_template_sources(self):
+        entry = self.by_id['early-coach-learn']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('バスケがしたいです', entry['origin']['summary'])
+        self.assertIn('教练，我想XXX', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-coach-hujiang-2013']['claims'])
+        self.assertIn('meaning', refs['early-src-coach-sina-2022']['claims'])
+        self.assertEqual(self.sources['early-src-coach-hujiang-2013']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-coach-sina-2022']['access_level'], 'full')
+
+    def test_coach_phrase_has_a_dated_early_bilibili_usage_record(self):
+        entry = self.by_id['early-coach-learn']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-coach-bili-2014']['claims'])
+        self.assertEqual(self.sources['early-src-coach-bili-2014']['access_level'], 'full')
+        self.assertIn('2014年1月2日', self.sources['early-src-coach-bili-2014']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('尚未定位中文首创者', entry['notes'])
+
+
+class FffGroupQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_fff_group_is_distinguished_from_anime_adaptation(self):
+        entry = self.by_id['early-fff']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('异端审问会·FFF团', entry['meaning'])
+        self.assertIn('动画改编中的火刑', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['early-src-fff-kadokawa-spinout']['claims'])
+        self.assertEqual(self.sources['early-src-fff-kadokawa-spinout']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-fff-novel4']['access_level'], 'full')
+
+    def test_fff_group_has_a_dated_early_bilibili_record(self):
+        entry = self.by_id['early-fff']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-fff-bili-2010']['claims'])
+        self.assertEqual(self.sources['early-src-fff-bili-2010']['access_level'], 'metadata')
+        self.assertIn('2010年1月24日', self.sources['early-src-fff-bili-2010']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('仍未通过原作正文', entry['notes'])
+        self.assertIn('标签', self.sources['early-src-fff-bili-2010']['supports'])
+        self.assertNotIn('简介', self.sources['early-src-fff-bili-2010']['supports'])
+
+
+class GermanOrthopedicsQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_german_orthopedics_distinguishes_blood_relation_and_pseudo_siblings(self):
+        entry = self.by_id['early-german-orthopedics']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('有血缘关系', entry['meaning'])
+        self.assertIn('伪骨科', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-german-wiktionary']['claims'])
+        self.assertIn('meaning', refs['early-src-german-bili-2018']['claims'])
+        self.assertEqual(self.sources['early-src-german-bili-2018']['access_level'], 'full')
+        self.assertIn('不能确认事件真实性', entry['origin']['summary'])
+
+    def test_german_orthopedics_has_a_dated_bilibili_usage_record(self):
+        entry = self.by_id['early-german-orthopedics']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-german-bili-2015']['claims'])
+        self.assertEqual(self.sources['early-src-german-bili-2015']['access_level'], 'metadata')
+        self.assertIn('2015年10月10日', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('原始微博帖', entry['notes'])
+        self.assertIn('标签', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertNotIn('简介', self.sources['early-src-german-bili-2015']['supports'])
