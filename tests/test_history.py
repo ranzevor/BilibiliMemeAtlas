@@ -360,3 +360,11 @@ class QueueIndividualEvidenceTests(unittest.TestCase):
         self.assertIn('platform_usage', refs['recent-src-gold-bili']['claims'])
         self.assertIn('2024年12月16日', self.sources['recent-src-gold-bili']['supports'])
 
+    def test_hmm_sound_and_visual_provenance_are_distinct(self):
+        entry = self.by_id['extra-hmm-scream']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['extra-src-bili-three-hum']['claims'])
+        self.assertEqual(self.sources['extra-src-bili-three-hum']['access_level'], 'full')
+        self.assertIn('音轨', self.sources['extra-src-bili-three-hum']['supports'])
+        self.assertIn('黑雷霆', self.sources['extra-src-bili-three-hum']['supports'])
+
