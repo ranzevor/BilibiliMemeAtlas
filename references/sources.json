@@ -3683,5 +3683,27 @@
     "checked_at": "2026-10-31",
     "supports": "官方释义说明“XX的含金量还在上升”用于形容某人或物的价值随时间逐渐显现和提升，并以中国游为例。",
     "limitations": "支持通用语义及2024年度榜单背景，不提供该表达的首创者或最早使用日期。"
+  },
+  {
+    "id": "recent-src-gala26-program",
+    "title": "B站：春晚直播总弹幕数量1.33亿，弹幕Top5是“啊？/新年快乐/我要验牌”",
+    "url": "https://news.zhibo8.com/game/2026-02-17/699447b6c644dnative.htm",
+    "publisher": "直播吧",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2026年2月16日春晚直播弹幕Top5中包含“我是真人”，并将其对应到开场表演《马上有奇迹》。",
+    "limitations": "报道记录单场弹幕统计及节目对应关系，不解释该句的固定语义、节目内具体指涉或更早起源。"
+  },
+  {
+    "id": "recent-src-real-person-context",
+    "title": "要不是有弹幕，我还以为春晚闹智械危机了",
+    "url": "https://www.taptap.cn/moment/774566313145143143",
+    "publisher": "BB姬（TapTap）",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2026年2月18日同期文章指出，B站春晚开放实时弹幕后，观众发送“我是真人”“妈妈我上电视了”等内容；文章将其解释为观众表达参与直播、寻找连接和共同在场的愿望，并称“我是真人”成为高密度弹幕。",
+    "limitations": "属于同期社区观察与作者解释，支持该场景中的用法和语义，不证明短语首创者、最早出现日期或春晚前的传播链。"
   }
 ]
