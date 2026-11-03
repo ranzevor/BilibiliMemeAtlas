@@ -3815,5 +3815,38 @@
     "checked_at": "2026-10-31",
     "supports": "2022年6月16日文章明确解释⑨称呼源于《东方花映塚》说明图：图中琪露诺对应第9项，注释为“9.バカ”，此后形成琪露诺＝笨蛋＝⑨的昵称关系。",
     "limitations": "回顾性专题文章，用于解释官方原始材料及称呼形成，不证明中文首创者或最早传播日期。"
+  },
+  {
+    "id": "early-src-coach-bili-2014",
+    "title": "安西教练，我想打篮球",
+    "url": "https://www.bilibili.com/video/BV1ds411o7kJ/",
+    "publisher": "哔哩哔哩投稿者 菠萝彬Sa",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "B站投稿页面显示2014年1月2日18:53:44发布，标题为“安西教练，我想打篮球”；简介称投稿者剪辑了自己喜欢的该段动画场景。",
+    "limitations": "页面正文支持该投稿的标题、日期和剪辑说明，是可定位的早期站内使用实例，不代表B站首发或中文首创。"
+  },
+  {
+    "id": "early-src-coach-hujiang-2013",
+    "title": "像火一样的男人——三井寿生日特辑",
+    "url": "https://m.hujiang.com/jp/p105779/",
+    "publisher": "沪江日语",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2013年5月22日文章记录三井寿在安西教练面前跪下，说出日语原句“バスケがしたいです”及中文“教练我想打篮球”，并说明该场景与《直到世界的尽头》背景音乐的关联。",
+    "limitations": "回顾性角色专题文章，支持原作场景、人物和译句，不证明该中文句式的首创者或网络传播起点。"
+  },
+  {
+    "id": "early-src-coach-sina-2022",
+    "title": "老梗科普之“教练，我想打篮球”，经典画面永不过时",
+    "url": "https://k.sina.cn/article_7561381096_1c2b184e800100zewy.html",
+    "publisher": "新浪网专栏作者 篮球湖白说",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2022年5月11日文章说明该梗出自《灌篮高手》第27集三井寿向安西教练表达想打篮球的场景，并记录“教练，我想XXX”用于表达愿望或诉求的扩展句式，通常配合原场景图片使用。",
+    "limitations": "作者对常见用法的回顾性解释，支持其文章所述语义和传播场景，不证明该模板的首创者或最早形成日期。"
   }
 ]
