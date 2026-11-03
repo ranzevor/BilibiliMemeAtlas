@@ -307,6 +307,42 @@ class MidEraEvidenceTests(unittest.TestCase):
                 self.assertEqual(entry['evidence_status'], 'verified')
                 self.assertIsNone(entry['origin']['date'])
                 self.assertIn(identifier, queued)
+class QueueFrontEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_real_person_usage_is_tied_to_the_actual_program(self):
+        entry = self.by_id['recent-real-person']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('《马上有奇迹》', entry['origin']['summary'])
+        self.assertIn('首创来源', entry['notes'])
+        self.assertEqual(self.sources['recent-src-gala26-program']['access_level'], 'full')
+
+class RealPersonQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_real_person_has_full_contextual_meaning_source(self):
+        entry = self.by_id['recent-real-person']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('确认自己被看见', entry['meaning'])
+        self.assertIn('寻求即时回应', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['recent-src-real-person-context']['claims'])
+        self.assertEqual(self.sources['recent-src-real-person-context']['access_level'], 'full')
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('首创来源', entry['notes'])
+        context = self.sources['recent-src-real-person-context']
+        self.assertIn('妈妈我上电视了', context['supports'])
+        self.assertNotIn('看得见我吗', context['supports'])
+
+
 
 
 class QueueIndividualEvidenceTests(unittest.TestCase):
