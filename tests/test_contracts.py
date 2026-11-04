@@ -185,6 +185,25 @@ class EvidenceContractTests(unittest.TestCase):
         self.assertTrue(any("时期起年晚于" in error
                             for error in errors))
 
+    def test_duplicate_source_reference_is_rejected_without_banning_independent_sources(self):
+        row = record()
+        row["evidence"].append({
+            "source_id": "test-source",
+            "claims": ["origin"],
+            "note": "同一来源的第二份引用",
+        })
+        self.assertTrue(any("重复来源引用" in error
+                            for error in self.validate(row)))
+        second = source()
+        second["id"] = "other-source"
+        second["url"] = "https://example.org/other-material"
+        second["supports"] = "Independent synthetic origin context"
+        row["evidence"][-1]["source_id"] = "other-source"
+        row["evidence"][-1]["note"] = "独立来源说明合成样本的来源背景"
+        self.assertEqual(
+            validate_records([row], {"test-source": source(),
+                                     "other-source": second}, metadata()), [])
+
     def test_missing_evidence_target_is_rejected(self):
         row = record()
         row["evidence"][0]["source_id"] = "missing-source"
