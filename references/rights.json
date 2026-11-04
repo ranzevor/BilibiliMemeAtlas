@@ -2516,6 +2516,20 @@
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-german-bili-2015",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-german-bili-2018",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
     }
   ]
 }
