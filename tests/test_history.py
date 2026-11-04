@@ -32,7 +32,7 @@ class HistoryTests(unittest.TestCase):
              if line.startswith('| ') and ' | `' in line]
         self.assertEqual(ids,[item['entry_id'] for item in queue])
         self.assertEqual(len(ids),len(set(ids)))
-        self.assertTrue(any(item['status']=='candidate' for item in queue))
+        self.assertIn('recent-real-person', {item['entry_id'] for item in queue})
         self.assertIn('2026年已收录的传播事件',markdown_index())
 
     def test_2026_navigation_covers_existing_autumn_batch(self):
@@ -327,6 +327,20 @@ class QueueFrontEvidenceTests(unittest.TestCase):
         self.assertIn('音乐是否由AI生成须按具体作品判断', entry['meaning'])
         self.assertEqual(self.sources['recent-src-26-tour-michael']['access_level'], 'full')
         self.assertIn('尚未确定最早创作者', entry['notes'])
+
+    def test_green_cat_records_a_locatable_creator_post_without_claiming_first_origin(self):
+        entry = self.by_id['recent-green-alien-cat']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('2026年3月8日', entry['origin']['summary'])
+        self.assertEqual(self.sources['recent-src-green-cat-original-post']['access_level'], 'full')
+        self.assertIn('尚未确认绿色外星猫形象本身的创作者', entry['notes'])
+        creator = self.sources['recent-src-green-cat-original-post']
+        self.assertIn('2026年3月8日', creator['supports'])
+        self.assertIn('@蹦跶的阿夏', creator['supports'])
+        original_post = next(ref for ref in entry['evidence']
+                             if ref['source_id'] == 'recent-src-green-cat-original-post')
+        self.assertNotIn('platform_usage', original_post['claims'])
+
 
 class RealPersonQueueEvidenceTests(unittest.TestCase):
     @classmethod
