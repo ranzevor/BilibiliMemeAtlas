@@ -321,6 +321,13 @@ class QueueFrontEvidenceTests(unittest.TestCase):
         self.assertIn('首创来源', entry['notes'])
         self.assertEqual(self.sources['recent-src-gala26-program']['access_level'], 'full')
 
+    def test_world_tour_meaning_is_limited_to_creator_described_ai_video(self):
+        entry = self.by_id['recent-26-world-tour']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('音乐是否由AI生成须按具体作品判断', entry['meaning'])
+        self.assertEqual(self.sources['recent-src-26-tour-michael']['access_level'], 'full')
+        self.assertIn('尚未确定最早创作者', entry['notes'])
+
 class RealPersonQueueEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

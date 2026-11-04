@@ -2887,10 +2887,10 @@
     "url": "https://www.bilibili.com/video/BV1ztho6uE2G/",
     "publisher": "哔哩哔哩投稿者",
     "source_type": "primary",
-    "access_level": "metadata",
+    "access_level": "full",
     "checked_at": "2026-10-29",
-    "supports": "2026年9月下旬另一人物世界巡演类AI二创的公开投稿元数据。",
-    "limitations": "仅核验视频索引，不主张音频也由AI生成。"
+    "supports": "2026年9月26日投稿“迈克尔·许家印世界巡演”；作者说明“非AI音乐，只是AI视频”，并指出画面参考《Jam》现场与《Billie Jean》现场。",
+    "limitations": "仅核验作者公开投稿说明，不替代完整视频逐帧核查；不证明该作品为模板首创，也不将该作品的非AI音乐结论推广到其他世界巡演视频。"
   },
   {
     "id": "recent-src-26-zhuan-rap-bili",
@@ -3716,5 +3716,16 @@
     "checked_at": "2026-10-31",
     "supports": "文章说明目力先辈画面后来被添加该叫声音轨，并明确声音不出自野兽先辈原片；文章将音轨来源关联到黑雷霆素材。",
     "limitations": "社区考据而非原始音轨或首发记录；不复述或链接成人原始素材，不据此确认最早合成作品及音轨首发日期。"
+  },
+  {
+    "id": "recent-src-26-tour-huangrenxun",
+    "title": "⚡️黄仁勋 世界巡演⚡️〖AI MV大赛〗",
+    "url": "https://www.bilibili.com/video/BV1VRHr6AEZ6/",
+    "publisher": "哔哩哔哩投稿者 王与也行",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-10-31",
+    "supports": "2026年10月4日发布黄仁勋世界巡演AI视频，显示模板已有不同人物变体。",
+    "limitations": "仅核验投稿页面标题、日期及公开简介，不据此确认最早模板作者或完整视频制作过程。"
   }
 ]
