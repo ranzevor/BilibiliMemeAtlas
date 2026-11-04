@@ -173,6 +173,31 @@ class HistoricalEvidenceTests(unittest.TestCase):
                 self.assertNotIn('摘要', ref['note'])
 
 
+    def test_hiyori_dub_distinguishes_fan_localization_from_original_dialogue(self):
+        entry = self.by_id['early-hiyori-dub']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('本土化版本', entry['meaning'])
+        self.assertIn('并非按日文原文逐句翻译', entry['origin']['summary'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-hiyori-interview']['claims'])
+        self.assertEqual(self.sources['early-src-hiyori-nanfang-2010']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-hiyori-beijing-2010']['access_level'], 'full')
+
+    def test_hiyori_dub_has_a_dated_bilibili_collection_record(self):
+        entry = self.by_id['early-hiyori-dub']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-hiyori-bili']['claims'])
+        self.assertEqual(self.sources['early-src-hiyori-bili']['access_level'], 'metadata')
+        self.assertIn('2014-04-18', self.sources['early-src-hiyori-bili']['supports'])
+        self.assertIn('不能据此确认B站最早上传', entry['notes'])
+        for source_id in (
+            'early-src-hiyori-interview',
+            'early-src-hiyori-nanfang-2010',
+            'early-src-hiyori-beijing-2010',
+        ):
+            self.assertNotIn('platform_usage', refs[source_id]['claims'])
+        self.assertEqual(refs['early-src-hiyori-bili']['claims'], ['platform_usage', 'date'])
+
 class MidEraEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
