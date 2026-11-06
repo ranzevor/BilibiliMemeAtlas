@@ -311,6 +311,24 @@ function eventGitErrors(event){
   return prErrors(pr,commits,files);
 }
 
+function prStateErrors(expected,current){
+  const fields=[
+    ['标题',pr=>pr?.title],
+    ['正文',pr=>pr?.body??''],
+    ['HEAD',pr=>pr?.head?.sha],
+    ['源分支',pr=>pr?.head?.ref],
+    ['来源仓库',pr=>pr?.head?.repo?.full_name],
+    ['BASE',pr=>pr?.base?.sha],
+    ['目标分支',pr=>pr?.base?.ref],
+    ['目标仓库',pr=>pr?.base?.repo?.full_name]
+  ];
+  return fields.flatMap(([label,read])=>{
+    const before=read(expected),after=read(current);
+    if(typeof before!=='string'||typeof after!=='string') return ['PR '+label+'缺少可核验状态'];
+    return before===after?[]:['PR '+label+' 已变化，拒绝使用过时数据'];
+  });
+}
+
 function preparedHookMessage(message) {
   const exec=require('node:child_process').spawnSync;
   const options={encoding:'utf8',windowsHide:true,maxBuffer:16*1024*1024};
@@ -351,7 +369,7 @@ async function main(){
   }else if(mode==='event-git'){
     const event=JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH,'utf8'));
     errors=eventGitErrors(event);
-  }else if(mode==='pr'){
+  }else if(mode==='pr'||mode==='event-current'){
     const event=JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH,'utf8'));
     if(!event.pull_request||!event.repository) throw new Error('事件缺少 PR 身份');
     const token=process.env.GITHUB_TOKEN;
@@ -362,12 +380,18 @@ async function main(){
     if(!Number.isSafeInteger(n)||n<=0) throw new Error('PR 编号无效');
     const prefix='/repos/'+repo+'/pulls/'+n;
     const live=await ghGet(prefix,token);
-    if(live.head.sha!==event.pull_request.head.sha) throw new Error('PR HEAD 已变化，拒绝使用过时数据');
-    if(event.pull_request.base && live.base && live.base.ref!==event.pull_request.base.ref) throw new Error('PR 目标分支在事件后改变');
-    const [commits,files]=await Promise.all([ghList(prefix+'/commits',token),ghList(prefix+'/files',token)]);
-    const latest=await ghGet(prefix,token);
-    if(latest.head.sha!==live.head.sha || (latest.base&&live.base&&latest.base.ref!==live.base.ref)) throw new Error('PR HEAD 或目标基线在校验期间改变');
-    errors=prErrors(live,commits,files);
+    errors=prStateErrors(event.pull_request,live);
+    if(errors.length) throw new Error(errors.join('；'));
+    if(mode==='event-current'){
+      if(!/^[0-9a-f]{40}$/u.test(process.env.GITHUB_SHA??'')||live.merge_commit_sha!==process.env.GITHUB_SHA)
+        errors.push('当前 PR 合并候选与本次运行不一致');
+    }else{
+      const [commits,files]=await Promise.all([ghList(prefix+'/commits',token),ghList(prefix+'/files',token)]);
+      const latest=await ghGet(prefix,token);
+      errors=prStateErrors(live,latest);
+      if(latest.merge_commit_sha!==live.merge_commit_sha) errors.push('PR 合并候选在校验期间改变');
+      errors.push(...prErrors(live,commits,files));
+    }
   }else throw new Error('不支持的检查模式');
   for(const problem of errors) console.error('FAIL: '+problem);
   if(errors.length) process.exitCode=1;

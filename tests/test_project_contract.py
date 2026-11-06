@@ -345,6 +345,9 @@ class ProjectContractTests(unittest.TestCase):
                     self.assertIn('os: ["ubuntu-24.04", "windows-2022"]', text)
                     self.assertIn('PYTHONUTF8: "1"', text)
                     self.assertIn('node .github/scripts/governance_gate.cjs event-git', text)
+                    self.assertIn('node .github/scripts/governance_gate.cjs event-current', text)
+                    self.assertIn('  pull-requests: read', text)
+                    self.assertIn('  cancel-in-progress: true', text)
                     self.assertIn('fetch-depth: 0', text)
                     self.assertEqual(text.count('name: Test governance policy regressions'), 1)
                 else:
