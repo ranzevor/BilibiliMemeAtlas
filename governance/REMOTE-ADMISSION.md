@@ -8,7 +8,7 @@
 
     npm install --prefix .github --no-save --no-package-lock --ignore-scripts --no-audit --no-fund markdown-it@15.0.3
 
-App 仅安装到 ranzevor/BilibiliMemeAtlas，仓库权限为 Checks 读写、Contents 读写和 Pull requests 只读。App 不授予 Administration 权限。私钥存放在运行目录之外的受限文件中，不能进入仓库、PR 作业、缓存或制品。
+生产部署绑定 ranzevor/BilibiliMemeAtlas，独立验收部署绑定专用验收仓库；仓库权限为 Checks 读写、Contents 读写和 Pull requests 只读。App 不授予 Administration 权限。私钥存放在运行目录之外的受限文件中，不能进入仓库、PR 作业、缓存或制品。
 
 运行进程读取以下环境变量：
 
@@ -19,7 +19,7 @@ App 仅安装到 ranzevor/BilibiliMemeAtlas，仓库权限为 Checks 读写、Co
 | GOVERNANCE_PRIVATE_KEY_FILE | RSA 私钥文件的绝对路径 |
 | GOVERNANCE_RULES_FILE | 管理员读取并保存的当前完整规则版本文件 |
 
-安装令牌限定到本仓库并自动更新。程序核对仓库和 App 的不可变身份；检查写入的来源必须是配置的 App。
+安装令牌按部署绑定的单个仓库 ID 签发并自动更新。程序核对仓库和 App 的不可变身份；检查写入的来源必须是配置的 App。
 
 ## 持续校验
 
