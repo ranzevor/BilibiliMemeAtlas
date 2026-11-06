@@ -109,7 +109,8 @@ test('本地提交钩子执行 Git 私有目录中的可信校验器',()=>{
 
 const installer=path.join(__dirname,'..','scripts','install-governance-hook.sh');
 const shell=process.platform==='win32'
-  ?path.join(process.env.ProgramFiles||'C:\\Program Files','Git','bin','bash.exe'):'sh';
+  ?path.resolve(cp.execFileSync('git',['--exec-path'],{encoding:'utf8',timeout:10000}).trim(),
+    '..','..','..','bin','bash.exe'):'sh';
 function hookFixture(tmp){
   git(tmp,['init','-b','main']);
   git(tmp,['config','user.name','Synthetic Maintainer']);
