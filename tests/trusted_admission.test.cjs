@@ -56,7 +56,10 @@ function fixture(pulls=[pull()]) {
       if(method==='PATCH'&&url.startsWith(prefix+'/check-runs/')) return {id:10,...copy(data)};
       if(method==='GET'&&url.startsWith(prefix+'/rules/branches/')) return state.rulesets.map((s,i)=>({type:s.rules[0].type,ruleset_id:i+1}));
       const rule=/\/rulesets\/(\d+)$/u.exec(url);
-      if(method==='GET'&&rule) return copy(state.rulesets[Number(rule[1])-1]);
+      if(method==='GET'&&rule) {
+        const full=copy(state.rulesets[Number(rule[1])-1]);
+        return state.ruleView?state.ruleView(full):full;
+      }
       if(method==='PUT'&&url.endsWith('/merge')) {
         if(!state.nativeChecks) throw new Error('GitHub API 返回 405');
         const n=Number(/\/pulls\/(\d+)\/merge$/u.exec(url)[1]);
@@ -181,6 +184,60 @@ test('独立保护目标与三项实际工作流的目标范围一致',()=>{
     assert.deepEqual(branches.map(branch=>'refs/heads/'+branch),gate.TARGETS,name);
   }
 });
+function croppedRuleFixture() {
+  const f=fixture();
+  f.state.rulesets=f.state.rulesets.map((rule,index)=>({...rule,id:index+1,
+    source:gate.REPOSITORY,source_type:'Repository',updated_at:'2026-11-06T16:00:00.123+08:00'}));
+  delete f.state.rulesets[1].rules[0].parameters;
+  f.client.ruleVersions=new Map(f.state.rulesets.map(rule=>[rule.id,structuredClone(rule)]));
+  f.state.ruleView=rule=>{
+    delete rule.bypass_actors;
+    rule.updated_at='2026-11-06T08:00:00.123Z';
+    rule.current_user_can_bypass=rule.rules.some(r=>r.type==='update')?'always':'never';
+    return rule;
+  };
+  return f;
+}
+test('权限裁剪视图须与管理员版本及实际旁路状态一致，时区格式可不同',async()=>{
+  const {client,state}=croppedRuleFixture();
+  const legacy=structuredClone(state.rulesets[0]);
+  legacy.id=3;
+  legacy.conditions.ref_name.include=['refs/heads/main'];
+  legacy.rules.find(rule=>rule.type==='required_status_checks').parameters.required_status_checks.pop();
+  state.rulesets.push(legacy);
+  assert.deepEqual(await gate.merge(client,36),{sha:MERGED,merged:true});
+  assert(gate.validUpdateGate({...gate.rulesetPlan(APP)[1],rules:[{type:'update'}]},APP));
+  assert(!gate.validUpdateGate({...gate.rulesetPlan(APP)[1],
+    rules:[{type:'update',parameters:{update_allows_fetch_and_merge:true}}]},APP));
+});
+test('管理员记录缺失、版本变化、公开规则变化或旁路状态异常均停止合并',async()=>{
+  for(const mutate of [
+    f=>{f.client.ruleVersions=undefined;},
+    f=>{f.client.ruleVersions.get(1).updated_at='2026-11-06T08:00:01.123Z';},
+    f=>{f.client.ruleVersions.get(1).conditions.ref_name.exclude=['refs/heads/main'];},
+    f=>{const view=f.state.ruleView;f.state.ruleView=rule=>({...view(rule),current_user_can_bypass:'always'});},
+    f=>{const view=f.state.ruleView;f.state.ruleView=rule=>({...view(rule),bypass_actors:null});}
+  ]) {
+    const f=croppedRuleFixture();mutate(f);
+    await assert.rejects(gate.merge(f.client,36),/目标分支缺少/u);
+    assert.equal(writes(f.state).length,0);
+  }
+});
+test('管理员读取入口只接受完整且与目标范围一致的两项规则',async()=>{
+  const full=gate.rulesetPlan(APP).map((rule,index)=>({...rule,id:index+1,
+    source:gate.REPOSITORY,source_type:'Repository',updated_at:'2026-11-06T08:00:00.123Z'}));
+  const client={
+    async list(){return structuredClone(full);},
+    async request(method,endpoint) {
+      assert.equal(method,'GET');
+      if(endpoint.endsWith('/'+gate.REPOSITORY)) return {id:gate.REPOSITORY_ID,full_name:gate.REPOSITORY};
+      return structuredClone(full[Number(endpoint.split('/').at(-1))-1]);
+    }
+  };
+  assert.equal((await gate.auditRules(client,APP)).rulesets.length,2);
+  delete full[0].bypass_actors;
+  await assert.rejects(gate.auditRules(client,APP),/管理员规则视图/u);
+});
 test('质量规则可绕过、检查来源错误和人工更新入口均阻止受控合并',async()=>{
   for(const mutate of [
     s=>{delete s.rulesets[0].bypass_actors;},
@@ -291,6 +348,12 @@ test('独立 App 的 RSA 身份和安装令牌限定到本仓库与最小权限'
     assert.deepEqual(tokenRequest.repository_ids,[gate.REPOSITORY_ID]);
     assert.deepEqual(tokenRequest.permissions,{contents:'write',checks:'write',pull_requests:'read'});
     assert(!('administration' in tokenRequest.permissions));
+    const wrongRecord=path.join(temporary,'wrong-rules.json');
+    fs.writeFileSync(wrongRecord,JSON.stringify({repository:'example/other',repository_id:1,app_id:APP,rulesets:[]}));
+    await assert.rejects(gate.installationClient({
+      GOVERNANCE_APP_ID:String(APP),GOVERNANCE_INSTALLATION_ID:'1',GOVERNANCE_PRIVATE_KEY_FILE:file,
+      GOVERNANCE_RULES_FILE:wrongRecord
+    },fetchImpl),/管理员规则版本记录/u);
   } finally {
     assert(path.resolve(temporary).startsWith(path.resolve(os.tmpdir())+path.sep+'bma-app-auth-'));
     fs.rmSync(temporary,{recursive:true,force:true});

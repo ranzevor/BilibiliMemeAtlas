@@ -17,6 +17,7 @@ App 仅安装到 ranzevor/BilibiliMemeAtlas，仓库权限为 Checks 读写、Co
 | GOVERNANCE_APP_ID | 独立 App 的应用 ID |
 | GOVERNANCE_INSTALLATION_ID | 该 App 在仓库所有者账号下的安装 ID |
 | GOVERNANCE_PRIVATE_KEY_FILE | RSA 私钥文件的绝对路径 |
+| GOVERNANCE_RULES_FILE | 管理员读取并保存的当前完整规则版本文件 |
 
 安装令牌限定到本仓库并自动更新。程序核对仓库和 App 的不可变身份；检查写入的来源必须是配置的 App。
 
@@ -63,6 +64,12 @@ Trusted metadata gate 绑定当前 HEAD。同一 HEAD 对应多个受支持的�
 个人账号仓库不能直接使用仅面向 Enterprise 组织的提交元数据限制与必需工作流规则。这里通过独立 App 的固定实现和分支更新限制约束最终消息。适用条件见 GitHub [可用规则](https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets#metadata-restrictions)；检查来源和分支保护见 [Rulesets 规则](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets)及 [Rules REST API](https://docs.github.com/en/rest/repos/rules)。
 
 ## 经批准的合并
+
+GitHub 仅向具有规则写入权限的主体返回旁路名单，普通 App 的响应会省略该字段。启用或修改规则后，由仓库管理员在独立运行目录读取完整版本：
+
+    node .github/scripts/trusted_admission.cjs audit-rules APP_ID RULES_FILE
+
+该命令从 GOVERNANCE_RULES_AUDIT_TOKEN 读取管理员令牌，只执行读取请求。文件绑定仓库、App、规则内容、旁路名单和 GitHub 更新时间，存放在贡献分支之外的受限目录。合并进程通过 GOVERNANCE_RULES_FILE 读取此文件，并与 GitHub 当前规则内容、更新时间和 App 实际旁路状态逐项比对。文件缺失、规则变化或读回字段异常时拒绝合并，重新核对后才能更新版本文件；App 本身不取得 Administration 权限。字段可见范围见 [Get a repository ruleset](https://docs.github.com/en/rest/repos/rules#get-a-repository-ruleset)。
 
 watch 与 check 只写入检查结果。负责人批准具体 PR 后，在独立运行目录执行：
 
