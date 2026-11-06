@@ -3,6 +3,7 @@ const test=require('node:test');
 const assert=require('node:assert/strict');
 const crypto=require('node:crypto');
 const fs=require('node:fs');
+const http=require('node:http');
 const os=require('node:os');
 const path=require('node:path');
 const gate=require('../.github/scripts/trusted_admission.cjs');
@@ -27,10 +28,11 @@ function pull(number=36) {
 }
 function fixture(pulls=[pull()]) {
   const state={
-    pulls,requests:[],getCount:0,checkId:10,
+    pulls,requests:[],getCount:0,checkId:10,checkRuns:[],listCount:0,
     files:[{filename:'.github/scripts/governance_gate.cjs'}],
     commits:[{sha:HEAD,commit:{message:'fix(governance): 修正真实合并消息的校验入口\n\n根据真实提交记录检查最终合并消息，并保留原有质量检查与分支保护约束。'}}],
-    rulesets:gate.rulesetPlan(APP),nativeChecks:true
+    rulesets:gate.rulesetPlan(APP).map((rule,index)=>({...rule,id:index+1,
+      source:gate.REPOSITORY,source_type:'Repository'})),nativeChecks:true
   };
   const copy=x=>structuredClone(x);
   const prefix='/repos/'+gate.REPOSITORY;
@@ -38,8 +40,17 @@ function fixture(pulls=[pull()]) {
     appId:APP,
     async list(url) {
       state.requests.push(['LIST',url]);
-      if(url===prefix+'/pulls?state=open') return copy(state.pulls.filter(p=>p.state==='open'));
-      if(url.endsWith('/commits')) return copy(state.commits);
+      if(url===prefix+'/pulls?state=open') {
+        state.onList?.(++state.listCount);
+        const rows=copy(state.pulls.filter(p=>p.state==='open'));
+        if(state.realListing)for(const row of rows)for(const key of ['mergeable','merged','commits','changed_files'])delete row[key];
+        return rows;
+      }
+      if(url.endsWith('/commits')) {
+        const number=Number(/\/pulls\/(\d+)\/commits/u.exec(url)[1]);
+        const head=state.pulls.find(p=>p.number===number).head.sha;
+        return copy(state.commitsByHead?.[head]||state.commits);
+      }
       if(url.endsWith('/files')) return copy(state.files);
       throw new Error('Unexpected list '+url);
     },
@@ -49,14 +60,31 @@ function fixture(pulls=[pull()]) {
       const number=/\/pulls\/(\d+)$/u.exec(url);
       if(method==='GET'&&number) {
         state.getCount++;
-        state.onGet?.(state.getCount);
+        state.onGet?.(state.getCount,Number(number[1]));
         return copy(state.pulls.find(p=>p.number===Number(number[1])));
       }
-      if(method==='POST'&&url===prefix+'/check-runs') return {id:state.checkId++,app:{id:state.checkApp||APP}};
-      if(method==='PATCH'&&url.startsWith(prefix+'/check-runs/')) return {id:10,...copy(data)};
+      if(method==='POST'&&url===prefix+'/check-runs') {
+        state.onCreate?.(data);
+        state.checkId=Math.max(state.checkId,...state.checkRuns.map(c=>c.id+1));
+        const check={...copy(data),id:state.checkId++,app:{id:state.checkApp||APP}};
+        state.checkRuns.push(check);return copy(check);
+      }
+      if(method==='PATCH'&&url.startsWith(prefix+'/check-runs/')) {
+        state.onPatch?.(data);
+        const check=state.checkRuns.find(c=>c.id===Number(url.split('/').at(-1)));
+        Object.assign(check,copy(data));
+        state.afterPublish?.();
+        return copy(check);
+      }
+      if(method==='GET'&&url.includes('/check-runs?')) {
+        const rows=state.checkRuns.filter(c=>url.includes('/'+c.head_sha+'/'));
+        const response={total_count:rows.length,check_runs:copy(rows)};
+        return state.checkView?state.checkView(response):response;
+      }
       if(method==='GET'&&url.startsWith(prefix+'/rules/branches/')) return state.rulesets.map((s,i)=>({type:s.rules[0].type,ruleset_id:i+1}));
       const rule=/\/rulesets\/(\d+)$/u.exec(url);
       if(method==='GET'&&rule) {
+        state.onRule?.(Number(rule[1]));
         const full=copy(state.rulesets[Number(rule[1])-1]);
         return state.ruleView?state.ruleView(full):full;
       }
@@ -124,7 +152,6 @@ test('真实列表缺项、超出 API 提交范围或错误仓库身份均失败
     s=>{s.pulls[0].changed_files=2;},
     s=>{s.pulls[0].commits=251;},
     s=>{s.pulls[0].base.repo.id=1;},
-    s=>{s.pulls[0].merge_commit_sha=null;},
     s=>{s.pulls[0].base.ref='other/unprotected';}
   ]) {
     const {client,state}=fixture();
@@ -324,6 +351,10 @@ test('独立 App 的 RSA 身份和安装令牌限定到本仓库与最小权限'
     const file=path.join(temporary,'private.pem');
     fs.writeFileSync(file,keys.privateKey.export({type:'pkcs8',format:'pem'}));
     const requests=[];
+    const issued={token:'synthetic-installation-token',expires_at:new Date(Date.now()+3600000).toISOString(),
+      permissions:{contents:'write',checks:'write',pull_requests:'read',metadata:'read'},
+      repositories:[{id:gate.REPOSITORY_ID}]};
+    let unauthorized=false;
     const fetchImpl=async(url,options)=>{
       requests.push({url,options});
       if(url==='https://api.github.com/app') {
@@ -333,11 +364,10 @@ test('独立 App 的 RSA 身份和安装令牌限定到本仓库与最小权限'
         assert.equal(JSON.parse(Buffer.from(jwt[1],'base64url')).iss,APP);
         return new Response(JSON.stringify({id:APP}));
       }
-      if(url.endsWith('/app/installations/1')) return new Response(JSON.stringify({app_id:APP,account:{login:'ranzevor'}}));
-      if(url.endsWith('/access_tokens')) return new Response(JSON.stringify({
-        token:'synthetic-installation-token',expires_at:new Date(Date.now()+3600000).toISOString()
-      }));
+      if(url.endsWith('/app/installations/1')) return new Response(JSON.stringify({id:1,app_id:APP,account:{login:'ranzevor'}}));
+      if(url.endsWith('/access_tokens')) return new Response(JSON.stringify(issued));
       assert.equal(options.headers.Authorization,'Bearer synthetic-installation-token');
+      if(unauthorized){unauthorized=false;return new Response('{}',{status:401});}
       return new Response(JSON.stringify({id:gate.REPOSITORY_ID}));
     };
     const client=await gate.installationClient({
@@ -348,6 +378,21 @@ test('独立 App 的 RSA 身份和安装令牌限定到本仓库与最小权限'
     assert.deepEqual(tokenRequest.repository_ids,[gate.REPOSITORY_ID]);
     assert.deepEqual(tokenRequest.permissions,{contents:'write',checks:'write',pull_requests:'read'});
     assert(!('administration' in tokenRequest.permissions));
+    unauthorized=true;
+    await assert.rejects(client.request('PUT','/repos/ranzevor/BilibiliMemeAtlas/pulls/36/merge',{}),e=>e.status===401);
+    assert.equal(requests.filter(r=>r.url.endsWith('/access_tokens')).length,1);
+    await client.request('GET','/repos/ranzevor/BilibiliMemeAtlas');
+    assert.equal(requests.filter(r=>r.url.endsWith('/access_tokens')).length,2);
+    for(const mutate of [
+      r=>{r.permissions.administration='write';},r=>{r.permissions.pull_requests='write';},
+      r=>{r.repositories=[{id:1}];},r=>{r.expires_at='invalid';},r=>{r.token='';}]) {
+      const original=structuredClone(issued);mutate(issued);
+      const invalid=await gate.installationClient({GOVERNANCE_APP_ID:String(APP),GOVERNANCE_INSTALLATION_ID:'1',
+        GOVERNANCE_PRIVATE_KEY_FILE:file},fetchImpl);
+      await assert.rejects(invalid.request('GET','/repos/ranzevor/BilibiliMemeAtlas'),/令牌响应/u);
+      await assert.rejects(invalid.request('GET','/repos/ranzevor/BilibiliMemeAtlas'),/令牌响应/u);
+      for(const key of Object.keys(issued))delete issued[key];Object.assign(issued,original);
+    }
     const wrongRecord=path.join(temporary,'wrong-rules.json');
     fs.writeFileSync(wrongRecord,JSON.stringify({repository:'example/other',repository_id:1,app_id:APP,rulesets:[]}));
     await assert.rejects(gate.installationClient({
@@ -357,5 +402,238 @@ test('独立 App 的 RSA 身份和安装令牌限定到本仓库与最小权限'
   } finally {
     assert(path.resolve(temporary).startsWith(path.resolve(os.tmpdir())+path.sep+'bma-app-auth-'));
     fs.rmSync(temporary,{recursive:true,force:true});
+  }
+});
+
+test('共享 HEAD 的其他 PR 在检查发布后变化时，合并前拒绝旧成功结果',async()=>{
+  const mutations=[
+    s=>{s.pulls[1].title='fix(api): bypass';},
+    s=>{s.pulls[1].body='缺少必需章节';},
+    s=>{s.pulls[1].title='fix(governance): 更新另一项合法的提交说明';},
+    s=>{s.pulls[1].base.sha='e'.repeat(40);},
+    s=>{s.pulls[1].head.sha='e'.repeat(40);},
+    s=>{s.pulls[1].base.ref='release/v0.1.5-queue-item-next';},
+    s=>{s.pulls[1].base.ref='other/unsupported';},
+    s=>{s.pulls[1].state='closed';},
+    s=>{s.pulls[1].draft=true;},
+    s=>{s.pulls.push(pull(46));},
+    s=>{s.pulls[2].state='open';}
+  ];
+  for(const mutate of mutations){
+    const closed=pull(46);closed.state='closed';
+    const {state,client}=fixture([pull(36),pull(45),closed]);
+    state.afterPublish=()=>{state.afterPublish=undefined;mutate(state);};
+    await assert.rejects(gate.merge(client,36),/合并前/u);
+    assert.equal(writes(state).length,0);
+  }
+});
+test('最终全组读取期间及规则复核期间发生变化，末次集合检查仍拒绝写入',async()=>{
+  for(const stage of ['during-pr','during-rules']){
+    const {state,client}=fixture([pull(36),pull(45)]);
+    state.onGet=(count,number)=>{
+      if(stage==='during-pr'&&count===7&&number===45)state.pulls[0].body='缺少必需章节';
+    };
+    let rules=0;
+    state.onRule=()=>{if(stage==='during-rules'&&++rules===4)state.pulls[1].title='fix(api): bypass';};
+    await assert.rejects(gate.merge(client,36),/合并前/u);
+    assert.equal(writes(state).length,0);
+  }
+});
+test('实际列表省略详情字段时，合法共享 HEAD 全组仍可通过并只写入一次',async()=>{
+  const {state,client}=fixture([pull(36),pull(45)]);state.realListing=true;
+  assert.deepEqual(await gate.merge(client,36),{sha:MERGED,merged:true});
+  assert.equal(writes(state).length,1);
+});
+test('独立准入实现不能 squash 进中间分支，main 目标及其他治理修复分别处理',async()=>{
+  for(const file of [{filename:'.github/scripts/trusted_admission.cjs'},
+    {filename:'.github/scripts/admission.cjs',previous_filename:'.github/scripts/trusted_admission.cjs'}]){
+    const {state,client}=fixture();state.files=[file];state.pulls[0].base.ref='feat/governance-pr-metadata-gate';
+    await assert.rejects(gate.merge(client,36),/main 为最终合并目标/u);
+    assert.equal(writes(state).length,0);
+  }
+  const main=fixture();main.state.files=[{filename:'.github/scripts/trusted_admission.cjs'}];
+  assert.equal((await gate.merge(main.client,36)).merged,true);
+  const related=fixture();related.state.pulls[0].base.ref='feat/governance-pr-metadata-gate';
+  assert.equal((await gate.merge(related.client,36)).merged,true);
+});
+test('提交、文件和 PR 分页响应中的重复对象不能掩盖列表缺项',async()=>{
+  const commits=fixture();commits.state.pulls[0].commits=2;commits.state.commits.push(structuredClone(commits.state.commits[0]));
+  await assert.rejects(gate.evaluate(commits.client,36),/提交列表/u);
+  const files=fixture();files.state.pulls[0].changed_files=2;files.state.files.push({...files.state.files[0]});
+  await assert.rejects(gate.evaluate(files.client,36),/文件列表/u);
+  const pulls=fixture([pull(36),pull(36)]);
+  await assert.rejects(gate.openGroups(pulls.client),/重复/u);
+  for(const f of [commits,files,pulls])assert.equal(writes(f.state).length,0);
+});
+test('规则详情必须对应生效规则 ID 和本仓库，不接受错误身份的规则响应',async()=>{
+  for(const mutate of [r=>{r.id=999;},r=>{r.source='example/other';},r=>{r.target='tag';}]){
+    const f=fixture();f.state.ruleView=r=>{mutate(r);return r;};
+    await assert.rejects(gate.merge(f.client,36),/规则|分支缺少/u);
+    assert.equal(writes(f.state).length,0);
+  }
+});
+async function cycles(f,steps,{start=Date.parse('2026-11-07T00:00:00Z'),interval=60000}={}){
+  let time=start,cycle=0;
+  await assert.rejects(gate.watch(f.client,{now:()=>time,sleep:async()=>{
+    cycle++;
+    if(cycle>=steps.length)throw new Error('stop synthetic loop');
+    const advance=steps[cycle-1]?.(f.state,cycle,time);
+    time+=advance??interval;
+  }}),/stop synthetic loop/u);
+  return f;
+}
+test('mergeable null 与候选未计算完成在无元数据变化恢复后重新检查',async()=>{
+  for(const mutate of [p=>{p.mergeable=null;},p=>{p.merge_commit_sha=null;},p=>{p.mergeable=false;}]){
+    const f=fixture();mutate(f.state.pulls[0]);
+    const result=await gate.evaluate(f.client,36);assert(result.retry);assert(result.errors.length);
+    await cycles(f,[s=>{s.pulls[0].mergeable=true;s.pulls[0].merge_commit_sha=CANDIDATE;},null]);
+    assert.deepEqual(writes(f.state,'PATCH').map(r=>r[2].conclusion),['failure','success']);
+    assert.equal(writes(f.state).length,0);
+  }
+});
+test('暂态 API 故障在相同元数据恢复后重试，永久违规仍缓存为失败',async()=>{
+  const transient=fixture();let fail=true;
+  transient.state.onGet=()=>{if(fail){fail=false;throw new Error('temporary API failure');}};
+  await cycles(transient,[()=>{},null]);
+  assert.deepEqual(writes(transient.state,'PATCH').map(r=>r[2].conclusion),['failure','success']);
+  const invalid=fixture();invalid.state.pulls[0].title='fix(api): bypass';
+  await cycles(invalid,[()=>{},()=>{},()=>{},()=>{},()=>{},()=>{},null]);
+  assert.equal(writes(invalid.state,'POST').length,1);
+  assert.deepEqual(writes(invalid.state,'PATCH').map(r=>r[2].conclusion),['failure']);
+});
+test('正常成功缓存不重复完整验证，按轮询核对检查且跨有效期重新发布',async()=>{
+  const f=fixture();
+  await cycles(f,[()=>gate.CHECK_POLL_MS,()=>gate.CHECK_MAX_AGE_MS-gate.CHECK_POLL_MS,null]);
+  assert.equal(writes(f.state,'POST').length,2);
+  assert.deepEqual(writes(f.state,'PATCH').map(r=>r[2].conclusion),['success','success']);
+  assert(f.state.requests.some(([method,url])=>method==='GET'&&url.includes('/check-runs?')));
+});
+test('检查缺失、取消、结果替换、时间异常和同名其他来源均会重新验证',async()=>{
+  const mutations=[
+    s=>{s.checkRuns=[];},
+    s=>{s.checkRuns[0].status='queued';},
+    s=>{s.checkRuns[0].conclusion='cancelled';},
+    s=>{s.checkRuns.push({...s.checkRuns[0],id:999,conclusion:'failure'});},
+    s=>{s.checkRuns[0].completed_at=null;},
+    (s,_cycle,time)=>{s.checkRuns[0].completed_at=new Date(time-gate.CHECK_MAX_AGE_MS).toISOString();},
+    s=>{s.checkRuns[0].app.id=15368;}
+  ];
+  for(const mutate of mutations){
+    const f=fixture();
+    await cycles(f,[(s,c,t)=>{mutate(s,c,t);return gate.CHECK_POLL_MS;},null]);
+    assert.equal(writes(f.state,'POST').length,2);
+    assert.equal(writes(f.state,'PATCH').at(-1)[2].conclusion,'success');
+  }
+});
+test('替换检查触发的是完整复核，永久违规不会因为刷新而放行',async()=>{
+  const f=fixture();f.state.pulls[0].body='缺少必需章节';
+  await cycles(f,[s=>{s.checkRuns.push({...s.checkRuns[0],id:999,conclusion:'success'});return gate.CHECK_POLL_MS;},null]);
+  assert.equal(writes(f.state,'POST').length,2);
+  assert.deepEqual(writes(f.state,'PATCH').map(r=>r[2].conclusion),['failure','failure']);
+});
+test('检查发布失败不留下成功缓存，恢复后重新发布',async()=>{
+  const f=fixture();let fail=true;
+  f.state.onPatch=()=>{if(fail){fail=false;throw new Error('temporary check update failure');}};
+  await cycles(f,[()=>{},null]);
+  assert.equal(writes(f.state,'POST').length,2);
+  assert.equal(f.state.checkRuns.at(-1).conclusion,'success');
+});
+test('单个 HEAD 的发布故障不会饿死其他 HEAD，暂态持续故障采用有限退避',async()=>{
+  const other=pull(45),sha='e'.repeat(40);other.head.sha=sha;
+  const f=fixture([pull(36),other]);f.state.commitsByHead={[sha]:[{...f.state.commits[0],sha}]};
+  f.state.onCreate=data=>{if(data.head_sha===HEAD)throw new Error('temporary check creation failure');};
+  await cycles(f,[null]);
+  assert.equal(f.state.checkRuns.length,1);assert.equal(f.state.checkRuns[0].head_sha,sha);
+  assert.equal(f.state.checkRuns[0].conclusion,'success');
+  const pending=fixture();pending.state.pulls[0].mergeable=null;
+  await cycles(pending,[()=>{},()=>{},()=>{},()=>{},()=>{},()=>{},null]);
+  assert.equal(writes(pending.state,'POST').length,3);
+  assert(writes(pending.state,'PATCH').every(r=>r[2].conclusion==='failure'));
+});
+
+test('详情缺字段、提交列表不含当前 HEAD 和空文件对象均不能形成有效检查',async()=>{
+  for(const mutate of [
+    s=>{delete s.pulls[0].mergeable;},
+    s=>{delete s.pulls[0].merge_commit_sha;},
+    s=>{s.pulls[0].updated_at='invalid';},
+    s=>{s.commits[0].sha='e'.repeat(40);},
+    s=>{s.files=[null];}
+  ]) {
+    const f=fixture();mutate(f.state);
+    await assert.rejects(gate.evaluate(f.client,36));
+    assert.equal(writes(f.state).length,0);
+  }
+});
+test('检查创建和完成响应必须对应本次 HEAD、来源和结论',async()=>{
+  for(const [method,mutate] of [
+    ['POST',r=>{r.head_sha=BASE;}],['POST',r=>{r.id=0;}],
+    ['PATCH',r=>{r.id=999;}],['PATCH',r=>{r.app.id=15368;}],
+    ['PATCH',r=>{r.conclusion='neutral';}],['PATCH',r=>{r.completed_at=null;}]
+  ]) {
+    const f=fixture(),request=f.client.request.bind(f.client);
+    f.client.request=async(m,url,data)=>{
+      const result=await request(m,url,data);
+      if(m===method&&url.includes('/check-runs'))mutate(result);
+      return result;
+    };
+    await assert.rejects(gate.merge(f.client,36),/检查/u);
+    assert.equal(writes(f.state).length,0);
+  }
+});
+test('检查完整分页选择本 App 最新结果，重复、截断和异常响应拒绝缓存',async()=>{
+  const rows=Array.from({length:101},(_,i)=>({id:i+1,name:gate.CHECK,head_sha:HEAD,
+    app:{id:APP},status:'completed',conclusion:'success',completed_at:'2026-11-07T00:00:00Z'}));
+  for(const mutate of [null,
+    r=>{r[100].id=1;},r=>{r[100].head_sha=BASE;},r=>{r[100].app.id=15368;}]) {
+    const checks=structuredClone(rows);mutate?.(checks);const pages=[];
+    const client=new gate.GitHub(async()=>'synthetic',{fetchImpl:async(url)=>{
+      const page=Number(new URL(url).searchParams.get('page'));pages.push(page);
+      return new Response(JSON.stringify({total_count:checks.length,check_runs:checks.slice((page-1)*100,page*100)}));
+    }});client.appId=APP;
+    if(mutate&&checks[100].app.id===APP)await assert.rejects(gate.latestCheck(client,HEAD),/检查/u);
+    else assert.equal((await gate.latestCheck(client,HEAD)).id,mutate?100:101);
+    assert.deepEqual(pages,[1,2]);
+  }
+  for(const result of [null,{total_count:2,check_runs:[rows[0]]},
+    {total_count:101,check_runs:Array(101).fill(rows[0])},{total_count:1,check_runs:[null]}]) {
+    const client={appId:APP,request:async()=>result};
+    await assert.rejects(gate.latestCheck(client,HEAD),/检查/u);
+  }
+});
+test('真实 HTTP 传输覆盖异步候选、暂态恢复及合并响应断连后的只读确认',async()=>{
+  const f=fixture();f.state.realListing=true;let detailFailure=true,loseMerge=false;
+  const prefix='/repos/'+gate.REPOSITORY;
+  const server=http.createServer(async(req,res)=>{
+    try {
+      const url=new URL(req.url,'http://localhost');
+      if(detailFailure&&req.method==='GET'&&url.pathname===prefix+'/pulls/36') {
+        detailFailure=false;res.writeHead(503,{'Content-Type':'application/json'});
+        res.end('{"message":"temporary"}');return;
+      }
+      let payload='';for await(const chunk of req)payload+=chunk;
+      let result;
+      if(req.method==='GET'&&url.pathname===prefix+'/pulls')result=await f.client.list(prefix+'/pulls?state=open');
+      else if(req.method==='GET'&&/\/pulls\/\d+\/(commits|files)$/u.test(url.pathname))result=await f.client.list(url.pathname);
+      else result=await f.client.request(req.method,url.pathname+(url.pathname.endsWith('/check-runs')?url.search:''),payload?JSON.parse(payload):undefined);
+      if(loseMerge&&req.method==='PUT'&&url.pathname.endsWith('/merge')) {res.destroy();return;}
+      res.writeHead(200,{'Content-Type':'application/json'});res.end(JSON.stringify(result));
+    } catch {res.writeHead(500);res.end('{}');}
+  });
+  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  const origin='http://127.0.0.1:'+server.address().port;
+  const client=new gate.GitHub(async()=>'synthetic',{fetchImpl:(url,options)=>{
+    assert.equal(new URL(url).origin,'https://api.github.com');
+    return fetch(origin+new URL(url).pathname+new URL(url).search,options);
+  }});client.appId=APP;
+  try {
+    f.state.pulls[0].mergeable=null;f.state.pulls[0].merge_commit_sha=null;
+    await cycles({client,state:f.state},[
+      ()=>{},s=>{s.pulls[0].mergeable=true;s.pulls[0].merge_commit_sha=CANDIDATE;},null]);
+    assert.deepEqual(writes(f.state,'PATCH').map(r=>r[2].conclusion),['failure','failure','success']);
+    loseMerge=true;
+    assert.deepEqual(await gate.merge(client,36),{sha:MERGED,merged:true});
+    assert.equal(writes(f.state).length,1);
+  } finally {
+    server.closeAllConnections();await new Promise(resolve=>server.close(resolve));
   }
 });

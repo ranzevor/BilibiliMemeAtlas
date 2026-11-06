@@ -27,7 +27,9 @@
 
     node .github/scripts/trusted_admission.cjs watch
 
-进程每分钟读取开放 PR，重新校验发生变化的提交与元数据。它不依赖 PR 编辑事件，因此由仓库令牌产生而没有触发 Actions 的编辑也会被读取。输入没有变化的确定性校验失败不重复写入；API 错误和校验期间变化会重新检查。
+进程每分钟读取开放 PR，重新校验发生变化的提交与元数据。它不依赖 PR 编辑事件，因此由仓库令牌产生而没有触发 Actions 的编辑也会被读取。合并候选尚未计算完成、冲突、临时 API 故障和校验期间变化会以一分钟至五分钟的有限退避重新检查；状态恢复后即使元数据未变也能恢复校验。确定性违规保持失败，不能通过重试获得放行。
+
+没有变化的结果使用缓存，每五分钟读取 App 实际发布的最新检查。检查缺失、被替换、状态或结果变化、完成时间无效时重新执行完整校验；正常缓存不重复发布。App 的检查在完成六天后重新校验并发布，为 GitHub 的七天必需检查有效期预留时间。该策略只刷新 Trusted metadata gate，三项 Actions 质量检查仍须真实运行。GitHub 的当前 HEAD、测试合并提交和检查时效规则见[必需检查故障排查](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks)。
 
 单次检查入口：
 
@@ -75,7 +77,11 @@ watch 与 check 只写入检查结果。负责人批准具体 PR 后，在独立
 
     node .github/scripts/trusted_admission.cjs merge PR_NUMBER
 
-程序先重新检查同一 HEAD 的全部 PR，再读取目标分支实际生效的两项规则，验证质量门禁和更新来源。最后一次读取当前 PR 后，向 GitHub 明确发送已校验的 commit_title、commit_message、HEAD SHA 与 squash 方法，不接受另行覆盖消息。
+程序先重新检查同一 HEAD 的全部 PR，再读取目标分支实际生效的两项规则，验证质量门禁和更新来源。随后重新读取共享 HEAD 的完整开放集合，逐项重新验证全部 PR，再次核对规则和最终集合。新增、关闭、重开、改目标、改标题或正文、HEAD 或基线变化都会拒绝沿用此前结果。只有可观察快照一致时，才向 GitHub 明确发送已校验的 commit_title、commit_message、HEAD SHA 与 squash 方法，不接受另行覆盖消息。
+
+GitHub 的合并请求可用 SHA 锁定目标 HEAD，但不提供同时锁定其他 PR 元数据、集合和基线的原子操作。最终读取后至服务端执行前仍存在平台接口无法封闭的变化窗口；上述复核用于拒绝已观察到的变化，不能证明所有元数据与合并写入原子一致。
+
+独立准入实现不能 squash 进中间治理分支。对于 #36 与 #56，先让 #36 经独立验收和批准后单独 squash 进入 main，再将实际 main 正常 merge 到 #56 的开发分支，确认剩余差异仅包含 #56 后将其目标改为 main。#56 重新检查、独立验收并获批准后再单独 squash；两项技术对象因此各自保留一个可回退提交。当前以中间分支为目标的 #56 可以完成代码整改和检查，但合并入口会拒绝该目标。
 
 GitHub 的合并接口继续执行原生质量检查和线程要求。合并响应丢失后只查询结果，不盲目重试。成功后读取真实提交对象，核对消息、父提交与返回的提交身份；仅在全部一致后报告合并成功。接口参数见 [Merge a pull request](https://docs.github.com/en/rest/pulls/pulls#merge-a-pull-request)。
 
