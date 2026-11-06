@@ -149,6 +149,16 @@ async function installationClient(env=process.env,fetchImpl=fetch) {
     return credential.token;
   },{fetchImpl});
   client.appId=appId;
+  if(env.GOVERNANCE_RULES_FILE) {
+    const record=JSON.parse(fs.readFileSync(env.GOVERNANCE_RULES_FILE,'utf8'));
+    if(record.repository!==REPOSITORY||record.repository_id!==REPOSITORY_ID||
+       record.app_id!==appId||!Array.isArray(record.rulesets)||
+       record.rulesets.some(rule=>!Number.isSafeInteger(rule.id)||!Array.isArray(rule.bypass_actors)||
+         !Number.isFinite(Date.parse(rule.updated_at))||rule.source!==REPOSITORY))
+      throw new Error('管理员规则版本记录的身份或内容无效');
+    client.ruleVersions=new Map(record.rulesets.map(rule=>[rule.id,rule]));
+    if(client.ruleVersions.size!==record.rulesets.length) throw new Error('管理员规则版本记录含重复对象');
+  }
   return client;
 }
 
@@ -253,18 +263,64 @@ function validBaseline(ruleset,appId) {
 }
 function validUpdateGate(ruleset,appId) {
   return ruleset.enforcement==='active'&&ruleset.rules?.some(r=>
-    r.type==='update'&&r.parameters?.update_allows_fetch_and_merge===false)&&
+    r.type==='update'&&(r.parameters===undefined||r.parameters?.update_allows_fetch_and_merge===false))&&
     ruleset.rules.length===1&&ruleset.bypass_actors?.length===1&&
     ruleset.bypass_actors[0].actor_id===appId&&
     ruleset.bypass_actors[0].actor_type==='Integration'&&
     ruleset.bypass_actors[0].bypass_mode==='always';
+}
+function canonical(value) {
+  if(Array.isArray(value)) return '['+value.map(canonical).join(',')+']';
+  if(value&&typeof value==='object') return '{'+Object.keys(value).filter(key=>value[key]!==undefined)
+    .sort().map(key=>JSON.stringify(key)+':'+canonical(value[key])).join(',')+'}';
+  return JSON.stringify(value);
+}
+function rulesetMaterial(rule) {
+  return {id:rule.id,target:rule.target,source_type:rule.source_type,source:rule.source,
+    enforcement:rule.enforcement,conditions:rule.conditions,rules:rule.rules};
+}
+function completeRuleset(client,live) {
+  if(Array.isArray(live.bypass_actors)) return live;
+  if(Object.hasOwn(live,'bypass_actors')) throw new Error('目标分支缺少有效的旁路名单响应');
+  const full=client.ruleVersions?.get(live.id);
+  const expectedBypass=full&&validBaseline(full,client.appId)?'never':
+    full&&validUpdateGate(full,client.appId)?'always':null;
+  if(!full||!expectedBypass||!Array.isArray(full.bypass_actors)||
+     !Number.isFinite(Date.parse(live.updated_at))||
+     Date.parse(live.updated_at)!==Date.parse(full.updated_at)||
+     canonical(rulesetMaterial(live))!==canonical(rulesetMaterial(full))||
+     live.current_user_can_bypass!==expectedBypass)
+    throw new Error('目标分支缺少可核验的完整规则版本，须由有权账号重新读取当前规则');
+  return {...live,bypass_actors:full.bypass_actors};
+}
+async function auditRules(client,appId) {
+  rulesetPlan(appId);
+  const repository=await client.request('GET',PREFIX);
+  if(repository.id!==REPOSITORY_ID||repository.full_name!==REPOSITORY)
+    throw new Error('管理员规则读取的仓库身份不符');
+  const list=await client.list(PREFIX+'/rulesets?includes_parents=true');
+  const candidates=list.filter(rule=>rule.enforcement==='active'&&rule.target==='branch');
+  const full=await Promise.all(candidates.map(rule=>client.request('GET',PREFIX+'/rulesets/'+rule.id)));
+  const sameScope=rule=>rule.source===REPOSITORY&&rule.target==='branch'&&
+    Array.isArray(rule.conditions?.ref_name?.include)&&
+    canonical([...rule.conditions.ref_name.include].sort())===canonical([...TARGETS].sort())&&
+    Array.isArray(rule.conditions.ref_name.exclude)&&rule.conditions.ref_name.exclude.length===0;
+  const baseline=full.filter(rule=>sameScope(rule)&&validBaseline(rule,appId));
+  const update=full.filter(rule=>sameScope(rule)&&validUpdateGate(rule,appId));
+  if(baseline.length!==1||update.length!==1||
+     [...baseline,...update].some(rule=>!Number.isSafeInteger(rule.id)||!Number.isFinite(Date.parse(rule.updated_at))))
+    throw new Error('缺少完整且唯一的管理员规则视图，不能生成版本记录');
+  return {schema:1,repository:REPOSITORY,repository_id:REPOSITORY_ID,app_id:appId,
+    rulesets:[baseline[0],update[0]]};
 }
 async function requireProtection(client,ref) {
   const effective=await client.request('GET',PREFIX+'/rules/branches/'+encodeURIComponent(ref));
   if(!Array.isArray(effective)) throw new Error('生效分支规则响应无效');
   const ids=[...new Set(effective.map(r=>r.ruleset_id))];
   if(ids.some(id=>!Number.isSafeInteger(id))) throw new Error('生效规则缺少规则集身份');
-  const sets=await Promise.all(ids.map(id=>client.request('GET',PREFIX+'/rulesets/'+id)));
+  const live=await Promise.all(ids.map(id=>client.request('GET',PREFIX+'/rulesets/'+id)));
+  const sets=live.filter(rule=>Array.isArray(rule.bypass_actors)||client.ruleVersions?.has(rule.id))
+    .map(rule=>completeRuleset(client,rule));
   if(!sets.some(s=>validBaseline(s,client.appId))||!sets.some(s=>validUpdateGate(s,client.appId)))
     throw new Error('目标分支缺少不可绕过的质量规则或独立 App 更新限制');
 }
@@ -331,7 +387,15 @@ async function main() {
     console.log(JSON.stringify(rulesetPlan(value),null,2));
     return;
   }
-  if(!['check','watch','merge'].includes(mode)) throw new Error('用法：trusted_admission.cjs plan <App ID> | check <PR> | watch | merge <PR>');
+  if(mode==='audit-rules') {
+    const token=process.env.GOVERNANCE_RULES_AUDIT_TOKEN;
+    if(!token||!process.argv[4]) throw new Error('缺少管理员规则读取令牌或输出文件');
+    const record=await auditRules(new GitHub(async()=>token),positive(value,'App ID'));
+    fs.writeFileSync(process.argv[4],JSON.stringify(record,null,2)+'\n',{mode:0o600});
+    console.log('PASS: 当前完整规则版本已读取');
+    return;
+  }
+  if(!['check','watch','merge'].includes(mode)) throw new Error('用法：trusted_admission.cjs plan <App ID> | audit-rules <App ID> <文件> | check <PR> | watch | merge <PR>');
   const client=await installationClient();
   if(mode==='watch') return watch(client);
   if(mode==='merge') {
@@ -348,6 +412,6 @@ async function main() {
 module.exports={
   REPOSITORY,REPOSITORY_ID,CHECK,TARGETS,GitHub,installationClient,supported,
   fingerprint,squashMessage,rulesetPlan,evaluate,openGroups,publishGroup,
-  validBaseline,validUpdateGate,requireProtection,merge,verifyMerge,watch
+  validBaseline,validUpdateGate,completeRuleset,auditRules,requireProtection,merge,verifyMerge,watch
 };
 if(require.main===module) main().catch(error=>{console.error('FAIL: '+error.message);process.exitCode=1;});
