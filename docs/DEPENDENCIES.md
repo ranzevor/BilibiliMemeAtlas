@@ -12,6 +12,8 @@ Skill 运行时没有第三方 Python 包、JavaScript 包、模型 SDK 或数�
 
 `.github/dependabot.yml` 为 GitHub Actions 配置版本更新，每周一 09:00（Asia/Shanghai）安排检查，最多同时保留 5 个更新 PR。维护者合并更新前，核对完整提交 SHA 固定及 PR 自动验证结果。
 
+独立远端校验使用 Node.js 22、markdown-it 15.0.3 和 Node.js 标准库的 HTTPS、RSA 签名及文件接口。它复用现有元数据规则，运行于独立固定版本目录，通过 GitHub App 读取 PR 并写入检查；经批准的 squash 合并使用 Contents 写权限。部署与规则启用条件见[远端校验](../governance/REMOTE-ADMISSION.md)。
+
 ## 静态资源
 
 `assets/cover.webp` 和 `assets/icon.png` 随项目保存。README 的 Python 版本与许可徽章通过 Shields.io 加载。项目自有资源的许可见根目录 `LICENSE`；外部语料来源的权利边界见 `CONTENT_RIGHTS.md`。

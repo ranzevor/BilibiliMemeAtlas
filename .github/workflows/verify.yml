@@ -37,7 +37,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: node .github/scripts/governance_gate.cjs event-git
       - name: Test governance policy regressions
-        run: node --test tests/governance_gate.test.cjs tests/governance_gate.integration.test.cjs tests/governance_gate.git.test.cjs
+        run: node --test tests/governance_gate.test.cjs tests/governance_gate.integration.test.cjs tests/governance_gate.git.test.cjs tests/trusted_admission.test.cjs
       - name: Remove governance tool dependencies before project validation
         run: node -e "require('node:fs').rmSync('.github/node_modules', {recursive:true, force:true})"
       - name: Report interpreter
