@@ -81,7 +81,12 @@ watch 与 check 只写入检查结果。负责人批准具体 PR 后，在独立
 
 GitHub 的合并请求可用 SHA 锁定目标 HEAD，但不提供同时锁定其他 PR 元数据、集合和基线的原子操作。最终读取后至服务端执行前仍存在平台接口无法封闭的变化窗口；上述复核用于拒绝已观察到的变化，不能证明所有元数据与合并写入原子一致。
 
-独立准入实现必须以 main 为最终合并目标，合并入口拒绝中间治理分支。存在未合并依赖时，先让依赖经独立验收和批准后单独 squash 进入 main，再将 main 正常 merge 到开发分支，核对剩余差异并将 PR 目标改为 main。重新检查、独立验收并获批准后再单独 squash，使各技术对象分别形成可回退提交。
+独立准入实现必须以 main 为最终合并目标，合并入口拒绝中间治理分支。存在未合并依赖时，先让依赖经独立验收和批准后单独 squash 进入 main，再在开发分支上用合规提交消息同步主分支：
+
+    git fetch origin
+    git merge --no-ff -m "chore(governance): 同步主分支已合并的治理依赖" origin/main
+
+非快进同步提交与其他新增提交适用相同的消息规则；须明确指定符合实际变更的消息，不能沿用 Git 默认的 `Merge branch ...` 或 `Merge remote-tracking branch ...` 标题。随后核对相对 main 的剩余差异并将 PR 目标改为 main。依赖经 squash 后，其原提交仍可能出现在开发分支的提交列表中，必须与同步提交一起完整校验。重新检查最终 squash 消息、完成独立验收并获批准后再单独 squash，使各技术对象分别形成可回退提交。
 
 GitHub 的合并接口继续执行原生质量检查和线程要求。合并响应丢失后只查询结果，不盲目重试。成功后读取真实提交对象，核对消息、父提交与返回的提交身份；仅在全部一致后报告合并成功。接口参数见 [Merge a pull request](https://docs.github.com/en/rest/pulls/pulls#merge-a-pull-request)。
 
