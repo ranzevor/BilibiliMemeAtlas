@@ -8,7 +8,7 @@
 
     npm install --prefix .github --no-save --no-package-lock --ignore-scripts --no-audit --no-fund markdown-it@15.0.3
 
-生产部署绑定 ranzevor/BilibiliMemeAtlas，独立验收部署绑定专用验收仓库；仓库权限为 Checks 读写、Contents 读写、Workflows 读写和 Pull requests 只读。合并 `.github/workflows/` 下的文件变更需要 Workflows 权限，见 GitHub [Git 访问权限](https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/choosing-permissions-for-a-github-app#choosing-permissions-for-git-access)。已有 App 增加权限后，须由安装所有者批准权限更新，再启动使用新权限的部署副本。App 不授予 Administration 权限。私钥存放在运行目录之外的受限文件中，不能进入仓库、PR 作业、缓存或制品。
+生产部署绑定 ranzevor/BilibiliMemeAtlas，独立验收部署绑定专用验收仓库；仓库权限为 Checks 读写、Contents 读写和 Pull requests 只读。App 不授予 Administration 权限。私钥存放在运行目录之外的受限文件中，不能进入仓库、PR 作业、缓存或制品。
 
 运行进程读取以下环境变量：
 

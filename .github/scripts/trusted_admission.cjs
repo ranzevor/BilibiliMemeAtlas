@@ -11,7 +11,7 @@ const QUALITY=['Project gate','Lifecycle gate','Release bytes gate'];
 const CHECK_MAX_AGE_MS=6*24*60*60*1000;
 const CHECK_POLL_MS=5*60*1000;
 const POLL_MS=60000;
-const TOKEN_PERMISSIONS={contents:'write',checks:'write',pull_requests:'read',workflows:'write'};
+const TOKEN_PERMISSIONS={contents:'write',checks:'write',pull_requests:'read'};
 const TARGETS=[
   'refs/heads/main',
   'refs/heads/release/v0.1.5-queue-item-*',
