@@ -389,7 +389,7 @@ test('独立 App 的 RSA 身份和安装令牌限定到本仓库与最小权限'
     fs.writeFileSync(file,keys.privateKey.export({type:'pkcs8',format:'pem'}));
     const requests=[];
     const issued={token:'synthetic-installation-token',expires_at:new Date(Date.now()+3600000).toISOString(),
-      permissions:{contents:'write',checks:'write',pull_requests:'read',metadata:'read'},
+      permissions:{contents:'write',checks:'write',pull_requests:'read',workflows:'write',metadata:'read'},
       repositories:[{id:gate.REPOSITORY_ID}]};
     let unauthorized=false;
     const fetchImpl=async(url,options)=>{
@@ -413,7 +413,7 @@ test('独立 App 的 RSA 身份和安装令牌限定到本仓库与最小权限'
     await client.request('GET','/repos/ranzevor/BilibiliMemeAtlas');
     const tokenRequest=JSON.parse(requests.find(r=>r.url.endsWith('/access_tokens')).options.body);
     assert.deepEqual(tokenRequest.repository_ids,[gate.REPOSITORY_ID]);
-    assert.deepEqual(tokenRequest.permissions,{contents:'write',checks:'write',pull_requests:'read'});
+    assert.deepEqual(tokenRequest.permissions,{contents:'write',checks:'write',pull_requests:'read',workflows:'write'});
     assert(!('administration' in tokenRequest.permissions));
     unauthorized=true;
     await assert.rejects(client.request('PUT','/repos/ranzevor/BilibiliMemeAtlas/pulls/36/merge',{}),e=>e.status===401);
@@ -422,6 +422,7 @@ test('独立 App 的 RSA 身份和安装令牌限定到本仓库与最小权限'
     assert.equal(requests.filter(r=>r.url.endsWith('/access_tokens')).length,2);
     for(const mutate of [
       r=>{r.permissions.administration='write';},r=>{r.permissions.pull_requests='write';},
+      r=>{delete r.permissions.workflows;},r=>{r.permissions.workflows='read';},
       r=>{r.repositories=[{id:1}];},r=>{r.expires_at='invalid';},r=>{r.token='';}]) {
       const original=structuredClone(issued);mutate(issued);
       const invalid=await gate.installationClient({GOVERNANCE_APP_ID:String(APP),GOVERNANCE_INSTALLATION_ID:'1',
