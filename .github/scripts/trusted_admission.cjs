@@ -54,6 +54,13 @@ function fingerprint(pr) {
     pr.base?.repo?.id,pr.merge_commit_sha,pr.commits,pr.changed_files
   ]);
 }
+function metadataFingerprint(pr) {
+  return JSON.stringify([
+    pr.number,pr.state,pr.draft,pr.title,pr.body,pr.updated_at,
+    pr.head?.ref,pr.head?.sha,pr.head?.repo?.id,
+    pr.base?.ref,pr.base?.sha,pr.base?.repo?.id
+  ]);
+}
 function squashMessage(pr) {
   return {commit_title:pr.title,commit_message:pr.body??'',sha:pr.head.sha,merge_method:'squash'};
 }
@@ -238,6 +245,8 @@ async function openGroups(client) {
     if(!supported(pr.base?.ref)) continue;
     if(!SHA.test(pr.head?.sha)||!SHA.test(pr.base?.sha)||pr.base?.repo?.id!==REPOSITORY_ID||
        pr.base.repo.full_name!==REPOSITORY||typeof pr.draft!=='boolean'||
+       !Number.isSafeInteger(pr.head?.repo?.id)||pr.head.repo.id<=0||
+       typeof pr.head.ref!=='string'||!pr.head.ref||!Number.isFinite(Date.parse(pr.updated_at))||
        typeof pr.title!=='string'||(pr.body!==null&&typeof pr.body!=='string'))
       throw new Error('开放 PR 列表包含无效身份');
     if(!groups.has(pr.head.sha)) groups.set(pr.head.sha,[]);
@@ -267,6 +276,10 @@ async function publishGroup(client,head,rows,{now=Date.now}={}) {
       const report=await evaluate(client,row.number);
       reports.push(report);
       retry ||= report.retry;
+      if(metadataFingerprint(report.pr)!==metadataFingerprint(row)) {
+        errors.push('PR #'+row.number+' 的开放列表与详情元数据不一致，须重新检查');
+        retry=true;
+      }
       if(report.pr.head.sha!==head) {
         errors.push('PR #'+row.number+' 的 HEAD 已变化');
         retry=true;
