@@ -183,6 +183,43 @@ test('同一 SHA 的多个 PR 聚合失败，不能用另一目标分支的成�
   assert.equal(update.conclusion,'failure');
   assert.equal(state.requests.find(([method])=>method==='POST')[2].status,'in_progress');
 });
+test('开放列表与 PR 详情的可观察元数据不一致时拒绝发布成功',async()=>{
+  for(const mutate of [
+    p=>{p.title='feat(api): bypass';},
+    p=>{p.body='缺少必需章节';},
+    p=>{p.base.sha='e'.repeat(40);},
+    p=>{p.head.ref='feat/another-source';},
+    p=>{p.updated_at='2026-11-06T00:00:01Z';}
+  ]) {
+    const {client,state}=fixture();
+    state.realListing=true;
+    const list=client.list.bind(client);
+    client.list=async url=>{
+      const rows=await list(url);
+      if(url.endsWith('/pulls?state=open'))mutate(rows[0]);
+      return rows;
+    };
+    const groups=await gate.openGroups(client);
+    const result=await gate.publishGroup(client,HEAD,groups.get(HEAD));
+    assert(result.errors.some(e=>e.includes('列表与详情')));
+    assert.equal(result.retry,true);
+    assert.equal(state.checkRuns.at(-1).conclusion,'failure');
+    assert.equal(writes(state).length,0);
+  }
+});
+test('同一 HEAD 的另一 PR 列表与详情不一致时阻止最终合并',async()=>{
+  const {client,state}=fixture([pull(),pull(45)]);
+  state.realListing=true;
+  const list=client.list.bind(client);
+  client.list=async url=>{
+    const rows=await list(url);
+    if(url.endsWith('/pulls?state=open'))rows.find(p=>p.number===45).body='缺少必需章节';
+    return rows;
+  };
+  await assert.rejects(gate.merge(client,36),/列表与详情/u);
+  assert.equal(state.checkRuns.at(-1).conclusion,'failure');
+  assert.equal(writes(state).length,0);
+});
 test('检查写入来源必须是配置的独立 App',async()=>{
   const {client,state}=fixture();
   state.checkApp=15368;
