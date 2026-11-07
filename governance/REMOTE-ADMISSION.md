@@ -33,7 +33,7 @@
 
 单次检查入口：
 
-    node .github/scripts/trusted_admission.cjs check 36
+    node .github/scripts/trusted_admission.cjs check PR_NUMBER
 
 Trusted metadata gate 绑定当前 HEAD。同一 HEAD 对应多个受支持的开放 PR 时，全部 PR 均须通过，防止一个目标分支的成功覆盖另一个 PR 的失败。程序核对完整分页、提交与文件数量、PR 前后快照和待写入的 squash 消息。
 
@@ -81,7 +81,7 @@ watch 与 check 只写入检查结果。负责人批准具体 PR 后，在独立
 
 GitHub 的合并请求可用 SHA 锁定目标 HEAD，但不提供同时锁定其他 PR 元数据、集合和基线的原子操作。最终读取后至服务端执行前仍存在平台接口无法封闭的变化窗口；上述复核用于拒绝已观察到的变化，不能证明所有元数据与合并写入原子一致。
 
-独立准入实现不能 squash 进中间治理分支。对于 #36 与 #56，先让 #36 经独立验收和批准后单独 squash 进入 main，再将实际 main 正常 merge 到 #56 的开发分支，确认剩余差异仅包含 #56 后将其目标改为 main。#56 重新检查、独立验收并获批准后再单独 squash；两项技术对象因此各自保留一个可回退提交。当前以中间分支为目标的 #56 可以完成代码整改和检查，但合并入口会拒绝该目标。
+独立准入实现必须以 main 为最终合并目标，合并入口拒绝中间治理分支。存在未合并依赖时，先让依赖经独立验收和批准后单独 squash 进入 main，再将 main 正常 merge 到开发分支，核对剩余差异并将 PR 目标改为 main。重新检查、独立验收并获批准后再单独 squash，使各技术对象分别形成可回退提交。
 
 GitHub 的合并接口继续执行原生质量检查和线程要求。合并响应丢失后只查询结果，不盲目重试。成功后读取真实提交对象，核对消息、父提交与返回的提交身份；仅在全部一致后报告合并成功。接口参数见 [Merge a pull request](https://docs.github.com/en/rest/pulls/pulls#merge-a-pull-request)。
 
