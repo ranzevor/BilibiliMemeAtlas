@@ -2578,9 +2578,9 @@
     ],
     "category": "community",
     "era": "2021-2026",
-    "meaning": "随着后续事件发生，重新发现某次成绩、作品或判断更有价值。",
+    "meaning": "形容某人或事物的价值随着时间推移逐渐显现、提升；也可用于后来出现的新情况使过去的选择、成绩或作品显得更有价值。",
     "origin": {
-      "summary": "2024年度网络用语榜列出该表达；榜单本身不解释这里登记的具体释义。",
+      "summary": "入选国家语言资源监测与研究中心发布的2024年度十大网络用语；官方释义以中国游为例说明价值随时间显现和提升。未确认该表达的首创来源。",
       "date": null,
       "precision": "unknown",
       "bilibili_role": "amplifier"
@@ -2600,17 +2600,31 @@
     "lifecycle": "contextual",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "recent-src-gold",
         "claims": [
           "date"
         ],
-        "note": "中国作家网2024榜单仅列出该表达；只支持榜单时间节点，不支持具体释义。"
+        "note": "中国作家网转载年度榜单信息，仅支持2024年榜单收录节点，不支持首创日期。"
+      },
+      {
+        "source_id": "recent-src-gold-ccnu",
+        "claims": [
+          "meaning"
+        ],
+        "note": "国家语言资源监测与研究中心官方释义说明句式及价值随时间显现、提升的含义，并以中国游举例。"
+      },
+      {
+        "source_id": "recent-src-gold-bili",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "B站2024年12月16日投稿标题实际使用该句式；投稿日期不是短语首创日期。"
       }
     ],
-    "notes": "榜单证实流行，不证明最早来源。 现唯一来源只在榜单列名，没有解释价值随事件重新评估的具体含义；保留线索，不作已核事实回答。"
+    "notes": "官方释义支持通用语义；年度榜单及示例不是起源时间。B站投稿标题可确认站内使用节点，尚未确定最早站内用例及首创来源。"
   },
   {
     "id": "recent-hongwen",
@@ -3171,28 +3185,29 @@
     "aliases": [],
     "category": "community",
     "era": "2021-2026",
-    "meaning": "在节目和AI讨论语境中，强调或戏仿“这不是机器生成的”；必须看具体场景。",
+    "meaning": "在B站2026年春晚等实时弹幕场景中，观众用“我是真人”表达自己正在真实参与、确认自己被看见，并寻求即时回应；常与“看得见我吗”“妈妈我上电视了”等内容共同出现。与机器人或机器生成内容形成对照时，也可强调真人参与。不能据此验证账号身份，也不应脱离具体语境一概解释为AI身份认证。",
     "origin": {
-      "summary": "2026B站春晚单场统计将其列为高频弹幕之一。",
+      "summary": "2026年B站春晚直播中作为高频弹幕之一出现，对应开场表演《马上有奇迹》；同期社区分析将其置于实时弹幕开放后的观众自我呈现、确认在场和寻求即时回应的语境。尚未确认该短语的首创来源或更早独立用例。",
       "date": null,
       "precision": "unknown",
       "bilibili_role": "amplifier"
     },
     "usage": {
       "contexts": [
-        "解释春晚弹幕",
-        "真人与AI的戏剧反差"
+        "实时直播弹幕互动",
+        "观众表达自己正在参与并确认被看见",
+        "与“妈妈我上电视了”等在场感表达共同出现"
       ],
-      "example": "这段“我是真人”是弹幕互动，不能据此完成身份认证。",
+      "example": "我是真人，看得见我吗？",
       "avoid": [
-        "一句自称不能替代具体语境判断",
-        "账号身份判断不属于该梗的含义"
+        "不能据此验证账号身份或区分真人与自动化账号",
+        "不能将春晚场景中的具体用法推广为所有语境下的固定含义"
       ]
     },
     "lifecycle": "volatile",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "recent-src-gala26",
@@ -3201,9 +3216,25 @@
           "date"
         ],
         "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+      },
+      {
+        "source_id": "recent-src-gala26-program",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2026年春晚弹幕统计将“我是真人”对应到开场表演《马上有奇迹》；这是单场使用节点，不是起源证据。"
+      },
+      {
+        "source_id": "recent-src-real-person-context",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "BB姬2026年2月18日同期分析说明该弹幕在实时弹幕开放后用于表达观众真实参与、在场和寻求即时回应；未提供短语首创来源。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站春晚直播弹幕总数达1.33亿，年轻人发送“啊？”最多：platform_usage,date（full）。统计只证明2026春晚使用，尚未完整核验节目原话与更早梗源；不认定年度弹幕。"
+    "notes": "已由春晚弹幕统计确认该表达的站内使用，并由同期社区分析补足实时互动、自我呈现和寻求回应的语义场景。尚未找到该短语的首创来源、春晚前的独立用例或可确定的起源日期。"
   },
   {
     "id": "recent-sauce-duck",
@@ -3270,12 +3301,12 @@
     ],
     "category": "music",
     "era": "2021-2026",
-    "meaning": "2026盘点中出现的绿色外星猫形象及舞蹈模仿标签；更细的原作与语义待核。",
+    "meaning": "以绿色外星小猫形象为主角的魔性舞蹈与特效合拍梗，常用于模仿该角色跳舞或将其置入不同场景；具体形象的最初来源尚未确认。",
     "origin": {
-      "summary": "2026报道和B站上半年盘点有记录，未确认最初作者和动画来源。",
+      "summary": "2026年3月8日抖音用户格鲁特尔发布外星小绿猫与小猫共舞的合成视频，文案称该猫与绿猫的制作是其原创，并将舞蹈原舞署名给@蹦跶的阿夏。该投稿是可定位的创作记录，不足以确认绿色猫形象本身的最早来源。",
       "date": null,
       "precision": "unknown",
-      "bilibili_role": "uncertain"
+      "bilibili_role": "imported"
     },
     "usage": {
       "contexts": [
@@ -3289,7 +3320,7 @@
     "lifecycle": "volatile",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "recent-src-green-cat",
@@ -3297,7 +3328,7 @@
           "origin",
           "date"
         ],
-        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+        "note": "新浪娱乐2026年3月27日盘点记录外星小绿猫舞的传播阶段；不证明原始角色创作。"
       },
       {
         "source_id": "recent-src-green-cat-bili",
@@ -3305,10 +3336,19 @@
           "platform_usage",
           "date"
         ],
-        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+        "note": "B站2026年6月13日上半年热梗盘点列出外星小绿猫；这是站内收录节点，不是起源日期。"
+      },
+      {
+        "source_id": "recent-src-green-cat-original-post",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "2026年3月8日格鲁特尔发布猫与绿色外星猫共舞的视频，文案称合成制作原创并注明舞蹈原舞作者；支持该版本及其舞蹈关系，不证明角色形象的最早来源。"
       }
     ],
-    "notes": "只取得二手描述和盘点索引；应先补原片、首发记录及不同同名形象的消歧。"
+    "notes": "已找到2026年3月8日格鲁特尔发布的原始可定位版本；作者称猫与绿色外星猫的合成制作原创，并将舞蹈原舞署名给@蹦跶的阿夏。尚未确认绿色外星猫形象本身的创作者、最早出现时间及更早传播链。"
   },
   {
     "id": "recent-chongqing-visa",
@@ -4455,12 +4495,12 @@
     ],
     "category": "guichu",
     "era": "2021-2026",
-    "meaning": "模仿夸张叫声的文字或音效梗，常与目力先辈的拼贴画面关联，也泛用于失控、惊叫或反差剪辑。",
+    "meaning": "以“哼哼、啊啊”等夸张叫声构成的音效表达，常与目力先辈的拼贴画面搭配；相关画面和音轨并非同一原片内容。",
     "origin": {
-      "summary": "站内考据明确常见目力画面和叫声音轨属于后期拼接，不是野兽先辈原片同一片段的完整原声。现有材料未证实音轨的确切原始出处。",
+      "summary": "B站社区考据指出，常见“哼哼啊啊”音轨是后来添加的二次创作，并非野兽先辈原片声音；相关考据将音轨关联到黑雷霆素材，但尚未直接核对原始音轨及最早合成投稿。",
       "date": null,
       "precision": "unknown",
-      "bilibili_role": "imported"
+      "bilibili_role": "adaptation"
     },
     "usage": {
       "contexts": [
@@ -4481,7 +4521,7 @@
     "relations": [
       "extra-yajusenpai"
     ],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "extra-src-bili-inmu-guide",
@@ -4490,10 +4530,19 @@
           "origin",
           "platform_usage"
         ],
-        "note": "2021年站内解释音画拼接。"
+        "note": "2021年B站社区文章说明目力先辈画面与叫声音轨为后期组合，明确该音轨并非原片原声。"
+      },
+      {
+        "source_id": "extra-src-bili-three-hum",
+        "claims": [
+          "meaning",
+          "origin",
+          "platform_usage"
+        ],
+        "note": "2023年B站社区考据进一步将该音轨与黑雷霆素材关联；该来源属于社区考据，不能替代原始音轨核验。"
       }
     ],
-    "notes": "当前索引按2021年已核解释页归档，不表示梗在2021年诞生。仍缺原音轨、首次合成作品和更早中文用例；目力先辈是相关视觉形态，不等于全部叫声都来自同一素材。",
+    "notes": "已核实该叫声音轨与目力先辈画面属于后期拼接，不能署为野兽先辈原片原声。黑雷霆来源目前由B站社区考据指认，仍缺原始音轨、最早合成作品及更早中文用例。",
     "tags": [
       "目力先辈"
     ]
@@ -4613,9 +4662,9 @@
     ],
     "category": "guichu",
     "era": "2021-2026",
-    "meaning": "用AI视频把原本不会举办演唱会的人物、角色或物体放进大型演唱会舞台，标题套用“某某世界巡演”，形成连续的荒诞视频模板。",
+    "meaning": "将人物或角色置入迈克尔·杰克逊风格的演唱会舞台与太空步画面，制作成AI视频，标题常采用“某某世界巡演”；音乐是否由AI生成须按具体作品判断。",
     "origin": {
-      "summary": "2026年9月B站可见多人物“世界巡演”生成视频和解说投稿；迈克尔·杰克逊式演唱会舞台被借作视觉参照，唯一最早制作者尚不明。",
+      "summary": "2026年9月26日出现“迈克尔·许家印世界巡演”投稿，作者说明使用AI视频并参考《Jam》《Billie Jean》现场画面，同时明确音乐并非AI生成；10月4日出现黄仁勋等人物变体及专题解释视频。现有材料支持传播过程，不足以确认首创者。",
       "date": null,
       "precision": "unknown",
       "bilibili_role": "adaptation"
@@ -4636,31 +4685,41 @@
     "lifecycle": "volatile",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "recent-src-26-tour-explainer",
         "claims": [
           "platform_usage"
         ],
-        "note": "站内讨论“世界巡演”渲染大赛，但未阅读视频内容。"
+        "note": "2026年9月28日B站专题视频标题直接以“世界巡演是什么梗”为主题，记录该模板当时已形成专题讨论。"
       },
       {
         "source_id": "recent-src-26-tour-hawking",
         "claims": [
           "platform_usage"
         ],
-        "note": "9月AI多人物巡演投稿合集标题列示不同变体。"
+        "note": "2026年9月26日多人物巡演投稿合集标题列出多种人物变体；仅支持投稿索引。"
       },
       {
         "source_id": "recent-src-26-tour-michael",
         "claims": [
+          "meaning",
+          "origin",
           "platform_usage"
         ],
-        "note": "另有真人形象巡演投稿索引。"
+        "note": "作者在投稿说明中称“非AI音乐，只是AI视频”，并指出画面参考《Jam》《Billie Jean》现场；支持该作品的制作方式与模板示例，不证明最早创作者。"
+      },
+      {
+        "source_id": "recent-src-26-tour-huangrenxun",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2026年10月4日王与也行发布黄仁勋世界巡演视频，提供另一条可定位的传播实例。"
       }
     ],
-    "notes": "已确认多条同时期站内视频索引；尚缺可读取正文来支持完整模板释义和具体渲染制作链，暂列候选。"
+    "notes": "已取得创作者对一条代表作品的说明，可确认其为AI视频、使用MJ演唱会画面参照，且该作品音乐并非AI生成。多人物变体及专题解释证明模板传播；尚未确定最早创作者和模板首次形成时间。"
   },
   {
     "id": "recent-26-zhuanben",
