@@ -329,6 +329,20 @@ class QueueIndividualEvidenceTests(unittest.TestCase):
         self.assertEqual(set(refs['recent-src-gold-bili']['claims']), {'platform_usage'})
         self.assertIsNone(entry['origin']['date'])
 
+    def test_hmm_sound_and_visual_provenance_are_distinct(self):
+        entry = self.by_id['extra-hmm-scream']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['extra-src-bili-three-hum']['claims'])
+        self.assertEqual(self.sources['extra-src-bili-three-hum']['access_level'], 'full')
+        self.assertIn('音轨', self.sources['extra-src-bili-three-hum']['supports'])
+        self.assertIn('黑雷霆', self.sources['extra-src-bili-three-hum']['supports'])
+        self.assertEqual(entry['origin']['bilibili_role'], 'imported')
+        self.assertIn('【ホモ雷普全書】', self.sources['extra-src-bili-three-hum']['title'])
+        self.assertEqual(self.sources['extra-src-bili-three-hum']['publisher'], '饃王ALocn／B站专栏')
+        self.assertIn('首发日期保留未知', self.sources['extra-src-bili-three-hum']['limitations'])
+        self.assertNotIn('不复述或链接', self.sources['extra-src-bili-three-hum']['limitations'])
+
+
 
 class QueueFrontEvidenceTests(unittest.TestCase):
     @classmethod
