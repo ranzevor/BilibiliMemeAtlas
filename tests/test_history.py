@@ -469,10 +469,18 @@ class FffGroupQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-fff-kadokawa-spinout']['access_level'], 'full')
         self.assertEqual(self.sources['early-src-fff-novel4']['access_level'], 'full')
 
-    def test_fff_group_has_a_dated_early_bilibili_record(self):
+    def test_fff_group_separates_video_upload_and_current_tags(self):
         entry = self.by_id['early-fff']
         refs = {ref['source_id']: ref for ref in entry['evidence']}
         self.assertIn('platform_usage', refs['early-src-fff-bili-2010']['claims'])
+        self.assertNotIn('date', refs['early-src-fff-bili-2010']['claims'])
+        self.assertIn('date', refs['early-src-fff-novel4']['claims'])
+        self.assertIn('date', refs['early-src-fff-blog-2010']['claims'])
+        self.assertIn('标签添加日期未知', entry['origin']['summary'])
+        self.assertIn('标签添加日期未知', entry['notes'])
+        self.assertEqual(self.sources['early-src-fff-bili-2010']['checked_at'], '2026-11-10')
+        self.assertIn('02:51:36', self.sources['early-src-fff-bili-2010']['supports'])
+        self.assertIn('标签添加日期未知', self.sources['early-src-fff-bili-2010']['limitations'])
         self.assertEqual(self.sources['early-src-fff-bili-2010']['access_level'], 'metadata')
         self.assertIn('2010年1月24日', self.sources['early-src-fff-bili-2010']['supports'])
         self.assertIsNone(entry['origin']['date'])
