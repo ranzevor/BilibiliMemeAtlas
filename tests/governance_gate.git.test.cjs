@@ -7,7 +7,6 @@ const path=require('node:path');
 const cp=require('node:child_process');
 const gate=path.join(__dirname,'..','.github','scripts','governance_gate.cjs');
 const policy=require(gate);
-const admission=require('../.github/scripts/trusted_admission.cjs');
 const body="## 背景与目标\n检查提交与 PR 元数据的真实格式。\n## 修改范围与实现\n通过合成 Git 历史验证提交和文件范围。\n## 兼容性与风险\n不更改现有页面接口，也不提供写入凭据。\n## 实际验证\n分别执行了合法消息、英文标题和过时 HEAD 反例。\n## 未完成事项\n远端强制规则和独立审查仍需要完成验收。";
 function git(cwd,args){
   const result=cp.spawnSync('git',args,{cwd,encoding:'utf8',timeout:10000});
@@ -111,7 +110,7 @@ test('本地提交钩子执行 Git 私有目录中的可信校验器',()=>{
 
 for(const compliant of [true,false]) test(compliant
   ?'依赖 squash 后用合规消息同步 main，改换目标后完整提交与最终消息均通过'
-  :'依赖 squash 后沿用默认同步消息，改换目标后两个门禁均拒绝该提交',async()=>{
+  :'依赖 squash 后沿用默认同步消息，预检与 Git 事件检查均拒绝该提交',()=>{
   const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'governance-dependency-'));
   try{
     git(tmp,['init','-b','main']);
@@ -129,35 +128,20 @@ for(const compliant of [true,false]) test(compliant
     };
     const root=commit('baseline.txt','baseline\n','docs(test): 建立依赖集成回归的初始内容');
     const dependencyBranch='feat/governance-pr-metadata-gate';
-    const developmentBranch='feat/governance-trusted-admission';
+    const developmentBranch='feat/governance-dependency-validation';
     git(tmp,['checkout','-b',dependencyBranch]);
     const dependency=commit('dependency.txt','dependency\n','feat(governance): 增加依赖提交的消息校验入口');
     git(tmp,['checkout','-b',developmentBranch]);
-    const feature=commit('admission.txt','admission\n','feat(governance): 增加独立准入检查与合并入口');
-    const repository={id:admission.REPOSITORY_ID,full_name:admission.REPOSITORY};
-    const pr={number:9,title:'feat(governance): 增加独立准入检查与合并入口',body,
+    const feature=commit('feature.txt','feature\n','test(governance): 补充依赖同步与最终消息回归');
+    const repository={full_name:'example/repo'};
+    const pr={number:9,title:'test(governance): 补充依赖同步与最终消息回归',body,
       state:'open',merged:false,draft:false,mergeable:true,updated_at:'2026-11-07T00:00:00Z',
       head:{ref:developmentBranch,sha:feature,repo:repository},
       base:{ref:dependencyBranch,sha:dependency,repo:repository}};
-    const prefix='/repos/'+admission.REPOSITORY;
-    const endpoint=prefix+'/pulls/'+pr.number;
     const commits=()=>git(tmp,['rev-list','--reverse',pr.base.sha+'..'+pr.head.sha])
       .split(/\r?\n/u).filter(Boolean).map(sha=>({sha,commit:{message:rawMessage(sha)}}));
     const files=()=>git(tmp,['diff','--name-only','-z',pr.base.sha+'...'+pr.head.sha])
       .split('\0').filter(Boolean).map(filename=>({filename}));
-    const client={
-      async request(method,url){
-        assert.equal(method,'GET');
-        if(url===prefix)return structuredClone(repository);
-        assert.equal(url,endpoint);
-        return structuredClone(pr);
-      },
-      async list(url){
-        if(url===endpoint+'/commits')return commits();
-        assert.equal(url,endpoint+'/files');
-        return files();
-      }
-    };
     const candidate=()=>{
       git(tmp,['checkout','--detach',pr.base.sha]);
       git(tmp,['merge','--no-ff','--no-edit',pr.head.sha]);
@@ -174,14 +158,14 @@ for(const compliant of [true,false]) test(compliant
     };
     candidate();
     assert.deepEqual(commits().map(c=>c.sha),[feature]);
-    assert.deepEqual((await admission.evaluate(client,pr.number)).errors,[]);
+    assert.deepEqual(policy.prErrors(pr,commits(),files()),[]);
     const initialEvent=runEvent();
     assert.equal(initialEvent.status,0,initialEvent.stdout+initialEvent.stderr);
 
     git(tmp,['checkout','main']);
     git(tmp,['merge','--squash',dependencyBranch]);
     git(tmp,['commit','-m','feat(governance): 合并依赖提交的消息校验入口',
-      '-m','将依赖变更独立纳入主分支，保留后续准入实现作为单独审查和集成的技术对象。']);
+      '-m','将依赖变更独立纳入主分支，保留后续回归测试作为单独审查和集成的技术对象。']);
     const base=git(tmp,['rev-parse','HEAD']);
     assert.equal(git(tmp,['show','-s','--format=%P','HEAD']),root);
     git(tmp,['update-ref','refs/remotes/origin/main',base]);
@@ -195,29 +179,29 @@ for(const compliant of [true,false]) test(compliant
     pr.head={...pr.head,sha:head};
     candidate();
     assert.deepEqual(commits().map(c=>c.sha),[dependency,feature,head]);
-    assert.deepEqual(files(),[{filename:'admission.txt'}]);
-    const report=await admission.evaluate(client,pr.number);
-    assert.deepEqual(report.message,{commit_title:pr.title,commit_message:body,sha:head,merge_method:'squash'});
-    const finalMessage=report.message.commit_title+'\n\n'+report.message.commit_message;
+    assert.deepEqual(files(),[{filename:'feature.txt'}]);
+    const errors=policy.prErrors(pr,commits(),files());
+    const finalMessage=pr.title+'\n\n'+pr.body;
     assert.deepEqual(policy.commitErrors(finalMessage),[]);
     const result=runEvent();
     if(!compliant){
       assert.match(rawMessage(head),/^Merge remote-tracking branch 'origin\/main'/u);
       assert.equal(result.status,1,result.stdout+result.stderr);
       assert.match(result.stderr,new RegExp(head.slice(0,12)+' 提交：标题须采用','u'));
-      assert.equal(report.errors.length,1,report.errors.join('\n'));
-      assert.match(report.errors[0],new RegExp('^'+head.slice(0,12)+' 提交：标题须采用','u'));
+      assert.equal(errors.length,1,errors.join('\n'));
+      assert.match(errors[0],new RegExp('^'+head.slice(0,12)+' 提交：标题须采用','u'));
       return;
     }
     assert.equal(result.status,0,result.stdout+result.stderr);
-    assert.deepEqual(report.errors,[]);
+    assert.deepEqual(errors,[]);
+    const validTitle=pr.title;
     pr.title=pr.title.replace('):',')!:');
     assert.deepEqual(policy.titleErrors(pr.title),[]);
     assert.deepEqual(policy.prBodyErrors(pr.body),[]);
-    const invalidFinal=await admission.evaluate(client,pr.number);
-    assert.equal(invalidFinal.errors.length,1,invalidFinal.errors.join('\n'));
-    assert.match(invalidFinal.errors[0],/最终 squash：.*BREAKING CHANGE/u);
-    pr.title=report.message.commit_title;
+    const invalidFinal=policy.commitErrors(pr.title+'\n\n'+pr.body);
+    assert.equal(invalidFinal.length,1,invalidFinal.join('\n'));
+    assert.match(invalidFinal[0],/BREAKING CHANGE/u);
+    pr.title=validTitle;
 
     git(tmp,['checkout','main']);
     git(tmp,['merge','--squash',developmentBranch]);
@@ -226,7 +210,7 @@ for(const compliant of [true,false]) test(compliant
     git(tmp,['commit','-F',messageFile]);
     assert.equal(git(tmp,['show','-s','--format=%P','HEAD']),base);
     assert.equal(rawMessage('HEAD'),finalMessage+'\n');
-    assert.deepEqual(git(tmp,['diff','--name-only',base,'HEAD']).split(/\r?\n/u),['admission.txt']);
+    assert.deepEqual(git(tmp,['diff','--name-only',base,'HEAD']).split(/\r?\n/u),['feature.txt']);
     assert.equal(git(tmp,['show','HEAD:dependency.txt']),'dependency');
   }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });

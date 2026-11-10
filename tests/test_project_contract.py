@@ -350,7 +350,6 @@ class ProjectContractTests(unittest.TestCase):
                     self.assertIn('  cancel-in-progress: true', text)
                     self.assertIn('fetch-depth: 0', text)
                     self.assertEqual(text.count('name: Test governance policy regressions'), 1)
-                    self.assertIn('tests/trusted_admission.test.cjs', text)
                 else:
                     self.assertIn("runs-on: ubuntu-24.04", text)
                 self.assertIn('python: ["3.10", "3.13"]', text)
