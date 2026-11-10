@@ -32,7 +32,7 @@ SH
 经仓库负责人批准后，通过已授权的 GitHub 身份执行合并检查和操作。
 
 1. 读取当前 PR、完整分页的提交与文件、审查讨论及目标分支生效规则，核对三项必需检查的来源、对应提交和成功结果。
-2. 将准确快照交给可信主分支的 `governance_gate.cjs preflight-json` 校验。用该快照的标题和正文生成最终 squash 消息，并以同一校验器的 `message-file` 模式验证完整消息。
+2. 将准确快照交给可信主分支的 `governance_gate.cjs preflight-json` 校验。用该快照的标题和正文生成最终 squash 消息，并直接调用同一校验器导出的 `commitErrors()` 校验完整原文。
 3. 合并前重新读取 HEAD、基线、标题、正文、两侧分支和仓库，并重新核对共享 HEAD 的相关开放 PR。发生变化时，针对变化重新验证并完成独立审查。
 4. 向合并接口明确传入已验证的 `commit_title`、`commit_message`、当前 HEAD 的 `sha` 和 `merge_method=squash`。
 5. 读取实际合并结果，核对完整消息、父提交及授权署名。响应结果不明时先查询 PR 和提交，依据实际结果处理后续操作。接口参数见 [GitHub 合并接口](https://docs.github.com/en/rest/pulls/pulls#merge-a-pull-request)。

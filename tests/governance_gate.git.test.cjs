@@ -217,7 +217,7 @@ for(const compliant of [true,false]) test(compliant
 
 const installer=path.join(__dirname,'..','scripts','install-governance-hook.sh');
 const shell=process.platform==='win32'
-  ?path.resolve(cp.execFileSync('git',['--exec-path'],{encoding:'utf8',timeout:10000}).trim(),
+  ?path.resolve(cp.execFileSync('git',['--exec-path'],{cwd:os.tmpdir(),encoding:'utf8',timeout:10000}).trim(),
     '..','..','..','bin','bash.exe'):'sh';
 function hookFixture(tmp){
   git(tmp,['init','-b','main']);
