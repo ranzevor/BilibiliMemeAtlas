@@ -37,7 +37,7 @@ function supported(ref) {
 function identity(pr,number,{candidate=true}={}) {
   if(!pr||pr.number!==number||pr.base?.repo?.id!==REPOSITORY_ID||
      pr.base.repo.full_name!==REPOSITORY||!SHA.test(pr.head?.sha)||
-     !Number.isSafeInteger(pr.head?.repo?.id)||pr.head.repo.id<=0||
+     !(pr.head?.repo===null||Number.isSafeInteger(pr.head?.repo?.id)&&pr.head.repo.id>0)||
      !SHA.test(pr.base?.sha)||(candidate&&!SHA.test(pr.merge_commit_sha||''))||
      !(pr.merge_commit_sha===null||SHA.test(pr.merge_commit_sha||''))||
      !(pr.mergeable===null||typeof pr.mergeable==='boolean')||
@@ -199,6 +199,7 @@ async function evaluate(client,number) {
   identity(pr,number,{candidate:false});
   const errors=[];
   if(pr.state!=='open'||pr.merged||pr.draft) errors.push('PR 必须处于开放且可审查状态');
+  if(pr.head.repo===null) errors.push('PR 源仓库不可用');
   const message=squashMessage(pr);
   if(errors.length) return {pr,message,errors,retry:false};
   if(pr.mergeable!==true||!SHA.test(pr.merge_commit_sha||'')) {
@@ -244,7 +245,7 @@ async function openGroups(client) {
     if(!supported(pr.base?.ref)) continue;
     if(!SHA.test(pr.head?.sha)||!SHA.test(pr.base?.sha)||pr.base?.repo?.id!==REPOSITORY_ID||
        pr.base.repo.full_name!==REPOSITORY||typeof pr.draft!=='boolean'||
-       !Number.isSafeInteger(pr.head?.repo?.id)||pr.head.repo.id<=0||
+       !(pr.head?.repo===null||Number.isSafeInteger(pr.head?.repo?.id)&&pr.head.repo.id>0)||
        typeof pr.head.ref!=='string'||!pr.head.ref||!Number.isFinite(Date.parse(pr.updated_at))||
        typeof pr.title!=='string'||(pr.body!==null&&typeof pr.body!=='string'))
       throw new Error('开放 PR 列表包含无效身份');

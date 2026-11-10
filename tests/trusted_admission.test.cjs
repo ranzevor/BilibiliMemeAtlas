@@ -782,3 +782,42 @@ test('恢复未完成检查时重新验证变化后的 PR 元数据',async()=>{
   assert.equal(f.state.checkRuns[0].conclusion,'failure');
   assert.match(f.state.checkRuns[0].output.summary,/标题/u);
 });
+
+test('空源仓库仅使自身 HEAD 失败，正常 HEAD 继续校验并缓存结果',async()=>{
+  const unavailable=pull(36);
+  unavailable.head.repo=null;
+  const healthy=pull(37);
+  healthy.head.sha='e'.repeat(40);
+  const f=fixture([unavailable,healthy]);
+  f.state.commitsByHead={
+    [healthy.head.sha]:[{sha:healthy.head.sha,commit:f.state.commits[0].commit}]
+  };
+  await cycles(f,[()=>{},()=>{},null]);
+  assert.equal(f.state.checkRuns.length,2);
+  assert.equal(f.state.checkRuns.find(check=>check.head_sha===HEAD).conclusion,'failure');
+  assert.equal(f.state.checkRuns.find(check=>check.head_sha===healthy.head.sha).conclusion,'success');
+  assert.equal(writes(f.state,'POST').length,2);
+  assert.equal(writes(f.state).length,0);
+});
+
+test('空源仓库与正常 PR 共享 HEAD 时整组保持失败',async()=>{
+  const unavailable=pull(36);
+  unavailable.head.repo=null;
+  const f=fixture([unavailable,pull(37)]);
+  const rows=(await gate.openGroups(f.client)).get(HEAD);
+  const result=await gate.publishGroup(f.client,HEAD,rows);
+  assert.equal(result.check.conclusion,'failure');
+  assert.equal(result.retry,false);
+  assert(result.errors.some(error=>error.includes('PR #36')&&error.includes('源仓库不可用')));
+  assert.equal(result.reports.length,2);
+  await assert.rejects(gate.merge(f.client,37),/源仓库不可用/u);
+  assert.equal(writes(f.state).length,0);
+});
+
+test('源仓库恢复后同一 HEAD 重新校验并发布成功',async()=>{
+  const f=fixture();
+  f.state.pulls[0].head.repo=null;
+  await cycles(f,[state=>{state.pulls[0].head.repo={id:gate.REPOSITORY_ID};},null]);
+  assert.deepEqual(writes(f.state,'PATCH').map(request=>request[2].conclusion),['failure','success']);
+  assert.equal(writes(f.state).length,0);
+});
