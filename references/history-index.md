@@ -222,7 +222,7 @@
 | 181 | 主打一个XX | `recent-mainly-one` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 句式早期使用未精确定位。 |
 | 182 | 嘴替 | `recent-mouthpiece` | 2021-2026 / community | 部分核实 | platform_usage | B站最早传播节点未核验。 |
 | 183 | 预制XX | `recent-prefabricated` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | “预制人”容易直接贬低他人，识别时可解释，默认不用于称呼真人。 |
-| 184 | 我是真人 | `recent-real-person` | 2021-2026 / community | 部分核实 | origin | 已由春晚弹幕统计确认该表达的站内使用，并由同期社区分析补足实时互动、自我呈现和寻求回应的语义场景。尚未找到该短语的首创来源、春晚前的独立用例或可确定的起源日期。 |
+| 184 | 我是真人 | `recent-real-person` | 2021-2026 / community | 部分核实 | origin | 该场直播的统计与社区分析分别支持使用记录和语境解释。首创来源、春晚前的独立用例与起源日期待考证。 |
 | 185 | 尊嘟假嘟 | `recent-really` | 2021-2026 / community | 部分核实 | platform_usage | 未取得最早微博原帖；不把宠物图片来源认定为已获授权。 |
 | 186 | 水灵灵地XX | `recent-shuilingling` | 2021-2026 / community | 部分核实 | platform_usage | 来源只描述偶像视频背景，不给出未经核实的首发日期。 |
 | 187 | 那咋了 | `recent-so-what` | 2021-2026 / community | 部分核实 | platform_usage | 不确定最早平台和作者；普通反问与流行模板应消歧。 |

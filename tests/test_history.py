@@ -330,7 +330,6 @@ class QueueIndividualEvidenceTests(unittest.TestCase):
         self.assertIsNone(entry['origin']['date'])
 
 
-
 class QueueFrontEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -344,7 +343,9 @@ class QueueFrontEvidenceTests(unittest.TestCase):
         self.assertIn('《马上有奇迹》', entry['origin']['summary'])
         self.assertIn('首创来源', entry['notes'])
         self.assertEqual(self.sources['recent-src-gala26-program']['access_level'], 'full')
-
+        references = {item['source_id']: item for item in entry['evidence']}
+        self.assertEqual(set(references['recent-src-gala26-program']['claims']), {'platform_usage'})
+        self.assertIn('2026年2月16日', self.sources['recent-src-gala26']['supports'])
 
 
 class RealPersonQueueEvidenceTests(unittest.TestCase):
@@ -357,8 +358,9 @@ class RealPersonQueueEvidenceTests(unittest.TestCase):
     def test_real_person_has_full_contextual_meaning_source(self):
         entry = self.by_id['recent-real-person']
         self.assertEqual(entry['evidence_status'], 'partial')
-        self.assertIn('确认自己被看见', entry['meaning'])
-        self.assertIn('寻求即时回应', entry['meaning'])
+        self.assertIn('参与直播', entry['meaning'])
+        self.assertIn('共同在场', entry['meaning'])
+        self.assertEqual(entry['usage']['avoid'], ['把观众弹幕当作《马上有奇迹》的节目台词'])
         refs = {ref['source_id']: ref for ref in entry['evidence']}
         self.assertIn('meaning', refs['recent-src-real-person-context']['claims'])
         self.assertEqual(self.sources['recent-src-real-person-context']['access_level'], 'full')
@@ -367,4 +369,3 @@ class RealPersonQueueEvidenceTests(unittest.TestCase):
         context = self.sources['recent-src-real-person-context']
         self.assertIn('妈妈我上电视了', context['supports'])
         self.assertNotIn('看得见我吗', context['supports'])
-
