@@ -252,7 +252,9 @@ class ProjectContractTests(unittest.TestCase):
         entries, sources, _ = load_catalogue(ROOT)
         by_id = {row["id"]: row for row in entries}
         self.assertIn("AI时代", by_id["recent-human-vibe"]["origin"]["summary"])
-        self.assertIn("机器生成", by_id["recent-real-person"]["meaning"])
+        self.assertIn("2026年春晚", by_id["recent-real-person"]["meaning"])
+        self.assertIn("参与直播", by_id["recent-real-person"]["meaning"])
+        self.assertIn("共同在场", by_id["recent-real-person"]["meaning"])
         self.assertTrue(any("造梗机器" in source["title"] for source in sources.values()))
         self.assertTrue(any("bilibili.com" in source["url"] for source in sources.values()))
 
