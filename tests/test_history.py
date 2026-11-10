@@ -366,7 +366,14 @@ class QueueFrontEvidenceTests(unittest.TestCase):
         self.assertEqual(entry['evidence_status'], 'partial')
         self.assertIn('音乐是否由AI生成须按具体作品判断', entry['meaning'])
         self.assertEqual(self.sources['recent-src-26-tour-michael']['access_level'], 'full')
-        self.assertIn('尚未确定最早创作者', entry['notes'])
+        self.assertIn('首创者和模板首次形成日期未知', entry['notes'])
+        self.assertIn('作者在说明中', entry['notes'])
+        self.assertNotIn('可确认其为AI视频', entry['notes'])
+        self.assertIn('作者在公开说明中', self.sources['recent-src-26-tour-michael']['supports'])
+        self.assertIn('标题包含', self.sources['recent-src-26-tour-huangrenxun']['supports'])
+        self.assertIn('公开简介为空', self.sources['recent-src-26-tour-huangrenxun']['limitations'])
+        self.assertIn('《Billie Jean》x《朋友的酒》', self.sources['recent-src-26-tour-michael']['title'])
+        self.assertTrue(self.sources['recent-src-26-tour-huangrenxun']['title'].endswith('【AI MV大赛】'))
 
 
 
