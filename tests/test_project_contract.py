@@ -252,7 +252,9 @@ class ProjectContractTests(unittest.TestCase):
         entries, sources, _ = load_catalogue(ROOT)
         by_id = {row["id"]: row for row in entries}
         self.assertIn("AI时代", by_id["recent-human-vibe"]["origin"]["summary"])
-        self.assertIn("机器生成", by_id["recent-real-person"]["meaning"])
+        self.assertIn("2026年春晚", by_id["recent-real-person"]["meaning"])
+        self.assertIn("参与直播", by_id["recent-real-person"]["meaning"])
+        self.assertIn("共同在场", by_id["recent-real-person"]["meaning"])
         self.assertTrue(any("造梗机器" in source["title"] for source in sources.values()))
         self.assertTrue(any("bilibili.com" in source["url"] for source in sources.values()))
 
@@ -336,12 +338,20 @@ class ProjectContractTests(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):
                 self.assertIn("workflow_dispatch:", text)
-                self.assertIn('  pull_request:\n    branches: ["main"]\n', text)
+                expected_branches = '  pull_request:\n    branches: ["main", "release/v0.1.5-queue-item-*", "fix/v0.1.5-duplicate-source-reference", "fix/v0.1.5-duplicate-source-reference-rebuild", "feat/governance-pr-metadata-gate"]\n'
+                self.assertIn(expected_branches, text)
+                self.assertIn('    types: [opened, reopened, synchronize, edited, ready_for_review]', text)
                 self.assertIn("  contents: read", text)
                 if path.name == "verify.yml":
                     self.assertIn("runs-on: ${{ matrix.os }}", text)
                     self.assertIn('os: ["ubuntu-24.04", "windows-2022"]', text)
                     self.assertIn('PYTHONUTF8: "1"', text)
+                    self.assertIn('node .github/scripts/governance_gate.cjs event-git', text)
+                    self.assertIn('node .github/scripts/governance_gate.cjs event-current', text)
+                    self.assertIn('  pull-requests: read', text)
+                    self.assertIn('  cancel-in-progress: true', text)
+                    self.assertIn('fetch-depth: 0', text)
+                    self.assertEqual(text.count('name: Test governance policy regressions'), 1)
                 else:
                     self.assertIn("runs-on: ubuntu-24.04", text)
                 self.assertIn('python: ["3.10", "3.13"]', text)
