@@ -90,11 +90,6 @@ function rulesetPlan(appId) {
           ]
         }}
       ]
-    },
-    {
-      name:'受控 squash 合并',target:'branch',enforcement:'active',conditions,
-      bypass_actors:[{actor_id:appId,actor_type:'Integration',bypass_mode:'always'}],
-      rules:[{type:'update',parameters:{update_allows_fetch_and_merge:false}}]
     }
   ];
 }
@@ -370,14 +365,6 @@ function validBaseline(ruleset,appId) {
       .every(expected=>checks.required_status_checks?.some(c=>
         c.context===expected.context&&c.integration_id===expected.integration_id));
 }
-function validUpdateGate(ruleset,appId) {
-  return ruleset.enforcement==='active'&&ruleset.rules?.some(r=>
-    r.type==='update'&&(r.parameters===undefined||r.parameters?.update_allows_fetch_and_merge===false))&&
-    ruleset.rules.length===1&&ruleset.bypass_actors?.length===1&&
-    ruleset.bypass_actors[0].actor_id===appId&&
-    ruleset.bypass_actors[0].actor_type==='Integration'&&
-    ruleset.bypass_actors[0].bypass_mode==='always';
-}
 function canonical(value) {
   if(Array.isArray(value)) return '['+value.map(canonical).join(',')+']';
   if(value&&typeof value==='object') return '{'+Object.keys(value).filter(key=>value[key]!==undefined)
@@ -392,8 +379,7 @@ function completeRuleset(client,live) {
   if(Array.isArray(live.bypass_actors)) return live;
   if(Object.hasOwn(live,'bypass_actors')) throw new Error('目标分支缺少有效的旁路名单响应');
   const full=client.ruleVersions?.get(live.id);
-  const expectedBypass=full&&validBaseline(full,client.appId)?'never':
-    full&&validUpdateGate(full,client.appId)?'always':null;
+  const expectedBypass=full&&validBaseline(full,client.appId)?'never':null;
   if(!full||!expectedBypass||!Array.isArray(full.bypass_actors)||
      !Number.isFinite(Date.parse(live.updated_at))||
      Date.parse(live.updated_at)!==Date.parse(full.updated_at)||
@@ -415,12 +401,11 @@ async function auditRules(client,appId) {
     canonical([...rule.conditions.ref_name.include].sort())===canonical([...TARGETS].sort())&&
     Array.isArray(rule.conditions.ref_name.exclude)&&rule.conditions.ref_name.exclude.length===0;
   const baseline=full.filter(rule=>sameScope(rule)&&validBaseline(rule,appId));
-  const update=full.filter(rule=>sameScope(rule)&&validUpdateGate(rule,appId));
-  if(baseline.length!==1||update.length!==1||
-     [...baseline,...update].some(rule=>!Number.isSafeInteger(rule.id)||!Number.isFinite(Date.parse(rule.updated_at))))
+  if(baseline.length!==1||
+     baseline.some(rule=>!Number.isSafeInteger(rule.id)||!Number.isFinite(Date.parse(rule.updated_at))))
     throw new Error('缺少完整且唯一的管理员规则视图，不能生成版本记录');
   return {schema:1,repository:REPOSITORY,repository_id:REPOSITORY_ID,app_id:appId,
-    rulesets:[baseline[0],update[0]]};
+    rulesets:[baseline[0]]};
 }
 async function requireProtection(client,ref) {
   if(!supported(ref)) throw new Error('目标分支不在受支持范围');
@@ -434,8 +419,8 @@ async function requireProtection(client,ref) {
   const sets=live.filter(rule=>Array.isArray(rule.bypass_actors)||client.ruleVersions?.has(rule.id))
     .map(rule=>completeRuleset(client,rule));
   const owned=sets.filter(rule=>rule.source===REPOSITORY&&rule.source_type==='Repository');
-  if(!owned.some(s=>validBaseline(s,client.appId))||!owned.some(s=>validUpdateGate(s,client.appId)))
-    throw new Error('目标分支缺少不可绕过的质量规则或独立 App 更新限制');
+  if(!owned.some(s=>validBaseline(s,client.appId)))
+    throw new Error('目标分支缺少不可绕过的质量规则');
 }
 async function verifyMerge(client,report,expectedSha) {
   const pr=await client.request('GET',PREFIX+'/pulls/'+report.pr.number);
@@ -567,6 +552,6 @@ async function main() {
 module.exports={
   REPOSITORY,REPOSITORY_ID,CHECK,TARGETS,CHECK_MAX_AGE_MS,CHECK_POLL_MS,GitHub,installationClient,supported,
   fingerprint,squashMessage,rulesetPlan,evaluate,openGroups,publishGroup,
-  validBaseline,validUpdateGate,completeRuleset,auditRules,requireProtection,merge,verifyMerge,latestCheck,watch
+  validBaseline,completeRuleset,auditRules,requireProtection,merge,verifyMerge,latestCheck,watch
 };
 if(require.main===module) main().catch(error=>{console.error('FAIL: '+error.message);process.exitCode=1;});
