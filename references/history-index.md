@@ -248,7 +248,7 @@
 | 207 | 既见未来，为何不Buy | `recent-why-not-buy` | 2021-2026 / game | 部分核实 | platform_usage | 原片台词与购买谐音分层解释；不采当时文章对未发布剧情的猜测。 |
 | 208 | 鸣潮公式 | `recent-wuwa-formula` | 2021-2026 / game | 部分核实 | platform_usage | 原句、反讽改写与普通分工陈述应分开；不引用完整原台词。 |
 | 209 | 你说得对，但是原神 | `recent-you-are-right` | 2021-2026 / game | 部分核实 | meaning、origin、platform_usage | 不收录完整营销文案；首发评论尚未核验。 |
-| 210 | 哼哼啊啊啊 | `extra-hmm-scream` | 2021-2026 / guichu | 部分核实 | 无 | 已核实该叫声音轨与目力先辈画面属于后期拼接，不能署为野兽先辈原片原声。黑雷霆来源目前由B站社区考据指认，仍缺原始音轨、最早合成作品及更早中文用例。 |
+| 210 | 哼哼啊啊啊 | `extra-hmm-scream` | 2021-2026 / guichu | 部分核实 | 无 | 2021年与2023年B站社区文章均将常见音画记为后期拼接。黑雷霆音轨关联来自2023年文章的指认，原始音轨、最早合成作品及更早中文用例仍待补录。 |
 | 211 | 小黑子露出鸡脚了 | `recent-black-fan` | 2021-2026 / guichu | 部分核实 | meaning、origin、platform_usage | 作为识别词条收录；不扩写谐音辱骂清单。 |
 | 212 | XX笑传之CCB | `recent-ccb-template` | 2021-2026 / guichu | 部分核实 | platform_usage | 2023-07-13仅为二创简介提供的原投稿线索，未据此填确定起源日期；2025不是已核实的首创年。 |
 | 213 | 圆头耄耋 | `recent-maodie` | 2021-2026 / guichu | 部分核实 | meaning、origin、platform_usage | 原视频及连续饲养记录未核；不收录血腥素材、群聊入口或推测性死因。 |

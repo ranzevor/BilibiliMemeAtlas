@@ -336,6 +336,10 @@ class QueueIndividualEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['extra-src-bili-three-hum']['access_level'], 'full')
         self.assertIn('音轨', self.sources['extra-src-bili-three-hum']['supports'])
         self.assertIn('黑雷霆', self.sources['extra-src-bili-three-hum']['supports'])
+        self.assertEqual(entry['origin']['bilibili_role'], 'imported')
+        self.assertIn('【ホモ雷普全書】', self.sources['extra-src-bili-three-hum']['title'])
+        self.assertIn('首发日期保留未知', self.sources['extra-src-bili-three-hum']['limitations'])
+        self.assertNotIn('不复述或链接', self.sources['extra-src-bili-three-hum']['limitations'])
 
 
 
