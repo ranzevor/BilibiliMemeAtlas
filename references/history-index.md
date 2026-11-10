@@ -214,14 +214,14 @@
 | 173 | 算了嘛警官 | `recent-26-suanle` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 原节目准确期次、原片版权与本轮跨平台传播先后未确证。 |
 | 174 | 蚌埠住了 | `recent-bengbu` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 已找到2021使用记录；存在多个网络溯源版本，不认定唯一首创。 |
 | 175 | 你CPU我 | `recent-cpu` | 2021-2026 / community | 部分核实 | platform_usage | 谐音模板不改变CPU等技术缩写的正式定义。 |
-| 176 | 含金量还在上升 | `recent-gold-content` | 2021-2026 / community | 部分核实 | origin、platform_usage | 官方释义支持通用语义；年度榜单及示例不是起源时间。B站投稿标题可确认站内使用节点，尚未确定最早站内用例及首创来源。 |
+| 176 | 含金量还在上升 | `recent-gold-content` | 2021-2026 / community | 部分核实 | origin、platform_usage | 官方释义和当前投稿标题支持通用语义及站内使用。首创来源、最早站内用例和该标题用语的出现时间待考证。 |
 | 177 | 古希腊掌管XX的神 | `recent-greek-god` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 没有可确证的唯一原帖。 |
 | 178 | 绝绝子 | `recent-juejuezi` | 2021-2026 / community | 部分核实 | origin、platform_usage | 未确认B站传播起点；反讽义需由当前语境支持。 反讽为可能的语用解释，尚需具体用例，不纳入当前已核释义。 |
 | 179 | 伤害性不高，侮辱性极强 | `recent-low-damage` | 2021-2026 / community | 部分核实 | platform_usage | 未找到最初评论原件，不据二手叙述给首创者定名。 |
 | 180 | 主打一个XX | `recent-mainly-one` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 句式早期使用未精确定位。 |
 | 181 | 嘴替 | `recent-mouthpiece` | 2021-2026 / community | 部分核实 | platform_usage | B站最早传播节点未核验。 |
 | 182 | 预制XX | `recent-prefabricated` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | “预制人”容易直接贬低他人，识别时可解释，默认不用于称呼真人。 |
-| 183 | 我是真人 | `recent-real-person` | 2021-2026 / community | 部分核实 | origin | 已由春晚弹幕统计确认该表达的站内使用，并由同期社区分析补足实时互动、自我呈现和寻求回应的语义场景。尚未找到该短语的首创来源、春晚前的独立用例或可确定的起源日期。 |
+| 183 | 我是真人 | `recent-real-person` | 2021-2026 / community | 部分核实 | origin | 该场直播的统计与社区分析分别支持使用记录和语境解释。首创来源、春晚前的独立用例与起源日期待考证。 |
 | 184 | 尊嘟假嘟 | `recent-really` | 2021-2026 / community | 部分核实 | platform_usage | 未取得最早微博原帖；不把宠物图片来源认定为已获授权。 |
 | 185 | 水灵灵地XX | `recent-shuilingling` | 2021-2026 / community | 部分核实 | platform_usage | 来源只描述偶像视频背景，不给出未经核实的首发日期。 |
 | 186 | 那咋了 | `recent-so-what` | 2021-2026 / community | 部分核实 | platform_usage | 不确定最早平台和作者；普通反问与流行模板应消歧。 |
