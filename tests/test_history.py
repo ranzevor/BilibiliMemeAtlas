@@ -329,3 +329,43 @@ class QueueIndividualEvidenceTests(unittest.TestCase):
         self.assertEqual(set(refs['recent-src-gold-bili']['claims']), {'platform_usage'})
         self.assertIsNone(entry['origin']['date'])
 
+
+class QueueFrontEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_real_person_usage_is_tied_to_the_actual_program(self):
+        entry = self.by_id['recent-real-person']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('《马上有奇迹》', entry['origin']['summary'])
+        self.assertIn('首创来源', entry['notes'])
+        self.assertEqual(self.sources['recent-src-gala26-program']['access_level'], 'full')
+        references = {item['source_id']: item for item in entry['evidence']}
+        self.assertEqual(set(references['recent-src-gala26-program']['claims']), {'platform_usage'})
+        self.assertIn('2026年2月16日', self.sources['recent-src-gala26']['supports'])
+
+
+class RealPersonQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_real_person_has_full_contextual_meaning_source(self):
+        entry = self.by_id['recent-real-person']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('参与直播', entry['meaning'])
+        self.assertIn('共同在场', entry['meaning'])
+        self.assertEqual(entry['usage']['avoid'], ['把观众弹幕当作《马上有奇迹》的节目台词'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['recent-src-real-person-context']['claims'])
+        self.assertEqual(self.sources['recent-src-real-person-context']['access_level'], 'full')
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('首创来源', entry['notes'])
+        context = self.sources['recent-src-real-person-context']
+        self.assertIn('妈妈我上电视了', context['supports'])
+        self.assertNotIn('看得见我吗', context['supports'])

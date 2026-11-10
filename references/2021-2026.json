@@ -3185,28 +3185,28 @@
     "aliases": [],
     "category": "community",
     "era": "2021-2026",
-    "meaning": "在节目和AI讨论语境中，强调或戏仿“这不是机器生成的”；必须看具体场景。",
+    "meaning": "在B站2026年春晚的实时弹幕中，观众用“我是真人”表达参与直播、被看见和共同在场的愿望，常与“妈妈我上电视了”等在场感表达一起出现。",
     "origin": {
-      "summary": "2026B站春晚单场统计将其列为高频弹幕之一。",
+      "summary": "2026年B站春晚直播的高频弹幕之一，B站公布的统计将其对应到开场表演《马上有奇迹》。同期社区文章从观众自我呈现和共同在场的角度解释该用法。",
       "date": null,
       "precision": "unknown",
       "bilibili_role": "amplifier"
     },
     "usage": {
       "contexts": [
-        "解释春晚弹幕",
-        "真人与AI的戏剧反差"
+        "春晚实时弹幕互动",
+        "观众表达参与直播和共同在场",
+        "与“妈妈我上电视了”等在场感表达共同出现"
       ],
-      "example": "这段“我是真人”是弹幕互动，不能据此完成身份认证。",
+      "example": "我是真人，看得见我吗？",
       "avoid": [
-        "一句自称不能替代具体语境判断",
-        "账号身份判断不属于该梗的含义"
+        "把观众弹幕当作《马上有奇迹》的节目台词"
       ]
     },
     "lifecycle": "volatile",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "recent-src-gala26",
@@ -3214,10 +3214,25 @@
           "platform_usage",
           "date"
         ],
-        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+        "note": "北京日报报道记录2026年2月16日B站春晚直播的五条高频弹幕，其中包括“我是真人”。"
+      },
+      {
+        "source_id": "recent-src-gala26-program",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "B站公布的2026年春晚直播统计中，“我是真人”对应开场表演《马上有奇迹》。"
+      },
+      {
+        "source_id": "recent-src-real-person-context",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "BB姬2026年2月18日发表的文章将“我是真人”“妈妈我上电视了”等弹幕解释为观众的自我呈现、寻找连接和共同在场。"
       }
     ],
-    "notes": "证据范围：现有引用尚无非元数据的释义支持，暂不作为已证实含义提供。已有依据限于 B站春晚直播弹幕总数达1.33亿，年轻人发送“啊？”最多：platform_usage,date（full）。统计只证明2026春晚使用，尚未完整核验节目原话与更早梗源；不认定年度弹幕。"
+    "notes": "该场直播的统计与社区分析分别支持使用记录和语境解释。首创来源、春晚前的独立用例与起源日期待考证。"
   },
   {
     "id": "recent-sauce-duck",

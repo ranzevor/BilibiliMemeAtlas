@@ -2118,9 +2118,9 @@
     "publisher": "新浪新闻",
     "source_type": "secondary",
     "access_level": "full",
-    "checked_at": "2026-10-23",
-    "supports": "2026春晚五个高频弹幕；我是真人；我要验牌",
-    "limitations": "仅春晚单场统计，绝不能标成2026年度弹幕。"
+    "checked_at": "2026-11-10",
+    "supports": "北京日报客户端报道记录2026年2月16日春晚直播的弹幕总数1.33亿，并列出包括“我是真人”在内的五条高频弹幕。",
+    "limitations": "统计范围为该场春晚直播，文中给出的2026年2月16日是直播日期。"
   },
   {
     "id": "recent-src-duck",
@@ -3683,5 +3683,27 @@
     "checked_at": "2026-11-10",
     "supports": "官方释义说明“XX的含金量还在上升”用于形容某人或物的价值随时间逐渐显现和提升，并以中国游为例。",
     "limitations": "支持通用语义及2024年度榜单背景，不提供该表达的首创者或最早使用日期。"
+  },
+  {
+    "id": "recent-src-gala26-program",
+    "title": "B站：春晚直播总弹幕数量1.33亿，弹幕Top5是“啊？/新年快乐/我要验牌”",
+    "url": "https://news.zhibo8.com/game/2026-02-17/699447b6c644dnative.htm",
+    "publisher": "直播吧",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-10",
+    "supports": "报道公布2026年春晚直播的五条高频弹幕，将“我是真人”对应到开场表演《马上有奇迹》。",
+    "limitations": "报道提供该场直播的统计与节目对应关系，具体语义另见观众语境分析。"
+  },
+  {
+    "id": "recent-src-real-person-context",
+    "title": "要不是有弹幕，我还以为春晚闹智械危机了",
+    "url": "https://www.taptap.cn/moment/774566313145143143",
+    "publisher": "BB姬（TapTap）",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-10",
+    "supports": "文章发表于2026年2月18日，页面标注2026年2月22日更新。正文记录“我是真人”“妈妈我上电视了”等弹幕，并将其解释为观众参与直播、寻找连接和共同在场的愿望。",
+    "limitations": "正文属于社区作者对该场春晚弹幕的解释，首创来源和更早用例未提供。"
   }
 ]
