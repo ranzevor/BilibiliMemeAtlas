@@ -509,10 +509,19 @@ class GermanOrthopedicsQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-german-bili-2018']['access_level'], 'full')
         self.assertIn('不能确认事件真实性', entry['origin']['summary'])
 
-    def test_german_orthopedics_has_a_dated_bilibili_usage_record(self):
+    def test_german_orthopedics_separates_video_upload_and_current_tags(self):
         entry = self.by_id['early-german-orthopedics']
         refs = {ref['source_id']: ref for ref in entry['evidence']}
         self.assertIn('platform_usage', refs['early-src-german-bili-2015']['claims'])
+        self.assertNotIn('date', refs['early-src-german-bili-2015']['claims'])
+        self.assertIn('platform_usage', refs['early-src-german-bili-2018']['claims'])
+        self.assertIn('标签添加日期未知', entry['origin']['summary'])
+        self.assertIn('标签添加日期未知', entry['notes'])
+        self.assertEqual(self.sources['early-src-german-bili-2015']['checked_at'], '2026-11-10')
+        self.assertIn('13:26:18', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertIn('德国骨科欢迎您', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertNotIn('与“德国骨科”', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertIn('标签添加日期未知', self.sources['early-src-german-bili-2015']['limitations'])
         self.assertEqual(self.sources['early-src-german-bili-2015']['access_level'], 'metadata')
         self.assertIn('2015年10月10日', self.sources['early-src-german-bili-2015']['supports'])
         self.assertIsNone(entry['origin']['date'])
