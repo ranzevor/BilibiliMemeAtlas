@@ -3661,5 +3661,27 @@
     "checked_at": "2026-10-31",
     "supports": "转载的年度用语说明解释skr原为轮胎摩擦拟声，2018年综艺传播中被用于表示认可、佩服和赞扬。",
     "limitations": "年度解释不证明英语拟声词始于2018年；没有建立B站首用或所有中文谐音变体的传播链。"
+  },
+  {
+    "id": "recent-src-gold-bili",
+    "title": "演技的含金量还在上升！！",
+    "url": "https://www.bilibili.com/video/BV1DskGYYE5V/",
+    "publisher": "哔哩哔哩投稿者",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-10",
+    "supports": "公开接口中的当前标题为“演技的含金量还在上升！！”，投稿日期为2024年12月16日。",
+    "limitations": "接口未提供标题历史，标题用语出现时间未定。"
+  },
+  {
+    "id": "recent-src-gold-ccnu",
+    "title": "2024年度十大网络用语发布 | 汉语盘点",
+    "url": "https://nlp.ccnu.edu.cn/news/133",
+    "publisher": "国家语言资源监测与研究网络媒体中心（华中师范大学）",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-10",
+    "supports": "官方释义说明“XX的含金量还在上升”用于形容某人或物的价值随时间逐渐显现和提升，并以中国游为例。",
+    "limitations": "支持通用语义及2024年度榜单背景，不提供该表达的首创者或最早使用日期。"
   }
 ]

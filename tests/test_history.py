@@ -307,3 +307,25 @@ class MidEraEvidenceTests(unittest.TestCase):
                 self.assertEqual(entry['evidence_status'], 'verified')
                 self.assertIsNone(entry['origin']['date'])
                 self.assertIn(identifier, queued)
+
+
+class QueueIndividualEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_gold_content_separates_current_title_from_publication_date(self):
+        entry = self.by_id['recent-gold-content']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['recent-src-gold-ccnu']['claims'])
+        self.assertEqual(self.sources['recent-src-gold-ccnu']['access_level'], 'full')
+        self.assertIn('platform_usage', refs['recent-src-gold-bili']['claims'])
+        source = self.sources['recent-src-gold-bili']
+        self.assertIn('当前标题', source['supports'])
+        self.assertIn('投稿日期为2024年12月16日', source['supports'])
+        self.assertIn('标题历史', source['limitations'])
+        self.assertEqual(set(refs['recent-src-gold-bili']['claims']), {'platform_usage'})
+        self.assertIsNone(entry['origin']['date'])
+
