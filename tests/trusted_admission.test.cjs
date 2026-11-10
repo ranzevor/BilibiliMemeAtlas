@@ -146,11 +146,12 @@ test('同一 HEAD 的元数据变化和目标基线变化均拒绝旧结果',asy
     assert(result.errors.some(e=>e.includes('校验期间变化')));
   }
 });
-test('真实列表缺项、超出 API 提交范围或错误仓库身份均失败关闭',async()=>{
+test('真实列表缺项、无效数量或错误仓库身份均失败关闭',async()=>{
   for(const mutate of [
     s=>{s.pulls[0].commits=2;},
     s=>{s.pulls[0].changed_files=2;},
-    s=>{s.pulls[0].commits=251;},
+    s=>{s.pulls[0].commits=null;},
+    s=>{s.pulls[0].changed_files=0;},
     s=>{s.pulls[0].base.repo.id=1;},
     s=>{s.pulls[0].base.ref='other/unprotected';}
   ]) {
@@ -568,11 +569,12 @@ test('替换检查触发的是完整复核，永久违规不会因为刷新而�
   assert.equal(writes(f.state,'POST').length,2);
   assert.deepEqual(writes(f.state,'PATCH').map(r=>r[2].conclusion),['failure','failure']);
 });
-test('检查发布失败不留下成功缓存，恢复后重新发布',async()=>{
+test('检查发布失败不留下成功缓存，恢复后完成既有检查',async()=>{
   const f=fixture();let fail=true;
   f.state.onPatch=()=>{if(fail){fail=false;throw new Error('temporary check update failure');}};
   await cycles(f,[()=>{},null]);
-  assert.equal(writes(f.state,'POST').length,2);
+  assert.equal(writes(f.state,'POST').length,1);
+  assert.equal(writes(f.state,'PATCH').length,2);
   assert.equal(f.state.checkRuns.at(-1).conclusion,'success');
 });
 test('单个 HEAD 的发布故障不会饿死其他 HEAD，暂态持续故障采用有限退避',async()=>{
@@ -673,4 +675,112 @@ test('真实 HTTP 传输覆盖异步候选、暂态恢复及合并响应断连�
   } finally {
     server.closeAllConnections();await new Promise(resolve=>server.close(resolve));
   }
+});
+
+test('确定性提交和文件超限失败在元数据不变时复用缓存',async()=>{
+  for(const [field,limit] of [['commits',250],['changed_files',500]]) {
+    const f=fixture();
+    f.state.pulls[0][field]=limit+1;
+    const report=await gate.evaluate(f.client,36);
+    assert.equal(report.retry,false);
+    assert.deepEqual(report.errors,['PR 提交或文件数量超出可核验范围']);
+    await cycles(f,[()=>gate.CHECK_POLL_MS,()=>gate.CHECK_POLL_MS,null]);
+    assert.equal(writes(f.state,'POST').length,1);
+    assert.equal(writes(f.state,'PATCH').length,1);
+    assert.equal(f.state.checkRuns[0].conclusion,'failure');
+    assert(!f.state.requests.some(([method,url])=>method==='LIST'&&/\/(commits|files)$/u.test(url)));
+  }
+});
+
+test('数量上限内的完整提交和文件列表仍通过',async()=>{
+  const f=fixture();
+  const message=f.state.commits[0].commit.message;
+  f.state.commits=Array.from({length:250},(_,index)=>({
+    sha:index===249?HEAD:(index+1).toString(16).padStart(40,'0'),commit:{message}
+  }));
+  f.state.files=Array.from({length:500},(_,index)=>({filename:'src/file-'+index+'.js'}));
+  f.state.pulls[0].commits=f.state.commits.length;
+  f.state.pulls[0].changed_files=f.state.files.length;
+  const report=await gate.evaluate(f.client,36);
+  assert.deepEqual(report.errors,[]);
+  assert.equal(report.retry,false);
+});
+
+test('检查创建和完成持续失败保留退避并在恢复后完成同一检查',async()=>{
+  for(const stage of ['create','complete']) {
+    const f=fixture();
+    let failing=true;
+    f.state[stage==='create'?'onCreate':'onPatch']=()=>{
+      if(failing)throw new Error('temporary check API failure');
+    };
+    const steps=Array.from({length:8},()=>()=>{});
+    steps[6]=()=>{
+      assert.equal(writes(f.state,stage==='create'?'POST':'PATCH').length,3);
+      assert.equal(f.state.checkRuns.length,stage==='create'?0:1);
+      failing=false;
+    };
+    await cycles(f,steps);
+    assert.equal(writes(f.state,'POST').length,stage==='create'?4:1);
+    assert.equal(writes(f.state,'PATCH').length,stage==='create'?1:4);
+    assert.equal(f.state.checkRuns.length,1);
+    assert.equal(f.state.checkRuns[0].status,'completed');
+    assert.equal(f.state.checkRuns[0].conclusion,'success');
+  }
+});
+
+test('检查创建或完成响应丢失后恢复既有检查且不重复创建',async()=>{
+  for(const lostMethod of ['POST','PATCH']) {
+    const f=fixture();
+    const request=f.client.request.bind(f.client);
+    let loseResponse=true;
+    f.client.request=async(method,url,data)=>{
+      const result=await request(method,url,data);
+      if(loseResponse&&method===lostMethod&&url.includes('/check-runs')) {
+        loseResponse=false;
+        throw new Error('temporary check response loss');
+      }
+      return result;
+    };
+    await cycles(f,[()=>{},null]);
+    assert.equal(writes(f.state,'POST').length,1);
+    assert.equal(writes(f.state,'PATCH').length,lostMethod==='POST'?1:2);
+    assert.equal(f.state.checkRuns.length,1);
+    assert.equal(f.state.checkRuns[0].conclusion,'success');
+  }
+});
+
+test('创建响应丢失后的恢复按关联标识查找，保留其他进程的检查',async()=>{
+  const f=fixture();
+  const request=f.client.request.bind(f.client);
+  let loseResponse=true;
+  f.client.request=async(method,url,data)=>{
+    const result=await request(method,url,data);
+    if(loseResponse&&method==='POST'&&url.endsWith('/check-runs')) {
+      loseResponse=false;
+      f.state.checkRuns.push({...structuredClone(result),id:999,external_id:'other-publication',
+        status:'completed',conclusion:'success',completed_at:'2026-11-07T00:00:00Z'});
+      throw new Error('temporary check response loss');
+    }
+    return result;
+  };
+  await cycles(f,[()=>{},null]);
+  assert.equal(writes(f.state,'POST').length,1);
+  assert.equal(writes(f.state,'PATCH').length,1);
+  assert.equal(f.state.checkRuns.length,2);
+  assert(f.state.checkRuns.every(check=>check.status==='completed'&&check.conclusion==='success'));
+  assert(f.state.requests.some(([method,url])=>method==='GET'&&url.includes('&filter=all&')));
+  assert.equal(f.state.checkRuns[1].external_id,'other-publication');
+});
+
+test('恢复未完成检查时重新验证变化后的 PR 元数据',async()=>{
+  const f=fixture();
+  let fail=true;
+  f.state.onPatch=()=>{if(fail){fail=false;throw new Error('temporary check update failure');}};
+  await cycles(f,[state=>{state.pulls[0].title='invalid';},null]);
+  assert.equal(writes(f.state,'POST').length,1);
+  assert.equal(writes(f.state,'PATCH').length,2);
+  assert.equal(f.state.checkRuns.length,1);
+  assert.equal(f.state.checkRuns[0].status,'completed');
+  assert.equal(f.state.checkRuns[0].conclusion,'failure');
+  assert.match(f.state.checkRuns[0].output.summary,/标题/u);
 });

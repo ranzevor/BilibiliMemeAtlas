@@ -210,9 +210,13 @@ async function evaluate(client,number) {
     errors.push(pr.mergeable===false?'PR 存在合并冲突':'PR 合并候选尚未计算完成');
     return {pr,message,errors,retry:true};
   }
-  if(!Number.isSafeInteger(pr.commits)||pr.commits<1||pr.commits>250||
-     !Number.isSafeInteger(pr.changed_files)||pr.changed_files<1||pr.changed_files>500)
+  if(!Number.isSafeInteger(pr.commits)||pr.commits<1||
+     !Number.isSafeInteger(pr.changed_files)||pr.changed_files<1)
     throw new Error('PR 提交或文件数量超出可核验范围');
+  if(pr.commits>250||pr.changed_files>500) {
+    errors.push('PR 提交或文件数量超出可核验范围');
+    return {pr,message,errors,retry:false};
+  }
   const [commits,files]=await Promise.all([
     client.list(endpoint+'/commits'),client.list(endpoint+'/files')
   ]);
@@ -258,16 +262,24 @@ async function openGroups(client) {
 function groupFingerprint(rows) {
   return JSON.stringify(rows.map(pr=>fingerprint(pr)));
 }
-async function publishGroup(client,head,rows,{now=Date.now}={}) {
+async function publishGroup(client,head,rows,{now=Date.now,publication={}}={}) {
   if(!SHA.test(head)||!Array.isArray(rows)||!rows.length||rows.some(pr=>pr.head?.sha!==head))
     throw new Error('检查对象无效');
   const snapshot=groupFingerprint(rows);
-  const check=await client.request('POST',PREFIX+'/check-runs',{
-    name:CHECK,head_sha:head,status:'in_progress'
-  });
+  let check=publication.check;
+  if(!check) {
+    if(publication.externalId) {
+      check=await latestCheck(client,head,{externalId:publication.externalId});
+    } else publication.externalId=crypto.randomUUID();
+    if(!check)check=await client.request('POST',PREFIX+'/check-runs',{
+      name:CHECK,head_sha:head,status:'in_progress',external_id:publication.externalId
+    });
+  }
   if(check.app?.id!==client.appId||!Number.isSafeInteger(check.id)||check.id<=0||
-     check.head_sha!==head||check.name!==CHECK||check.status!=='in_progress')
+     check.head_sha!==head||check.name!==CHECK||check.external_id!==publication.externalId||
+     !['in_progress','completed'].includes(check.status))
     throw new Error('检查来源不是配置的独立 App');
+  publication.check=check;
   const errors=[];
   let retry=false;
   const reports=[];
@@ -309,17 +321,19 @@ async function publishGroup(client,head,rows,{now=Date.now}={}) {
      completed.name!==CHECK||completed.status!=='completed'||completed.conclusion!==conclusion||
      !Number.isFinite(Date.parse(completed.completed_at)))
     throw new Error('检查完成响应的身份或结果不符');
+  delete publication.check;
+  delete publication.externalId;
   return {reports,errors,retry,snapshot,
     check:{id:check.id,conclusion,completed_at:completed.completed_at}};
 }
 
-async function latestCheck(client,head) {
+async function latestCheck(client,head,{externalId}={}) {
   if(!SHA.test(head)) throw new Error('检查 HEAD 无效');
   let latest=null,total=0;
   const seen=new Set();
   for(let page=1;page<=11;page++) {
     const result=await client.request('GET',PREFIX+'/commits/'+head+'/check-runs?check_name='+
-      encodeURIComponent(CHECK)+'&filter=latest&per_page=100&page='+page);
+      encodeURIComponent(CHECK)+'&filter='+(externalId?'all':'latest')+'&per_page=100&page='+page);
     if(!Array.isArray(result?.check_runs)||result.check_runs.length>100||
        !Number.isSafeInteger(result.total_count)||result.total_count<0)
       throw new Error('检查列表响应无效');
@@ -331,6 +345,7 @@ async function latestCheck(client,head) {
       if(check.name!==CHECK||check.app?.id!==client.appId) continue;
       if(check.head_sha!==head||!Number.isSafeInteger(check.id)||check.id<=0)
         throw new Error('检查对象身份无效');
+      if(externalId&&check.external_id!==externalId)continue;
       if(!latest||check.id>latest.id) latest=check;
     }
     if(result.check_runs.length<100) {
@@ -487,8 +502,10 @@ async function watch(client,{sleep=ms=>new Promise(resolve=>setTimeout(resolve,m
       const groups=await openGroups(client);
       for(const [head,rows] of groups) {
         const signature=groupFingerprint(rows);
+        const cached=previous.get(head),time=now();
+        const publication=cached?.publication||{};
+        let result;
         try {
-          const cached=previous.get(head),time=now();
           let refresh=!cached||cached.signature!==signature;
           if(!refresh&&cached.retry) refresh=time>=cached.retryAt||time<cached.observedAt;
           if(!refresh&&!cached.retry&&(time-cached.observedAt>=checkIntervalMs||
@@ -502,14 +519,15 @@ async function watch(client,{sleep=ms=>new Promise(resolve=>setTimeout(resolve,m
             }
           }
           if(!refresh) continue;
-          const result=await publishGroup(client,head,rows,{now});
-          const attempts=cached?.signature===signature&&cached.retry?cached.attempts+1:0;
-          previous.set(head,{signature,check:result.check,retry:result.retry,attempts,
-            observedAt:now(),retryAt:now()+Math.min(POLL_MS*2**Math.min(attempts,3),CHECK_POLL_MS)});
+          result=await publishGroup(client,head,rows,{now,publication});
         } catch(error) {
-          previous.delete(head);
+          result={check:cached?.check,retry:true};
           console.error('FAIL: '+error.message);
         }
+        const attempts=cached?.signature===signature&&cached.retry?cached.attempts+1:0;
+        const observedAt=now();
+        previous.set(head,{signature,check:result.check,retry:result.retry,attempts,publication,
+          observedAt,retryAt:observedAt+Math.min(POLL_MS*2**Math.min(attempts,3),CHECK_POLL_MS)});
       }
       for(const head of previous.keys()) if(!groups.has(head)) previous.delete(head);
     } catch(error) {
