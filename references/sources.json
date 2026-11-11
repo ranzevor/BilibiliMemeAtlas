@@ -3903,5 +3903,27 @@
     "checked_at": "2026-10-31",
     "supports": "检索摘要称FFF团全名为“异端审问会·FFF团”，来自《笨蛋·测验·召唤兽》轻小说，首次出现于2008年出版的第4卷；并区分原作组织设定与动画改编中的火刑桥段。",
     "limitations": "当前读取范围为检索摘要；卷次、组织细节及动画改编差异尚未通过原作正文逐页核对。"
+  },
+  {
+    "id": "early-src-german-bili-2015",
+    "title": "欧尼酱之歌",
+    "url": "https://www.bilibili.com/video/BV1Ls411278p/",
+    "publisher": "哔哩哔哩投稿者 汽水Yui",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-10",
+    "supports": "B站公开元数据显示，视频《欧尼酱之歌》于2015年10月10日13:26:18投稿。2026年11月10日读取时，当前标签包含“德国骨科欢迎您”。",
+    "limitations": "读取范围为视频标题、投稿日期和当前标签。标签添加日期未知，现有记录缺少2015年的同期标签快照。"
+  },
+  {
+    "id": "early-src-german-bili-2018",
+    "title": "二次元绅士们看过来——p站美图『游戏人生』篇最终期",
+    "url": "https://www.bilibili.com/read/cv1239769/",
+    "publisher": "哔哩哔哩专栏作者 毛绒绒小纱鱼",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2018年9月30日B站专栏正文将“德国骨科”解释为血缘兄妹恋的隐语，复述2012年3月1日微博传闻的具体故事，并说明该词也用于调侃兄控、妹控。",
+    "limitations": "该专栏是2018年对流传说法的复述，不提供原始微博链接或独立证据，不能证明传闻事件真实、2012年帖子为最早用例或梗的确切首创日期。"
   }
 ]

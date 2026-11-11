@@ -445,6 +445,43 @@ class FffGroupQueueEvidenceTests(unittest.TestCase):
                          refs['early-src-fff-blog-2010']['claims'])
 
 
+class GermanOrthopedicsQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_german_orthopedics_distinguishes_blood_relation_and_pseudo_siblings(self):
+        entry = self.by_id['early-german-orthopedics']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('有血缘关系', entry['meaning'])
+        self.assertIn('伪骨科', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-german-wiktionary']['claims'])
+        self.assertIn('meaning', refs['early-src-german-bili-2018']['claims'])
+        self.assertEqual(self.sources['early-src-german-bili-2018']['access_level'], 'full')
+        self.assertIn('不能确认事件真实性', entry['origin']['summary'])
+
+    def test_german_orthopedics_separates_video_upload_and_current_tags(self):
+        entry = self.by_id['early-german-orthopedics']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-german-bili-2015']['claims'])
+        self.assertNotIn('date', refs['early-src-german-bili-2015']['claims'])
+        self.assertIn('platform_usage', refs['early-src-german-bili-2018']['claims'])
+        self.assertIn('标签添加日期未知', entry['origin']['summary'])
+        self.assertIn('标签添加日期未知', entry['notes'])
+        self.assertEqual(self.sources['early-src-german-bili-2015']['checked_at'], '2026-11-10')
+        self.assertIn('13:26:18', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertIn('德国骨科欢迎您', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertNotIn('与“德国骨科”', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertIn('标签添加日期未知', self.sources['early-src-german-bili-2015']['limitations'])
+        self.assertEqual(self.sources['early-src-german-bili-2015']['access_level'], 'metadata')
+        self.assertIn('2015年10月10日', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('原始微博帖', entry['notes'])
+        self.assertIn('标签', self.sources['early-src-german-bili-2015']['supports'])
+        self.assertNotIn('简介', self.sources['early-src-german-bili-2015']['supports'])
 class QueueIndividualEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
