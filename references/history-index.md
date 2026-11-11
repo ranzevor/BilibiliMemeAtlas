@@ -39,8 +39,8 @@
 
 | 序号 | 词条 | ID | 时期 / 分类 | 资料状态 | 缺少全文命题 | 具体缺口 |
 | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | 阿卡林 | `early-akarin` | 2009-2015 / acg | 部分核实 | 无 | 已核实角色来源、昵称形成路径及“存在感低”的引申义；B站2011年8月13日已有可定位的相关投稿记录。该投稿只是早期使用实例，不是B站首发或中文首创证明；确切起源日期仍未知。 |
-| 2 | ⑨ | `early-cirno-nine` | 2009-2015 / acg | 部分核实 | platform_usage | 已直接核对《东方花映塚》官方说明书原图，并由东方专题媒体解释其昵称形成关系；找到B站2010年9月6日标题使用“⑨”指向琪露诺的投稿，以及2009年同期跨站讨论线索。上述材料证明官方标注和早期使用，不证明中文首创者、B站首发或精确起源日期。 |
+| 1 | 阿卡林 | `early-akarin` | 2009-2015 / acg | 部分核实 | 无 | 2015年与2017年文章分别记录角色归属、昵称读音和低存在感引申义。站内视频的发布时间为2011年8月13日，登记标题为《【猎奇】阿卡林葬礼会场》。中文首创者、B站最早用例与精确起源日期未知。 |
+| 2 | ⑨ | `early-cirno-nine` | 2009-2015 / acg | 部分核实 | platform_usage | 官方说明书第9页保留画面编号和“バカ”标注，2022年专题文章说明了昵称的形成关系。可定位的B站投稿标注发布时间为2010年9月6日，社区帖子另列2008年发表和2009年编辑时间。中文首创者、B站最早用例及精确起源日期未知。 |
 | 3 | 教练，我想打篮球 | `early-coach-learn` | 2009-2015 / acg | 部分核实 | 无 | 已由2013年全文文章核实原作人物、日语原句和中文译句；2022年全文解释支持“教练，我想XXX”的扩展表达；B站2014年1月2日投稿提供早期站内使用记录。尚未定位中文首创者、B站最早用例或该模板的精确形成日期。 |
 | 4 | FFF团 | `early-fff` | 2009-2015 / acg | 部分核实 | platform_usage | 已核实FFF团属于《笨蛋·测验·召唤兽》系列正式设定，并找到KADOKAWA官方书目与2010年B站投稿视频。视频投稿日期与当前标签分开记录，标签添加日期未知。首次登场第4卷的具体正文位置、中文社区传播链和精确起源日期仍未通过原作正文及早期站内档案完整核定；动画火刑表现与原作组织设定已分开记录。 |
 | 5 | 德国骨科 | `early-german-orthopedics` | 2009-2015 / acg | 部分核实 | origin、platform_usage | 已补亲属恋爱隐语与无血缘变体的区分；最初造词记录、传闻真实性和早期B站用例仍未核定。 |
@@ -212,14 +212,14 @@
 | 171 | 算了嘛警官 | `recent-26-suanle` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 原节目准确期次、原片版权与本轮跨平台传播先后未确证。 |
 | 172 | 蚌埠住了 | `recent-bengbu` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 已找到2021使用记录；存在多个网络溯源版本，不认定唯一首创。 |
 | 173 | 你CPU我 | `recent-cpu` | 2021-2026 / community | 部分核实 | platform_usage | 谐音模板不改变CPU等技术缩写的正式定义。 |
-| 174 | 含金量还在上升 | `recent-gold-content` | 2021-2026 / community | 部分核实 | origin、platform_usage | 官方释义支持通用语义；年度榜单及示例不是起源时间。B站投稿标题可确认站内使用节点，尚未确定最早站内用例及首创来源。 |
+| 174 | 含金量还在上升 | `recent-gold-content` | 2021-2026 / community | 部分核实 | origin、platform_usage | 官方释义和当前投稿标题支持通用语义及站内使用。首创来源、最早站内用例和该标题用语的出现时间待考证。 |
 | 175 | 古希腊掌管XX的神 | `recent-greek-god` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 没有可确证的唯一原帖。 |
 | 176 | 绝绝子 | `recent-juejuezi` | 2021-2026 / community | 部分核实 | origin、platform_usage | 未确认B站传播起点；反讽义需由当前语境支持。 反讽为可能的语用解释，尚需具体用例，不纳入当前已核释义。 |
 | 177 | 伤害性不高，侮辱性极强 | `recent-low-damage` | 2021-2026 / community | 部分核实 | platform_usage | 未找到最初评论原件，不据二手叙述给首创者定名。 |
 | 178 | 主打一个XX | `recent-mainly-one` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 句式早期使用未精确定位。 |
 | 179 | 嘴替 | `recent-mouthpiece` | 2021-2026 / community | 部分核实 | platform_usage | B站最早传播节点未核验。 |
 | 180 | 预制XX | `recent-prefabricated` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | “预制人”容易直接贬低他人，识别时可解释，默认不用于称呼真人。 |
-| 181 | 我是真人 | `recent-real-person` | 2021-2026 / community | 部分核实 | origin | 已由春晚弹幕统计确认该表达的站内使用，并由同期社区分析补足实时互动、自我呈现和寻求回应的语义场景。尚未找到该短语的首创来源、春晚前的独立用例或可确定的起源日期。 |
+| 181 | 我是真人 | `recent-real-person` | 2021-2026 / community | 部分核实 | origin | 该场直播的统计与社区分析分别支持使用记录和语境解释。首创来源、春晚前的独立用例与起源日期待考证。 |
 | 182 | 尊嘟假嘟 | `recent-really` | 2021-2026 / community | 部分核实 | platform_usage | 未取得最早微博原帖；不把宠物图片来源认定为已获授权。 |
 | 183 | 水灵灵地XX | `recent-shuilingling` | 2021-2026 / community | 部分核实 | platform_usage | 来源只描述偶像视频背景，不给出未经核实的首发日期。 |
 | 184 | 那咋了 | `recent-so-what` | 2021-2026 / community | 部分核实 | platform_usage | 不确定最早平台和作者；普通反问与流行模板应消歧。 |
@@ -246,8 +246,8 @@
 | 205 | 既见未来，为何不Buy | `recent-why-not-buy` | 2021-2026 / game | 部分核实 | platform_usage | 原片台词与购买谐音分层解释；不采当时文章对未发布剧情的猜测。 |
 | 206 | 鸣潮公式 | `recent-wuwa-formula` | 2021-2026 / game | 部分核实 | platform_usage | 原句、反讽改写与普通分工陈述应分开；不引用完整原台词。 |
 | 207 | 你说得对，但是原神 | `recent-you-are-right` | 2021-2026 / game | 部分核实 | meaning、origin、platform_usage | 不收录完整营销文案；首发评论尚未核验。 |
-| 208 | 哼哼啊啊啊 | `extra-hmm-scream` | 2021-2026 / guichu | 部分核实 | 无 | 已核实该叫声音轨与目力先辈画面属于后期拼接，不能署为野兽先辈原片原声。黑雷霆来源目前由B站社区考据指认，仍缺原始音轨、最早合成作品及更早中文用例。 |
-| 209 | XX世界巡演 | `recent-26-world-tour` | 2021-2026 / guichu | 部分核实 | 无 | 已取得创作者对一条代表作品的说明，可确认其为AI视频、使用MJ演唱会画面参照，且该作品音乐并非AI生成。多人物变体及专题解释证明模板传播；尚未确定最早创作者和模板首次形成时间。 |
+| 208 | 哼哼啊啊啊 | `extra-hmm-scream` | 2021-2026 / guichu | 部分核实 | 无 | 2021年与2023年B站社区文章均将常见音画记为后期拼接。黑雷霆音轨关联来自2023年文章的指认，原始音轨、最早合成作品及更早中文用例仍待补录。 |
+| 209 | XX世界巡演 | `recent-26-world-tour` | 2021-2026 / guichu | 部分核实 | 无 | 代表投稿的作者在说明中标为AI视频，称音乐为非AI生成，并列出MJ演唱会现场作为参考。多人物标题与专题解释投稿记录了该模板的传播。首创者和模板首次形成日期未知。 |
 | 210 | 小黑子露出鸡脚了 | `recent-black-fan` | 2021-2026 / guichu | 部分核实 | meaning、origin、platform_usage | 作为识别词条收录；不扩写谐音辱骂清单。 |
 | 211 | XX笑传之CCB | `recent-ccb-template` | 2021-2026 / guichu | 部分核实 | platform_usage | 2023-07-13仅为二创简介提供的原投稿线索，未据此填确定起源日期；2025不是已核实的首创年。 |
 | 212 | 圆头耄耋 | `recent-maodie` | 2021-2026 / guichu | 部分核实 | meaning、origin、platform_usage | 原视频及连续饲养记录未核；不收录血腥素材、群聊入口或推测性死因。 |
@@ -276,7 +276,7 @@
 | 235 | 专是专本是本 | `recent-26-zhuanben` | 2021-2026 / music | 部分核实 | platform_usage | 2026年8月27日已有站内投稿使用该句；9月28日为后续说唱传播节点。更早的词句形成与原始创作者仍未核实。 |
 | 236 | 从从容容，游刃有余 | `recent-composed-or-rushed` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 未核原质询日期；歌曲改编与原发言分别归属。 |
 | 237 | 挖呀挖呀挖 | `recent-dig-dig` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 该来源主要确认年度流行；词曲原始作者与最早传播待单独核验。 |
-| 238 | 外星小绿猫 | `recent-green-alien-cat` | 2021-2026 / music | 部分核实 | platform_usage | 已找到2026年3月8日格鲁特尔发布的原始可定位版本；作者称猫与绿色外星猫的合成制作原创，并将舞蹈原舞署名给@蹦跶的阿夏。尚未确认绿色外星猫形象本身的创作者、最早出现时间及更早传播链。 |
+| 238 | 外星小绿猫 | `recent-green-alien-cat` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 该投稿的发布时间、作者评论中的制作署名和舞蹈署名分别登记。评论添加日期、绿色外星猫形象的首创者、首次出现日期及更早传播链未知。 |
 | 239 | 什么是快乐星球 | `recent-happy-planet` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 拍摄、剧集上线与2021翻红是不同时间节点。 |
 | 240 | 哈基米南北绿豆 | `recent-north-south-beans` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 每首改编的旋律、音色与作者应分别标注，不笼统归于同一原曲。 |
 | 241 | 技能五子棋 | `recent-skill-gomoku` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 原表演与AI歌曲的先后和作者链尚未完整核验。 棋盘技能机制和说明口吻待原节目核验；2026回顾不能代替观看2025表演。 |
