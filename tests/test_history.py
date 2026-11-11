@@ -321,10 +321,15 @@ class AkarinQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(entry['evidence_status'], 'partial')
         self.assertIn('赤座灯里', entry['meaning'])
         self.assertIn('存在感低', entry['meaning'])
+        self.assertIn('日文名「あかり」的读音', entry['meaning'])
+        self.assertIn('剧情笑点使这一称呼引申', entry['meaning'])
+        self.assertNotIn('因其作为主角', entry['meaning'])
         refs = {ref['source_id']: ref for ref in entry['evidence']}
         self.assertIn('origin', refs['early-src-akarin-bili-guide']['claims'])
         self.assertIn('meaning', refs['early-src-akarin-360-2015']['claims'])
         self.assertEqual(self.sources['early-src-akarin-bili-guide']['access_level'], 'full')
+        self.assertIn('日文名「あかり」的发音', self.sources['early-src-akarin-bili-guide']['supports'])
+        self.assertIn('剧情笑点又使该称呼引申', self.sources['early-src-akarin-bili-guide']['supports'])
 
     def test_akarin_has_a_dated_early_bilibili_example_without_claiming_first_use(self):
         entry = self.by_id['early-akarin']
@@ -334,7 +339,8 @@ class AkarinQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-akarin-bili-2011']['url'], 'https://www.bilibili.com/video/BV1Rx411c7GK/')
         self.assertIn('2011年8月13日', self.sources['early-src-akarin-bili-2011']['supports'])
         self.assertIn('2011年8月13日', entry['notes'])
-        self.assertIn('不是B站首发', entry['notes'])
+        self.assertIn('B站最早用例与精确起源日期未知', entry['notes'])
+        self.assertEqual(self.sources['early-src-akarin-bili-2011']['title'], '【猎奇】阿卡林葬礼会场')
         self.assertIsNone(entry['origin']['date'])
 
 
