@@ -307,6 +307,43 @@ class MidEraEvidenceTests(unittest.TestCase):
                 self.assertEqual(entry['evidence_status'], 'verified')
                 self.assertIsNone(entry['origin']['date'])
                 self.assertIn(identifier, queued)
+
+
+class QueueIndividualEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_gold_content_separates_current_title_from_publication_date(self):
+        entry = self.by_id['recent-gold-content']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['recent-src-gold-ccnu']['claims'])
+        self.assertEqual(self.sources['recent-src-gold-ccnu']['access_level'], 'full')
+        self.assertIn('platform_usage', refs['recent-src-gold-bili']['claims'])
+        source = self.sources['recent-src-gold-bili']
+        self.assertIn('当前标题', source['supports'])
+        self.assertIn('投稿日期为2024年12月16日', source['supports'])
+        self.assertIn('标题历史', source['limitations'])
+        self.assertEqual(set(refs['recent-src-gold-bili']['claims']), {'platform_usage'})
+        self.assertIsNone(entry['origin']['date'])
+
+    def test_hmm_sound_and_visual_provenance_are_distinct(self):
+        entry = self.by_id['extra-hmm-scream']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['extra-src-bili-three-hum']['claims'])
+        self.assertEqual(self.sources['extra-src-bili-three-hum']['access_level'], 'full')
+        self.assertIn('音轨', self.sources['extra-src-bili-three-hum']['supports'])
+        self.assertIn('黑雷霆', self.sources['extra-src-bili-three-hum']['supports'])
+        self.assertEqual(entry['origin']['bilibili_role'], 'imported')
+        self.assertIn('【ホモ雷普全書】', self.sources['extra-src-bili-three-hum']['title'])
+        self.assertEqual(self.sources['extra-src-bili-three-hum']['publisher'], '饃王ALocn／B站专栏')
+        self.assertIn('首发日期保留未知', self.sources['extra-src-bili-three-hum']['limitations'])
+        self.assertNotIn('不复述或链接', self.sources['extra-src-bili-three-hum']['limitations'])
+
+
+
 class QueueFrontEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -320,13 +357,23 @@ class QueueFrontEvidenceTests(unittest.TestCase):
         self.assertIn('《马上有奇迹》', entry['origin']['summary'])
         self.assertIn('首创来源', entry['notes'])
         self.assertEqual(self.sources['recent-src-gala26-program']['access_level'], 'full')
+        references = {item['source_id']: item for item in entry['evidence']}
+        self.assertEqual(set(references['recent-src-gala26-program']['claims']), {'platform_usage'})
+        self.assertIn('2026年2月16日', self.sources['recent-src-gala26']['supports'])
 
     def test_world_tour_meaning_is_limited_to_creator_described_ai_video(self):
         entry = self.by_id['recent-26-world-tour']
         self.assertEqual(entry['evidence_status'], 'partial')
         self.assertIn('音乐是否由AI生成须按具体作品判断', entry['meaning'])
         self.assertEqual(self.sources['recent-src-26-tour-michael']['access_level'], 'full')
-        self.assertIn('尚未确定最早创作者', entry['notes'])
+        self.assertIn('首创者和模板首次形成日期未知', entry['notes'])
+        self.assertIn('作者在说明中', entry['notes'])
+        self.assertNotIn('可确认其为AI视频', entry['notes'])
+        self.assertIn('作者在公开说明中', self.sources['recent-src-26-tour-michael']['supports'])
+        self.assertIn('标题包含', self.sources['recent-src-26-tour-huangrenxun']['supports'])
+        self.assertIn('公开简介为空', self.sources['recent-src-26-tour-huangrenxun']['limitations'])
+        self.assertIn('《Billie Jean》x《朋友的酒》', self.sources['recent-src-26-tour-michael']['title'])
+        self.assertTrue(self.sources['recent-src-26-tour-huangrenxun']['title'].endswith('【AI MV大赛】'))
 
     def test_green_cat_records_a_locatable_creator_post_without_claiming_first_origin(self):
         entry = self.by_id['recent-green-alien-cat']
@@ -342,6 +389,8 @@ class QueueFrontEvidenceTests(unittest.TestCase):
         self.assertNotIn('platform_usage', original_post['claims'])
 
 
+
+
 class RealPersonQueueEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -352,8 +401,9 @@ class RealPersonQueueEvidenceTests(unittest.TestCase):
     def test_real_person_has_full_contextual_meaning_source(self):
         entry = self.by_id['recent-real-person']
         self.assertEqual(entry['evidence_status'], 'partial')
-        self.assertIn('确认自己被看见', entry['meaning'])
-        self.assertIn('寻求即时回应', entry['meaning'])
+        self.assertIn('参与直播', entry['meaning'])
+        self.assertIn('共同在场', entry['meaning'])
+        self.assertEqual(entry['usage']['avoid'], ['把观众弹幕当作《马上有奇迹》的节目台词'])
         refs = {ref['source_id']: ref for ref in entry['evidence']}
         self.assertIn('meaning', refs['recent-src-real-person-context']['claims'])
         self.assertEqual(self.sources['recent-src-real-person-context']['access_level'], 'full')
@@ -362,30 +412,3 @@ class RealPersonQueueEvidenceTests(unittest.TestCase):
         context = self.sources['recent-src-real-person-context']
         self.assertIn('妈妈我上电视了', context['supports'])
         self.assertNotIn('看得见我吗', context['supports'])
-
-
-
-
-class QueueIndividualEvidenceTests(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        from atlas import load_catalogue
-        cls.entries, cls.sources, _ = load_catalogue(ROOT)
-        cls.by_id = {entry['id']: entry for entry in cls.entries}
-
-    def test_gold_content_has_full_meaning_and_dated_platform_example(self):
-        entry = self.by_id['recent-gold-content']
-        refs = {ref['source_id']: ref for ref in entry['evidence']}
-        self.assertIn('meaning', refs['recent-src-gold-ccnu']['claims'])
-        self.assertEqual(self.sources['recent-src-gold-ccnu']['access_level'], 'full')
-        self.assertIn('platform_usage', refs['recent-src-gold-bili']['claims'])
-        self.assertIn('2024年12月16日', self.sources['recent-src-gold-bili']['supports'])
-
-    def test_hmm_sound_and_visual_provenance_are_distinct(self):
-        entry = self.by_id['extra-hmm-scream']
-        refs = {ref['source_id']: ref for ref in entry['evidence']}
-        self.assertIn('origin', refs['extra-src-bili-three-hum']['claims'])
-        self.assertEqual(self.sources['extra-src-bili-three-hum']['access_level'], 'full')
-        self.assertIn('音轨', self.sources['extra-src-bili-three-hum']['supports'])
-        self.assertIn('黑雷霆', self.sources['extra-src-bili-three-hum']['supports'])
-

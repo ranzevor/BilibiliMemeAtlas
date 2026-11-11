@@ -212,14 +212,14 @@
 | 171 | 算了嘛警官 | `recent-26-suanle` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 原节目准确期次、原片版权与本轮跨平台传播先后未确证。 |
 | 172 | 蚌埠住了 | `recent-bengbu` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 已找到2021使用记录；存在多个网络溯源版本，不认定唯一首创。 |
 | 173 | 你CPU我 | `recent-cpu` | 2021-2026 / community | 部分核实 | platform_usage | 谐音模板不改变CPU等技术缩写的正式定义。 |
-| 174 | 含金量还在上升 | `recent-gold-content` | 2021-2026 / community | 部分核实 | origin、platform_usage | 官方释义支持通用语义；年度榜单及示例不是起源时间。B站投稿标题可确认站内使用节点，尚未确定最早站内用例及首创来源。 |
+| 174 | 含金量还在上升 | `recent-gold-content` | 2021-2026 / community | 部分核实 | origin、platform_usage | 官方释义和当前投稿标题支持通用语义及站内使用。首创来源、最早站内用例和该标题用语的出现时间待考证。 |
 | 175 | 古希腊掌管XX的神 | `recent-greek-god` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 没有可确证的唯一原帖。 |
 | 176 | 绝绝子 | `recent-juejuezi` | 2021-2026 / community | 部分核实 | origin、platform_usage | 未确认B站传播起点；反讽义需由当前语境支持。 反讽为可能的语用解释，尚需具体用例，不纳入当前已核释义。 |
 | 177 | 伤害性不高，侮辱性极强 | `recent-low-damage` | 2021-2026 / community | 部分核实 | platform_usage | 未找到最初评论原件，不据二手叙述给首创者定名。 |
 | 178 | 主打一个XX | `recent-mainly-one` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | 句式早期使用未精确定位。 |
 | 179 | 嘴替 | `recent-mouthpiece` | 2021-2026 / community | 部分核实 | platform_usage | B站最早传播节点未核验。 |
 | 180 | 预制XX | `recent-prefabricated` | 2021-2026 / community | 部分核实 | meaning、origin、platform_usage | “预制人”容易直接贬低他人，识别时可解释，默认不用于称呼真人。 |
-| 181 | 我是真人 | `recent-real-person` | 2021-2026 / community | 部分核实 | origin | 已由春晚弹幕统计确认该表达的站内使用，并由同期社区分析补足实时互动、自我呈现和寻求回应的语义场景。尚未找到该短语的首创来源、春晚前的独立用例或可确定的起源日期。 |
+| 181 | 我是真人 | `recent-real-person` | 2021-2026 / community | 部分核实 | origin | 该场直播的统计与社区分析分别支持使用记录和语境解释。首创来源、春晚前的独立用例与起源日期待考证。 |
 | 182 | 尊嘟假嘟 | `recent-really` | 2021-2026 / community | 部分核实 | platform_usage | 未取得最早微博原帖；不把宠物图片来源认定为已获授权。 |
 | 183 | 水灵灵地XX | `recent-shuilingling` | 2021-2026 / community | 部分核实 | platform_usage | 来源只描述偶像视频背景，不给出未经核实的首发日期。 |
 | 184 | 那咋了 | `recent-so-what` | 2021-2026 / community | 部分核实 | platform_usage | 不确定最早平台和作者；普通反问与流行模板应消歧。 |
@@ -246,8 +246,8 @@
 | 205 | 既见未来，为何不Buy | `recent-why-not-buy` | 2021-2026 / game | 部分核实 | platform_usage | 原片台词与购买谐音分层解释；不采当时文章对未发布剧情的猜测。 |
 | 206 | 鸣潮公式 | `recent-wuwa-formula` | 2021-2026 / game | 部分核实 | platform_usage | 原句、反讽改写与普通分工陈述应分开；不引用完整原台词。 |
 | 207 | 你说得对，但是原神 | `recent-you-are-right` | 2021-2026 / game | 部分核实 | meaning、origin、platform_usage | 不收录完整营销文案；首发评论尚未核验。 |
-| 208 | 哼哼啊啊啊 | `extra-hmm-scream` | 2021-2026 / guichu | 部分核实 | 无 | 已核实该叫声音轨与目力先辈画面属于后期拼接，不能署为野兽先辈原片原声。黑雷霆来源目前由B站社区考据指认，仍缺原始音轨、最早合成作品及更早中文用例。 |
-| 209 | XX世界巡演 | `recent-26-world-tour` | 2021-2026 / guichu | 部分核实 | 无 | 已取得创作者对一条代表作品的说明，可确认其为AI视频、使用MJ演唱会画面参照，且该作品音乐并非AI生成。多人物变体及专题解释证明模板传播；尚未确定最早创作者和模板首次形成时间。 |
+| 208 | 哼哼啊啊啊 | `extra-hmm-scream` | 2021-2026 / guichu | 部分核实 | 无 | 2021年与2023年B站社区文章均将常见音画记为后期拼接。黑雷霆音轨关联来自2023年文章的指认，原始音轨、最早合成作品及更早中文用例仍待补录。 |
+| 209 | XX世界巡演 | `recent-26-world-tour` | 2021-2026 / guichu | 部分核实 | 无 | 代表投稿的作者在说明中标为AI视频，称音乐为非AI生成，并列出MJ演唱会现场作为参考。多人物标题与专题解释投稿记录了该模板的传播。首创者和模板首次形成日期未知。 |
 | 210 | 小黑子露出鸡脚了 | `recent-black-fan` | 2021-2026 / guichu | 部分核实 | meaning、origin、platform_usage | 作为识别词条收录；不扩写谐音辱骂清单。 |
 | 211 | XX笑传之CCB | `recent-ccb-template` | 2021-2026 / guichu | 部分核实 | platform_usage | 2023-07-13仅为二创简介提供的原投稿线索，未据此填确定起源日期；2025不是已核实的首创年。 |
 | 212 | 圆头耄耋 | `recent-maodie` | 2021-2026 / guichu | 部分核实 | meaning、origin、platform_usage | 原视频及连续饲养记录未核；不收录血腥素材、群聊入口或推测性死因。 |
