@@ -4651,9 +4651,9 @@
     ],
     "category": "guichu",
     "era": "2021-2026",
-    "meaning": "用AI视频把原本不会举办演唱会的人物、角色或物体放进大型演唱会舞台，标题套用“某某世界巡演”，形成连续的荒诞视频模板。",
+    "meaning": "将人物或角色置入迈克尔·杰克逊风格的演唱会舞台与太空步画面，制作成AI视频，标题常采用“某某世界巡演”；音乐是否由AI生成须按具体作品判断。",
     "origin": {
-      "summary": "2026年9月B站可见多人物“世界巡演”生成视频和解说投稿；迈克尔·杰克逊式演唱会舞台被借作视觉参照，唯一最早制作者尚不明。",
+      "summary": "2026年9月26日投稿的“迈克尔·许家印世界巡演”在作者说明中标为AI视频，参考《Jam》《Billie Jean》现场，音乐标为非AI生成。9月28日存在专题解释投稿，10月4日有标题为黄仁勋世界巡演的投稿。首创者和模板首次形成日期未知。",
       "date": null,
       "precision": "unknown",
       "bilibili_role": "adaptation"
@@ -4667,38 +4667,48 @@
       "example": "连游戏里的NPC都安排上世界巡演了。",
       "avoid": [
         "人物参加巡演是虚构演绎，勿当作真实活动",
-        "不能据画面推断音频也由AI生成",
+        "仅凭画面推断音频也由AI生成",
         "真人形象二创应尊重相关权益"
       ]
     },
     "lifecycle": "volatile",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "recent-src-26-tour-explainer",
         "claims": [
           "platform_usage"
         ],
-        "note": "站内讨论“世界巡演”渲染大赛，但未阅读视频内容。"
+        "note": "2026年9月28日B站专题视频标题直接以“世界巡演是什么梗”为主题，记录该模板当时已形成专题讨论。"
       },
       {
         "source_id": "recent-src-26-tour-hawking",
         "claims": [
           "platform_usage"
         ],
-        "note": "9月AI多人物巡演投稿合集标题列示不同变体。"
+        "note": "2026年9月26日多人物巡演投稿合集标题列出多种人物变体；仅支持投稿索引。"
       },
       {
         "source_id": "recent-src-26-tour-michael",
         "claims": [
+          "meaning",
+          "origin",
           "platform_usage"
         ],
-        "note": "另有真人形象巡演投稿索引。"
+        "note": "作者在投稿说明中称“非AI音乐，只是AI视频”，并列出《Jam》《Billie Jean》现场作为画面参考。"
+      },
+      {
+        "source_id": "recent-src-26-tour-huangrenxun",
+        "claims": [
+          "platform_usage",
+          "date"
+        ],
+        "note": "2026年10月4日王与也行发布标题为“⚡️黄仁勋 世界巡演⚡️【AI MV大赛】”的投稿，提供另一条可定位的传播记录。"
       }
     ],
-    "notes": "已确认多条同时期站内视频索引；尚缺可读取正文来支持完整模板释义和具体渲染制作链，暂列候选。"
+    "notes": "代表投稿的作者在说明中标为AI视频，称音乐为非AI生成，并列出MJ演唱会现场作为参考。多人物标题与专题解释投稿记录了该模板的传播。首创者和模板首次形成日期未知。"
   },
   {
     "id": "recent-26-zhuanben",

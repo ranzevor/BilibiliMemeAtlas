@@ -361,6 +361,21 @@ class QueueFrontEvidenceTests(unittest.TestCase):
         self.assertEqual(set(references['recent-src-gala26-program']['claims']), {'platform_usage'})
         self.assertIn('2026年2月16日', self.sources['recent-src-gala26']['supports'])
 
+    def test_world_tour_meaning_is_limited_to_creator_described_ai_video(self):
+        entry = self.by_id['recent-26-world-tour']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('音乐是否由AI生成须按具体作品判断', entry['meaning'])
+        self.assertEqual(self.sources['recent-src-26-tour-michael']['access_level'], 'full')
+        self.assertIn('首创者和模板首次形成日期未知', entry['notes'])
+        self.assertIn('作者在说明中', entry['notes'])
+        self.assertNotIn('可确认其为AI视频', entry['notes'])
+        self.assertIn('作者在公开说明中', self.sources['recent-src-26-tour-michael']['supports'])
+        self.assertIn('标题包含', self.sources['recent-src-26-tour-huangrenxun']['supports'])
+        self.assertIn('公开简介为空', self.sources['recent-src-26-tour-huangrenxun']['limitations'])
+        self.assertIn('《Billie Jean》x《朋友的酒》', self.sources['recent-src-26-tour-michael']['title'])
+        self.assertTrue(self.sources['recent-src-26-tour-huangrenxun']['title'].endswith('【AI MV大赛】'))
+
+
 
 class RealPersonQueueEvidenceTests(unittest.TestCase):
     @classmethod

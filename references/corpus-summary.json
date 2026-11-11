@@ -10,10 +10,10 @@
     "version": "0.1.5",
     "knowledge_cutoff": "2026-11-10",
     "entries": 303,
-    "sources": 338,
+    "sources": 339,
     "by_evidence": {
-      "candidate": 2,
-      "partial": 246,
+      "candidate": 1,
+      "partial": 247,
       "verified": 55
     },
     "by_era": {
@@ -35,7 +35,7 @@
       "vtuber": 7
     },
     "source_access": {
-      "full": 151,
+      "full": 152,
       "metadata": 54,
       "snippet": 133
     },
