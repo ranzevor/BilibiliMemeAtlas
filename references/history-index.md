@@ -276,7 +276,7 @@
 | 235 | 专是专本是本 | `recent-26-zhuanben` | 2021-2026 / music | 部分核实 | platform_usage | 2026年8月27日已有站内投稿使用该句；9月28日为后续说唱传播节点。更早的词句形成与原始创作者仍未核实。 |
 | 236 | 从从容容，游刃有余 | `recent-composed-or-rushed` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 未核原质询日期；歌曲改编与原发言分别归属。 |
 | 237 | 挖呀挖呀挖 | `recent-dig-dig` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 该来源主要确认年度流行；词曲原始作者与最早传播待单独核验。 |
-| 238 | 外星小绿猫 | `recent-green-alien-cat` | 2021-2026 / music | 部分核实 | platform_usage | 已找到2026年3月8日格鲁特尔发布的原始可定位版本；作者称猫与绿色外星猫的合成制作原创，并将舞蹈原舞署名给@蹦跶的阿夏。尚未确认绿色外星猫形象本身的创作者、最早出现时间及更早传播链。 |
+| 238 | 外星小绿猫 | `recent-green-alien-cat` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 该投稿的发布时间、作者评论中的制作署名和舞蹈署名分别登记。评论添加日期、绿色外星猫形象的首创者、首次出现日期及更早传播链未知。 |
 | 239 | 什么是快乐星球 | `recent-happy-planet` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 拍摄、剧集上线与2021翻红是不同时间节点。 |
 | 240 | 哈基米南北绿豆 | `recent-north-south-beans` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 每首改编的旋律、音色与作者应分别标注，不笼统归于同一原曲。 |
 | 241 | 技能五子棋 | `recent-skill-gomoku` | 2021-2026 / music | 部分核实 | meaning、origin、platform_usage | 原表演与AI歌曲的先后和作者链尚未完整核验。 棋盘技能机制和说明口吻待原节目核验；2026回顾不能代替观看2025表演。 |

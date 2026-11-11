@@ -379,14 +379,20 @@ class QueueFrontEvidenceTests(unittest.TestCase):
         entry = self.by_id['recent-green-alien-cat']
         self.assertEqual(entry['evidence_status'], 'partial')
         self.assertIn('2026年3月8日', entry['origin']['summary'])
-        self.assertEqual(self.sources['recent-src-green-cat-original-post']['access_level'], 'full')
-        self.assertIn('尚未确认绿色外星猫形象本身的创作者', entry['notes'])
+        self.assertEqual(self.sources['recent-src-green-cat-original-post']['access_level'], 'snippet')
+        self.assertIn('绿色外星猫形象的首创者', entry['notes'])
+        self.assertIn('评论添加日期未知', entry['origin']['summary'])
+        self.assertIn('共舞', ' '.join(entry['usage']['contexts']))
         creator = self.sources['recent-src-green-cat-original-post']
         self.assertIn('2026年3月8日', creator['supports'])
         self.assertIn('@蹦跶的阿夏', creator['supports'])
         original_post = next(ref for ref in entry['evidence']
                              if ref['source_id'] == 'recent-src-green-cat-original-post')
         self.assertNotIn('platform_usage', original_post['claims'])
+        self.assertNotIn('合成', creator['supports'])
+        sina = next(ref for ref in entry['evidence'] if ref['source_id'] == 'recent-src-green-cat')
+        self.assertEqual(sina['claims'], ['meaning'])
+        self.assertNotIn('3月27日', sina['note'])
 
 
 
