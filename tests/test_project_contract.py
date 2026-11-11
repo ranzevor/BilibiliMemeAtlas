@@ -329,14 +329,17 @@ class ProjectContractTests(unittest.TestCase):
 
     def test_pr_and_manual_ci_are_read_only_hosted_verification(self):
         workflows = ROOT / ".github" / "workflows"
+        quality = {"verify.yml", "local-lifecycle-verify.yml",
+                   "release-byte-verify.yml"}
         self.assertEqual(
             {path.name for path in workflows.iterdir()},
-            {"verify.yml", "local-lifecycle-verify.yml", "release-byte-verify.yml"})
+            quality | {"publish-v0.1.5.yml"})
         forbidden = (
             "self-hosted", "contents: write", "secrets.", "actions/upload",
             "git push", "gh release", "curl ", "wget ", "pull_request_target:",
         )
-        for path in workflows.iterdir():
+        for name in sorted(quality):
+            path = workflows / name
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):
                 self.assertIn("workflow_dispatch:", text)
@@ -370,6 +373,27 @@ class ProjectContractTests(unittest.TestCase):
                 self.assertIn("run: python -VV", text)
                 self.assertIn("persist-credentials: false", text)
                 self.assertFalse(any(fragment in text for fragment in forbidden))
+
+    def test_authorized_release_workflow_is_separate_from_quality_gates(self):
+        path = ROOT / ".github" / "workflows" / "publish-v0.1.5.yml"
+        text = path.read_text(encoding="utf-8")
+        self.assertIn("  workflow_dispatch:\n", text)
+        self.assertIn("  pull_request:\n    branches: [main]\n    types: [closed]\n", text)
+        self.assertIn("github.ref == 'refs/heads/main'", text)
+        self.assertIn("github.event.pull_request.merged == true", text)
+        self.assertIn("github.event.pull_request.head.repo.full_name == github.repository", text)
+        self.assertIn("github.event.pull_request.head.ref == 'release/v0.1.5-publish'", text)
+        self.assertIn("permissions:\n  contents: read", text)
+        self.assertIn("    permissions:\n      contents: write", text)
+        self.assertIn("0bb033bb029f7121cda12024b496c54186ce9777", text)
+        self.assertIn("persist-credentials: false", text)
+        self.assertIn("gh release create", text)
+        self.assertIn("gh release download", text)
+        self.assertIn("gh release edit", text)
+        self.assertIn("verify-installable-release", text)
+        self.assertNotIn("pull_request_target:", text)
+        self.assertNotIn("self-hosted", text)
+        self.assertNotIn("secrets.", text)
 
     def test_cache_directories_are_rejected_not_packaged(self):
         with tempfile.TemporaryDirectory() as temporary:
