@@ -378,11 +378,9 @@ class ProjectContractTests(unittest.TestCase):
         path = ROOT / ".github" / "workflows" / "publish-v0.1.5.yml"
         text = path.read_text(encoding="utf-8")
         self.assertIn("  workflow_dispatch:\n", text)
-        self.assertIn("  pull_request:\n    branches: [main]\n    types: [closed]\n", text)
+        self.assertIn("  push:\n    branches: [main]\n    paths:\n      - .github/workflows/publish-v0.1.5.yml\n", text)
         self.assertIn("github.ref == 'refs/heads/main'", text)
-        self.assertIn("github.event.pull_request.merged == true", text)
-        self.assertIn("github.event.pull_request.head.repo.full_name == github.repository", text)
-        self.assertIn("github.event.pull_request.head.ref == 'release/v0.1.5-publish'", text)
+        self.assertIn("github.event_name == 'workflow_dispatch' || github.event_name == 'push'", text)
         self.assertIn("permissions:\n  contents: read", text)
         self.assertIn("    permissions:\n      contents: write", text)
         self.assertIn("0bb033bb029f7121cda12024b496c54186ce9777", text)
