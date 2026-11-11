@@ -58,9 +58,10 @@ PROJECT_FILES = frozenset("""
 .gitattributes .gitignore AGENTS.md AGENT_INSTALL.md CODE_OF_CONDUCT.md CONTENT_RIGHTS.md CONTRIBUTING.md LICENSE README.md SECURITY.md SKILL.md
 .github/dependabot.yml .github/scripts/governance_gate.cjs .github/ISSUE_TEMPLATE/bug.yml .github/ISSUE_TEMPLATE/entry.yml .github/pull_request_template.md
 .github/workflows/local-lifecycle-verify.yml .github/workflows/release-byte-verify.yml .github/workflows/verify.yml
+.github/workflows/publish-v0.1.5.yml
 agents/openai.yaml assets/cover.webp assets/icon.png
 docs/COMPATIBILITY.md docs/DEPENDENCIES.md docs/INSTALL.md docs/INSTALL.en.md docs/MAINTENANCE.md docs/README.en.md
-docs/RELEASING.md docs/VERIFICATION.md governance/BRANCHES-AND-REVIEW.md governance/LOCAL-ENTRYPOINT.md
+docs/RELEASING.md docs/RELEASE_NOTES-v0.1.5.md docs/VERIFICATION.md governance/BRANCHES-AND-REVIEW.md governance/LOCAL-ENTRYPOINT.md
 references/2009-2015.json references/2016-2020.json references/2021-2026.json
 references/architecture.md references/catalog.md references/corpus-summary.json
 references/coverage.md references/history-index.md references/history-map.md references/metadata.json
