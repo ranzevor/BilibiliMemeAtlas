@@ -1,0 +1,183 @@
+name: Publish v0.1.5
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-v0.1.5.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-v0.1.5
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: >-
+      github.repository == 'ranzevor/BilibiliMemeAtlas' &&
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'workflow_dispatch' || github.event_name == 'push')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONUTF8: '1'
+      SOURCE_REVISION: 0bb033bb029f7121cda12024b496c54186ce9777
+      TAG: v0.1.5
+    steps:
+      - name: Check out exact released source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: 0bb033bb029f7121cda12024b496c54186ce9777
+          path: source
+          persist-credentials: false
+
+      - name: Check out release notes from merged publication change
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.sha }}
+          path: publication
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.13'
+
+      - name: Verify exact source and all project contracts
+        working-directory: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$SOURCE_REVISION"
+          python scripts/build.py --check
+          python scripts/validate.py
+          python scripts/verify.py
+
+      - name: Construct and bind release bytes
+        working-directory: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          assets="$GITHUB_WORKSPACE/release-assets"
+          notes="$GITHUB_WORKSPACE/publication/docs/RELEASE_NOTES-v0.1.5.md"
+          mkdir -p "$assets"
+          test -f "$notes"
+          python scripts/package.py build --output "$assets/bilibili-meme-atlas-v0.1.5.zip"
+          python scripts/package.py verify "$assets/bilibili-meme-atlas-v0.1.5.zip"
+          python - <<'PY'
+          from pathlib import Path
+          from hashlib import sha256
+          archive = Path('../release-assets/bilibili-meme-atlas-v0.1.5.zip')
+          checksum = Path('../release-assets/SHA256SUMS-v0.1.5.txt')
+          checksum.write_bytes((sha256(archive.read_bytes()).hexdigest() + '  ' + archive.name + '\n').encode('ascii'))
+          PY
+          python scripts/release.py describe --notes "$notes" --assets-dir "$assets" > "$GITHUB_WORKSPACE/release-manifest.json"
+          python scripts/release.py lint --manifest "$GITHUB_WORKSPACE/release-manifest.json"
+          python scripts/release.py check-source --manifest "$GITHUB_WORKSPACE/release-manifest.json" --notes "$notes" --assets-dir "$assets"
+          python scripts/release.py prepare-installable-request \
+            --manifest "$GITHUB_WORKSPACE/release-manifest.json" \
+            --notes "$notes" --assets-dir "$assets" \
+            --repository "$GITHUB_REPOSITORY" --source-revision "$SOURCE_REVISION" \
+            > "$GITHUB_WORKSPACE/release-request.json"
+
+      - name: Create draft release and upload exact assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$TAG" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release already exists" >&2
+            exit 1
+          fi
+          if gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$TAG" >/dev/null 2>&1; then
+            echo "Tag already exists" >&2
+            exit 1
+          fi
+          notes="$GITHUB_WORKSPACE/publication/docs/RELEASE_NOTES-v0.1.5.md"
+          title="$(python -c 'import json; print(json.load(open("release-request.json", encoding="utf-8"))["name"])')"
+          gh release create "$TAG" \
+            "$GITHUB_WORKSPACE/release-assets/bilibili-meme-atlas-v0.1.5.zip" \
+            "$GITHUB_WORKSPACE/release-assets/SHA256SUMS-v0.1.5.txt" \
+            --repo "$GITHUB_REPOSITORY" --target "$SOURCE_REVISION" \
+            --title "$title" --notes-file "$notes" --draft
+
+      - name: Confirm draft metadata, exact target and uploaded bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" > draft-release.json
+          gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$TAG" > release-tag.json
+          mkdir -p "$GITHUB_WORKSPACE/draft-assets"
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --dir "$GITHUB_WORKSPACE/draft-assets"
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          req = json.loads(Path('release-request.json').read_text(encoding='utf-8'))
+          rel = json.loads(Path('draft-release.json').read_text(encoding='utf-8'))
+          tag = json.loads(Path('release-tag.json').read_text(encoding='utf-8'))
+          assert tag['object']['type'] == 'commit' and tag['object']['sha'] == os.environ['SOURCE_REVISION']
+          assert rel['tag_name'] == req['tag'] and rel['name'] == req['name']
+          assert rel['body'] == req['body'] and rel['draft'] is True and rel['prerelease'] is False
+          expected = {item['name']: item for item in req['assets']}
+          assert {item['name'] for item in rel['assets']} == set(expected)
+          directory = Path('draft-assets')
+          assert {p.name for p in directory.iterdir()} == set(expected)
+          for name, item in expected.items():
+              content = (directory / name).read_bytes()
+              assert len(content) == item['bytes']
+              assert hashlib.sha256(content).hexdigest() == item['sha256']
+              assert len(content) == next(a['size'] for a in rel['assets'] if a['name'] == name)
+          PY
+
+      - name: Publish verified release
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --draft=false
+
+      - name: Verify published tag, notes and downloaded asset bytes
+        working-directory: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" > "$GITHUB_WORKSPACE/published-release.json"
+          gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$TAG" > "$GITHUB_WORKSPACE/published-tag.json"
+          mkdir -p "$GITHUB_WORKSPACE/published-assets"
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --dir "$GITHUB_WORKSPACE/published-assets"
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          base = Path('..')
+          release = json.loads((base / 'published-release.json').read_text(encoding='utf-8'))
+          tag = json.loads((base / 'published-tag.json').read_text(encoding='utf-8'))
+          if tag['object']['type'] != 'commit':
+              raise ValueError('Release tag must point to a commit')
+          assets = []
+          for item in release['assets']:
+              name = item['name']
+              path = base / 'published-assets' / name
+              content = path.read_bytes()
+              digest = 'sha256:' + hashlib.sha256(content).hexdigest()
+              if len(content) != item['size'] or (item.get('digest') and item['digest'] != digest):
+                  raise ValueError('Release asset bytes differ from GitHub metadata')
+              assets.append({'name': name, 'size': len(content), 'digest': digest})
+          result = {
+              'tag': release['tag_name'], 'name': release['name'], 'body': release['body'],
+              'draft': release['draft'], 'prerelease': release['prerelease'],
+              'assets': assets, 'repository': os.environ['GITHUB_REPOSITORY'],
+              'tag_target': tag['object']['sha'],
+          }
+          (base / 'published-observation.json').write_text(json.dumps(result, ensure_ascii=False) + '\n', encoding='utf-8')
+          PY
+          python scripts/release.py verify-installable-release \
+            --manifest "$GITHUB_WORKSPACE/release-manifest.json" \
+            --notes "$GITHUB_WORKSPACE/publication/docs/RELEASE_NOTES-v0.1.5.md" \
+            --assets-dir "$GITHUB_WORKSPACE/release-assets" \
+            --metadata "$GITHUB_WORKSPACE/published-observation.json" \
+            --repository "$GITHUB_REPOSITORY" --source-revision "$SOURCE_REVISION"
