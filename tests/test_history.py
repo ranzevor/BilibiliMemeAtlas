@@ -406,6 +406,45 @@ class CoachBasketballQueueEvidenceTests(unittest.TestCase):
         self.assertIn('尚未定位中文首创者', entry['notes'])
 
 
+class FffGroupQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry['id']: entry for entry in cls.entries}
+
+    def test_fff_group_is_distinguished_from_anime_adaptation(self):
+        entry = self.by_id['early-fff']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('异端审问会·FFF团', entry['meaning'])
+        self.assertIn('动画改编中的火刑', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['early-src-fff-kadokawa-spinout']['claims'])
+        self.assertEqual(self.sources['early-src-fff-kadokawa-spinout']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-fff-novel4']['access_level'], 'full')
+
+    def test_fff_group_separates_video_upload_and_current_tags(self):
+        entry = self.by_id['early-fff']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-fff-bili-2010']['claims'])
+        self.assertNotIn('date', refs['early-src-fff-bili-2010']['claims'])
+        self.assertIn('date', refs['early-src-fff-novel4']['claims'])
+        self.assertIn('date', refs['early-src-fff-blog-2010']['claims'])
+        self.assertIn('标签添加日期未知', entry['origin']['summary'])
+        self.assertIn('标签添加日期未知', entry['notes'])
+        self.assertEqual(self.sources['early-src-fff-bili-2010']['checked_at'], '2026-11-10')
+        self.assertIn('02:51:36', self.sources['early-src-fff-bili-2010']['supports'])
+        self.assertIn('标签添加日期未知', self.sources['early-src-fff-bili-2010']['limitations'])
+        self.assertEqual(self.sources['early-src-fff-bili-2010']['access_level'], 'metadata')
+        self.assertIn('2010年1月24日', self.sources['early-src-fff-bili-2010']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('仍未通过原作正文', entry['notes'])
+        self.assertIn('标签', self.sources['early-src-fff-bili-2010']['supports'])
+        self.assertNotIn('简介', self.sources['early-src-fff-bili-2010']['supports'])
+        self.assertNotIn('platform_usage',
+                         refs['early-src-fff-blog-2010']['claims'])
+
+
 class QueueIndividualEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
