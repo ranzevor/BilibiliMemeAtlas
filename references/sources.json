@@ -2118,9 +2118,9 @@
     "publisher": "新浪新闻",
     "source_type": "secondary",
     "access_level": "full",
-    "checked_at": "2026-10-23",
-    "supports": "2026春晚五个高频弹幕；我是真人；我要验牌",
-    "limitations": "仅春晚单场统计，绝不能标成2026年度弹幕。"
+    "checked_at": "2026-11-10",
+    "supports": "北京日报客户端报道记录2026年2月16日春晚直播的弹幕总数1.33亿，并列出包括“我是真人”在内的五条高频弹幕。",
+    "limitations": "统计范围为该场春晚直播，文中给出的2026年2月16日是直播日期。"
   },
   {
     "id": "recent-src-duck",
@@ -2162,9 +2162,9 @@
     "publisher": "新浪娱乐页面",
     "source_type": "secondary",
     "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "2026外星小绿猫舞与模仿传播",
-    "limitations": "该页面现已无法从原链接取得正文；历史检索摘要只作线索，不能独立证明原作出处、传播规模或首创者。"
+    "checked_at": "2026-11-10",
+    "supports": "历史检索摘要提及外星小绿猫舞及模仿传播，保留为词义辅助线索。",
+    "limitations": "原链接返回404，保留的材料为历史检索标题与摘要，其中缺少原始角色创作与传播规模资料。"
   },
   {
     "id": "recent-src-chongqing",
@@ -2883,14 +2883,14 @@
   },
   {
     "id": "recent-src-26-tour-michael",
-    "title": "迈克尔·杰克逊风格人物世界巡演AI二创",
+    "title": "迈克尔·许家印世界巡演！《Billie Jean》x《朋友的酒》，太空步封神现场！【AI MV大赛】",
     "url": "https://www.bilibili.com/video/BV1ztho6uE2G/",
-    "publisher": "哔哩哔哩投稿者",
+    "publisher": "哔哩哔哩投稿者 181319",
     "source_type": "primary",
     "access_level": "full",
-    "checked_at": "2026-10-29",
-    "supports": "2026年9月26日投稿“迈克尔·许家印世界巡演”；作者说明“非AI音乐，只是AI视频”，并指出画面参考《Jam》现场与《Billie Jean》现场。",
-    "limitations": "仅核验作者公开投稿说明，不替代完整视频逐帧核查；不证明该作品为模板首创，也不将该作品的非AI音乐结论推广到其他世界巡演视频。"
+    "checked_at": "2026-11-10",
+    "supports": "该视频投稿于2026年9月26日。作者在公开说明中写明“非AI音乐，只是AI视频”，并列出《Jam》现场及《Billie Jean》现场作为画面参考。",
+    "limitations": "读取范围为作者公开投稿说明，其中的制作方式按作者表述登记。首创者与模板最早出现日期未知。"
   },
   {
     "id": "recent-src-26-zhuan-rap-bili",
@@ -3669,18 +3669,18 @@
     "publisher": "哔哩哔哩投稿者",
     "source_type": "primary",
     "access_level": "metadata",
-    "checked_at": "2026-10-31",
-    "supports": "2024年12月16日B站投稿标题使用“含金量还在上升”句式。",
-    "limitations": "仅核验公开投稿标题与元数据，不证明视频正文、最早站内用例或短语首创。"
+    "checked_at": "2026-11-10",
+    "supports": "公开接口中的当前标题为“演技的含金量还在上升！！”，投稿日期为2024年12月16日。",
+    "limitations": "接口未提供标题历史，标题用语出现时间未定。"
   },
   {
     "id": "recent-src-gold-ccnu",
     "title": "2024年度十大网络用语发布 | 汉语盘点",
     "url": "https://nlp.ccnu.edu.cn/news/133",
-    "publisher": "国家语言资源监测与研究中心（华中师范大学）",
+    "publisher": "国家语言资源监测与研究网络媒体中心（华中师范大学）",
     "source_type": "primary",
     "access_level": "full",
-    "checked_at": "2026-10-31",
+    "checked_at": "2026-11-10",
     "supports": "官方释义说明“XX的含金量还在上升”用于形容某人或物的价值随时间逐渐显现和提升，并以中国游为例。",
     "limitations": "支持通用语义及2024年度榜单背景，不提供该表达的首创者或最早使用日期。"
   },
@@ -3691,9 +3691,9 @@
     "publisher": "直播吧",
     "source_type": "secondary",
     "access_level": "full",
-    "checked_at": "2026-10-31",
-    "supports": "2026年2月16日春晚直播弹幕Top5中包含“我是真人”，并将其对应到开场表演《马上有奇迹》。",
-    "limitations": "报道记录单场弹幕统计及节目对应关系，不解释该句的固定语义、节目内具体指涉或更早起源。"
+    "checked_at": "2026-11-10",
+    "supports": "报道公布2026年春晚直播的五条高频弹幕，将“我是真人”对应到开场表演《马上有奇迹》。",
+    "limitations": "报道提供该场直播的统计与节目对应关系，具体语义另见观众语境分析。"
   },
   {
     "id": "recent-src-real-person-context",
@@ -3702,31 +3702,31 @@
     "publisher": "BB姬（TapTap）",
     "source_type": "community",
     "access_level": "full",
-    "checked_at": "2026-10-31",
-    "supports": "2026年2月18日同期文章指出，B站春晚开放实时弹幕后，观众发送“我是真人”“妈妈我上电视了”等内容；文章将其解释为观众表达参与直播、寻找连接和共同在场的愿望，并称“我是真人”成为高密度弹幕。",
-    "limitations": "属于同期社区观察与作者解释，支持该场景中的用法和语义，不证明短语首创者、最早出现日期或春晚前的传播链。"
+    "checked_at": "2026-11-10",
+    "supports": "文章发表于2026年2月18日，页面标注2026年2月22日更新。正文记录“我是真人”“妈妈我上电视了”等弹幕，并将其解释为观众参与直播、寻找连接和共同在场的愿望。",
+    "limitations": "正文属于社区作者对该场春晚弹幕的解释，首创来源和更早用例未提供。"
   },
   {
     "id": "extra-src-bili-three-hum",
-    "title": "目力先辈、哼哼哼啊啊啊啊啊（三哼经）考据",
+    "title": "【ホモ雷普全書】野獸先輩是誰？田所浩二？1145141919810？目力先輩是什麼梗？",
     "url": "https://www.bilibili.com/opus/769448665506906214",
-    "publisher": "哔哩哔哩社区专栏作者",
+    "publisher": "饃王ALocn／B站专栏",
     "source_type": "community",
     "access_level": "full",
-    "checked_at": "2026-10-31",
-    "supports": "文章说明目力先辈画面后来被添加该叫声音轨，并明确声音不出自野兽先辈原片；文章将音轨来源关联到黑雷霆素材。",
-    "limitations": "社区考据而非原始音轨或首发记录；不复述或链接成人原始素材，不据此确认最早合成作品及音轨首发日期。"
+    "checked_at": "2026-11-10",
+    "supports": "文章将目力先辈画面的改编记在Niconico，说明常见叫声为后配，并把音轨关联到黑雷霆。",
+    "limitations": "材料为社区作者的考据文章，音轨关联据作者说明登记，音轨首发日期保留未知。"
   },
   {
     "id": "recent-src-26-tour-huangrenxun",
-    "title": "⚡️黄仁勋 世界巡演⚡️〖AI MV大赛〗",
+    "title": "⚡️黄仁勋 世界巡演⚡️【AI MV大赛】",
     "url": "https://www.bilibili.com/video/BV1VRHr6AEZ6/",
     "publisher": "哔哩哔哩投稿者 王与也行",
     "source_type": "primary",
     "access_level": "metadata",
-    "checked_at": "2026-10-31",
-    "supports": "2026年10月4日发布黄仁勋世界巡演AI视频，显示模板已有不同人物变体。",
-    "limitations": "仅核验投稿页面标题、日期及公开简介，不据此确认最早模板作者或完整视频制作过程。"
+    "checked_at": "2026-11-10",
+    "supports": "该视频投稿于2026年10月4日，标题包含“黄仁勋 世界巡演”和“AI MV大赛”。",
+    "limitations": "公开简介为空，制作方式仅见标题中的AI MV标记。"
   },
   {
     "id": "recent-src-green-cat-original-post",
@@ -3734,21 +3734,10 @@
     "url": "https://www.douyin.com/video/7614732057914227365",
     "publisher": "抖音创作者 格鲁特尔",
     "source_type": "primary",
-    "access_level": "full",
-    "checked_at": "2026-10-31",
-    "supports": "2026年3月8日创作者发布绿色外星猫与小猫共舞视频；投稿说明称该猫与绿猫合成制作原创，并将原舞署名给@蹦跶的阿夏。",
-    "limitations": "支持该创作者发布的具体视频版本与其自述制作分工；不证明绿色外星猫形象的最早创作、最早出现或全网首发。"
-  },
-  {
-    "id": "early-src-akarin-360-2015",
-    "title": "那些成为日本网络流行语的动画台词",
-    "url": "https://u.360.cn/news/article/76980/",
-    "publisher": "360游戏",
-    "source_type": "secondary",
-    "access_level": "full",
-    "checked_at": "2026-10-31",
-    "supports": "2015年11月11日文章将“阿卡林”与2011年动画《摇曳百合》及角色赤座灯里关联，并解释为对存在感稀缺的调侃。",
-    "limitations": "属于回顾性媒体整理，支持2015年已流通的解释，不提供中文首创或B站最早使用记录。"
+    "access_level": "snippet",
+    "checked_at": "2026-11-10",
+    "supports": "页面检索摘录标注该投稿发布于2026年3月8日12:09。作者在评论中自称小奶猫与小绿猫跳舞的制作原创，并将原舞署名给@蹦跶的阿夏。",
+    "limitations": "材料为页面检索摘录与作者评论。评论添加日期未知，原创归属对应评论所述的小奶猫与小绿猫跳舞制作。"
   },
   {
     "id": "early-src-akarin-bili-2011",
@@ -3760,6 +3749,17 @@
     "checked_at": "2026-10-31",
     "supports": "B站投稿页面公开元数据显示，该视频于2011年8月13日16:15:23发布，标题直接使用“阿卡林”称呼。",
     "limitations": "仅核验投稿标题、日期和公开元数据；不据此推断视频正文、弹幕内容或B站/中文首个用例。"
+  },
+  {
+    "id": "early-src-akarin-360-2015",
+    "title": "那些成为日本网络流行语的动画台词",
+    "url": "https://u.360.cn/news/article/76980/",
+    "publisher": "360游戏",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2015年11月11日文章将“阿卡林”与2011年动画《摇曳百合》及角色赤座灯里关联，并解释为对存在感稀缺的调侃。",
+    "limitations": "属于回顾性媒体整理，支持2015年已流通的解释，不提供中文首创或B站最早使用记录。"
   },
   {
     "id": "early-src-akarin-bili-guide",
