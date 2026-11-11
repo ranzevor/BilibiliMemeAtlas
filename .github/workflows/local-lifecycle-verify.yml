@@ -2,7 +2,8 @@ name: Verify local archive and directory lifecycle
 on:
   workflow_dispatch:
   pull_request:
-    branches: ["main"]
+    branches: ["main", "release/v0.1.5-queue-item-*", "fix/v0.1.5-duplicate-source-reference", "fix/v0.1.5-duplicate-source-reference-rebuild", "feat/governance-pr-metadata-gate"]
+    types: [opened, reopened, synchronize, edited, ready_for_review]
 permissions:
   contents: read
 concurrency:
