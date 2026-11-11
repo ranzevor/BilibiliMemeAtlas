@@ -39,7 +39,7 @@
 
 | 序号 | 词条 | ID | 时期 / 分类 | 资料状态 | 缺少全文命题 | 具体缺口 |
 | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | 阿卡林 | `early-akarin` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 缺2015年前B站实际用例，不能声称站内起源已核。 |
+| 1 | 阿卡林 | `early-akarin` | 2009-2015 / acg | 部分核实 | 无 | 2015年与2017年文章分别记录角色归属、昵称读音和低存在感引申义。站内视频的发布时间为2011年8月13日，登记标题为《【猎奇】阿卡林葬礼会场》。中文首创者、B站最早用例与精确起源日期未知。 |
 | 2 | ⑨ | `early-cirno-nine` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 游戏说明图的解释由专业社区摘要引述；未直接读取原说明书或早期B站用例。 |
 | 3 | 教练，我想打篮球 | `early-coach-learn` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | B站前2016用例未独立核验。 |
 | 4 | FFF团 | `early-fff` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 未直接核原作集数；使用示例避开煽动性口号。 |

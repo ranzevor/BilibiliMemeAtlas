@@ -3738,5 +3738,38 @@
     "checked_at": "2026-11-10",
     "supports": "页面检索摘录标注该投稿发布于2026年3月8日12:09。作者在评论中自称小奶猫与小绿猫跳舞的制作原创，并将原舞署名给@蹦跶的阿夏。",
     "limitations": "材料为页面检索摘录与作者评论。评论添加日期未知，原创归属对应评论所述的小奶猫与小绿猫跳舞制作。"
+  },
+  {
+    "id": "early-src-akarin-bili-2011",
+    "title": "【猎奇】阿卡林葬礼会场",
+    "url": "https://www.bilibili.com/video/BV1Rx411c7GK/",
+    "publisher": "哔哩哔哩投稿者 夢宫",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-11",
+    "supports": "公开元数据显示视频投稿时间为2011年8月13日16:15:23，当前题名为《【猎奇】阿卡林葬礼会场》。",
+    "limitations": "材料为公开投稿元数据，词义和昵称来源的解释见关联的专栏及媒体文章。"
+  },
+  {
+    "id": "early-src-akarin-360-2015",
+    "title": "那些成为日本网络流行语的动画台词",
+    "url": "https://u.360.cn/news/article/76980/",
+    "publisher": "360游戏",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-11",
+    "supports": "2015年11月11日文章将“阿卡林”与2011年动画《摇曳百合》及角色赤座灯里关联，并解释为对存在感稀缺的调侃。",
+    "limitations": "2015年的回顾性媒体整理，反映该文发表时对角色和引申义的解释。"
+  },
+  {
+    "id": "early-src-akarin-bili-guide",
+    "title": "‘阿卡林’是个什么梗",
+    "url": "https://www.bilibili.com/opus/62667249341057709",
+    "publisher": "哔哩哔哩专栏作者 辇道增七的公主",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-11",
+    "supports": "专栏将“阿卡林”称呼联系到赤座灯里日文名「あかり」的发音。角色低存在感的剧情笑点又使该称呼引申为“无存在感”的代名词，文中列出相关使用示例。",
+    "limitations": "2017年的社区解释，昵称读音与词义形成过程据该文作者表述登记。"
   }
 ]
