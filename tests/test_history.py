@@ -226,6 +226,28 @@ class HistoricalEvidenceTests(unittest.TestCase):
         self.assertIn('视频上传日期与当前标签添加日期不是同一事实', self.sources['early-src-kugimiya-bili-2010-tag']['limitations'])
         self.assertNotIn('early-src-kugimiya-bili-2010-index', self.sources)
 
+    def test_madoka_contract_has_full_original_line_and_broadcast_year_sources(self):
+        entry = self.by_id['early-madoka-contract']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('僕と契約して魔法少女になってよ！', entry['origin']['summary'])
+        self.assertEqual(entry['origin']['date'], '2011')
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('origin', refs['early-src-madoka-official-ep1']['claims'])
+        self.assertIn('date', refs['early-src-madoka-nitroplus-2011']['claims'])
+        self.assertEqual(self.sources['early-src-madoka-official-ep1']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-madoka-nitroplus-2011']['access_level'], 'full')
+
+    def test_madoka_contract_has_chinese_template_and_bilibili_usage_evidence(self):
+        entry = self.by_id['early-madoka-contract']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['early-src-madoka-hujiang-2014']['claims'])
+        self.assertNotIn('platform_usage', refs['early-src-madoka-netbuzz-2011']['claims'])
+        self.assertNotIn('platform_usage', refs['early-src-madoka-hujiang-2014']['claims'])
+        self.assertIn('platform_usage', refs['early-src-madoka']['claims'])
+        self.assertEqual(self.sources['early-src-madoka']['access_level'], 'full')
+        self.assertIn('B站', self.sources['early-src-madoka']['supports'])
+        self.assertIn('中文最早译本', entry['notes'])
+
 class MidEraEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
