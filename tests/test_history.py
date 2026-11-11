@@ -368,7 +368,12 @@ class CirnoNineQueueEvidenceTests(unittest.TestCase):
         self.assertEqual(self.sources['early-src-cirno-bili-2010']['access_level'], 'metadata')
         self.assertIn('2010年9月6日', self.sources['early-src-cirno-bili-2010']['supports'])
         self.assertIsNone(entry['origin']['date'])
-        self.assertIn('不证明中文首创者', entry['notes'])
+        self.assertIn('中文首创者、B站最早用例及精确起源日期未知', entry['notes'])
+        self.assertEqual(self.sources['early-src-cirno-bili-2010']['title'], '【NICO老物】DXM ⑨destiny～最強チルノのターン')
+        self.assertEqual(self.sources['early-src-cirno-forum-2009']['access_level'], 'full')
+        self.assertIn('2008年6月16日发表', self.sources['early-src-cirno-forum-2009']['supports'])
+        self.assertIn('2009年10月16日编辑', self.sources['early-src-cirno-forum-2009']['supports'])
+        self.assertIn('2008年发表和2009年编辑时间', entry['notes'])
         self.assertNotIn('platform_usage',
                          refs['early-src-cirno-forum-2009']['claims'])
 

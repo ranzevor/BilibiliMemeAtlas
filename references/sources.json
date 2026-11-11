@@ -3779,41 +3779,41 @@
     "publisher": "上海爱丽丝幻乐团（Steam发行页面提供的游戏说明书）",
     "source_type": "primary",
     "access_level": "full",
-    "checked_at": "2026-10-31",
-    "supports": "官方说明书“画面说明”图中以圈号⑨标注琪露诺所在位置，图下第9项原文为“バカ”；直接支持琪露诺与⑨、笨蛋标注的对应关系。",
-    "limitations": "说明书证明原作中的标注，不单独证明该称呼在中文社区的首创者、传播起点或精确形成日期。"
+    "checked_at": "2026-11-11",
+    "supports": "官方说明书第9页“画面説明”图中以圈号⑨标注琪露诺所在位置，图下第9项写作“バカ”，对应琪露诺、⑨和笨蛋标注。",
+    "limitations": "材料为游戏说明书中的原作画面编号及说明文字，昵称的传播关系另见专题文章。"
   },
   {
     "id": "early-src-cirno-touhou-media",
-    "title": "東方原作を振り返る『東方花映塚 ～ Phantasmagoria of Flower View.』",
+    "title": "東方原作を振り返る『東方花映塚　～ Phantasmagoria of Flower View.』",
     "url": "https://touhougarakuta.com/article/220616/",
     "publisher": "東方我楽多叢誌",
     "source_type": "secondary",
     "access_level": "full",
-    "checked_at": "2026-10-31",
+    "checked_at": "2026-11-11",
     "supports": "2022年6月16日文章明确解释⑨称呼源于《东方花映塚》说明图：图中琪露诺对应第9项，注释为“9.バカ”，此后形成琪露诺＝笨蛋＝⑨的昵称关系。",
-    "limitations": "回顾性专题文章，用于解释官方原始材料及称呼形成，不证明中文首创者或最早传播日期。"
+    "limitations": "2022年的回顾性专题文章，记录官方画面说明图与昵称关系的解释。"
   },
   {
     "id": "early-src-cirno-forum-2009",
     "title": "有關⑨ 跟萃香的小ネタ",
     "url": "https://forum.gamer.com.tw/G2.php?bsn=10039&lorder=22&parent=1743&sn=397",
-    "publisher": "巴哈姆特东方Project系列讨论区",
+    "publisher": "巴哈姆特东方Project系列讨论区用户 marux3",
     "source_type": "community",
-    "access_level": "snippet",
-    "checked_at": "2026-10-31",
-    "supports": "检索到的帖子记录显示，2009年10月16日已有“琪露诺＝⑨”的圈内称呼说明。",
-    "limitations": "当前读取范围为检索摘要，作为同期跨站用例线索，不单独承担词义或起源结论。"
+    "access_level": "full",
+    "checked_at": "2026-11-11",
+    "supports": "页面元数据列出该帖2008年6月16日发表、2009年10月16日编辑，当前正文开头写有“琪露諾=⑨”。",
+    "limitations": "材料为当前可读版本与页面列出的发表、编辑时间。正文另含撞球词源解释，该段属于社区作者的民间说法。"
   },
   {
     "id": "early-src-cirno-bili-2010",
-    "title": "〖NICO老物〗DXM ⑨destiny～最強チルノのターン",
+    "title": "【NICO老物】DXM ⑨destiny～最強チルノのターン",
     "url": "https://www.bilibili.com/video/BV1Hx411c7sc/",
     "publisher": "哔哩哔哩投稿者 光之绅士",
     "source_type": "primary",
     "access_level": "metadata",
-    "checked_at": "2026-10-31",
-    "supports": "B站投稿页面公开元数据显示，该投稿于2010年9月6日16:03:16发布，标题直接使用“⑨”并指向琪露诺；简介注明原Niconico作品编号sm7926074。",
-    "limitations": "仅核验标题、投稿日期和公开简介；不据此推断视频正文、弹幕或B站最早使用记录。"
+    "checked_at": "2026-11-11",
+    "supports": "公开投稿元数据标注发布时间为2010年9月6日16:03:16，当前标题含“⑨”和“チルノ”，简介注明原Niconico作品编号sm7926074。",
+    "limitations": "读取范围为投稿标题、发布时间及公开简介中的原作品编号。"
   }
 ]
