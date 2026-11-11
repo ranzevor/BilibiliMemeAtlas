@@ -2162,9 +2162,9 @@
     "publisher": "新浪娱乐页面",
     "source_type": "secondary",
     "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "2026外星小绿猫舞与模仿传播",
-    "limitations": "非原作者素材；首次出现与原作出处未核实，列为候选。"
+    "checked_at": "2026-11-10",
+    "supports": "历史检索摘要提及外星小绿猫舞及模仿传播，保留为词义辅助线索。",
+    "limitations": "原链接返回404，保留的材料为历史检索标题与摘要，其中缺少原始角色创作与传播规模资料。"
   },
   {
     "id": "recent-src-chongqing",
@@ -3727,5 +3727,16 @@
     "checked_at": "2026-11-10",
     "supports": "该视频投稿于2026年10月4日，标题包含“黄仁勋 世界巡演”和“AI MV大赛”。",
     "limitations": "公开简介为空，制作方式仅见标题中的AI MV标记。"
+  },
+  {
+    "id": "recent-src-green-cat-original-post",
+    "title": "#外星小绿 #哈基米 #可爱到爆炸💥 #抽象",
+    "url": "https://www.douyin.com/video/7614732057914227365",
+    "publisher": "抖音创作者 格鲁特尔",
+    "source_type": "primary",
+    "access_level": "snippet",
+    "checked_at": "2026-11-10",
+    "supports": "页面检索摘录标注该投稿发布于2026年3月8日12:09。作者在评论中自称小奶猫与小绿猫跳舞的制作原创，并将原舞署名给@蹦跶的阿夏。",
+    "limitations": "材料为页面检索摘录与作者评论。评论添加日期未知，原创归属对应评论所述的小奶猫与小绿猫跳舞制作。"
   }
 ]

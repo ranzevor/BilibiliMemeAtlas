@@ -3299,34 +3299,34 @@
     ],
     "category": "music",
     "era": "2021-2026",
-    "meaning": "2026盘点中出现的绿色外星猫形象及舞蹈模仿标签；更细的原作与语义待核。",
+    "meaning": "绿色外星小猫的舞蹈形象及其共舞二创，也常被称为“小绿猫舞”。",
     "origin": {
-      "summary": "2026报道和B站上半年盘点有记录，未确认最初作者和动画来源。",
+      "summary": "格鲁特尔的一条抖音投稿标注发布时间为2026年3月8日，页面检索摘录中的标题含“外星小绿”等标签。作者评论自称小奶猫与小绿猫跳舞的制作原创，并将原舞署名给@蹦跶的阿夏。评论添加日期未知。绿色外星猫形象的首创者和首次出现日期未知。",
       "date": null,
       "precision": "unknown",
-      "bilibili_role": "uncertain"
+      "bilibili_role": "imported"
     },
     "usage": {
       "contexts": [
-        "识别当年盘点提到的标签"
+        "围绕小绿猫舞进行舞蹈模仿",
+        "为小绿猫与小猫的共舞二创配文"
       ],
-      "example": "这个标题里的外星小绿猫需要结合具体视频确认版本。",
+      "example": "小绿猫来了，小猫也跟上节拍。",
       "avoid": [
-        "不要凭标签臆造原动画设定或首创者"
+        "把共舞视频的制作署名当作小绿猫形象的首创署名"
       ]
     },
     "lifecycle": "volatile",
     "sensitivity": [],
     "relations": [],
-    "evidence_status": "candidate",
+    "evidence_status": "partial",
     "evidence": [
       {
         "source_id": "recent-src-green-cat",
         "claims": [
-          "origin",
-          "date"
+          "meaning"
         ],
-        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+        "note": "历史检索摘要提及外星小绿猫舞及模仿传播，保留为词义辅助线索。"
       },
       {
         "source_id": "recent-src-green-cat-bili",
@@ -3334,10 +3334,19 @@
           "platform_usage",
           "date"
         ],
-        "note": "仅使用该来源实际支持的字段；来源访问层级见来源表。"
+        "note": "B站2026年6月13日上半年热梗盘点列出外星小绿猫；这是站内收录节点，不是起源日期。"
+      },
+      {
+        "source_id": "recent-src-green-cat-original-post",
+        "claims": [
+          "meaning",
+          "origin",
+          "date"
+        ],
+        "note": "页面摘录标注投稿发布时间为2026年3月8日。作者评论自述共舞制作原创，并给出原舞署名。评论添加日期未知。"
       }
     ],
-    "notes": "只取得二手描述和盘点索引；应先补原片、首发记录及不同同名形象的消歧。"
+    "notes": "该投稿的发布时间、作者评论中的制作署名和舞蹈署名分别登记。评论添加日期、绿色外星猫形象的首创者、首次出现日期及更早传播链未知。"
   },
   {
     "id": "recent-chongqing-visa",
