@@ -3925,5 +3925,27 @@
     "checked_at": "2026-10-31",
     "supports": "2018年9月30日B站专栏正文将“德国骨科”解释为血缘兄妹恋的隐语，复述2012年3月1日微博传闻的具体故事，并说明该词也用于调侃兄控、妹控。",
     "limitations": "该专栏是2018年对流传说法的复述，不提供原始微博链接或独立证据，不能证明传闻事件真实、2012年帖子为最早用例或梗的确切首创日期。"
+  },
+  {
+    "id": "early-src-hiyori-nanfang-2010",
+    "title": "揭秘四人配音组CUCN201 今天你“日和”了吗？",
+    "url": "https://ent.sina.com.cn/s/m/2010-07-23/07203026814.shtml",
+    "publisher": "南方都市报（新浪转载）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2010年7月23日采访记录CUCN201四名成员、2010年5月开始的中文改配、宿舍改词过程，以及“我勒个擦”等句式在论坛和微博传播的情况。",
+    "limitations": "采访主要记录CUCN201这一配音组及其作品，不代表所有《日和》中文配音均由该组制作，也不确定B站最早上传日期。"
+  },
+  {
+    "id": "early-src-hiyori-beijing-2010",
+    "title": "《搞笑漫画日和》无厘头动画永无止境",
+    "url": "https://ent.sina.com.cn/c/2010-06-25/10112997406.shtml",
+    "publisher": "新京报（新浪转载）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-10-31",
+    "supports": "2010年6月25日报道记录CUCN201中文改配作品在网络走红，说明寝室日常用语经本土化改写进入动画配音并在网络传播。",
+    "limitations": "报道聚焦CUCN201的具体作品与流行语，不代表所有中文配音团队或全部《日和》台词来源。"
   }
 ]
