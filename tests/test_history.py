@@ -304,6 +304,26 @@ class HistoricalEvidenceTests(unittest.TestCase):
         self.assertIn('platform_usage', refs['early-src-mami-bili-article-2021']['claims'])
         self.assertEqual(self.sources['early-src-mami-bili-article-2021']['access_level'], 'full')
 
+    def test_nyanpasu_has_creator_and_production_explanations(self):
+        entry = self.by_id['early-nyanpasu']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('最初绘制的故事原计划作为第1话', entry['origin']['summary'])
+        self.assertIn('正式刊载时成为第2话', entry['origin']['summary'])
+        self.assertIn('后来作为原作第2话刊载', self.sources['early-src-nyanpasu-febri-creator']['supports'])
+        self.assertEqual(self.sources['early-src-nyanpasu-febri-creator']['access_level'], 'full')
+        self.assertEqual(self.sources['early-src-nyanpasu-mantan-2013']['access_level'], 'full')
+
+    def test_nyanpasu_has_official_award_and_early_bilibili_usage(self):
+        entry = self.by_id['early-nyanpasu']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('date', refs['early-src-nyanpasu-kadokawa-award-2013']['claims'])
+        self.assertNotIn('platform_usage', refs['early-src-nyanpasu-kadokawa-award-2013']['claims'])
+        self.assertNotIn('platform_usage', refs['early-src-nyanpasu']['claims'])
+        self.assertIn('platform_usage', refs['early-src-nyanpasu-bili-2013']['claims'])
+        self.assertEqual(self.sources['early-src-nyanpasu-bili-2013']['access_level'], 'metadata')
+        self.assertIn('2013年12月14日', self.sources['early-src-nyanpasu-bili-2013']['supports'])
+
 class MidEraEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
