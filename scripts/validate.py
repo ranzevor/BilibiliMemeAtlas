@@ -55,26 +55,26 @@ EXPECTED_INTERFACE = {
     "icon_large": "assets/icon.png",
 }
 PROJECT_FILES = frozenset("""
-.gitattributes .gitignore AGENT_INSTALL.md CODE_OF_CONDUCT.md CONTENT_RIGHTS.md CONTRIBUTING.md LICENSE README.md SECURITY.md SKILL.md
-.github/dependabot.yml .github/ISSUE_TEMPLATE/bug.yml .github/ISSUE_TEMPLATE/entry.yml .github/pull_request_template.md
+.gitattributes .gitignore AGENTS.md AGENT_INSTALL.md CODE_OF_CONDUCT.md CONTENT_RIGHTS.md CONTRIBUTING.md LICENSE README.md SECURITY.md SKILL.md
+.github/dependabot.yml .github/scripts/governance_gate.cjs .github/ISSUE_TEMPLATE/bug.yml .github/ISSUE_TEMPLATE/entry.yml .github/pull_request_template.md
 .github/workflows/local-lifecycle-verify.yml .github/workflows/release-byte-verify.yml .github/workflows/verify.yml
 agents/openai.yaml assets/cover.webp assets/icon.png
 docs/COMPATIBILITY.md docs/DEPENDENCIES.md docs/INSTALL.md docs/INSTALL.en.md docs/MAINTENANCE.md docs/README.en.md
-docs/RELEASING.md docs/VERIFICATION.md
+docs/RELEASING.md docs/VERIFICATION.md governance/BRANCHES-AND-REVIEW.md governance/LOCAL-ENTRYPOINT.md
 references/2009-2015.json references/2016-2020.json references/2021-2026.json
 references/architecture.md references/catalog.md references/corpus-summary.json
 references/coverage.md references/history-index.md references/history-map.md references/metadata.json
 references/platform.md references/refresh.md references/research.md references/safety.md
 references/schema.json references/sources.json references/sources.schema.json references/rights.json references/usage.md
-scripts/atlas.py scripts/build.py scripts/history.py scripts/research.py scripts/update.py
+scripts/atlas.py scripts/build.py scripts/history.py scripts/research.py scripts/update.py scripts/install-governance-hook.sh
 scripts/install.py scripts/package.py scripts/release.py scripts/validate.py scripts/verify.py
 scripts/writer_lock.py
-tests/test_contracts.py tests/test_hardening.py tests/test_history.py
+tests/governance_gate.test.cjs tests/governance_gate.integration.test.cjs tests/governance_gate.git.test.cjs tests/test_contracts.py tests/test_hardening.py tests/test_history.py
 tests/test_install.py tests/test_package.py tests/test_project_contract.py tests/test_release.py
 tests/test_research.py tests/test_transactions.py tests/test_update.py
 """.split())
 PROJECT_DIRECTORIES = frozenset({
-    ".github", ".github/ISSUE_TEMPLATE", ".github/workflows",
+    ".github", ".github/scripts", ".github/ISSUE_TEMPLATE", ".github/workflows", "governance",
     "agents", "assets", "docs", "references", "scripts", "tests",
 })
 TRANSIENT_DIRECTORIES = frozenset({"__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"})
