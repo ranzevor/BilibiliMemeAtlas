@@ -198,6 +198,34 @@ class HistoricalEvidenceTests(unittest.TestCase):
             self.assertNotIn('platform_usage', refs[source_id]['claims'])
         self.assertEqual(refs['early-src-hiyori-bili']['claims'], ['platform_usage', 'date'])
 
+    def test_kugimiya_syndrome_is_a_fandom_term_not_a_medical_condition(self):
+        entry = self.by_id['early-kugimiya-syndrome']
+        self.assertEqual(entry['evidence_status'], 'partial')
+        self.assertIn('粉丝文化', entry['meaning'])
+        self.assertIn('并非医学诊断', entry['meaning'])
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['early-src-kugimiya-360-2017']['claims'])
+        self.assertEqual(self.sources['early-src-kugimiya-360-2017']['access_level'], 'full')
+
+    def test_kugimiya_syndrome_has_dated_2008_chinese_community_records(self):
+        entry = self.by_id['early-kugimiya-syndrome']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('meaning', refs['early-src-kugimiya-cari-2008-may']['claims'])
+        self.assertIn('meaning', refs['early-src-kugimiya-cari-2008-sep']['claims'])
+        self.assertIn('2008年5月30日', self.sources['early-src-kugimiya-cari-2008-may']['supports'])
+        self.assertIn('2008年9月17日', self.sources['early-src-kugimiya-cari-2008-sep']['supports'])
+        self.assertIsNone(entry['origin']['date'])
+        self.assertIn('原始告示', entry['origin']['summary'])
+
+    def test_kugimiya_syndrome_has_early_bilibili_indexed_use_without_claiming_first_use(self):
+        entry = self.by_id['early-kugimiya-syndrome']
+        refs = {ref['source_id']: ref for ref in entry['evidence']}
+        self.assertIn('platform_usage', refs['early-src-kugimiya-bili-2010-tag']['claims'])
+        self.assertNotIn('date', refs['early-src-kugimiya-bili-2010-tag']['claims'])
+        self.assertEqual(self.sources['early-src-kugimiya-bili-2010-tag']['access_level'], 'metadata')
+        self.assertIn('视频上传日期与当前标签添加日期不是同一事实', self.sources['early-src-kugimiya-bili-2010-tag']['limitations'])
+        self.assertNotIn('early-src-kugimiya-bili-2010-index', self.sources)
+
 class MidEraEvidenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
