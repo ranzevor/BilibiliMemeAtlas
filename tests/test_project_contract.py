@@ -344,6 +344,9 @@ class ProjectContractTests(unittest.TestCase):
             with self.subTest(path=path.name):
                 self.assertIn("workflow_dispatch:", text)
                 self.assertIn('  push:\n    branches: ["main"]\n', text)
+                self.assertIn('group: verify-', text)
+                self.assertIn('${{ github.run_id }}', text)
+                self.assertIn('  cancel-in-progress: false', text)
                 self.assertIn('test "$(git rev-parse HEAD)" = "$GITHUB_SHA"', text)
                 expected_branches = '  pull_request:\n    branches: ["main", "release/v0.1.5-queue-item-*", "fix/v0.1.5-duplicate-source-reference", "fix/v0.1.5-duplicate-source-reference-rebuild", "feat/governance-pr-metadata-gate"]\n'
                 self.assertIn(expected_branches, text)
