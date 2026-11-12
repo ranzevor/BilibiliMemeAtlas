@@ -1,6 +1,8 @@
 name: Verify offline release byte contract
 on:
   workflow_dispatch:
+  push:
+    branches: ["main"]
   pull_request:
     branches: ["main", "release/v0.1.5-queue-item-*", "fix/v0.1.5-duplicate-source-reference", "fix/v0.1.5-duplicate-source-reference-rebuild", "feat/governance-pr-metadata-gate"]
     types: [opened, reopened, synchronize, edited, ready_for_review]
@@ -28,6 +30,12 @@ jobs:
         uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: ${{ matrix.python }}
+      - name: Verify checked-out main revision
+        shell: bash
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = push ]; then
+            test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          fi
       - name: Report interpreter
         run: python -VV
       - name: Validate project boundary
