@@ -10,7 +10,7 @@ permissions:
   contents: read
   pull-requests: read
 concurrency:
-  group: verify-project-${{ github.ref }}
+  group: verify-project-${{ github.run_id }}
   cancel-in-progress: false
 jobs:
   verify:
