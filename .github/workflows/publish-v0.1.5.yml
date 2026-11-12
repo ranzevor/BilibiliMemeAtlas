@@ -87,59 +87,81 @@ jobs:
             --repository "$GITHUB_REPOSITORY" --source-revision "$SOURCE_REVISION" \
             > "$GITHUB_WORKSPACE/release-request.json"
 
-      - name: Create draft release and upload exact assets
+      - name: Recover existing draft or create exact release assets
         shell: bash
         run: |
           set -euo pipefail
-          if gh release view "$TAG" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            echo "Release already exists" >&2
-            exit 1
-          fi
           if gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$TAG" >/dev/null 2>&1; then
-            echo "Tag already exists" >&2
+            echo "Release tag already exists" >&2
             exit 1
           fi
-          notes="$GITHUB_WORKSPACE/publication/docs/RELEASE_NOTES-v0.1.5.md"
-          title="$(python -c 'import json; print(json.load(open("release-request.json", encoding="utf-8"))["name"])')"
-          gh release create "$TAG" \
-            "$GITHUB_WORKSPACE/release-assets/bilibili-meme-atlas-v0.1.5.zip" \
-            "$GITHUB_WORKSPACE/release-assets/SHA256SUMS-v0.1.5.txt" \
-            --repo "$GITHUB_REPOSITORY" --target "$SOURCE_REVISION" \
-            --title "$title" --notes-file "$notes" --draft
+          gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" > existing-releases.json
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          request = json.loads(Path('release-request.json').read_text(encoding='utf-8'))
+          releases = json.loads(Path('existing-releases.json').read_text(encoding='utf-8'))
+          matches = [item for item in releases
+                     if item['tag_name'] == request['tag'] or item['name'] == request['name']]
+          if len(matches) > 1:
+              raise ValueError('Conflicting releases for this version')
+          if matches:
+              item = matches[0]
+              if not item['draft']:
+                  raise ValueError('Release has already been published')
+              if (item['tag_name'] != request['tag'] or item['name'] != request['name']
+                      or item['body'] != request['body'] or item['prerelease']
+                      or item['target_commitish'] != os.environ['SOURCE_REVISION']):
+                  raise ValueError('Existing draft belongs to different source or notes')
+              Path('existing-draft.txt').write_text(str(item['id']) + '\n', encoding='ascii')
+          PY
+          if [ ! -f existing-draft.txt ]; then
+            notes="$GITHUB_WORKSPACE/publication/docs/RELEASE_NOTES-v0.1.5.md"
+            title="$(python -c 'import json; print(json.load(open("release-request.json", encoding="utf-8"))["name"])')"
+            gh release create "$TAG" \
+              "$GITHUB_WORKSPACE/release-assets/bilibili-meme-atlas-v0.1.5.zip" \
+              "$GITHUB_WORKSPACE/release-assets/SHA256SUMS-v0.1.5.txt" \
+              --repo "$GITHUB_REPOSITORY" --target "$SOURCE_REVISION" \
+              --title "$title" --notes-file "$notes" --draft
+          fi
 
-      - name: Confirm draft metadata, exact target and uploaded bytes
+      - name: Verify draft target, notes and uploaded asset digests
         shell: bash
         run: |
           set -euo pipefail
-          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" > draft-release.json
-          gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$TAG" > release-tag.json
-          mkdir -p "$GITHUB_WORKSPACE/draft-assets"
-          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --dir "$GITHUB_WORKSPACE/draft-assets"
+          gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" > draft-releases.json
           python - <<'PY'
-          import hashlib, json, os
+          import json, os
           from pathlib import Path
-          req = json.loads(Path('release-request.json').read_text(encoding='utf-8'))
-          rel = json.loads(Path('draft-release.json').read_text(encoding='utf-8'))
-          tag = json.loads(Path('release-tag.json').read_text(encoding='utf-8'))
-          assert tag['object']['type'] == 'commit' and tag['object']['sha'] == os.environ['SOURCE_REVISION']
-          assert rel['tag_name'] == req['tag'] and rel['name'] == req['name']
-          assert rel['body'] == req['body'] and rel['draft'] is True and rel['prerelease'] is False
-          expected = {item['name']: item for item in req['assets']}
-          assert {item['name'] for item in rel['assets']} == set(expected)
-          directory = Path('draft-assets')
-          assert {p.name for p in directory.iterdir()} == set(expected)
+          request = json.loads(Path('release-request.json').read_text(encoding='utf-8'))
+          releases = json.loads(Path('draft-releases.json').read_text(encoding='utf-8'))
+          matches = [item for item in releases if item['tag_name'] == request['tag']]
+          if len(matches) != 1:
+              raise ValueError('Exactly one draft of the requested tag is required')
+          release = matches[0]
+          if (release['draft'] is not True or release['prerelease'] is not False
+                  or release['target_commitish'] != os.environ['SOURCE_REVISION']
+                  or release['name'] != request['name']
+                  or release['body'] != request['body']):
+              raise ValueError('Draft metadata does not match the approved release')
+          expected = {item['name']: item for item in request['assets']}
+          observed = {item['name']: item for item in release['assets']}
+          if len(release['assets']) != len(expected) or set(observed) != set(expected):
+              raise ValueError('Draft assets do not match required asset names')
           for name, item in expected.items():
-              content = (directory / name).read_bytes()
-              assert len(content) == item['bytes']
-              assert hashlib.sha256(content).hexdigest() == item['sha256']
-              assert len(content) == next(a['size'] for a in rel['assets'] if a['name'] == name)
+              remote = observed[name]
+              if (remote['size'] != item['bytes'] or
+                      remote.get('digest') != 'sha256:' + item['sha256']):
+                  raise ValueError('Draft asset bytes differ: ' + name)
+          Path('draft-release-id.txt').write_text(str(release['id']) + '\n', encoding='ascii')
           PY
 
-      - name: Publish verified release
+      - name: Publish verified draft by release ID
         shell: bash
         run: |
           set -euo pipefail
-          gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --draft=false
+          release_id="$(cat draft-release-id.txt)"
+          gh api -X PATCH "repos/$GITHUB_REPOSITORY/releases/$release_id" -F draft=false > published-release-action.json
 
       - name: Verify published tag, notes and downloaded asset bytes
         working-directory: source
