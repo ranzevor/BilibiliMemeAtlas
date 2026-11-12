@@ -9,7 +9,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: verify-local-lifecycle-${{ github.ref }}
+  group: verify-local-lifecycle-${{ github.run_id }}
   cancel-in-progress: false
 jobs:
   verify:
