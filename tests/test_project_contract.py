@@ -327,7 +327,7 @@ class ProjectContractTests(unittest.TestCase):
         for name in required_assets:
             self.assertIn(f"assets/{name}", rights)
 
-    def test_pr_and_manual_ci_are_read_only_hosted_verification(self):
+    def test_pr_merge_group_and_main_commit_checks_are_read_only(self):
         workflows = ROOT / ".github" / "workflows"
         quality = {"verify.yml", "local-lifecycle-verify.yml",
                    "release-byte-verify.yml"}
@@ -343,6 +343,9 @@ class ProjectContractTests(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):
                 self.assertIn("workflow_dispatch:", text)
+                self.assertIn('  push:\n    branches: ["main"]\n', text)
+                self.assertIn('  merge_group:\n    types: [checks_requested]\n    branches: ["main"]\n', text)
+                self.assertIn("${{ github.event_name == 'push' && github.sha || github.ref }}", text)
                 expected_branches = '  pull_request:\n    branches: ["main", "release/v0.1.5-queue-item-*", "fix/v0.1.5-duplicate-source-reference", "fix/v0.1.5-duplicate-source-reference-rebuild", "feat/governance-pr-metadata-gate"]\n'
                 self.assertIn(expected_branches, text)
                 self.assertIn('    types: [opened, reopened, synchronize, edited, ready_for_review]', text)
@@ -354,11 +357,12 @@ class ProjectContractTests(unittest.TestCase):
                     self.assertIn('node .github/scripts/governance_gate.cjs event-git', text)
                     self.assertIn('node .github/scripts/governance_gate.cjs event-current', text)
                     self.assertIn('  pull-requests: read', text)
-                    self.assertIn('  cancel-in-progress: true', text)
+                    self.assertIn("  cancel-in-progress: ${{ github.event_name == 'pull_request' }}", text)
                     self.assertIn('fetch-depth: 0', text)
                     self.assertEqual(text.count('name: Test governance policy regressions'), 1)
                 else:
                     self.assertIn("runs-on: ubuntu-24.04", text)
+                    self.assertIn("  cancel-in-progress: false", text)
                 self.assertIn('python: ["3.10", "3.13"]', text)
                 actions = re.findall(
                     r"^[ \t]*(?:-[ \t]+)?uses:[ \t]*(\S+)(?:[ \t]+#.*)?[ \t]*$", text, re.MULTILINE)
