@@ -343,6 +343,8 @@ class ProjectContractTests(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):
                 self.assertIn("workflow_dispatch:", text)
+                self.assertIn('  push:\n    branches: ["main"]\n', text)
+                self.assertIn('test "$(git rev-parse HEAD)" = "$GITHUB_SHA"', text)
                 expected_branches = '  pull_request:\n    branches: ["main", "release/v0.1.5-queue-item-*", "fix/v0.1.5-duplicate-source-reference", "fix/v0.1.5-duplicate-source-reference-rebuild", "feat/governance-pr-metadata-gate"]\n'
                 self.assertIn(expected_branches, text)
                 self.assertIn('    types: [opened, reopened, synchronize, edited, ready_for_review]', text)
@@ -354,7 +356,8 @@ class ProjectContractTests(unittest.TestCase):
                     self.assertIn('node .github/scripts/governance_gate.cjs event-git', text)
                     self.assertIn('node .github/scripts/governance_gate.cjs event-current', text)
                     self.assertIn('  pull-requests: read', text)
-                    self.assertIn('  cancel-in-progress: true', text)
+                    self.assertIn('  cancel-in-progress: false', text)
+                    self.assertNotIn("if: ${{ github.event_name == 'pull_request' }}", text)
                     self.assertIn('fetch-depth: 0', text)
                     self.assertEqual(text.count('name: Test governance policy regressions'), 1)
                 else:
