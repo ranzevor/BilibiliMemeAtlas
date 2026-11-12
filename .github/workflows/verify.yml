@@ -1,6 +1,8 @@
 name: Verify project
 on:
   workflow_dispatch:
+  push:
+    branches: ["main"]
   pull_request:
     branches: ["main", "release/v0.1.5-queue-item-*", "fix/v0.1.5-duplicate-source-reference", "fix/v0.1.5-duplicate-source-reference-rebuild", "feat/governance-pr-metadata-gate"]
     types: [opened, reopened, synchronize, edited, ready_for_review]
@@ -9,7 +11,7 @@ permissions:
   pull-requests: read
 concurrency:
   group: verify-project-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   verify:
     name: Project (${{ matrix.os }}, Python ${{ matrix.python }})
@@ -34,9 +36,14 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Install Markdown parser for governance validation
         run: npm install --prefix .github --no-save --no-package-lock --ignore-scripts --no-audit --no-fund markdown-it@15.0.3
-      - name: Validate current PR metadata from exact git candidate
-        if: ${{ github.event_name == 'pull_request' }}
-        run: node .github/scripts/governance_gate.cjs event-git
+      - name: Validate PR candidate or exact main commit
+        shell: bash
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            node .github/scripts/governance_gate.cjs event-git
+          else
+            test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          fi
       - name: Test governance policy regressions
         run: node --test tests/governance_gate.test.cjs tests/governance_gate.integration.test.cjs tests/governance_gate.git.test.cjs
       - name: Remove governance tool dependencies before project validation
@@ -50,11 +57,16 @@ jobs:
       - name: Run complete verification
         run: python scripts/verify.py
 
-      - name: Recheck current PR admission state
-        if: ${{ github.event_name == 'pull_request' }}
+      - name: Recheck PR admission or exact main commit
+        shell: bash
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: node .github/scripts/governance_gate.cjs event-current
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            node .github/scripts/governance_gate.cjs event-current
+          else
+            test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          fi
 
   gate:
     name: Project gate
