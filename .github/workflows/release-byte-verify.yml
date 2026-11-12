@@ -9,7 +9,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: verify-release-bytes-${{ github.ref }}
+  group: verify-release-bytes-${{ github.run_id }}
   cancel-in-progress: false
 jobs:
   verify:
