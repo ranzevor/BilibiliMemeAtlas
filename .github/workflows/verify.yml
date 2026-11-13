@@ -1,6 +1,11 @@
 name: Verify project
 on:
   workflow_dispatch:
+  push:
+    branches: ["main"]
+  merge_group:
+    types: [checks_requested]
+    branches: ["main"]
   pull_request:
     branches: ["main", "release/v0.1.5-queue-item-*", "fix/v0.1.5-duplicate-source-reference", "fix/v0.1.5-duplicate-source-reference-rebuild", "feat/governance-pr-metadata-gate"]
     types: [opened, reopened, synchronize, edited, ready_for_review]
@@ -8,8 +13,8 @@ permissions:
   contents: read
   pull-requests: read
 concurrency:
-  group: verify-project-${{ github.ref }}
-  cancel-in-progress: true
+  group: verify-project-${{ github.event_name == 'push' && github.sha || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   verify:
     name: Project (${{ matrix.os }}, Python ${{ matrix.python }})
@@ -28,6 +33,10 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+      - name: Verify checked-out event SHA
+        if: ${{ github.event_name == 'push' || github.event_name == 'merge_group' }}
+        shell: bash
+        run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
       - name: Set up Python
         uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
