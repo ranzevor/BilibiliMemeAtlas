@@ -343,6 +343,14 @@ class ProjectContractTests(unittest.TestCase):
                 self.assertIn('  push:\n    branches: ["main"]\n', text)
                 self.assertIn('  merge_group:\n    types: [checks_requested]\n    branches: ["main"]\n', text)
                 self.assertIn("${{ github.event_name == 'push' && github.sha || github.ref }}", text)
+                sha_check = (
+                    "      - name: Verify checked-out event SHA\n"
+                    "        if: ${{ github.event_name == 'push' || github.event_name == 'merge_group' }}\n"
+                    "        shell: bash\n"
+                    '        run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"\n')
+                self.assertEqual(text.count(sha_check), 1)
+                self.assertLess(text.index("uses: actions/checkout@"), text.index(sha_check))
+                self.assertLess(text.index(sha_check), text.index("uses: actions/setup-python@"))
                 expected_branches = '  pull_request:\n    branches: ["main", "release/v0.1.5-queue-item-*", "fix/v0.1.5-duplicate-source-reference", "fix/v0.1.5-duplicate-source-reference-rebuild", "feat/governance-pr-metadata-gate"]\n'
                 self.assertIn(expected_branches, text)
                 self.assertIn('    types: [opened, reopened, synchronize, edited, ready_for_review]', text)

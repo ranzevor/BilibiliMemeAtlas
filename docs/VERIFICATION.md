@@ -24,7 +24,7 @@ python3 scripts/verify.py
 
 每个汇总检查等待整个矩阵完成，只有全部矩阵作业成功才通过。主分支将这三个检查绑定到 GitHub Actions；合并还须完成必要审批和讨论处理。调整矩阵时保留汇总检查名称；修改名称时同步主分支规则。
 
-每次提交进入 `main` 后，`push` 事件在实际主分支提交上再次运行全部三项质量检查。该次检查与合并前门禁分开，失败时阻止后续发行，并通过独立 PR 恢复；合并后检查不能代替合并前检查或撤销已完成的合并。对主分支的不同提交分别保留检查运行，旧 PR 的运行可以由新运行取代。
+每次提交进入 `main` 后，`push` 事件在实际主分支提交上再次运行全部三项质量检查。`push` 和 `merge_group` 验证须在检出后核对实际 HEAD 与事件的 `GITHUB_SHA`，不一致则该矩阵任务失败。该次检查与合并前门禁分开，失败时阻止后续发行，并通过独立 PR 恢复；合并后检查不能代替合并前检查或撤销已完成的合并。对主分支的不同提交分别保留检查运行，旧 PR 的运行可以由新运行取代。
 
 来自 fork 的 PR 使用同一组检查；GitHub 要求批准工作流运行时，维护者先审查差异再批准。工作流保留手动入口供单独验证；合并门禁使用 PR 事件触发的检查结果，失败后可重跑该次 PR 工作流。仅手动派发的结果无法满足[GitHub 的必需检查要求](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks#checks-from-some-workflow-jobs-are-not-evaluated)。
 

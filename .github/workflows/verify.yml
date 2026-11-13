@@ -33,6 +33,10 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+      - name: Verify checked-out event SHA
+        if: ${{ github.event_name == 'push' || github.event_name == 'merge_group' }}
+        shell: bash
+        run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
       - name: Set up Python
         uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
