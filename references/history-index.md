@@ -55,7 +55,7 @@
 | 14 | 战五渣 | `early-power-five` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 原作场景与缩略语由社区摘要解释；未直接核漫画页或B站早期实例。 |
 | 15 | 自古红蓝出CP | `early-red-blue-cp` | 2009-2015 / acg | 部分核实 | origin | 已补红蓝代表色角色配对的释义；2015年弹幕文章支持既有用例，首次造词和早期跨站传播链仍待补。 |
 | 16 | 都是时臣的错 | `early-tokiomi-fault` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 只有百科摘要的回顾性解释；中文归因句并未对照原作或站内早期投稿。 |
-| 17 | 今天的风儿甚是喧嚣 | `early-wind-noisy` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 目前由社区摘要支持作品场景；译句版本不同，未确认唯一中文原句或首传。 |
+| 17 | 今天的风儿甚是喧嚣 | `early-wind-noisy` | 2009-2015 / acg | 部分核实 | 无 | SUNRISE动画官方资料明确记录《男子高中生的日常》2012年播出与河边文学少女场景的日语台词「今日は風が騒がしいな」；2012年2月的日文用户问答复述第一话相关台词和片尾曲；2019年B站专栏明确将中文译句关联该动画。中文字幕首译、译法版本关系和B站最早使用时间仍未核定。 |
 | 18 | 何弃疗 | `early-abandon-treatment` | 2009-2015 / community | 部分核实 | meaning、origin、platform_usage | 2013年报道摘要支持缩略语用法；唯一首创故事与B站最早用例未确认。 |
 | 19 | 空降成功 | `early-airdrop` | 2009-2015 / community | 部分核实 | meaning、origin | 前2016中文用例已见；B站最早用例未补。 |
 | 20 | 我也是醉了 | `early-also-drunk` | 2009-2015 / community | 部分核实 | meaning、origin、platform_usage | 年度名单全文支持2014年流行；词源说法冲突，B站独立传播链未补。 |

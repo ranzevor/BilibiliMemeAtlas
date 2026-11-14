@@ -2768,6 +2768,27 @@
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-wind-sunrise-official",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-wind-jp-qa-2012",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-wind-bili-2019",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
     }
   ]
 }

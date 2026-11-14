@@ -4299,5 +4299,38 @@
     "checked_at": "2026-11-01",
     "supports": "2017年4月23日マンガペディア官方名言集列出「僕と契約して、魔法少女になってよ！」并明确标注为原TV动画第1话中丘比向少女发出的契约邀请台词。",
     "limitations": "二手回顾性台词资料，支持台词归属，不替代原片或原始脚本，也不证明中文最早译法或B站最初传播。"
+  },
+  {
+    "id": "early-src-wind-sunrise-official",
+    "title": "SUNRISE《男子高校生の日常》作品与场景资料",
+    "url": "https://www.sunrise-world.net/titles/pickup_309.php",
+    "publisher": "SUNRISE动画官方网站",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-14",
+    "supports": "官方作品页列出TV动画2012年1月9日至3月26日播出，并在河边文学少女场景正文写明秀则的日语台词「今日は風が騒がしいな」及后续搭话情节。",
+    "limitations": "官网是原作改编动画官方资料，支持日语场景和作品播出信息；不提供授权中文配音字幕逐字稿、初次译出日期或B站首传。"
+  },
+  {
+    "id": "early-src-wind-jp-qa-2012",
+    "title": "《男子高校生の日常》第1话片尾曲来源的2012年日文问答",
+    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1080818495",
+    "publisher": "Yahoo!知恵袋用户问答",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-14",
+    "supports": "2012年2月4日提问、2月5日回答中明确复述第一话「男子高校生と文学少女」情节的「今日は・・・風が騒がしいな」及关联台词，并指向第一话ED改编。",
+    "limitations": "为观众同期复述而非原始音轨；可支持早期日文用例和剧集辨识，不足以判定准确原音标点、中文首译及B站使用。"
+  },
+  {
+    "id": "early-src-wind-bili-2019",
+    "title": "今天的风儿甚是喧嚣啊——轻松日常系番剧推荐",
+    "url": "https://www.bilibili.com/opus/249868024619561694",
+    "publisher": "哔哩哔哩专栏作者 十派派派",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-14",
+    "supports": "2019年5月5日B站专栏正文引用「今天的风儿，甚是喧嚣啊」，明示其出自《男子高中生的日常》并作为站内熟悉的名句讨论。",
+    "limitations": "2019年站内文章支持译句用例及当时社区语境；不证明最早站内使用、唯一中文字幕译法或官方翻译。"
   }
 ]

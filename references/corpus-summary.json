@@ -8,9 +8,9 @@
   ],
   "statistics": {
     "version": "0.1.6",
-    "knowledge_cutoff": "2026-11-11",
+    "knowledge_cutoff": "2026-11-14",
     "entries": 303,
-    "sources": 391,
+    "sources": 394,
     "by_evidence": {
       "partial": 248,
       "verified": 55
@@ -34,7 +34,7 @@
       "vtuber": 7
     },
     "source_access": {
-      "full": 189,
+      "full": 192,
       "metadata": 64,
       "snippet": 138
     },

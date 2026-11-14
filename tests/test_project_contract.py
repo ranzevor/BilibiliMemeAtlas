@@ -405,5 +405,22 @@ class ProjectContractTests(unittest.TestCase):
             self.assertIn("references/2027-2031.json", source_files(root))
 
 
+
+    def test_early_wind_noisy_official_japanese_scene_and_chinese_use_are_distinct(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-wind-noisy")
+        refs = {ref["source_id"]: ref["claims"] for ref in item["evidence"]}
+        official = sources["early-src-wind-sunrise-official"]
+        jp = sources["early-src-wind-jp-qa-2012"]
+        bili = sources["early-src-wind-bili-2019"]
+        self.assertEqual(refs[official["id"]], ["origin"])
+        self.assertEqual(refs[jp["id"]], ["origin"])
+        self.assertEqual(refs[bili["id"]], ["meaning", "platform_usage"])
+        self.assertEqual([official["access_level"], jp["access_level"], bili["access_level"]], ["full"] * 3)
+        self.assertIn("今日は風が騒がしいな", official["supports"])
+        self.assertIn("2019年5月5日", bili["supports"])
+        self.assertIsNone(item["origin"]["date"])
+        self.assertEqual(item["evidence_status"], "partial")
+
 if __name__ == "__main__":
     unittest.main()
