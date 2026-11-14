@@ -405,5 +405,23 @@ class ProjectContractTests(unittest.TestCase):
             self.assertIn("references/2027-2031.json", source_files(root))
 
 
+
+    def test_early_tokiomi_official_story_fanfiction_and_video_are_not_equated(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-tokiomi-fault")
+        refs = {ref["source_id"]: ref["claims"] for ref in item["evidence"]}
+        official = sources["early-src-tokiomi-fate-zero-ep15-official"]
+        fanfic = sources["early-src-tokiomi-fanfic-jjwxc-2012"]
+        video = sources["early-src-tokiomi-bili-2021"]
+        self.assertEqual(refs[official["id"]], ["origin"])
+        self.assertEqual(refs[fanfic["id"]], ["meaning"])
+        self.assertEqual(refs[video["id"]], ["platform_usage"])
+        self.assertEqual(official["access_level"], "full")
+        self.assertEqual(fanfic["access_level"], "full")
+        self.assertEqual(video["access_level"], "metadata")
+        self.assertIn("最新更新", fanfic["supports"])
+        self.assertIsNone(item["origin"]["date"])
+        self.assertEqual(item["evidence_status"], "partial")
+
 if __name__ == "__main__":
     unittest.main()

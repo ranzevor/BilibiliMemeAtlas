@@ -54,7 +54,7 @@
 | 13 | 人被杀就会死 | `early-people-die` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 汉译与英文字幕存在版本差异；不写唯一首译。 |
 | 14 | 战五渣 | `early-power-five` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 原作场景与缩略语由社区摘要解释；未直接核漫画页或B站早期实例。 |
 | 15 | 自古红蓝出CP | `early-red-blue-cp` | 2009-2015 / acg | 部分核实 | origin | 已补红蓝代表色角色配对的释义；2015年弹幕文章支持既有用例，首次造词和早期跨站传播链仍待补。 |
-| 16 | 都是时臣的错 | `early-tokiomi-fault` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 只有百科摘要的回顾性解释；中文归因句并未对照原作或站内早期投稿。 |
+| 16 | 都是时臣的错 | `early-tokiomi-fault` | 2009-2015 / acg | 部分核实 | platform_usage | 《Fate/Zero》动画官网第15话梗概明确记载间桐雁夜将对魔术的怨恨转向远坂时臣；晋江同人作品第9章正文直接使用「都是时臣的错」，其页面标有2012年1月8日最新更新时刻，但不等同首次发表；2021年B站投稿标题明确使用该梗。原作逐字台词、同人句式首次出现日和早期B站投稿仍未核验。 |
 | 17 | 今天的风儿甚是喧嚣 | `early-wind-noisy` | 2009-2015 / acg | 部分核实 | meaning、origin、platform_usage | 目前由社区摘要支持作品场景；译句版本不同，未确认唯一中文原句或首传。 |
 | 18 | 何弃疗 | `early-abandon-treatment` | 2009-2015 / community | 部分核实 | meaning、origin、platform_usage | 2013年报道摘要支持缩略语用法；唯一首创故事与B站最早用例未确认。 |
 | 19 | 空降成功 | `early-airdrop` | 2009-2015 / community | 部分核实 | meaning、origin | 前2016中文用例已见；B站最早用例未补。 |
