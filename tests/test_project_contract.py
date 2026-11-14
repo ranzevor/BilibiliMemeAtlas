@@ -405,5 +405,21 @@ class ProjectContractTests(unittest.TestCase):
             self.assertIn("references/2027-2031.json", source_files(root))
 
 
+
+    def test_early_people_die_game_anime_and_bilibili_evidence_are_distinct(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-people-die")
+        refs = {ref["source_id"]: ref["claims"] for ref in item["evidence"]}
+        article = sources["early-src-people-die-acg17-2019"]
+        video = sources["early-src-people-die-bili-2017"]
+        self.assertEqual(refs[article["id"]], ["meaning", "origin"])
+        self.assertEqual(article["access_level"], "full")
+        self.assertIn("2004年", article["supports"])
+        self.assertIn("2006年", article["supports"])
+        self.assertEqual(refs[video["id"]], ["platform_usage"])
+        self.assertEqual(video["access_level"], "metadata")
+        self.assertIn("2017年6月10日", video["supports"])
+        self.assertEqual(item["evidence_status"], "partial")
+
 if __name__ == "__main__":
     unittest.main()
