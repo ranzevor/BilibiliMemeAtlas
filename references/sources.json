@@ -4299,5 +4299,27 @@
     "checked_at": "2026-11-01",
     "supports": "2017年4月23日マンガペディア官方名言集列出「僕と契約して、魔法少女になってよ！」并明确标注为原TV动画第1话中丘比向少女发出的契约邀请台词。",
     "limitations": "二手回顾性台词资料，支持台词归属，不替代原片或原始脚本，也不证明中文最早译法或B站最初传播。"
+  },
+  {
+    "id": "early-src-powerfive-dragonball-official-2021",
+    "title": "ウィークリー☆キャラクター紹介！第22回目は戦闘力5のおじさん！",
+    "url": "https://dragon-ball-official.com/news/01_505.html",
+    "publisher": "龙珠官方网站",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-14",
+    "supports": "官方角色解说正文明确：拉蒂兹抵达地球后以探测器测得农夫战斗力5，场景定位于原作第195回，并记录其轻蔑评价。",
+    "limitations": "这是版权方在2021年的原作回顾，支持原作场景、数值与回次，不单独证明中文缩略语「战五渣」形成时间或B站传播。"
+  },
+  {
+    "id": "early-src-powerfive-bili-2013",
+    "title": "你还敢小看战5渣吗？",
+    "url": "https://www.bilibili.com/video/BV1Gs411f7bU/",
+    "publisher": "哔哩哔哩投稿者 卡妙",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-14",
+    "supports": "公开搜索索引显示该投稿标题直接使用「战5渣」，投稿日期标示为2013年7月14日，简介描述农夫与《龙珠Z》主线角色的剪辑。",
+    "limitations": "视频页面直开返回HTTP 412；只取得索引中的标题、日期与简介，不声称看过视频正文或判定为B站最早用例。当前标签不作为投稿时已存在的历史证据。"
   }
 ]
