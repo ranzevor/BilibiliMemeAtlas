@@ -406,6 +406,35 @@ class ProjectContractTests(unittest.TestCase):
 
 
 
+    def test_early_people_die_game_anime_and_bilibili_evidence_are_distinct(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-people-die")
+        refs = {ref["source_id"]: ref["claims"] for ref in item["evidence"]}
+        article = sources["early-src-people-die-acg17-2019"]
+        video = sources["early-src-people-die-bili-2017"]
+        self.assertEqual(refs[article["id"]], ["meaning", "origin"])
+        self.assertEqual(article["access_level"], "full")
+        self.assertIn("2004年", article["supports"])
+        self.assertIn("2006年", article["supports"])
+        self.assertEqual(refs[video["id"]], ["platform_usage"])
+        self.assertEqual(video["access_level"], "metadata")
+        self.assertIn("2017年6月10日", video["supports"])
+        self.assertEqual(item["evidence_status"], "partial")
+
+    def test_early_power_five_original_and_platform_title_evidence_are_separate(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-power-five")
+        by_source = {ref["source_id"]: ref["claims"] for ref in item["evidence"]}
+        official = sources["early-src-powerfive-dragonball-official-2021"]
+        bilibili = sources["early-src-powerfive-bili-2013"]
+        self.assertEqual(by_source[official["id"]], ["origin"])
+        self.assertEqual(official["access_level"], "full")
+        self.assertIn("第195回", official["supports"])
+        self.assertEqual(by_source[bilibili["id"]], ["platform_usage"])
+        self.assertEqual(bilibili["access_level"], "metadata")
+        self.assertIn("2013年7月14日", bilibili["supports"])
+        self.assertEqual(item["evidence_status"], "partial")
+
     def test_early_tokiomi_official_story_fanfiction_and_video_are_not_equated(self):
         entries, sources, _ = load_catalogue(ROOT)
         item = next(row for row in entries if row["id"] == "early-tokiomi-fault")
