@@ -4301,6 +4301,28 @@
     "limitations": "二手回顾性台词资料，支持台词归属，不替代原片或原始脚本，也不证明中文最早译法或B站最初传播。"
   },
   {
+    "id": "early-src-people-die-acg17-2019",
+    "title": "【全面科普】型月梗 人被杀就会死",
+    "url": "https://acg17.com/53627.html",
+    "publisher": "ACG17（转自AcFun会计考据）",
+    "source_type": "community",
+    "access_level": "full",
+    "checked_at": "2026-11-14",
+    "supports": "2019年全文区分2004年Fate/stay night游戏Fate路线内心独白与2006年TV动画中的近似日语表达，并解释剑鞘归还、中文句式及英文翻译的语境差异。",
+    "limitations": "中文二次考据转载，不替代游戏剧本、动画原片或原始字幕；不证明唯一首译、英语梗传播起点或B站首发。"
+  },
+  {
+    "id": "early-src-people-die-bili-2017",
+    "title": "【ACG趣闻录】重新理解《人被杀就会死》/新海诚导演也会配音？",
+    "url": "https://www.bilibili.com/video/BV1wx411Y72d/",
+    "publisher": "哔哩哔哩投稿者 LeeAJie",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-14",
+    "supports": "可检索投稿标题直接包含「人被杀就会死」，页面元数据标记2017年6月10日14:09:35发布。",
+    "limitations": "视频直开返回HTTP 412；使用搜索索引标题和投稿日期，不声称观看视频内容或确定最早站内用例。"
+  },
+  {
     "id": "early-src-powerfive-dragonball-official-2021",
     "title": "ウィークリー☆キャラクター紹介！第22回目は戦闘力5のおじさん！",
     "url": "https://dragon-ball-official.com/news/01_505.html",
