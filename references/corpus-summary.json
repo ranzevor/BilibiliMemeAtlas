@@ -10,7 +10,7 @@
     "version": "0.1.6",
     "knowledge_cutoff": "2026-11-14",
     "entries": 303,
-    "sources": 399,
+    "sources": 402,
     "by_evidence": {
       "partial": 248,
       "verified": 55
@@ -34,7 +34,7 @@
       "vtuber": 7
     },
     "source_access": {
-      "full": 193,
+      "full": 196,
       "metadata": 68,
       "snippet": 138
     },
