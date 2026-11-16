@@ -435,6 +435,18 @@ class ProjectContractTests(unittest.TestCase):
         self.assertIn("2013年7月14日", bilibili["supports"])
         self.assertEqual(item["evidence_status"], "partial")
 
+    def test_early_red_blue_cp_2016_video_is_a_cross_work_title_not_an_origin_date(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-red-blue-cp")
+        refs = {ref["source_id"]: ref["claims"] for ref in item["evidence"]}
+        record = sources["early-src-red-blue-bili-2016"]
+        self.assertEqual(refs[record["id"]], ["platform_usage"])
+        self.assertEqual(record["access_level"], "metadata")
+        self.assertIn("2016年7月14日", record["supports"])
+        self.assertIn("《三年E班》《K》《黑子的篮球》", record["supports"])
+        self.assertIsNone(item["origin"]["date"])
+        self.assertEqual(item["evidence_status"], "partial")
+
     def test_early_tokiomi_official_story_fanfiction_and_video_are_not_equated(self):
         entries, sources, _ = load_catalogue(ROOT)
         item = next(row for row in entries if row["id"] == "early-tokiomi-fault")
