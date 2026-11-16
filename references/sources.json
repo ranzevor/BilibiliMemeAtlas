@@ -4345,6 +4345,50 @@
     "limitations": "视频页面直开返回HTTP 412；只取得索引中的标题、日期与简介，不声称看过视频正文或判定为B站最早用例。当前标签不作为投稿时已存在的历史证据。"
   },
   {
+    "id": "early-src-red-blue-bili-2016",
+    "title": "【混剪】自古红蓝出CP（业渚、伏八、赤黑）",
+    "url": "https://www.bilibili.com/video/BV1is411y7TS/",
+    "publisher": "哔哩哔哩投稿者 懒癌症末期",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-14",
+    "supports": "投稿标题直接使用「自古红蓝出CP」，页面标示2016年7月14日发布；简介列出《三年E班》《K》《黑子的篮球》的多组CP剪辑。",
+    "limitations": "只核页面标题、日期、简介等原投稿元数据，不视作已观看整段视频；并非该句首创或跨平台传播链证据。"
+  },
+  {
+    "id": "early-src-tokiomi-fate-zero-ep15-official",
+    "title": "Fate/Zero第15话「黄金の輝き」故事梗概",
+    "url": "https://www.fate-zero.jp/story/",
+    "publisher": "《Fate/Zero》动画官方网站",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-14",
+    "supports": "动画官网第15话剧情说明：间桐雁夜因远坂葵与间桐樱的遭遇，将针对「魔术」本身的憎恨投向远坂时臣，支持原作人物怨恨关系。",
+    "limitations": "官方故事梗概没有逐字列出「都是时臣的错」或中文译本，不证明此句由动画原词直接形成。"
+  },
+  {
+    "id": "early-src-tokiomi-fanfic-jjwxc-2012",
+    "title": "《人生问答》第9章：狂欢之夜（上）",
+    "url": "https://m.jjwxc.net/book2/1390408/9",
+    "publisher": "晋江文学城作者 宫城眼珠",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-14",
+    "supports": "同人小说第9章正文出现「雁夜开始拍着桌子大吼都是时臣的错」，可确认中文同人文本中的明确句式实例。网页标题标示最新更新于2012年1月8日。",
+    "limitations": "同人创作而非原作对话，最新更新时刻不等于初次发布时刻；不以此推定口号首创者、最早中文使用或原作台词。"
+  },
+  {
+    "id": "early-src-tokiomi-bili-2021",
+    "title": "都是时臣的错是什么梗【梗指南】",
+    "url": "https://www.bilibili.com/video/BV1Pi4y1K7HH/",
+    "publisher": "哔哩哔哩投稿者 梗指南",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-14",
+    "supports": "公开投稿元数据记录2021年3月9日22:44:01发布的标题「都是时臣的错是什么梗【梗指南】」，属于可定位的B站站内梗解说标题。",
+    "limitations": "仅依据投稿标题和日期元数据，不证明视频内具体解说内容、2012年前B站首传或平台梗生成过程。"
+  },
+  {
     "id": "early-src-wind-sunrise-official",
     "title": "SUNRISE《男子高校生の日常》作品与场景资料",
     "url": "https://www.sunrise-world.net/titles/pickup_309.php",

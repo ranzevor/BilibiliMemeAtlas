@@ -435,6 +435,35 @@ class ProjectContractTests(unittest.TestCase):
         self.assertIn("2013年7月14日", bilibili["supports"])
         self.assertEqual(item["evidence_status"], "partial")
 
+    def test_early_red_blue_cp_2016_video_is_a_cross_work_title_not_an_origin_date(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-red-blue-cp")
+        refs = {ref["source_id"]: ref["claims"] for ref in item["evidence"]}
+        record = sources["early-src-red-blue-bili-2016"]
+        self.assertEqual(refs[record["id"]], ["platform_usage"])
+        self.assertEqual(record["access_level"], "metadata")
+        self.assertIn("2016年7月14日", record["supports"])
+        self.assertIn("《三年E班》《K》《黑子的篮球》", record["supports"])
+        self.assertIsNone(item["origin"]["date"])
+        self.assertEqual(item["evidence_status"], "partial")
+
+    def test_early_tokiomi_official_story_fanfiction_and_video_are_not_equated(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-tokiomi-fault")
+        refs = {ref["source_id"]: ref["claims"] for ref in item["evidence"]}
+        official = sources["early-src-tokiomi-fate-zero-ep15-official"]
+        fanfic = sources["early-src-tokiomi-fanfic-jjwxc-2012"]
+        video = sources["early-src-tokiomi-bili-2021"]
+        self.assertEqual(refs[official["id"]], ["origin"])
+        self.assertEqual(refs[fanfic["id"]], ["meaning"])
+        self.assertEqual(refs[video["id"]], ["platform_usage"])
+        self.assertEqual(official["access_level"], "full")
+        self.assertEqual(fanfic["access_level"], "full")
+        self.assertEqual(video["access_level"], "metadata")
+        self.assertIn("最新更新", fanfic["supports"])
+        self.assertIsNone(item["origin"]["date"])
+        self.assertEqual(item["evidence_status"], "partial")
+
     def test_early_wind_noisy_official_japanese_scene_and_chinese_use_are_distinct(self):
         entries, sources, _ = load_catalogue(ROOT)
         item = next(row for row in entries if row["id"] == "early-wind-noisy")
@@ -450,6 +479,5 @@ class ProjectContractTests(unittest.TestCase):
         self.assertIn("2019年5月5日", bili["supports"])
         self.assertIsNone(item["origin"]["date"])
         self.assertEqual(item["evidence_status"], "partial")
-
 if __name__ == "__main__":
     unittest.main()
