@@ -479,5 +479,23 @@ class ProjectContractTests(unittest.TestCase):
         self.assertIn("2019年5月5日", bili["supports"])
         self.assertIsNone(item["origin"]["date"])
         self.assertEqual(item["evidence_status"], "partial")
+
+    def test_early_abandon_treatment_keeps_origin_unconfirmed_and_bilibili_use_scoped(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-abandon-treatment")
+        refs = {ref["source_id"]: set(ref["claims"]) for ref in item["evidence"]}
+        self.assertIn("meaning", refs["early-src-2013-luoyang-three-word"])
+        self.assertIn("origin", refs["early-src-2013-hnr-yang-origin"])
+        self.assertIn("origin", refs["early-src-2013-chinanews-treatment-story"])
+        self.assertIn("origin", refs["early-src-2009-cctv-wangyin-report"])
+        self.assertIn("platform_usage", refs["early-src-2013-bilibili-makoto-mobius"])
+        bilibili = sources["early-src-2013-bilibili-makoto-mobius"]
+        self.assertEqual(bilibili["access_level"], "metadata")
+        self.assertIn("未读取视频", bilibili["limitations"])
+        self.assertIn("2013年11月15日", bilibili["supports"])
+        self.assertIsNone(item["origin"]["date"])
+        self.assertEqual(item["origin"]["precision"], "unknown")
+        self.assertEqual(item["evidence_status"], "partial")
+
 if __name__ == "__main__":
     unittest.main()
