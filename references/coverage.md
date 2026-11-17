@@ -20,7 +20,7 @@
 
 这些状态衡量资料支持程度，不能转成事实概率。
 
-来源读取范围：full 199；metadata 69；snippet 139。
+来源读取范围：full 199；metadata 69；snippet 139。full表示已取得正文相关段落，snippet为检索摘要，metadata为标题/日期等元数据。
 
 ## 年代与分区
 
