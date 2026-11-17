@@ -4420,5 +4420,60 @@
     "checked_at": "2026-11-14",
     "supports": "2019年5月5日B站专栏正文引用「今天的风儿，甚是喧嚣啊」，明示其出自《男子高中生的日常》并作为站内熟悉的名句讨论。",
     "limitations": "2019年站内文章支持译句用例及当时社区语境；不证明最早站内使用、唯一中文字幕译法或官方翻译。"
+  },
+  {
+    "id": "early-src-2009-cctv-wangyin-report",
+    "title": "[新闻调查]网瘾之戒(2009.08.15)",
+    "url": "https://news.cntv.cn/program/xinwendiaocha/20100402/104415.shtml",
+    "publisher": "央视网",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-17",
+    "supports": "央视网刊载的2009年《新闻调查：网瘾之戒》文字稿记录网戒中心相关采访；全文未见“为什么放弃治疗”句式，仅用于核对该节目文字稿的记录范围。",
+    "limitations": "该文字稿仅覆盖该节目内容，不能排除杨永信在其他场合说过类似表述，也不能单独否定流传的词源叙述。"
+  },
+  {
+    "id": "early-src-2013-luoyang-three-word",
+    "title": "网络“三字经”，我伙呆！",
+    "url": "https://lywb.lyd.com.cn/images/2013-09/18/1379463043718lywb20130918C08.pdf",
+    "publisher": "洛阳晚报",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-17",
+    "supports": "2013年9月18日全文将“何弃疗”解释为“为何放弃治疗”的缩略语，并记录其网络流行语使用和嘲讽语境。",
+    "limitations": ""
+  },
+  {
+    "id": "early-src-2013-bilibili-makoto-mobius",
+    "title": "〖恐怖ADV·何弃疗〗真琴莫比乌斯 完结〖阿四〗",
+    "url": "https://www.bilibili.com/video/BV1bs411o7B2/",
+    "publisher": "阿四四四四君",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-17",
+    "supports": "B站投稿页面元数据显示视频于2013年11月15日23:26:22发布，标题含“何弃疗”，简介也用该词评价游戏作者，构成可定位的站内使用实例。",
+    "limitations": "仅核对平台索引返回的标题、投稿时间、简介与标签等元数据，未读取视频、弹幕或评论；不证明最早站内用例，也不确定投稿时标签状态。"
+  },
+  {
+    "id": "early-src-2013-hnr-yang-origin",
+    "title": "2013网络热词 看完“涨姿势”",
+    "url": "https://www.hnr.cn/hnr/dfjb/xqlt/201312/t20131206_736886.html",
+    "publisher": "映象网",
+    "source_type": "secondary",
+    "access_level": "snippet",
+    "checked_at": "2026-11-17",
+    "supports": "2013年12月6日检索摘要将“何弃疗”解释为“为何放弃治疗”的缩写，并将其起源归于杨永信网戒治疗故事。",
+    "limitations": "页面正文未能读取；摘要未提供原始发言、当事人记录或首发帖，只能证明该归因在当时被报道，不能证实杨永信说过该句或为首创者。"
+  },
+  {
+    "id": "early-src-2013-chinanews-treatment-story",
+    "title": "“十大流行语”公布 “女汉子”上榜 “小伙伴”落选",
+    "url": "https://www.chinanews.com/cul/2013/12-20/5643482.shtml",
+    "publisher": "中新网（来源：厦门日报）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-17",
+    "supports": "2013年12月20日全文转述网瘾少年在戒网机构接受治疗后被问“为什么放弃治疗”的故事，作为“何弃疗”的流行起源解释。",
+    "limitations": "报道未提供当事人、原始对话或首发记录，只能证明该起源叙述当时被媒体转述，不能证实故事真实性或具体首创者。"
   }
 ]
