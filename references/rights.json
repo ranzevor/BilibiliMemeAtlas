@@ -2845,6 +2845,41 @@
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2009-cctv-wangyin-report",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2013-luoyang-three-word",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2013-bilibili-makoto-mobius",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2013-hnr-yang-origin",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-2013-chinanews-treatment-story",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
     }
   ]
 }
