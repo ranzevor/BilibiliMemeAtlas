@@ -17,7 +17,7 @@
 | 2011 | 3 | 和我签订契约，成为魔法少女吧（early-madoka-contract）；已经没什么好害怕的了（early-nothing-to-fear）；膝盖中了一箭（early-arrow-knee）；千本樱（early-senbonzakura） |
 | 2012 | 2 | 白金迪斯科（early-platinum-disco）；元芳，你怎么看（early-yuanfang） |
 | 2013 | 0 | 本索引条件未命中；需继续研究，不表示不存在材料 |
-| 2014 | 2 | 我也是醉了（early-also-drunk）；画面太美我不敢看（early-too-beautiful）；张全蛋（early-zhang-quandan） |
+| 2014 | 2 | 画面太美我不敢看（early-too-beautiful）；张全蛋（early-zhang-quandan） |
 | 2015 | 1 | Duang（early-duang）；Are you OK（early-are-you-ok） |
 | 2016 | 4 | 感觉身体被掏空（mid-body-empty）；葛优躺（mid-geyou-recline）；先定一个小目标（mid-small-goal）；洪荒之力（mid-flood-power） |
 | 2017 | 3 | 皮皮虾，我们走（mid-prawn）；正方形打野（extra-square-jungle）；你有freestyle吗（mid-freestyle）；大碗宽面（mid-big-bowl） |
@@ -58,7 +58,7 @@
 | 17 | 今天的风儿甚是喧嚣 | `early-wind-noisy` | 2009-2015 / acg | 部分核实 | 无 | SUNRISE动画官方资料明确记录《男子高中生的日常》2012年播出与河边文学少女场景的日语台词「今日は風が騒がしいな」；2012年2月的日文用户问答复述第一话相关台词和片尾曲；2019年B站专栏明确将中文译句关联该动画。中文字幕首译、译法版本关系和B站最早使用时间仍未核定。 |
 | 18 | 何弃疗 | `early-abandon-treatment` | 2009-2015 / community | 部分核实 | platform_usage | 2013年9月全文报道支持缩略语展开和嘲讽语义；2013年11月15日B站投稿标题与简介提供可定位的站内使用实例。2013年12月媒体转述的网戒治疗起源说法未提供原始发言或首发记录；具体首创来源仍未确认。B站记录仅为页面元数据，不代表最早投稿或标签添加时间。 |
 | 19 | 空降成功 | `early-airdrop` | 2009-2015 / community | 部分核实 | origin | 2015年7月29日Bangumi讨论转录一条明确标注为“哔站评论”的用例，提供可定位的早期B站使用记录；原始B站评论地址未取得，不能认定为站内最早用例。2016年《意林》与《语言战略研究》均记录片头/片段跳转语义；2018年B站专栏记录“空降坐标”“空降指挥部”等变体，年度弹幕榜收录“空降成功”。首创者、首发平台和精确起源日期仍未确认。 |
-| 20 | 我也是醉了 | `early-also-drunk` | 2009-2015 / community | 部分核实 | meaning、origin、platform_usage | 年度名单全文支持2014年流行；词源说法冲突，B站独立传播链未补。 |
+| 20 | 我也是醉了 | `early-also-drunk` | 2009-2015 / community | 部分核实 | platform_usage | 同期报道与研究对词源有不同归因，未取得可核验的原始方言用例、游戏解说或首发记录。B站2014年两条投稿标题提供站内使用节点：9月页面仅取得检索摘要，11月页面仅核对标题和投稿元数据；两者均不证明视频口播、弹幕或评论内容，也不构成B站首发证据。 |
 | 21 | 你们城里人真会玩 | `early-city-play` | 2009-2015 / community | 部分核实 | meaning、origin、platform_usage | 同期摘要可支持2015年流行用法；起源原帖及B站首次传播未确认。 |
 | 22 | 弹幕护体 | `early-danmu-shield` | 2009-2015 / community | 部分核实 | meaning、origin | 2014年站内用例与2018年榜可见；最早造词及B站首次使用未确认，早期投稿仅核到元数据。 |
 | 23 | 火钳刘明 | `early-fire-before` | 2009-2015 / community | 部分核实 | meaning、origin、platform_usage | 缺B站最早使用记录。 |

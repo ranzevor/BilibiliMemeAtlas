@@ -8,9 +8,9 @@
   ],
   "statistics": {
     "version": "0.1.6",
-    "knowledge_cutoff": "2026-11-19",
+    "knowledge_cutoff": "2026-11-20",
     "entries": 303,
-    "sources": 410,
+    "sources": 417,
     "by_evidence": {
       "partial": 248,
       "verified": 55
@@ -34,9 +34,9 @@
       "vtuber": 7
     },
     "source_access": {
-      "full": 203,
-      "metadata": 69,
-      "snippet": 138
+      "full": 208,
+      "metadata": 70,
+      "snippet": 139
     },
     "coverage": "按年代与分区组织的收录集；未建立全站历史梗总量，不计算全量覆盖率"
   }
