@@ -688,9 +688,9 @@
     "publisher": "人民网",
     "source_type": "secondary",
     "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "画面太美、挖掘机、也是醉了等2014中文网络流行语及用法。",
-    "limitations": "检索摘要；不照搬其关于最初词源的未经交叉核实推断。"
+    "checked_at": "2026-11-19",
+    "supports": "2014年12月7日媒体盘点列出“也是醉了”，解释为无奈、郁闷、无语等情绪的轻微表达，并把一种来源说法追溯到《笑傲江湖》令狐冲典故及《英雄联盟》玩家使用。",
+    "limitations": "仅取得检索摘要；其中的文学典故和游戏传播说法未给出原始文本或首发记录，只作为同期归因记录。"
   },
   {
     "id": "early-src-yuanfang-correction",
@@ -4508,5 +4508,82 @@
     "checked_at": "2026-11-19",
     "supports": "2018年11月12日B站专栏列出“空降成功、空降坐标、空降指挥部”，并解释空降成功/空降坐标用于跳过动画片头到达正片，空降指挥部用于请求正片时间点。",
     "limitations": "个人用户专栏记录的是当时作者理解的站内用法，不证明首创者、最早出现时间或全站频率。"
+  },
+  {
+    "id": "early-src-also-drunk-bili-2014-09",
+    "title": "☆我的世界☆minecraft〖粉鱼1.8生存〗③这羊的智商我也是醉了",
+    "url": "https://www.bilibili.com/video/BV1sx411K7ny/",
+    "publisher": "哔哩哔哩",
+    "source_type": "primary",
+    "access_level": "snippet",
+    "checked_at": "2026-11-19",
+    "supports": "B站视频搜索索引显示投稿标题“☆我的世界☆minecraft〖粉鱼1.8生存〗③这羊的智商我也是醉了”，索引时间为2014年9月13日21:38:46。",
+    "limitations": "B站原页面读取未成功，当前仅取得检索索引中的标题和投稿时间；未读取简介、视频、弹幕或评论。该记录不证明B站最早用例或起源。"
+  },
+  {
+    "id": "early-src-also-drunk-bili-2014-11",
+    "title": "英文翻译成韩文我也是醉了……〖106〖淡魂的魂淡日记",
+    "url": "https://www.bilibili.com/video/av1759747/",
+    "publisher": "哔哩哔哩",
+    "source_type": "primary",
+    "access_level": "metadata",
+    "checked_at": "2026-11-19",
+    "supports": "B站投稿页标题包含“我也是醉了”，页面标示投稿时间为2014年11月30日09:40:25，简介说明为作者自制解说。",
+    "limitations": "只读取投稿页面标题、日期和简介等元数据，未读取视频内容、弹幕或评论；不能据此认定视频内口播、最早站内用例或词源。"
+  },
+  {
+    "id": "early-src-also-drunk-cyol-2014",
+    "title": "2014年十大网络用语发布:“我也是醉了”上榜",
+    "url": "https://news.sina.com.cn/s/2014-12-23/063931316423.shtml",
+    "publisher": "中国青年报（新浪新闻转载）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-19",
+    "supports": "2014年12月23日《中国青年报》将其列入2014年十大网络用语，称其最早源自电脑游戏解说，后被用于微博评论并扩散；释义包括无奈、郁闷、无语及无力吐槽。",
+    "limitations": "报道未提供原始游戏解说记录或具体游戏名称；仅记录当时媒体对传播路径和语义的说明。"
+  },
+  {
+    "id": "early-src-also-drunk-jiemian-2014",
+    "title": "10个在2014年假装90后必须要掌握的词汇",
+    "url": "https://www.jiemian.com/article/218642.html",
+    "publisher": "界面新闻（转载人人网年度校园热词盘点）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-19",
+    "supports": "2014年12月26日界面新闻转载的校园热词盘点称“也是醉了”来源于武汉方言及东来东往同名EP，并解释为多用于表达无奈。",
+    "limitations": "文章未给出武汉方言原始语料、歌曲与网络用法之间的传播记录或首发材料；只支持该来源说法在2014年被报道。"
+  },
+  {
+    "id": "early-src-also-drunk-chinanews-2015",
+    "title": "2014微博流行词出炉 “萌萌哒”被用5298万次",
+    "url": "https://www.chinanews.com/cul/2015/01-12/6958313.shtml",
+    "publisher": "中新网（来源：北方新报）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-19",
+    "supports": "2015年1月12日报道称“也是醉了”来自DOTA游戏，在游戏语境中表达“我服了”或对队友行为的嘲讽，在微博语境中用于对奇葩行为的无奈感叹。",
+    "limitations": "报道未提供原始DOTA解说记录；微博提及量是单个平台统计，不能代表全网使用量或词语首发时间。"
+  },
+  {
+    "id": "early-src-also-drunk-xinhua-2015",
+    "title": "2014年网络流行语特征分析",
+    "url": "https://www.xinhuanet.com/politics/2015-03/23/c_127611936.htm",
+    "publisher": "新华网（来源：千龙网）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-19",
+    "supports": "2015年3月23日分析将“也是醉了”列为2014年网络自造词，并归入贴吧、豆瓣、微博等自媒体生成型词语；同时讨论其网络与媒体传播热度。",
+    "limitations": "该文提供的是对2014年流行语的分类分析，不给出该词的原始首发帖或首创者；分类不等于唯一来源链。"
+  },
+  {
+    "id": "early-src-also-drunk-dota-paper-2015",
+    "title": "网络流行语“我也是醉了”的模因考察",
+    "url": "https://m.fx361.com/news/2015/0430/1354010.html",
+    "publisher": "参考网（《现代语文（学术综合）》）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-19",
+    "supports": "2015年4月30日论文称该表达最初在DOTA解说中出现，并解释为对队友行为难以理解时的反讽回应；文中将“醉”引申为“糊涂”。",
+    "limitations": "网页可读部分包含摘要和语义溯源相关段落，后续全文需登录；未提供原始DOTA解说录音、视频或首发记录。"
   }
 ]

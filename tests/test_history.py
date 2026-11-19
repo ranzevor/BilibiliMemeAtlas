@@ -750,5 +750,60 @@ class RealPersonQueueEvidenceTests(unittest.TestCase):
         self.assertIn('妈妈我上电视了', context['supports'])
         self.assertNotIn('看得见我吗', context['supports'])
 
+class AlsoDrunkQueueEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from atlas import load_catalogue
+        cls.entries, cls.sources, _ = load_catalogue(ROOT)
+        cls.by_id = {entry["id"]: entry for entry in cls.entries}
 
+    def test_also_drunk_origin_claims_and_bilibili_usage_are_scoped(self):
+        entry = self.by_id["early-also-drunk"]
+        refs = {ref["source_id"]: set(ref["claims"]) for ref in entry["evidence"]}
+
+        self.assertIn("meaning", refs["early-src-2014-memes"])
+        self.assertIn("origin", refs["early-src-2014-memes"])
+        self.assertIn("origin", refs["early-src-2014-list"])
+        self.assertNotIn("date", refs["early-src-2014-list"])
+        for source_id in (
+            "early-src-also-drunk-cyol-2014",
+            "early-src-also-drunk-jiemian-2014",
+            "early-src-also-drunk-chinanews-2015",
+            "early-src-also-drunk-xinhua-2015",
+            "early-src-also-drunk-dota-paper-2015",
+        ):
+            self.assertIn("origin", refs[source_id])
+            self.assertEqual(self.sources[source_id]["access_level"], "full")
+
+        september = self.sources["early-src-also-drunk-bili-2014-09"]
+        november = self.sources["early-src-also-drunk-bili-2014-11"]
+        self.assertEqual((september["source_type"], september["access_level"]), ("primary", "snippet"))
+        self.assertIn("2014年9月13日", september["supports"])
+        self.assertIn("检索索引", september["limitations"])
+        self.assertEqual((november["source_type"], november["access_level"]), ("primary", "metadata"))
+        self.assertIn("2014年11月30日", november["supports"])
+        self.assertIn("未读取视频", november["limitations"])
+        self.assertIn("platform_usage", refs[september["id"]])
+        self.assertIn("platform_usage", refs[november["id"]])
+
+        self.assertIsNone(entry["origin"]["date"])
+        self.assertEqual(entry["origin"]["precision"], "unknown")
+        self.assertEqual(entry["origin"]["bilibili_role"], "uncertain")
+        self.assertEqual(entry["evidence_status"], "partial")
+        self.assertIn("武汉方言", entry["origin"]["summary"])
+        self.assertIn("DOTA", entry["origin"]["summary"])
+        self.assertIn("令狐冲", entry["origin"]["summary"])
+        self.assertIn("东来东往", entry["origin"]["summary"])
+
+        community_2014 = next(
+            cell for cell in matrix()["cells"]
+            if cell["year"] == 2014 and cell["category"] == "community"
+        )
+        self.assertNotIn("early-also-drunk", community_2014["date_supported_entry_ids"])
+        queued = next(
+            row for row in matrix()["research_queue"]
+            if row["entry_id"] == "early-also-drunk"
+        )
+        self.assertEqual(queued["missing_full_claims"], ["platform_usage"])
+        self.assertEqual(queued["date_precision"], "unknown")
 

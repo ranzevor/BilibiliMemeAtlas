@@ -3954,21 +3954,22 @@
     ],
     "category": "community",
     "era": "2009-2015",
-    "meaning": "表达无语、难以理解、佩服或被离谱事情打败；一般不指真的醉酒。",
+    "meaning": "在网络语境中表达对人或事的无奈、郁闷、无语或难以理解，常作为轻微吐槽；在游戏语境中也可用于评价他人操作，语气可能带反讽或嘲讽，具体含义由上下文决定。",
     "origin": {
-      "summary": "2014年度网络用语之一；多条词源说法并存，本条不指定唯一首创者。",
-      "date": "2014",
-      "precision": "year",
-      "bilibili_role": "imported"
+      "summary": "2014年同期报道对其来源有多种归因：有报道称其来自电脑游戏解说；另有报道将其关联到武汉方言和东来东往同名EP，或追溯至《笑傲江湖》令狐冲典故；2015年论文进一步称其在DOTA解说中出现，另有传播分析将其归入贴吧、豆瓣、微博等自媒体生成型词语。现有材料未提供可复核的原始方言语料、DOTA原始解说或可定位的首发记录，无法确认唯一词源与精确起源日期。2014年年度名单及同年B站投稿标题只证明其当年已流行并在B站使用，不是起源节点。",
+      "date": null,
+      "precision": "unknown",
+      "bilibili_role": "uncertain"
     },
     "usage": {
       "contexts": [
         "无奈吐槽",
-        "离谱反差"
+        "游戏表现评价",
+        "反讽或自嘲"
       ],
-      "example": "重开三次还是出生在同一个坑里，我也是醉了。",
+      "example": "队友连续空大，我也是醉了。",
       "avoid": [
-        "遇到实际饮酒或健康问题须按字面澄清。"
+        "不要仅凭“醉了”判断实际饮酒；应结合上下文区分字面饮酒与网络语用。"
       ]
     },
     "lifecycle": "classic",
@@ -3977,21 +3978,75 @@
     "evidence_status": "partial",
     "evidence": [
       {
-        "source_id": "early-src-2014-list",
+        "source_id": "early-src-also-drunk-bili-2014-09",
         "claims": [
-          "date"
+          "platform_usage"
         ],
-        "note": "年度名单。"
+        "note": "B站搜索索引中的投稿标题包含该表达，索引时间为2014年9月13日；原页面未读取。"
+      },
+      {
+        "source_id": "early-src-also-drunk-bili-2014-11",
+        "claims": [
+          "platform_usage"
+        ],
+        "note": "B站投稿页标题包含该表达，页面标示投稿时间为2014年11月30日；只核对标题和页面元数据。"
       },
       {
         "source_id": "early-src-2014-memes",
         "claims": [
-          "meaning"
+          "meaning",
+          "origin"
         ],
-        "note": "年度回顾用法。"
+        "note": "2014年12月7日媒体盘点解释其无奈、郁闷、无语语义，并将一种来源说法追溯到令狐冲典故及《英雄联盟》玩家；仅记录媒体归因，不作为已证实词源。"
+      },
+      {
+        "source_id": "early-src-2014-list",
+        "claims": [
+          "origin"
+        ],
+        "note": "2014年度十大网络用语名单收录该词，支持其当年已进入主流流行语名单，不支持起源日期。"
+      },
+      {
+        "source_id": "early-src-also-drunk-cyol-2014",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "2014年12月23日《中国青年报》称其最早源自电脑游戏解说，后用于微博评论；报道未提供原始解说记录。"
+      },
+      {
+        "source_id": "early-src-also-drunk-jiemian-2014",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "2014年12月26日界面新闻记录武汉方言及东来东往同名EP的来源说法，并释为表达无奈；未提供原始材料。"
+      },
+      {
+        "source_id": "early-src-also-drunk-chinanews-2015",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "2015年1月12日报道将其关联到DOTA游戏，并区分游戏和微博语境；未提供原始解说记录。"
+      },
+      {
+        "source_id": "early-src-also-drunk-xinhua-2015",
+        "claims": [
+          "origin"
+        ],
+        "note": "2015年3月23日传播分析将其归入2014年贴吧、豆瓣、微博等自媒体生成型网络用语；这是分类判断，不提供首发帖。"
+      },
+      {
+        "source_id": "early-src-also-drunk-dota-paper-2015",
+        "claims": [
+          "meaning",
+          "origin"
+        ],
+        "note": "2015年4月30日论文称其最初出现在DOTA解说中，并分析“醉”向“糊涂”的语义引申及反讽用法；未提供原始解说记录。"
       }
     ],
-    "notes": "年度名单全文支持2014年流行；词源说法冲突，B站独立传播链未补。"
+    "notes": "同期报道与研究对词源有不同归因，未取得可核验的原始方言用例、游戏解说或首发记录。B站2014年两条投稿标题提供站内使用节点：9月页面仅取得检索摘要，11月页面仅核对标题和投稿元数据；两者均不证明视频口播、弹幕或评论内容，也不构成B站首发证据。"
   },
   {
     "id": "early-too-beautiful",
