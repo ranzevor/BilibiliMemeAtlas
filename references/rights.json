@@ -2880,6 +2880,27 @@
       "project_use": "source-metadata-and-project-authored-claim-support",
       "bundled_full_work": false,
       "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-airdrop-yilin-2016",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-airdrop-language-strategy-2016",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
+    },
+    {
+      "source_id": "early-src-airdrop-bili-2018",
+      "external_rights": "retained-by-respective-rightsholders",
+      "project_use": "source-metadata-and-project-authored-claim-support",
+      "bundled_full_work": false,
+      "relicensed_by_project": false
     }
   ]
 }

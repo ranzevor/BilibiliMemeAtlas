@@ -497,5 +497,42 @@ class ProjectContractTests(unittest.TestCase):
         self.assertEqual(item["origin"]["precision"], "unknown")
         self.assertEqual(item["evidence_status"], "partial")
 
+
+    def test_early_airdrop_has_dated_bilibili_comment_and_full_semantic_sources(self):
+        entries, sources, _ = load_catalogue(ROOT)
+        item = next(row for row in entries if row["id"] == "early-airdrop")
+        refs = {ref["source_id"]: set(ref["claims"]) for ref in item["evidence"]}
+
+        cross_post = sources["early-src-airdrop-2015"]
+        self.assertEqual(cross_post["access_level"], "full")
+        self.assertIn("date", refs[cross_post["id"]])
+        self.assertIn("platform_usage", refs[cross_post["id"]])
+        self.assertNotIn("origin", refs[cross_post["id"]])
+        self.assertIn("2015年7月29日", cross_post["supports"])
+        self.assertIn("原始B站评论链接", cross_post["limitations"])
+
+        yilin = sources["early-src-airdrop-yilin-2016"]
+        self.assertEqual(yilin["access_level"], "full")
+        self.assertIn("meaning", refs[yilin["id"]])
+        self.assertIn("空难现场", yilin["supports"])
+
+        research = sources["early-src-airdrop-language-strategy-2016"]
+        self.assertEqual(research["access_level"], "full")
+        self.assertIn("meaning", refs[research["id"]])
+        self.assertIn("2015年1月至2016年7月", research["supports"])
+
+        bili = sources["early-src-airdrop-bili-2018"]
+        self.assertEqual(bili["source_type"], "primary")
+        self.assertEqual(bili["access_level"], "full")
+        self.assertIn("meaning", refs[bili["id"]])
+        self.assertIn("platform_usage", refs[bili["id"]])
+        self.assertIn("空降坐标", bili["supports"])
+        self.assertIn("空降指挥部", bili["supports"])
+
+        self.assertIsNone(item["origin"]["date"])
+        self.assertEqual(item["origin"]["precision"], "unknown")
+        self.assertEqual(item["origin"]["bilibili_role"], "uncertain")
+        self.assertEqual(item["evidence_status"], "partial")
+
 if __name__ == "__main__":
     unittest.main()

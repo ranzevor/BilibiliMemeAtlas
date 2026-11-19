@@ -49,10 +49,10 @@
     "url": "https://bgm.tv/ep/538135",
     "publisher": "Bangumi用户讨论",
     "source_type": "community",
-    "access_level": "snippet",
-    "checked_at": "2026-10-23",
-    "supports": "2015-07-28评论出现“op过后，空降成功”。",
-    "limitations": "是跨站同期用例，不能证明B站首创。"
+    "access_level": "full",
+    "checked_at": "2026-11-19",
+    "supports": "2015年7月29日04:12，Bangumi用户评论明确称“顺手转一下哔站评论”，随后转录的评论包含“op过后，空降成功！”；这是一条带日期的跨站B站评论转录。",
+    "limitations": "原始B站评论链接和发布者未定位；该跨站转录只能证明该表达至少在2015年7月29日已出现在被标为B站评论的文本中，不证明首创者或站内最早用例。"
   },
   {
     "id": "early-src-kneel-2012",
@@ -4475,5 +4475,38 @@
     "checked_at": "2026-11-17",
     "supports": "2013年12月20日全文转述网瘾少年在戒网机构接受治疗后被问“为什么放弃治疗”的故事，作为“何弃疗”的流行起源解释。",
     "limitations": "报道未提供当事人、原始对话或首发记录，只能证明该起源叙述当时被媒体转述，不能证实故事真实性或具体首创者。"
+  },
+  {
+    "id": "early-src-airdrop-yilin-2016",
+    "title": "如何成为弹幕高手",
+    "url": "https://www.yilinzazhi.com/2016/2016_12/yili20161230.html",
+    "publisher": "《意林》（作者：黄小跑）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-19",
+    "supports": "《意林》2016年第12期文章将“不看片头曲，直接跳到正片”称为“空降成功”，并将跳片头失败称为“空难现场”，记录该表达的弹幕语义。",
+    "limitations": "该文是弹幕文化说明，不提供词语首发帖子、创作者或精确起源时间；其描述的是片头跳转场景。"
+  },
+  {
+    "id": "early-src-airdrop-language-strategy-2016",
+    "title": "新网络环境下的流行语特征探析",
+    "url": "https://read01.com/REgk6E.html",
+    "publisher": "《语言战略研究》（壹读转载）",
+    "source_type": "secondary",
+    "access_level": "full",
+    "checked_at": "2026-11-19",
+    "supports": "李未柠2016年文章以2015年1月至2016年7月的102个网络流行语为研究范围，解释“空降成功”为跳过片头或无聊片段、点击进度条到达想看的位置，并记录“空降失败”作为相反表达。",
+    "limitations": "当前可读页面为转载全文；研究范围不是该词的首发时间，文章未提供原始B站投稿或最早用例。"
+  },
+  {
+    "id": "early-src-airdrop-bili-2018",
+    "title": "盘点：B站弹幕最多的7句话，7个梗，你懂几个？",
+    "url": "https://www.bilibili.com/read/cv1504510/",
+    "publisher": "余跞Rainfalls（哔哩哔哩用户）",
+    "source_type": "primary",
+    "access_level": "full",
+    "checked_at": "2026-11-19",
+    "supports": "2018年11月12日B站专栏列出“空降成功、空降坐标、空降指挥部”，并解释空降成功/空降坐标用于跳过动画片头到达正片，空降指挥部用于请求正片时间点。",
+    "limitations": "个人用户专栏记录的是当时作者理解的站内用法，不证明首创者、最早出现时间或全站频率。"
   }
 ]
