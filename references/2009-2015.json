@@ -153,9 +153,9 @@
     ],
     "category": "community",
     "era": "2009-2015",
-    "meaning": "按时间戳跳过前段，直接来到某个视频位置；“成功”常用于回应他人提供的时间点。",
+    "meaning": "在视频观看语境中，拖动进度条跳过片头或其他不想看的片段，直接抵达目标内容；成功到达预定位置时称“空降成功”，未命中时常称“空降失败”或戏称“空难现场”。",
     "origin": {
-      "summary": "弹幕社区将跳转播放比作空降；不等于空降兵的字面军事含义。 2018年B站年度弹幕名单再次收录，属于传播节点，不是首创证据。",
+      "summary": "2015年7月29日的跨站讨论转录了一条明确标为“哔站评论”的使用文本，其中出现“op过后，空降成功！”；2016年文章及研究已将其作为跳过片头或无聊片段的弹幕用语解释，2018年B站专栏记录相关变体。现有材料尚未确认首创者、首发平台或精确起源日期。2018年年度弹幕榜属于传播节点，不是首创证据。",
       "date": null,
       "precision": "unknown",
       "bilibili_role": "uncertain"
@@ -177,19 +177,37 @@
     "evidence_status": "partial",
     "evidence": [
       {
-        "source_id": "early-src-danmu-glossary",
-        "claims": [
-          "meaning",
-          "platform_usage"
-        ],
-        "note": "2020年B站用语释义。"
-      },
-      {
         "source_id": "early-src-airdrop-2015",
         "claims": [
+          "date",
+          "platform_usage"
+        ],
+        "note": "2015年7月29日Bangumi用户评论明确将转录文本标为“哔站评论”，原句含“op过后，空降成功！”；原始B站评论链接未提供。"
+      },
+      {
+        "source_id": "early-src-airdrop-yilin-2016",
+        "claims": [
+          "meaning",
           "date"
         ],
-        "note": "跨站讨论中2015年已有同样用法。"
+        "note": "《意林》2016年第12期说明“空降成功”是跳过片头直达正片，跳转失败称“空难现场”；只支持当期语义。"
+      },
+      {
+        "source_id": "early-src-airdrop-language-strategy-2016",
+        "claims": [
+          "meaning",
+          "date"
+        ],
+        "note": "2016年期刊文章梳理2015年1月至2016年7月的网络流行语，解释跳过片头或无聊片段并点击进度条直达目标内容；不提供首发记录。"
+      },
+      {
+        "source_id": "early-src-airdrop-bili-2018",
+        "claims": [
+          "meaning",
+          "platform_usage",
+          "date"
+        ],
+        "note": "2018年11月12日B站用户专栏直接列出“空降成功、空降坐标、空降指挥部”，并解释片头跳转和请求时间点语境。"
       },
       {
         "source_id": "mid-src-annual18",
@@ -197,10 +215,18 @@
           "platform_usage",
           "date"
         ],
-        "note": "正文列名，语义未逐词展开。"
+        "note": "2018年B站年度弹幕榜列入“空降成功”，证明该年站内传播节点，不说明首创。"
+      },
+      {
+        "source_id": "early-src-danmu-glossary",
+        "claims": [
+          "meaning",
+          "platform_usage"
+        ],
+        "note": "2020年B站用语释义将“空降成功”解释为跳过进度、到达感兴趣片段；属于后期释义。"
       }
     ],
-    "notes": "前2016中文用例已见；B站最早用例未补。"
+    "notes": "2015年7月29日Bangumi讨论转录一条明确标注为“哔站评论”的用例，提供可定位的早期B站使用记录；原始B站评论地址未取得，不能认定为站内最早用例。2016年《意林》与《语言战略研究》均记录片头/片段跳转语义；2018年B站专栏记录“空降坐标”“空降指挥部”等变体，年度弹幕榜收录“空降成功”。首创者、首发平台和精确起源日期仍未确认。"
   },
   {
     "id": "early-danmu-shield",
